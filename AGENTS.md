@@ -15,3 +15,4 @@ When working on this codebase:
 ## 3. Git & Code Cleanliness
 - Keep commits structured, clean, and tested.
 - Remind daily push to GitHub (`https://github.com/Ghaberitsohaib/jardins-de-bali`).
+
