@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" class="h-full w-full overflow-hidden">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>3D Experience | Jardins de Bali | BaytImmo</title>
+  <meta name="description" content="Explorez l'expérience 3D immersive officielle du projet Jardins de Bali à Marrakech : rotation 360°, sélection d'appartements par niveau, plans d'étages et visite virtuelle." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="3D Experience | Jardins de Bali | BaytImmo" />
+  <meta property="og:description" content="Explorez en 3D immersive les 230 résidences, le patio arboré et le rooftop avec double piscine." />
+  <meta property="og:image" content="/jardins_de_bali/14_rendu_3d_facade_rue.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="/icons/tree-symbol.svg" />
+  <link rel="stylesheet" href="/src/arbor.css" />
+
+  <style>
+    /* ==========================================================================
+       1:1 IMMERSIVE FULLSCREEN 3D VIEWPORT (BELGRADE ARBOR /EN/3D STANDARD)
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      height: 100dvh;
+      overflow: hidden;
+      background-color: #1a2219;
+      touch-action: none;
+    }
+
+    /* Edge-to-edge 3D Canvas Stage: Centers the building in the middle of the screen */
+    .arbor-3d-fullscreen-stage {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      z-index: 1;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #1a2219;
+    }
+
+    .arbor-3d-iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      display: block;
+      background: #1a2219;
+    }
+
+    /* Floating Mode Switcher (Glassmorphic Pill at Bottom Center) */
+    .arbor-floating-mode-bar {
+      position: fixed;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 80;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 8px;
+      border-radius: 9999px;
+      background: rgba(31, 38, 30, 0.9);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(204, 191, 153, 0.22);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+      transition: all 0.3s ease;
+      max-width: calc(100vw - 2rem);
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .arbor-floating-mode-bar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .arbor-mode-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 18px;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-family: var(--font-workSans), sans-serif;
+      color: rgba(253, 251, 239, 0.8);
+      background: transparent;
+      border: 1px solid transparent;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    .arbor-mode-pill:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.09);
+    }
+
+    .arbor-mode-pill.is-active {
+      background: #a68150;
+      color: #fff;
+      border-color: #a68150;
+      box-shadow: 0 4px 14px rgba(166, 129, 80, 0.4);
+    }
+
+    /* Minimal Luxury Loading Veil */
+    .arbor-3d-loader {
+      position: fixed;
+      inset: 0;
+      z-index: 90;
+      background: #1a2219;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.45s ease;
+      color: #fdfbef;
+      pointer-events: none;
+    }
+
+    .arbor-spinner {
+      width: 44px;
+      height: 44px;
+      border: 3px solid rgba(166, 129, 80, 0.25);
+      border-top-color: #a68150;
+      border-radius: 50%;
+      animation: spin 0.9s linear infinite;
+      margin-bottom: 16px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body class="text-pine-green bg-[#1a2219] antialiased">
+
+  <!-- ==========================================================================
+       BELGRADE ARBOR FLOATING EXPANDABLE PILL HEADER (TOP-CENTER)
+       ========================================================================== -->
+  <header class="arbor-header" id="overlayHeader">
+    <div class="arbor-header-inner">
+      <div class="arbor-header-top">
+        <div class="arbor-header-left">
+          <button
+            type="button"
+            id="mobileMenuToggle"
+            class="arbor-menu-btn"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <div class="arbor-menu-lines" id="arborMenuLines">
+              <span class="arbor-line arbor-line-1"></span>
+              <span class="arbor-line arbor-line-2"></span>
+            </div>
+            <span class="arbor-menu-text" id="arborMenuText">Menu</span>
+          </button>
+        </div>
+
+        <a href="/index.html" class="arbor-logo-link" aria-label="BaytImmo">
+          <svg width="24" height="24" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="arbor-logo-symbol" id="arborHeaderSymbol">
+            <path d="M0.00542084 6.72846V12.2388C0.00542084 14.8968 2.16022 17.0516 4.81573 17.0516H9.2175C10.6897 13.9501 13.8559 11.8003 17.5203 11.8003H19.2616C21.663 11.8003 23.6509 10.0441 24.0146 7.74233C20.1559 7.24411 17.1616 3.97579 17.0844 0H14.9844V2.96441C14.9844 6.62632 12.5132 9.70781 9.14775 10.6395C9.98974 11.3644 11.0858 11.8003 12.284 11.8003H13.0164C12.3887 12.1491 11.8107 12.5825 11.3026 13.0907C10.5901 13.8032 10.0221 14.6526 9.63601 15.5868C9.61359 15.6466 9.58618 15.7064 9.56626 15.7662C5.95167 14.6477 3.2862 11.3544 3.10684 7.416C2.01076 7.36618 0.966985 7.12703 0.00292969 6.72596H0.00542084V6.72846Z" fill="currentColor"></path>
+            <path d="M10.6076 0.00242615H7.46387L7.46885 6.52661C9.23753 6.3049 10.6076 4.79779 10.6076 2.96683V0.00242615Z" fill="currentColor"></path>
+            <path d="M3.08984 0.00232697H1.46066C0.656036 0.00232697 0.00585938 0.652504 0.00585938 1.45713V1.5219C0.793046 2.36389 1.87917 2.92439 3.09482 3.03399V0.00232697H3.09233H3.08984Z" fill="currentColor"></path>
+            <path d="M21.4619 0.00242615C21.5267 1.58178 22.6128 2.89459 24.0776 3.30562V0.00242615H21.4619Z" fill="currentColor"></path>
+            <path d="M28.4562 0.00242615L28.4512 6.03337C30.0156 5.23871 31.0843 3.61452 31.0843 1.74121V0.00242615H28.4562Z" fill="currentColor"></path>
+            <path d="M34.9979 4.60857C33.9292 7.86693 31.0819 10.3207 27.6043 10.8313C26.152 13.9876 22.9584 16.1797 19.2567 16.1797H17.5154C14.8574 16.1797 12.7051 18.3345 12.7051 20.99V35H22.3282V20.99C22.3282 19.4082 21.5659 18.0032 20.3826 17.1263C21.12 17.0491 21.8449 16.8673 22.53 16.5808C23.3172 16.2545 24.0421 15.8011 24.6773 15.2406C25.8556 16.7078 26.5954 18.5463 26.6901 20.5541H30.2175C32.6712 20.5541 34.699 18.7157 34.9929 16.3367V4.60857H34.9954H34.9979Z" fill="currentColor"></path>
+            <path d="M34.9999 23.5883C33.6099 24.4377 31.9732 24.926 30.2245 24.926H26.707V35H33.5426C34.3472 35 34.9974 34.3498 34.9974 33.5452V23.5883H34.9999Z" fill="currentColor"></path>
+            <path d="M8.33272 35V21.426H4.81529C3.05159 21.426 1.4 20.9278 0 20.0634V33.5402C0 34.3448 0.650177 34.995 1.4548 34.995H8.33272V35Z" fill="currentColor"></path>
+          </svg>
+        </a>
+
+        <div class="arbor-header-right">
+          <a href="https://wa.me/212665644391?text=Bonjour%20BaytImmo%2C%20je%20souhaite%20des%20informations%20sur%20les%20r%C3%A9sidences%20Jardins%20de%20Bali" target="_blank" rel="noopener" class="arbor-inquire-btn" aria-label="Inquire">
+            <span class="arbor-inquire-clip">
+              <span class="arbor-inquire-row arbor-inquire-row-1">
+                <span>Inquire</span>
+                <svg width="24" height="24" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arbor-arrow-svg">
+                  <path d="M0.5 5L24.5 5" stroke="currentColor" stroke-linecap="round"></path>
+                  <path d="M19.5 0.5L24.5 5L19.5 9.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                </svg>
+              </span>
+              <span class="arbor-inquire-row arbor-inquire-row-2">
+                <span>Inquire</span>
+                <svg width="24" height="24" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arbor-arrow-svg">
+                  <path d="M0.5 5L24.5 5" stroke="currentColor" stroke-linecap="round"></path>
+                  <path d="M19.5 0.5L24.5 5L19.5 9.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                </svg>
+              </span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Expandable Menu Grid inside the floating card -->
+      <div class="arbor-menu-collapse" id="arborDropdownMenu">
+        <div class="arbor-menu-body">
+          <a href="/index.html" class="arbor-wordmark-link" aria-label="BaytImmo">
+            <h2 class="arbor-wordmark-title">
+              <span class="arbor-wordmark-line">Bayt</span>
+              <span class="arbor-wordmark-line">Immo</span>
+            </h2>
+          </a>
+
+          <nav class="arbor-menu-nav" aria-label="Main navigation">
+            <a href="/index.html" class="arbor-nav-item">
+              <span class="arbor-nav-primary">Home</span>
+              <span class="arbor-nav-accent">Home</span>
+            </a>
+            <a href="/maquette3d.html" class="arbor-nav-item is-active">
+              <span class="arbor-nav-primary" style="color: #a68150; font-style: italic;">3D Experience</span>
+              <span class="arbor-nav-accent">3D Experience</span>
+            </a>
+            <a href="/residences.html" class="arbor-nav-item">
+              <span class="arbor-nav-primary">Residences</span>
+              <span class="arbor-nav-accent">Residences</span>
+            </a>
+            <a href="/business.html" class="arbor-nav-item">
+              <span class="arbor-nav-primary">Business & Retail</span>
+              <span class="arbor-nav-accent">Business & Retail</span>
+            </a>
+                        <a href="/index.html#Amenities" class="arbor-nav-item">
+              <span class="arbor-nav-primary">Amenities</span>
+              <span class="arbor-nav-accent">Amenities</span>
+            </a>
+          </nav>
+
+          <div class="arbor-menu-footer">
+            <div class="arbor-lang-group">
+              <a href="#" class="arbor-lang-item is-active">FR</a>
+              <span class="opacity-40">|</span>
+              <a href="#" class="arbor-lang-item">ENG</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FLOATING MENU BACKDROP OVERLAY -->
+  <div class="arbor-menu-backdrop" id="arborMenuBackdrop" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       IMMERSIVE FULLSCREEN 3D STAGE (CLEAN VIEW: NO VERTEX TOP BAR)
+       ========================================================================== -->
+  <main class="arbor-3d-fullscreen-stage">
+    
+    <!-- Minimal Initial Loading Veil -->
+    <div class="arbor-3d-loader" id="viewerLoader">
+      <div class="arbor-spinner"></div>
+      <p class="font-editorialOld text-xl text-vanilla tracking-wide">Jardins de Bali</p>
+      <span class="text-xs uppercase tracking-widest text-[#a68150] font-sans mt-1">Chargement 3D...</span>
+    </div>
+
+    <!-- Official 3D Real-Estate Model (Direct View: Zero Top Collision) -->
+    <iframe
+      id="vertexIframe"
+      class="arbor-3d-iframe"
+      src="https://www.vertex-france.com/PACKAGE/KISMOGOOD/JARDINS_DE_BALI/navigation/model/index.html"
+      data-current-mode="model"
+      title="3D Experience Jardins de Bali"
+      allow="fullscreen; accelerometer; gyroscope; xr-spatial-tracking"
+      loading="eager"
+    ></iframe>
+
+  </main>
+
+  <!-- ==========================================================================
+       FLOATING GLASSMORPHIC NAVIGATION PILL (BOTTOM CENTER - FULLY FUNCTIONAL)
+       ========================================================================== -->
+  <nav class="arbor-floating-mode-bar" aria-label="Modes de visualisation 3D">
+    <button type="button" class="arbor-mode-pill is-active" data-vertex-mode="model">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+      <span>Maquette 3D</span>
+    </button>
+    <button type="button" class="arbor-mode-pill" data-vertex-mode="gallery">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      <span>Galerie</span>
+    </button>
+    <button type="button" class="arbor-mode-pill" data-vertex-mode="plan">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/></svg>
+      <span>Localisation</span>
+    </button>
+    <button type="button" class="arbor-mode-pill" data-vertex-mode="visit">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <span>Visite 360°</span>
+    </button>
+    <button type="button" class="arbor-mode-pill" data-vertex-mode="bookmarks">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <span>Favoris</span>
+    </button>
+  </nav>
+
+  <script type="module" src="/src/maquette.js"></script>
+</body>
+</html>

@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Residences | Jardins de Bali | BaytImmo Marrakech</title>
+  <meta name="description" content="Découvrez les 230 résidences de prestige du projet Jardins de Bali à Marrakech Menara. Studios, appartements F2, F3 et penthouses d'exception avec terrasses, rooftop, double piscine et parking en sous-sol." />
+  <meta name="keywords" content="residences marrakech, jardins de bali, appartement marrakech, immobilier luxe marrakech, penthouse menara, baytimmo" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Residences | Jardins de Bali | BaytImmo" />
+  <meta property="og:description" content="230 appartements d'exception et penthouses avec piscines sur le toit et patio paysager à Marrakech." />
+  <meta property="og:image" content="/jardins_de_bali/14_rendu_3d_facade_rue.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="/icons/tree-symbol.svg" />
+  
+  <!-- Structured Data Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ApartmentComplex",
+    "name": "Jardins de Bali — Résidences de Prestige Marrakech",
+    "description": "230 appartements d'exception, studios et penthouses à Marrakech Menara par BaytImmo.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Marrakech",
+      "addressCountry": "MA"
+    },
+    "telephone": "+212661550905"
+  }
+  </script>
+  <link rel="stylesheet" href="/src/arbor.css" />
+  <link rel="stylesheet" href="/src/residences.css" />
+</head>
+<body class="text-pine-green bg-vanilla antialiased arbor-home-body">
+
+  <!-- GOLDEN SPRING SILK CURSOR TRAIL -->
+  <canvas id="canvas" class="pointer-events-none fixed inset-0 z-100"></canvas>
+
+  <!-- ==========================================================================
+       FLOATING EXPANDABLE PILL HEADER (1:1 MATCH WITH HOMEPAGE & BELGRADE ARBOR)
+       ========================================================================== -->
+  <header class="arbor-header" id="overlayHeader">
+    <div class="arbor-header-inner">
+      <div class="arbor-header-top">
+        <div class="arbor-header-left">
+          <button
+            type="button"
+            id="mobileMenuToggle"
+            class="arbor-menu-btn"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <div class="arbor-menu-lines" id="arborMenuLines">
+              <span class="arbor-line arbor-line-1"></span>
+              <span class="arbor-line arbor-line-2"></span>
+            </div>
+            <span class="arbor-menu-text" id="arborMenuText">Menu</span>
+          </button>
+        </div>
+
+        <a href="/index.html" class="arbor-logo-link" aria-label="BaytImmo">
+          <svg width="24" height="24" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="arbor-logo-symbol" id="arborHeaderSymbol">
+            <path d="M0.00542084 6.72846V12.2388C0.00542084 14.8968 2.16022 17.0516 4.81573 17.0516H9.2175C10.6897 13.9501 13.8559 11.8003 17.5203 11.8003H19.2616C21.663 11.8003 23.6509 10.0441 24.0146 7.74233C20.1559 7.24411 17.1616 3.97579 17.0844 0H14.9844V2.96441C14.9844 6.62632 12.5132 9.70781 9.14775 10.6395C9.98974 11.3644 11.0858 11.8003 12.284 11.8003H13.0164C12.3887 12.1491 11.8107 12.5825 11.3026 13.0907C10.5901 13.8032 10.0221 14.6526 9.63601 15.5868C9.61359 15.6466 9.58618 15.7064 9.56626 15.7662C5.95167 14.6477 3.2862 11.3544 3.10684 7.416C2.01076 7.36618 0.966985 7.12703 0.00292969 6.72596H0.00542084V6.72846Z" fill="currentColor"></path>
+            <path d="M10.6076 0.00242615H7.46387L7.46885 6.52661C9.23753 6.3049 10.6076 4.79779 10.6076 2.96683V0.00242615Z" fill="currentColor"></path>
+            <path d="M3.08984 0.00232697H1.46066C0.656036 0.00232697 0.00585938 0.652504 0.00585938 1.45713V1.5219C0.793046 2.36389 1.87917 2.92439 3.09482 3.03399V0.00232697H3.09233H3.08984Z" fill="currentColor"></path>
+            <path d="M21.4619 0.00242615C21.5267 1.58178 22.6128 2.89459 24.0776 3.30562V0.00242615H21.4619Z" fill="currentColor"></path>
+            <path d="M28.4562 0.00242615L28.4512 6.03337C30.0156 5.23871 31.0843 3.61452 31.0843 1.74121V0.00242615H28.4562Z" fill="currentColor"></path>
+            <path d="M34.9979 4.60857C33.9292 7.86693 31.0819 10.3207 27.6043 10.8313C26.152 13.9876 22.9584 16.1797 19.2567 16.1797H17.5154C14.8574 16.1797 12.7051 18.3345 12.7051 20.99V35H22.3282V20.99C22.3282 19.4082 21.5659 18.0032 20.3826 17.1263C21.12 17.0491 21.8449 16.8673 22.53 16.5808C23.3172 16.2545 24.0421 15.8011 24.6773 15.2406C25.8556 16.7078 26.5954 18.5463 26.6901 20.5541H30.2175C32.6712 20.5541 34.699 18.7157 34.9929 16.3367V4.60857H34.9954H34.9979Z" fill="currentColor"></path>
+            <path d="M34.9999 23.5883C33.6099 24.4377 31.9732 24.926 30.2245 24.926H26.707V35H33.5426C34.3472 35 34.9974 34.3498 34.9974 33.5452V23.5883H34.9999Z" fill="currentColor"></path>
+            <path d="M8.33272 35V21.426H4.81529C3.05159 21.426 1.4 20.9278 0 20.0634V33.5402C0 34.3448 0.650177 34.995 1.4548 34.995H8.33272V35Z" fill="currentColor"></path>
+          </svg>
+        </a>
+
+        <div class="arbor-header-right">
+          <a href="https://wa.me/212661550905?text=Bonjour%20BaytImmo%2C%20je%20souhaite%20des%20informations%20sur%20les%20r%C3%A9sidences%20Jardins%20de%20Bali" target="_blank" rel="noopener" class="arbor-inquire-btn" aria-label="Inquire">
+            <span class="arbor-inquire-clip">
+              <span class="arbor-inquire-row arbor-inquire-row-1">
+                <span>Inquire</span>
+                <svg width="24" height="24" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arbor-arrow-svg">
+                  <path d="M0.5 5L24.5 5" stroke="currentColor" stroke-linecap="round"></path>
+                  <path d="M19.5 0.5L24.5 5L19.5 9.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                </svg>
+              </span>
+              <span class="arbor-inquire-row arbor-inquire-row-2">
+                <span>Inquire</span>
+                <svg width="24" height="24" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arbor-arrow-svg">
+                  <path d="M0.5 5L24.5 5" stroke="currentColor" stroke-linecap="round"></path>
+                  <path d="M19.5 0.5L24.5 5L19.5 9.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                </svg>
+              </span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Expandable Menu Grid inside the floating card -->
+      <div class="arbor-menu-collapse" id="arborDropdownMenu">
+        <div class="arbor-menu-body">
+          <a href="/index.html" class="arbor-wordmark-link" aria-label="BaytImmo">
+            <h2 class="arbor-wordmark-title">
+              <span class="arbor-wordmark-line">Bayt</span>
+              <span class="arbor-wordmark-line">Immo</span>
+            </h2>
+          </a>
+
+          <nav class="arbor-menu-nav" aria-label="Main navigation">
+            <a href="/index.html" class="arbor-nav-item">
+              <span class="arbor-nav-primary">Home</span>
+              <span class="arbor-nav-accent">Home</span>
+            </a>
+            <a href="/maquette3d.html" class="arbor-nav-item">
+              <span class="arbor-nav-primary">3D Experience</span>
+              <span class="arbor-nav-accent">3D Experience</span>
+            </a>
+            <a href="/residences.html" class="arbor-nav-item is-active">
+              <span class="arbor-nav-primary" style="color: var(--arbor-accent); font-style: italic;">Residences</span>
+              <span class="arbor-nav-accent">Residences</span>
+            </a>
+            <a href="/business.html" class="arbor-nav-item">
+              <span class="arbor-nav-primary">Business</span>
+              <span class="arbor-nav-accent">Business</span>
+            </a>
+            <a href="/retail-spaces.html" class="arbor-nav-item">
+              <span class="arbor-nav-primary">Retail Spaces</span>
+              <span class="arbor-nav-accent">Retail Spaces</span>
+            </a>
+                        <a href="/index.html#Amenities" class="arbor-nav-item">
+              <span class="arbor-nav-primary">Amenities</span>
+              <span class="arbor-nav-accent">Amenities</span>
+            </a>
+            <a href="/contact.html" class="arbor-nav-item">
+              <span class="arbor-nav-primary">Contact</span>
+              <span class="arbor-nav-accent">Contact</span>
+            </a>
+            <a href="/about-the-investor.html" class="arbor-nav-item">
+              <span class="arbor-nav-primary">About the investor</span>
+              <span class="arbor-nav-accent">About the investor</span>
+            </a>
+          </nav>
+
+          <div class="arbor-menu-footer">
+            <div class="arbor-lang-group">
+              <a href="/residences.html" class="arbor-lang-item is-active">FR</a>
+              <span class="opacity-40">|</span>
+              <a href="/residences.html" class="arbor-lang-item">ENG</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FLOATING MENU BACKDROP OVERLAY -->
+  <div class="arbor-menu-backdrop" id="arborMenuBackdrop" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       HERO SECTION (1:1 BELGRADE ARBOR RESIDENCES)
+       ========================================================================== -->
+  <section id="Hero" class="residences-hero">
+    <img
+      src="/jardins_de_bali/14_rendu_3d_facade_rue.jpg"
+      alt="Façade Jardins de Bali Marrakech"
+      class="residences-hero-bg"
+      loading="eager"
+    />
+    <div class="residences-hero-overlay"></div>
+
+    <div class="residences-hero-content">
+      <div></div>
+
+      <div class="space-y-6">
+        <span class="text-xs tracking-widest text-golden uppercase font-sans">Projet Immobilier de Prestige · Marrakech Menara</span>
+        <h1 class="residences-title">Residences</h1>
+        <p class="residences-lead">
+          Une nouvelle dimension de l'art de vivre à Marrakech. <strong>230 résidences d'exception</strong> réparties sur 5 étages avec des lignes organiques ondulantes inspirées des rizières de Bali, patio central arboré avec grande fontaine, double piscine suspendue sur le rooftop et 2 sous-sols de stationnement sécurisé.
+        </p>
+
+        <!-- Quick Metrics Bar -->
+        <div class="residences-metrics-bar">
+          <div class="metric-item">
+            <span class="metric-number">230</span>
+            <span class="metric-label">Appartements & Penthouses</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number">4</span>
+            <span class="metric-label">Grands Magasins en RDC</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number">2</span>
+            <span class="metric-label">Piscines Rooftop Panoramiques</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-number">234</span>
+            <span class="metric-label">Places de Parking en Sous-Sol</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INTERACTIVE APARTMENT PICKER & FILTERS SECTION (1:1 MATCH)
+       ========================================================================== -->
+  <section id="Picker" class="residences-picker-section">
+    <div class="picker-container">
+
+      <!-- STICKY FILTER SIDEBAR (LEFT) -->
+      <aside class="picker-sidebar">
+        <div class="filter-heading">
+          <span>Filters</span>
+          <button type="button" id="resetFiltersBtn" class="filter-reset-btn" title="Réinitialiser tous les filtres">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+            <span>Reset</span>
+          </button>
+        </div>
+
+        <!-- Search Input -->
+        <div class="filter-group">
+          <label for="residenceSearch" class="filter-label">Rechercher un lot</label>
+          <div class="filter-search-box">
+            <svg class="filter-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input
+              type="text"
+              id="residenceSearch"
+              class="filter-search-input"
+              placeholder="Ex: APP 33, 105, Magasin..."
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <!-- Typology / Rooms -->
+        <div class="filter-group">
+          <span class="filter-label">Typologie</span>
+          <div class="filter-pills">
+            <button type="button" class="filter-pill is-active" data-filter-category="all">Tous</button>
+            <button type="button" class="filter-pill" data-filter-category="Studio">Studio (38-49 m²)</button>
+            <button type="button" class="filter-pill" data-filter-category="1 BR">1 BR (54-69 m²)</button>
+            <button type="button" class="filter-pill" data-filter-category="2 BR">2 BR (70-94 m²)</button>
+            <button type="button" class="filter-pill" data-filter-category="3+ BR">Penthouse (95-234 m²)</button>
+            <button type="button" class="filter-pill" data-filter-category="Commerce">Magasins RDC</button>
+          </div>
+        </div>
+
+        <!-- Surface Range Slider -->
+        <div class="filter-group">
+          <div class="flex items-center justify-between">
+            <span class="filter-label mb-0">Surface Maximale</span>
+            <span class="range-current-badge" id="surfaceBadge">234 m²</span>
+          </div>
+          <div class="range-slider-wrapper">
+            <div class="range-values">
+              <span>38 m²</span>
+              <span>234 m²</span>
+            </div>
+            <input
+              type="range"
+              id="surfaceSlider"
+              min="38"
+              max="234"
+              value="234"
+              step="1"
+              class="range-slider-input"
+            />
+          </div>
+        </div>
+
+        <!-- Floor (Étage) Filter -->
+        <div class="filter-group">
+          <span class="filter-label">Étage</span>
+          <div class="filter-pills">
+            <button type="button" class="filter-pill is-active" data-filter-floor="all">Tous</button>
+            <button type="button" class="filter-pill" data-filter-floor="0">RDC</button>
+            <button type="button" class="filter-pill" data-filter-floor="1">1er Étage</button>
+            <button type="button" class="filter-pill" data-filter-floor="2">2ème Étage</button>
+            <button type="button" class="filter-pill" data-filter-floor="3">3ème Étage</button>
+            <button type="button" class="filter-pill" data-filter-floor="4">4ème Étage</button>
+            <button type="button" class="filter-pill" data-filter-floor="5">5ème (Terrasses)</button>
+          </div>
+        </div>
+
+        <!-- Features Filter -->
+        <div class="filter-group">
+          <span class="filter-label">Prestations Clés</span>
+          <div class="filter-pills">
+            <button type="button" class="filter-pill" data-filter-feature="Terrasse Panoramique">
+              Terrasse Panoramique
+            </button>
+            <button type="button" class="filter-pill" data-filter-feature="Piscines Rooftop">
+              Piscines Rooftop
+            </button>
+            <button type="button" class="filter-pill" data-filter-feature="Vue Patio & Fontaine">
+              Vue Patio & Fontaine
+            </button>
+            <button type="button" class="filter-pill" data-filter-feature="Parking Sous-Sol Garanti">
+              Parking Garanti
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- RESULTS LISTING (RIGHT) -->
+      <main class="picker-results-main">
+        <!-- Control Header Bar -->
+        <div class="results-header-bar">
+          <span class="results-counter" id="resultsCount">234 Résultats</span>
+
+          <div class="results-controls">
+            <!-- Sort dropdown -->
+            <select id="sortSelect" class="results-sort-select" aria-label="Trier par">
+              <option value="default">Tri par défaut</option>
+              <option value="surface-asc">Surface : Croissante</option>
+              <option value="surface-desc">Surface : Décroissante</option>
+              <option value="floor-asc">Étage : RDC vers R+5</option>
+              <option value="floor-desc">Étage : R+5 vers RDC</option>
+            </select>
+
+            <!-- Grid / Table view toggle -->
+            <div class="view-mode-toggle" role="group" aria-label="Mode d'affichage">
+              <button type="button" id="gridViewBtn" class="view-mode-btn is-active" title="Vue Grille">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              </button>
+              <button type="button" id="tableViewBtn" class="view-mode-btn" title="Vue Tableau">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Residence Cards Grid -->
+        <div id="residencesGrid" class="residences-cards-grid"></div>
+
+        <!-- Table View Alternative (Hidden by default) -->
+        <div class="overflow-x-auto">
+          <table id="residencesTable" class="residences-table-view" style="display: none;">
+            <thead>
+              <tr>
+                <th>Lot / N°</th>
+                <th>Surface</th>
+                <th>Niveau</th>
+                <th>Pièces</th>
+                <th>Prestations</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="picker-load-more-wrap" id="loadMoreWrapper">
+          <button type="button" id="loadMoreBtn" class="load-more-btn">
+            Charger plus de résidences
+          </button>
+        </div>
+      </main>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ARCHITECTURAL PLANS & BLUEPRINTS SHOWCASE (CABINET AMA ARCHITECTURE)
+       ========================================================================== -->
+  <section id="PlansArchitecture" class="architectural-plans-section">
+    <div class="plans-section-container">
+      <div class="plans-header">
+        <span class="text-xs uppercase tracking-widest text-golden font-sans">Plans Vectoriels & Visas Officiels</span>
+        <h2 class="plans-section-title">Plans d'Architecture par Niveau</h2>
+        <p class="plans-section-subtitle">
+          Consultez l'ensemble des planches certifiées découpées au millimètre près, du parking sous-sol jusqu'aux piscines suspendues de la toiture-terrasse.
+        </p>
+      </div>
+
+      <!-- Plan Tab Buttons -->
+      <div class="plans-tabs-nav" role="tablist">
+        <button type="button" class="plan-tab-btn is-active" data-plan-target="rdc">RDC & Patio</button>
+        <button type="button" class="plan-tab-btn" data-plan-target="mezz">Mezzanine</button>
+        <button type="button" class="plan-tab-btn" data-plan-target="r1">1er Étage</button>
+        <button type="button" class="plan-tab-btn" data-plan-target="r2">2ème Étage</button>
+        <button type="button" class="plan-tab-btn" data-plan-target="r3">3ème Étage</button>
+        <button type="button" class="plan-tab-btn" data-plan-target="r4">4ème Étage</button>
+        <button type="button" class="plan-tab-btn" data-plan-target="r5">5ème (Penthouses)</button>
+        <button type="button" class="plan-tab-btn" data-plan-target="toiture">Toiture Rooftop</button>
+        <button type="button" class="plan-tab-btn" data-plan-target="ss2">Sous-sol 2 (Parking)</button>
+        <button type="button" class="plan-tab-btn" data-plan-target="ss1">Sous-sol 1 (Parking)</button>
+        <button type="button" class="plan-tab-btn" data-plan-target="facades">Façade & Coupes</button>
+      </div>
+
+      <!-- Plan Display Stage -->
+      <div class="plan-display-stage">
+        <img
+          id="planDisplayImg"
+          src="/jardins_de_bali/plan_03_rez_de_chaussee.jpg"
+          alt="Plan Rez-de-Chaussée"
+          class="plan-display-img"
+        />
+        <div class="plan-display-info">
+          <div>
+            <h3 id="planInfoTitle" class="plan-info-title">Plan Rez-de-Chaussée (Patio Central, 4 Magasins & 32 Résidences)</h3>
+            <p id="planInfoDesc" class="plan-info-desc">Allée d'accès arborée avec grande fontaine d'eau, 4 grands magasins en façade sur rue et 32 appartements privatifs.</p>
+          </div>
+          <a
+            id="planFullscreenLink"
+            href="/jardins_de_bali/plan_03_rez_de_chaussee.jpg"
+            target="_blank"
+            rel="noopener"
+            class="plan-fullscreen-btn"
+          >
+            <span>Afficher en Plein Écran (HD)</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SHOW APARTMENT & AMENITIES PHOTO MOSAIC (APPARTEMENT TÉMOIN)
+       ========================================================================== -->
+  <section id="AppartementTemoin" class="show-apartment-section">
+    <div class="max-w-7xl mx-auto px-6 mb-12 text-center">
+      <span class="text-xs uppercase tracking-widest text-golden font-sans">Immersion Réelle</span>
+      <h2 class="font-editorialOld text-5xl md:text-6xl text-pine-green font-light mt-2 uppercase">L'Appartement Témoin</h2>
+      <p class="font-workSans text-pine-green/75 max-w-2xl mx-auto mt-4 text-base">
+        Explorez les matériaux nobles, les finitions raffinées et les prestations haut de gamme qui composent chaque résidence des Jardins de Bali.
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- Cuisine Américaine -->
+      <div class="gallery-card span-2">
+        <img
+          src="/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg"
+          alt="Cuisine américaine avec îlot en marbre"
+          class="gallery-img"
+          loading="lazy"
+        />
+        <div class="gallery-caption">
+          <span class="gallery-caption-title">Cuisine Américaine & Îlot en Marbre</span>
+          <span class="gallery-caption-sub">Électroménager Bosch haut de gamme encastré, comptoir bar et suspensions design</span>
+        </div>
+      </div>
+
+      <!-- Suite Parentale -->
+      <div class="gallery-card">
+        <img
+          src="/jardins_de_bali/01_chambre_lit_double.jpg"
+          alt="Chambre à coucher et tête de lit velours"
+          class="gallery-img"
+          loading="lazy"
+        />
+        <div class="gallery-caption">
+          <span class="gallery-caption-title">La Suite Parentale</span>
+          <span class="gallery-caption-sub">Tête de lit en velours vert olive et tasseaux de chêne</span>
+        </div>
+      </div>
+
+      <!-- Douche Italienne Travertin -->
+      <div class="gallery-card">
+        <img
+          src="/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg"
+          alt="Salle de bain avec douche à l'italienne en travertin"
+          class="gallery-img"
+          loading="lazy"
+        />
+        <div class="gallery-caption">
+          <span class="gallery-caption-title">Salle de Bain en Travertin</span>
+          <span class="gallery-caption-sub">Douche à l'italienne spacieuse et robinetterie noire mate</span>
+        </div>
+      </div>
+
+      <!-- Grand Salon Panoramique -->
+      <div class="gallery-card span-2">
+        <img
+          src="/jardins_de_bali/07_salon_canape_et_tv.jpg"
+          alt="Salon lumineux avec canapé panoramique"
+          class="gallery-img"
+          loading="lazy"
+        />
+        <div class="gallery-caption">
+          <span class="gallery-caption-title">Le Grand Salon Lumineux</span>
+          <span class="gallery-caption-sub">Baie vitrée toute hauteur, meuble TV suspendu et ambiance feutrée</span>
+        </div>
+      </div>
+
+      <!-- Rooftop Double Piscine -->
+      <div class="gallery-card span-2">
+        <img
+          src="/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+          alt="Rooftop avec double piscine suspendue"
+          class="gallery-img"
+          loading="lazy"
+        />
+        <div class="gallery-caption">
+          <span class="gallery-caption-title">Rooftop Panoramique & Double Piscine</span>
+          <span class="gallery-caption-sub">Deux piscines à débordement suspendues, solarium en teck et vue imprenable sur l'Atlas</span>
+        </div>
+      </div>
+
+      <!-- Patio Intérieur Fontaine -->
+      <div class="gallery-card">
+        <img
+          src="/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+          alt="Patio intérieur avec grande fontaine"
+          class="gallery-img"
+          loading="lazy"
+        />
+        <div class="gallery-caption">
+          <span class="gallery-caption-title">Patio Central Végétalisé</span>
+          <span class="gallery-caption-sub">Fontaine monumentale d'eau et coursives arborées en cascade</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       APARTMENT QUICK VIEW MODAL
+       ========================================================================== -->
+  <div id="apartmentModal" class="apartment-modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="apartment-modal-card">
+      <button type="button" id="modalCloseBtn" class="modal-close-btn" aria-label="Fermer la fenêtre">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+
+      <div class="modal-content-grid">
+        <!-- Visuals Column -->
+        <div class="modal-visuals-col">
+          <div class="modal-main-img-wrap">
+            <img id="modalMainImg" src="/jardins_de_bali/plan_05_1er_etage.jpg" alt="Plan" class="modal-main-img" />
+          </div>
+          <!-- Thumbnails Row -->
+          <div class="modal-thumbs-row" id="modalThumbsRow"></div>
+        </div>
+
+        <!-- Info Column -->
+        <div class="modal-info-col">
+          <div>
+            <span class="text-xs tracking-widest text-golden uppercase font-sans">Jardins de Bali · Marrakech Menara</span>
+            <h2 id="modalLotId" class="modal-lot-id">APP 33</h2>
+            <p class="font-workSans text-sm text-pine-green/75">Résidence de prestige au sein du complexe résidentiel et commercial Jardins de Bali.</p>
+
+            <table class="modal-specs-table">
+              <tbody>
+                <tr>
+                  <td class="label">Surface Privative</td>
+                  <td class="value" id="modalSurface">75.00 m²</td>
+                </tr>
+                <tr>
+                  <td class="label">Étage & Niveau</td>
+                  <td class="value" id="modalFloor">1er Étage</td>
+                </tr>
+                <tr>
+                  <td class="label">Configuration</td>
+                  <td class="value" id="modalRooms">2 rooms (1 BR)</td>
+                </tr>
+                <tr>
+                  <td class="label">Titre Foncier (TF)</td>
+                  <td class="value">34 603 / M</td>
+                </tr>
+                <tr>
+                  <td class="label">Prestations Incluses</td>
+                  <td class="value" id="modalFeatures">Terrasse, Parking Sous-Sol</td>
+                </tr>
+                <tr>
+                  <td class="label">Équipements</td>
+                  <td class="value">Cuisine Bosch, Travertin, Climatisation</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="modal-actions-row">
+            <a id="modalWaLink" href="https://wa.me/212661550905" target="_blank" rel="noopener" class="modal-inquire-btn">
+              Réserver ce lot via WhatsApp
+            </a>
+            <a id="modalPlanDownload" href="#" target="_blank" rel="noopener" class="modal-download-plan-btn">
+              <span>Voir le Plan</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       LUXURY FOOTER (MATCHING BELGRADE ARBOR DESIGN)
+       ========================================================================== -->
+  <footer id="footer" class="to-vanilla relative bg-linear-to-t from-[#8AB6D2] pt-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-10">
+        <div class="space-y-6">
+          <p class="font-editorialOld text-3xl md:text-4xl uppercase text-pine-green leading-tight">
+            REJOIGNEZ L'UNIVERS DES JARDINS DE BALI
+          </p>
+          <p class="font-workSans text-sm text-pine-green/80">
+            Inscrivez-vous pour recevoir les disponibilités en temps réel, les grilles tarifaires et les actualités du projet.
+          </p>
+          <form id="residencesFooterForm" class="space-y-4">
+            <div class="flex gap-4">
+              <input type="text" placeholder="Prénom" class="w-1/2 border-b border-pine-green bg-transparent pb-2 text-sm outline-none placeholder:text-pine-green/60" required />
+              <input type="text" placeholder="Nom" class="w-1/2 border-b border-pine-green bg-transparent pb-2 text-sm outline-none placeholder:text-pine-green/60" required />
+            </div>
+            <input type="email" placeholder="Adresse email" class="w-full border-b border-pine-green bg-transparent pb-2 text-sm outline-none placeholder:text-pine-green/60" required />
+            <button type="submit" class="mt-4 px-8 py-3 rounded-full bg-pine-green text-sand text-xs tracking-widest uppercase hover:bg-golden transition">
+              S'inscrire
+            </button>
+          </form>
+        </div>
+
+        <div class="space-y-4">
+          <p class="text-xs uppercase tracking-widest text-golden font-sans font-medium">Localisation & Projet</p>
+          <p class="font-workSans text-sm text-pine-green/80 leading-relaxed">
+            <strong>Projet :</strong> Jardins de Bali<br>
+            <strong>Adresse :</strong> Quartier Rahham, Zone B5, Arrondissement Menara, Marrakech, Maroc<br>
+            <strong>Titre Foncier :</strong> 34 603 / M<br>
+            <strong>Cabinet d'Architecture :</strong> AMA Architecture (Guéliz, Marrakech)
+          </p>
+          <div class="pt-4">
+            <p class="text-xs uppercase tracking-widest text-golden font-sans font-medium">Contact Commercial</p>
+            <p class="font-workSans text-sm text-pine-green/80 mt-1">
+              Téléphone : +212 6 61 55 09 05<br>
+              Email : contact@baytimmo.ma
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <p class="text-xs uppercase tracking-widest text-golden font-sans font-medium">Navigation</p>
+          <ul class="space-y-2 text-sm font-workSans text-pine-green/80 uppercase">
+            <li><a href="/index.html" class="hover:text-golden transition">Home</a></li>
+            <li><a href="/residences.html" class="text-golden font-medium">Residences</a></li>
+            <li><a href="/maquette3d.html" class="hover:text-golden transition">3D Experience</a></li>
+            <li><a href="/business.html" class="hover:text-golden transition">Business</a></li>
+            <li><a href="/retail-spaces.html" class="hover:text-golden transition">Retail Spaces</a></li>
+                        <li><a href="/index.html#Amenities" class="hover:text-golden transition">Amenities</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Illustration Graphics: Jardins de Bali Signature Architecture -->
+    <div class="pointer-events-none -mt-20 w-full overflow-clip select-none relative max-md:-mt-10">
+      <img
+        alt="Jardins de Bali Marrakech Menara"
+        loading="eager"
+        width="1920"
+        height="1200"
+        class="front h-[32rem] max-2xl:h-[28rem] max-lg:h-[24rem] max-md:h-[18rem] w-full object-cover object-top filter contrast-[1.05] brightness-[1.02]"
+        style="-webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 8%, black 20%, black 100%); mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 8%, black 20%, black 100%);"
+        src="/home/footer/jardins_bali_rooftop_pools.jpg"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none"></div>
+      <div class="absolute bottom-0 left-0 h-auto w-full">
+        <img alt="footer tree left" loading="lazy" width="387" height="559" class="absolute bottom-0 left-0 h-auto w-96 max-w-none max-2xl:w-75 max-lg:hidden opacity-90" src="/home/footer/tree-l.webp"/>
+        <img alt="footer tree right" loading="lazy" width="1354" height="641" class="absolute right-0 bottom-0 h-auto w-335 max-w-none max-2xl:w-250 max-lg:w-[150%] max-md:w-150 opacity-90" src="/home/footer/tree-r.webp"/>
+      </div>
+    </div>
+
+    <!-- Footer Copyright Row -->
+    <div class="absolute bottom-10 left-0 z-10 w-full max-md:bottom-6">
+      <div class="max-w-7xl mx-auto px-6 flex items-end justify-between max-lg:flex-col-reverse max-lg:items-center max-lg:gap-4">
+        <div class="text-xs text-cream/90 uppercase">© 2026 BaytImmo — Jardins de Bali Marrakech. Tous droits réservés.</div>
+        <div class="font-editorialOld text-3xl md:text-5xl text-cream uppercase font-light tracking-wide"><span>Jardins de Bali</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Conversion Sticky CTA Bar -->
+  <div class="mobile-sticky-cta-bar" id="mobileStickyCta">
+    <a href="https://wa.me/212661550905?text=Bonjour%20BaytImmo%2C%20je%20souhaite%20des%20informations%20sur%20les%20r%C3%A9sidences%20Jardins%20de%20Bali%20Marrakech." target="_blank" rel="noopener noreferrer" class="mobile-sticky-cta-btn whatsapp" aria-label="WhatsApp Direct">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="#footer" class="mobile-sticky-cta-btn inquire" aria-label="Contacter">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+        <polyline points="22,6 12,13 2,6"/>
+      </svg>
+      <span>Brochure</span>
+    </a>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toastNotice">
+    <span style="color: #a68150; font-size: 1.2rem;">✓</span>
+    <span id="toastMsg">Merci ! Votre demande d'inscription aux Jardins de Bali a bien été enregistrée.</span>
+  </div>
+
+  <script type="module" src="/src/residences.js"></script>
+</body>
+</html>

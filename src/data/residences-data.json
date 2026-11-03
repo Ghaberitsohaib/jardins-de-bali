@@ -1,0 +1,5580 @@
+[
+  {
+    "id": "MAGASIN 1",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 56,
+    "type": "Commerce",
+    "slug": "magasin-1",
+    "category": "Magasin",
+    "rooms": 1,
+    "roomsText": "Local Commercial",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/14_rendu_3d_facade_rue.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "MAGASIN 2",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 221,
+    "type": "Commerce",
+    "slug": "magasin-2",
+    "category": "Magasin",
+    "rooms": 1,
+    "roomsText": "Local Commercial",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/14_rendu_3d_facade_rue.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "MAGASIN 3",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 56,
+    "type": "Commerce",
+    "slug": "magasin-3",
+    "category": "Magasin",
+    "rooms": 1,
+    "roomsText": "Local Commercial",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/14_rendu_3d_facade_rue.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "MAGASIN 4",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 221,
+    "type": "Commerce",
+    "slug": "magasin-4",
+    "category": "Magasin",
+    "rooms": 1,
+    "roomsText": "Local Commercial",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/14_rendu_3d_facade_rue.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 1",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 92,
+    "slug": "app-1",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 2",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 111,
+    "slug": "app-2",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 3",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 125,
+    "slug": "app-3",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 4",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 126,
+    "slug": "app-4",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 5",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 128,
+    "slug": "app-5",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 6",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 129,
+    "slug": "app-6",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 7",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 131,
+    "slug": "app-7",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 8",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 131,
+    "slug": "app-8",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 9",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 234,
+    "slug": "app-9",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 10",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 112,
+    "slug": "app-10",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 11",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 80,
+    "slug": "app-11",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 12",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 80,
+    "slug": "app-12",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 13",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 59,
+    "slug": "app-13",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 14",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 59,
+    "slug": "app-14",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 15",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 80,
+    "slug": "app-15",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 16",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 94,
+    "slug": "app-16",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 17",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 94,
+    "slug": "app-17",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 18",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 80,
+    "slug": "app-18",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 19",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 58,
+    "slug": "app-19",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 20",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 59,
+    "slug": "app-20",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 21",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 80,
+    "slug": "app-21",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 22",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 80,
+    "slug": "app-22",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 23",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 101,
+    "slug": "app-23",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 24",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 209,
+    "slug": "app-24",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 25",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 129,
+    "slug": "app-25",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 26",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 128,
+    "slug": "app-26",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 27",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 126,
+    "slug": "app-27",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 28",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 125,
+    "slug": "app-28",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 29",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 122,
+    "slug": "app-29",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 30",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 121,
+    "slug": "app-30",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 31",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 106,
+    "slug": "app-31",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 32",
+    "floor": 0,
+    "floorName": "Rez-de-Chaussée",
+    "surface": 152,
+    "slug": "app-32",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 33",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 75,
+    "slug": "app-33",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 34",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 59,
+    "slug": "app-34",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 35",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 55,
+    "slug": "app-35",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 36",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 55,
+    "slug": "app-36",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 37",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 56,
+    "slug": "app-37",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 38",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 56,
+    "slug": "app-38",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 39",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 57,
+    "slug": "app-39",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 40",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 57,
+    "slug": "app-40",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 41",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 83,
+    "slug": "app-41",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 42",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 61,
+    "slug": "app-42",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 43",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 57,
+    "slug": "app-43",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 44",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 57,
+    "slug": "app-44",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 45",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 39,
+    "slug": "app-45",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 46",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 38,
+    "slug": "app-46",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 47",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 57,
+    "slug": "app-47",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 48",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 57,
+    "slug": "app-48",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 49",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 65,
+    "slug": "app-49",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 50",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 65,
+    "slug": "app-50",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 51",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 57,
+    "slug": "app-51",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 52",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 57,
+    "slug": "app-52",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 53",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 38,
+    "slug": "app-53",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 54",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 39,
+    "slug": "app-54",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 55",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 57,
+    "slug": "app-55",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 56",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 57,
+    "slug": "app-56",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 57",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 56,
+    "slug": "app-57",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 58",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 67,
+    "slug": "app-58",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 59",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 57,
+    "slug": "app-59",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 60",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 57,
+    "slug": "app-60",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 61",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 56,
+    "slug": "app-61",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 62",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 56,
+    "slug": "app-62",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 63",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 55,
+    "slug": "app-63",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 64",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 55,
+    "slug": "app-64",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 65",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 59,
+    "slug": "app-65",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 66",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 75,
+    "slug": "app-66",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 67",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 64,
+    "slug": "app-67",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 68",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 63,
+    "slug": "app-68",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 69",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 67,
+    "slug": "app-69",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 70",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 63,
+    "slug": "app-70",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 71",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 65,
+    "slug": "app-71",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 72",
+    "floor": 1,
+    "floorName": "1er Étage",
+    "surface": 64,
+    "slug": "app-72",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Vue Patio & Fontaine",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 73",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 75,
+    "slug": "app-73",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 74",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 59,
+    "slug": "app-74",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 75",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 55,
+    "slug": "app-75",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 76",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 55,
+    "slug": "app-76",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 77",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 56,
+    "slug": "app-77",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 78",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 56,
+    "slug": "app-78",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 79",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 57,
+    "slug": "app-79",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 80",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 57,
+    "slug": "app-80",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 81",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 83,
+    "slug": "app-81",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 82",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 61,
+    "slug": "app-82",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 83",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 57,
+    "slug": "app-83",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 84",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 57,
+    "slug": "app-84",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 85",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 39,
+    "slug": "app-85",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 86",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 38,
+    "slug": "app-86",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 87",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 57,
+    "slug": "app-87",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 88",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 57,
+    "slug": "app-88",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 89",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 65,
+    "slug": "app-89",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 90",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 65,
+    "slug": "app-90",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 91",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 57,
+    "slug": "app-91",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 92",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 57,
+    "slug": "app-92",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 93",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 38,
+    "slug": "app-93",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 94",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 39,
+    "slug": "app-94",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 95",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 57,
+    "slug": "app-95",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 96",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 57,
+    "slug": "app-96",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 97",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 56,
+    "slug": "app-97",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 98",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 67,
+    "slug": "app-98",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 99",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 57,
+    "slug": "app-99",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 100",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 57,
+    "slug": "app-100",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 101",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 56,
+    "slug": "app-101",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 102",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 56,
+    "slug": "app-102",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 103",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 55,
+    "slug": "app-103",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 104",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 55,
+    "slug": "app-104",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 105",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 59,
+    "slug": "app-105",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 106",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 75,
+    "slug": "app-106",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 107",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 64,
+    "slug": "app-107",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 108",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 63,
+    "slug": "app-108",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 109",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 67,
+    "slug": "app-109",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 110",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 63,
+    "slug": "app-110",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 111",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 65,
+    "slug": "app-111",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 112",
+    "floor": 2,
+    "floorName": "2ème Étage",
+    "surface": 64,
+    "slug": "app-112",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 113",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 75,
+    "slug": "app-113",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 114",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 59,
+    "slug": "app-114",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 115",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 55,
+    "slug": "app-115",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 116",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 55,
+    "slug": "app-116",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 117",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 56,
+    "slug": "app-117",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 118",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 56,
+    "slug": "app-118",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 119",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 57,
+    "slug": "app-119",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 120",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 57,
+    "slug": "app-120",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 121",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 83,
+    "slug": "app-121",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 122",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 61,
+    "slug": "app-122",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 123",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 57,
+    "slug": "app-123",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 124",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 57,
+    "slug": "app-124",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 125",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 39,
+    "slug": "app-125",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 126",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 38,
+    "slug": "app-126",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 127",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 57,
+    "slug": "app-127",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 128",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 57,
+    "slug": "app-128",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 129",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 65,
+    "slug": "app-129",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 130",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 65,
+    "slug": "app-130",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 131",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 57,
+    "slug": "app-131",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 132",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 57,
+    "slug": "app-132",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 133",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 38,
+    "slug": "app-133",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 134",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 39,
+    "slug": "app-134",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 135",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 57,
+    "slug": "app-135",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 136",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 57,
+    "slug": "app-136",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 137",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 56,
+    "slug": "app-137",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 138",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 67,
+    "slug": "app-138",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 139",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 57,
+    "slug": "app-139",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 140",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 57,
+    "slug": "app-140",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 141",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 56,
+    "slug": "app-141",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 142",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 56,
+    "slug": "app-142",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 143",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 55,
+    "slug": "app-143",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 144",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 55,
+    "slug": "app-144",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 145",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 59,
+    "slug": "app-145",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 146",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 75,
+    "slug": "app-146",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 147",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 64,
+    "slug": "app-147",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 148",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 63,
+    "slug": "app-148",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 149",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 67,
+    "slug": "app-149",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 150",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 63,
+    "slug": "app-150",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 151",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 65,
+    "slug": "app-151",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 152",
+    "floor": 3,
+    "floorName": "3ème Étage",
+    "surface": 64,
+    "slug": "app-152",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 153",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 75,
+    "slug": "app-153",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 154",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 59,
+    "slug": "app-154",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 155",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 55,
+    "slug": "app-155",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 156",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 55,
+    "slug": "app-156",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 157",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 57,
+    "slug": "app-157",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 158",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 57,
+    "slug": "app-158",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 159",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 59,
+    "slug": "app-159",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 160",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 57,
+    "slug": "app-160",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 161",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 85,
+    "slug": "app-161",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 162",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 62,
+    "slug": "app-162",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 163",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 57,
+    "slug": "app-163",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 164",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 57,
+    "slug": "app-164",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 165",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 39,
+    "slug": "app-165",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 166",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 38,
+    "slug": "app-166",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 167",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 57,
+    "slug": "app-167",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 168",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 57,
+    "slug": "app-168",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 169",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 65,
+    "slug": "app-169",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 170",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 65,
+    "slug": "app-170",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 171",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 57,
+    "slug": "app-171",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 172",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 57,
+    "slug": "app-172",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 173",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 38,
+    "slug": "app-173",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 174",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 39,
+    "slug": "app-174",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 175",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 57,
+    "slug": "app-175",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 176",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 57,
+    "slug": "app-176",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 177",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 57,
+    "slug": "app-177",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 178",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 68,
+    "slug": "app-178",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 179",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 57,
+    "slug": "app-179",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 180",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 58,
+    "slug": "app-180",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 181",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 57,
+    "slug": "app-181",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 182",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 56,
+    "slug": "app-182",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 183",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 55,
+    "slug": "app-183",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 184",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 54,
+    "slug": "app-184",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 185",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 59,
+    "slug": "app-185",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 186",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 75,
+    "slug": "app-186",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 187",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 61,
+    "slug": "app-187",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 188",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 69,
+    "slug": "app-188",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 189",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 65,
+    "slug": "app-189",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 190",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 68,
+    "slug": "app-190",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 191",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 66,
+    "slug": "app-191",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 192",
+    "floor": 4,
+    "floorName": "4ème Étage",
+    "surface": 65,
+    "slug": "app-192",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 193",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 75,
+    "slug": "app-193",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 194",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 59,
+    "slug": "app-194",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 195",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 55,
+    "slug": "app-195",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 196",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 55,
+    "slug": "app-196",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 197",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 47,
+    "slug": "app-197",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 198",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 47,
+    "slug": "app-198",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 199",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 48,
+    "slug": "app-199",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 200",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 49,
+    "slug": "app-200",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 201",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 116,
+    "slug": "app-201",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 202",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 57,
+    "slug": "app-202",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 203",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 57,
+    "slug": "app-203",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 204",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 39,
+    "slug": "app-204",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 205",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 38,
+    "slug": "app-205",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 206",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 39,
+    "slug": "app-206",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 207",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 57,
+    "slug": "app-207",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 208",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 96,
+    "slug": "app-208",
+    "category": "3+ BR",
+    "rooms": 4,
+    "roomsText": "4+ rooms (Penthouse)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 209",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 57,
+    "slug": "app-209",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 210",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 68,
+    "slug": "app-210",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 211",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 57,
+    "slug": "app-211",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 212",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 56,
+    "slug": "app-212",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 213",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 55,
+    "slug": "app-213",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 214",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 54,
+    "slug": "app-214",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 215",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 59,
+    "slug": "app-215",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 216",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 75,
+    "slug": "app-216",
+    "category": "2 BR",
+    "rooms": 3,
+    "roomsText": "3 rooms (2 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 217",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 61,
+    "slug": "app-217",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 218",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 69,
+    "slug": "app-218",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 219",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 65,
+    "slug": "app-219",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 220",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 68,
+    "slug": "app-220",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 221",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 66,
+    "slug": "app-221",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 222",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 65,
+    "slug": "app-222",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 223",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 65,
+    "slug": "app-223",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 224",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 65,
+    "slug": "app-224",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 225",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 57,
+    "slug": "app-225",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 226",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 57,
+    "slug": "app-226",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 227",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 38,
+    "slug": "app-227",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 228",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 39,
+    "slug": "app-228",
+    "category": "Studio",
+    "rooms": 1,
+    "roomsText": "1 room",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 229",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 57,
+    "slug": "app-229",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  },
+  {
+    "id": "APP 230",
+    "floor": 5,
+    "floorName": "5ème Étage (Terrasses & Penthouses)",
+    "surface": 68,
+    "slug": "app-230",
+    "category": "1 BR",
+    "rooms": 2,
+    "roomsText": "2 rooms (1 BR)",
+    "features": [
+      "Terrasse Panoramique",
+      "Piscines Rooftop",
+      "Parking Sous-Sol Garanti"
+    ],
+    "planImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
+    "thumbImg": "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+    "gallery": [
+      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+      "/jardins_de_bali/01_chambre_lit_double.jpg",
+      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg",
+      "/jardins_de_bali/09_patio_interieur_fontaine.jpg"
+    ]
+  }
+]

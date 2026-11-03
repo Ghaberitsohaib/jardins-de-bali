@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Retail &amp; Business Spaces | Jardins de Bali | BaytImmo</title>
+  <meta name="description" content="Explorez les locaux commerciaux, magasins flagships et plateaux de bureaux aux Jardins de Bali à Marrakech Menara. Des surfaces modulables de 48 m² à 406 m² avec vitrines sur boulevard principal et parkings sécurisés." />
+  <meta name="keywords" content="retail spaces marrakech, magasins jardins de bali, locaux commerciaux menara, bureaux marrakech, baytimmo, showroom marrakech" />
+  <link rel="icon" type="image/svg+xml" href="/icons/tree-symbol.svg" />
+  
+  <!-- Structured Data Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateListing",
+    "name": "Retail & Business Spaces — Jardins de Bali Marrakech",
+    "description": "Locaux commerciaux, magasins flagships et bureaux modulables de 48 m² à 406 m² aux Jardins de Bali à Marrakech Menara.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Marrakech",
+      "addressCountry": "MA"
+    },
+    "telephone": "+212661550905"
+  }
+  </script>
+  <link rel="stylesheet" href="/src/arbor.css" />
+  <link rel="stylesheet" href="/src/business.css" />
+
+  <style>
+    /* Range slider custom styling */
+    input[type=range] {
+      -webkit-appearance: none;
+      width: 100%;
+      background: transparent;
+    }
+    input[type=range]:focus {
+      outline: none;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 2px;
+      cursor: pointer;
+      background: #737373;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      background: #B38E5D;
+      cursor: pointer;
+      -webkit-appearance: none;
+      margin-top: -7px;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+    input[type=range]::-webkit-slider-thumb:hover {
+      transform: scale(1.2);
+      background: #232d1e;
+    }
+
+    /* Modal Backdrop Transitions */
+    .unit-modal-backdrop {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      visibility: hidden;
+    }
+    .unit-modal-backdrop.is-active {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+    }
+
+    /* Ultra-Luxury Mobile Filter Bottom Sheet */
+    .mobile-filter-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s ease;
+      display: none;
+    }
+    @media (max-width: 1023px) {
+      .mobile-filter-overlay {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+      }
+    }
+    .mobile-filter-overlay.is-active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .mobile-filter-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 15, 12, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: opacity 0.35s ease;
+    }
+    .mobile-filter-sheet {
+      position: relative;
+      width: 100%;
+      max-width: 480px;
+      height: 84vh;
+      max-height: 96vh;
+      border-radius: 28px 28px 0 0;
+      background: #FAF7EF;
+      border-top: 1px solid rgba(200, 163, 102, 0.5);
+      box-shadow: 0 -16px 50px rgba(0, 0, 0, 0.38);
+      transform: translateY(100%);
+      transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1), height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      z-index: 10;
+      touch-action: pan-y;
+      will-change: transform, height;
+    }
+    .mobile-filter-sheet.is-expanded {
+      height: 95vh !important;
+    }
+    .mobile-filter-sheet.is-dragging {
+      transition: none !important;
+    }
+    .mobile-filter-overlay.is-active .mobile-filter-sheet {
+      transform: translateY(0);
+    }
+
+    /* Grab bar */
+    .filter-drag-handle-zone {
+      width: 100%;
+      padding: 10px 0 6px;
+      cursor: grab;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .filter-drag-handle-zone:active {
+      cursor: grabbing;
+    }
+    .filter-grab-bar {
+      width: 46px;
+      height: 5px;
+      border-radius: 9999px;
+      background: rgba(26, 36, 23, 0.25);
+      transition: width 0.2s ease, background 0.2s ease, transform 0.2s ease;
+    }
+    .filter-drag-handle-zone:hover .filter-grab-bar,
+    .filter-drag-handle-zone:active .filter-grab-bar {
+      width: 56px;
+      background: rgba(26, 36, 23, 0.55);
+      transform: scaleY(1.2);
+    }
+    .filter-sheet-header {
+      touch-action: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Filter cards */
+    .filter-card-box {
+      background: #FFFFFF;
+      border: 1px solid rgba(26, 36, 23, 0.1);
+      border-radius: 18px;
+      padding: 16px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    }
+
+    /* Type buttons */
+    .filter-type-pill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border: 1px solid rgba(26, 36, 23, 0.12);
+      background: #FFFFFF;
+      color: #1a2417;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+      text-align: center;
+    }
+    .filter-type-pill:hover {
+      border-color: #C8A366;
+    }
+    .filter-type-pill.is-active {
+      background: #1a2417 !important;
+      color: #F8F5E9 !important;
+      border-color: #1a2417 !important;
+      box-shadow: 0 4px 12px rgba(26, 36, 23, 0.25);
+    }
+
+    /* Wing buttons */
+    .filter-wing-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(26, 36, 23, 0.12);
+      background: #FFFFFF;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+    }
+    .filter-wing-card:hover {
+      border-color: #C8A366;
+    }
+    .filter-wing-card.is-active {
+      border-color: #C8A366 !important;
+      background: rgba(200, 163, 102, 0.08) !important;
+      box-shadow: 0 2px 10px rgba(200, 163, 102, 0.18);
+    }
+    .filter-wing-card.is-active .wing-circle {
+      background: #C8A366;
+      color: #FFFFFF;
+      border-color: #C8A366;
+    }
+    .filter-wing-card .wing-circle {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: #FAF7EF;
+      border: 1px solid rgba(26, 36, 23, 0.12);
+      color: #1a2417;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: serif;
+      font-weight: bold;
+      font-size: 15px;
+      transition: all 0.2s ease;
+    }
+    .filter-wing-card .wing-radio {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(26, 36, 23, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+    .filter-wing-card.is-active .wing-radio {
+      border-color: #C8A366;
+      background: #C8A366;
+      color: #FFFFFF;
+    }
+
+    /* Range slider custom styling */
+    .luxury-slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 6px;
+      border-radius: 9999px;
+      background: #E5DECE;
+      outline: none;
+      margin: 12px 0 8px;
+      cursor: pointer;
+    }
+    .luxury-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      background: #C8A366;
+      border: 3px solid #FFFFFF;
+      box-shadow: 0 2px 8px rgba(26, 36, 23, 0.25);
+      cursor: pointer;
+      transition: transform 0.15s ease, background-color 0.15s ease;
+    }
+    .luxury-slider::-webkit-slider-thumb:active {
+      transform: scale(1.15);
+      background: #1a2417;
+    }
+    .luxury-slider::-moz-range-thumb {
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      background: #C8A366;
+      border: 3px solid #FFFFFF;
+      box-shadow: 0 2px 8px rgba(26, 36, 23, 0.25);
+      cursor: pointer;
+    }
+
+    /* Badge highlight */
+    .filter-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      background: rgba(200, 163, 102, 0.18);
+      color: #8C6B2F;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    /* Apply button */
+    .filter-cta-btn {
+      width: 100%;
+      padding: 16px 20px;
+      border-radius: 9999px;
+      background: #1a2417;
+      color: #F8F5E9;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: 1px solid rgba(200, 163, 102, 0.4);
+      box-shadow: 0 8px 24px rgba(26, 36, 23, 0.3);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: all 0.2s ease;
+    }
+    .filter-cta-btn:hover {
+      background: #253321;
+      border-color: #C8A366;
+    }
+    .filter-cta-btn:active {
+      transform: scale(0.98);
+    }
+
+    /* Floating mobile filter button */
+    .mobile-filter-bar {
+      position: fixed;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translate(-50%, 20px);
+      z-index: 100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    @media (max-width: 1023px) {
+      .mobile-filter-bar {
+        display: flex;
+      }
+    }
+    .mobile-filter-bar.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translate(-50%, 0);
+    }
+    .mobile-filter-pill-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      height: 48px;
+      padding: 0 24px;
+      border-radius: 9999px;
+      background: #FAF7EF;
+      border: 1.5px solid #C8A366;
+      color: #1a2417;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .mobile-filter-pill-btn:hover {
+      background: #FFFFFF;
+      transform: translateY(-1px);
+    }
+    .mobile-filter-pill-btn:active {
+      transform: scale(0.96);
+    }
+
+    .contact-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(10, 15, 22, 0.85);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      padding: 1.25rem;
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    .contact-modal-backdrop.is-active {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+    }
+
+    /* Toast notice */
+    .toast-notice {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #232d1e;
+      color: #F8F5EE;
+      padding: 1rem 1.5rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      border: 1px solid rgba(179,142,93,0.4);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      z-index: 1000;
+    }
+    .toast-notice.is-show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Retail Hero Scrim & Crystal Clear Luxury Legibility */
+    .retail-hero-scrim {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background: 
+        linear-gradient(90deg, rgba(16, 21, 15, 0.94) 0%, rgba(16, 21, 15, 0.86) 38%, rgba(16, 21, 15, 0.52) 68%, rgba(16, 21, 15, 0.22) 100%),
+        linear-gradient(180deg, rgba(16, 21, 15, 0.85) 0%, rgba(16, 21, 15, 0.2) 30%, rgba(16, 21, 15, 0.45) 70%, rgba(16, 21, 15, 0.96) 100%);
+    }
+
+    .retail-hero-title {
+      font-family: var(--font-editorialOld), 'Editorial Old', serif;
+      color: #F8F5E9;
+      font-weight: 300;
+      font-size: clamp(2.75rem, 6.2vw, 6.5rem);
+      line-height: 0.98;
+      letter-spacing: -0.015em;
+      text-transform: uppercase;
+      text-shadow: 0 4px 28px rgba(0, 0, 0, 0.75);
+    }
+
+    .retail-hero-tag {
+      color: #C8A366;
+      font-family: var(--font-workSans), sans-serif;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+      display: inline-block;
+      margin-bottom: 1.25rem;
+    }
+
+    .retail-hero-p {
+      color: rgba(248, 245, 233, 0.93);
+      font-family: var(--font-workSans), sans-serif;
+      font-size: clamp(1rem, 1.2vw, 1.15rem);
+      font-weight: 300;
+      line-height: 1.7;
+      max-width: 40rem;
+      text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
+      margin-bottom: 2.25rem;
+    }
+
+    .retail-hero-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 2.25rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(200, 163, 102, 0.75);
+      background: rgba(200, 163, 102, 0.22);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      color: #F8F5E9;
+      font-family: var(--font-workSans), sans-serif;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+      transition: all 0.3s ease;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    }
+
+    .retail-hero-btn:hover {
+      background: #C8A366;
+      color: #10150F;
+      border-color: #C8A366;
+      box-shadow: 0 12px 35px rgba(200, 163, 102, 0.35);
+      transform: translateY(-2px);
+      text-shadow: none;
+    }
+  </style>
+</head>
+<body class="work_sans_85248dc3-module__gzDsyq__variable editorialold_ad1a3d18-module__UoXJ4a__variable antialiased bg-vanilla text-pine-green arbor-home-body selection:bg-golden selection:text-vanilla">
+
+  <!-- GOLDEN SPRING SILK CURSOR TRAIL (1:1 MATCH WITH BELGRADE ARBOR) -->
+  <canvas id="canvas" class="pointer-events-none fixed inset-0 z-100"></canvas>
+
+  <!-- ANCHOR TOP -->
+  <div id="top" class="absolute top-0 left-0 w-full h-0 pointer-events-none"></div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION PILL (1:1 BELGRADE ARBOR)
+       ========================================================================== -->
+  <header class="arbor-header" id="overlayHeader">
+    <div class="arbor-header-inner">
+      <div class="arbor-header-top">
+        <div class="arbor-header-left">
+          <button
+            type="button"
+            id="mobileMenuToggle"
+            class="arbor-menu-btn"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <div class="arbor-menu-lines" id="arborMenuLines">
+              <span class="arbor-line arbor-line-1"></span>
+              <span class="arbor-line arbor-line-2"></span>
+            </div>
+            <span class="arbor-menu-text" id="arborMenuText">Menu</span>
+          </button>
+        </div>
+
+        <a href="#top" class="arbor-logo-link" aria-label="BaytImmo">
+          <svg width="24" height="24" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="arbor-logo-symbol" id="arborHeaderSymbol">
+            <path d="M0.00542084 6.72846V12.2388C0.00542084 14.8968 2.16022 17.0516 4.81573 17.0516H9.2175C10.6897 13.9501 13.8559 11.8003 17.5203 11.8003H19.2616C21.663 11.8003 23.6509 10.0441 24.0146 7.74233C20.1559 7.24411 17.1616 3.97579 17.0844 0H14.9844V2.96441C14.9844 6.62632 12.5132 9.70781 9.14775 10.6395C9.98974 11.3644 11.0858 11.8003 12.284 11.8003H13.0164C12.3887 12.1491 11.8107 12.5825 11.3026 13.0907C10.5901 13.8032 10.0221 14.6526 9.63601 15.5868C9.61359 15.6466 9.58618 15.7064 9.56626 15.7662C5.95167 14.6477 3.2862 11.3544 3.10684 7.416C2.01076 7.36618 0.966985 7.12703 0.00292969 6.72596H0.00542084V6.72846Z" fill="currentColor"></path>
+            <path d="M10.6076 0.00242615H7.46387L7.46885 6.52661C9.23753 6.3049 10.6076 4.79779 10.6076 2.96683V0.00242615Z" fill="currentColor"></path>
+            <path d="M3.08984 0.00232697H1.46066C0.656036 0.00232697 0.00585938 0.652504 0.00585938 1.45713V1.5219C0.793046 2.36389 1.87917 2.92439 3.09482 3.03399V0.00232697H3.09233H3.08984Z" fill="currentColor"></path>
+            <path d="M21.4619 0.00242615C21.5267 1.58178 22.6128 2.89459 24.0776 3.30562V0.00242615H21.4619Z" fill="currentColor"></path>
+            <path d="M28.4562 0.00242615L28.4512 6.03337C30.0156 5.23871 31.0843 3.61452 31.0843 1.74121V0.00242615H28.4562Z" fill="currentColor"></path>
+            <path d="M34.9979 4.60857C33.9292 7.86693 31.0819 10.3207 27.6043 10.8313C26.152 13.9876 22.9584 16.1797 19.2567 16.1797H17.5154C14.8574 16.1797 12.7051 18.3345 12.7051 20.99V35H22.3282V20.99C22.3282 19.4082 21.5659 18.0032 20.3826 17.1263C21.12 17.0491 21.8449 16.8673 22.53 16.5808C23.3172 16.2545 24.0421 15.8011 24.6773 15.2406C25.8556 16.7078 26.5954 18.5463 26.6901 20.5541H30.2175C32.6712 20.5541 34.699 18.7157 34.9929 16.3367V4.60857H34.9954H34.9979Z" fill="currentColor"></path>
+            <path d="M34.9999 23.5883C33.6099 24.4377 31.9732 24.926 30.2245 24.926H26.707V35H33.5426C34.3472 35 34.9974 34.3498 34.9974 33.5452V23.5883H34.9999Z" fill="currentColor"></path>
+            <path d="M8.33272 35V21.426H4.81529C3.05159 21.426 1.4 20.9278 0 20.0634V33.5402C0 34.3448 0.650177 34.995 1.4548 34.995H8.33272V35Z" fill="currentColor"></path>
+          </svg>
+        </a>
+
+        <div class="arbor-header-right">
+          <a href="https://wa.me/212661550905?text=Bonjour%20BaytImmo%2C%20je%20souhaite%20des%20informations%20sur%20les%20espaces%20commerciaux%20et%20bureaux%20Jardins%20de%20Bali" target="_blank" rel="noopener" class="arbor-inquire-btn open-contact-btn" aria-label="Inquire">
+            <span class="arbor-inquire-clip">
+              <span class="arbor-inquire-row arbor-inquire-row-1">
+                <span>Inquire</span>
+                <svg width="24" height="24" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arbor-arrow-svg">
+                  <path d="M0.5 5L24.5 5" stroke="currentColor" stroke-linecap="round"></path>
+                  <path d="M19.5 0.5L24.5 5L19.5 9.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                </svg>
+              </span>
+              <span class="arbor-inquire-row arbor-inquire-row-2">
+                <span>Inquire</span>
+                <svg width="24" height="24" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arbor-arrow-svg">
+                  <path d="M0.5 5L24.5 5" stroke="currentColor" stroke-linecap="round"></path>
+                  <path d="M19.5 0.5L24.5 5L19.5 9.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                </svg>
+              </span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Expandable Menu Grid inside the floating card -->
+      <div class="arbor-menu-collapse" id="arborDropdownMenu">
+        <div class="arbor-menu-body">
+          <a href="/index.html" class="arbor-wordmark-link" aria-label="BaytImmo">
+            <h2 class="arbor-wordmark-title">
+              <span class="arbor-wordmark-line">Bayt</span>
+              <span class="arbor-wordmark-line">Immo</span>
+            </h2>
+          </a>
+
+          <nav class="arbor-menu-nav" aria-label="Main navigation">
+            <a href="/index.html" class="arbor-nav-item">
+              <span class="arbor-nav-primary">Home</span>
+              <span class="arbor-nav-accent">Home</span>
+            </a>
+            <a href="/maquette3d.html" class="arbor-nav-item">
+              <span class="arbor-nav-primary">3D Experience</span>
+              <span class="arbor-nav-accent">3D Experience</span>
+            </a>
+            <a href="/residences.html" class="arbor-nav-item">
+              <span class="arbor-nav-primary">Residences</span>
+              <span class="arbor-nav-accent">Residences</span>
+            </a>
+            <a href="/business.html" class="arbor-nav-item">
+              <span class="arbor-nav-primary">Business</span>
+              <span class="arbor-nav-accent">Business</span>
+            </a>
+            <a href="/retail-spaces.html" class="arbor-nav-item is-active">
+              <span class="arbor-nav-primary text-golden">Retail Spaces</span>
+              <span class="arbor-nav-accent text-golden">Retail Spaces</span>
+            </a>
+                        <a href="/index.html#Amenities" class="arbor-nav-item">
+              <span class="arbor-nav-primary">Amenities</span>
+              <span class="arbor-nav-accent">Amenities</span>
+            </a>
+            <a href="/about-the-investor.html" class="arbor-nav-item">
+              <span class="arbor-nav-primary">About the investor</span>
+              <span class="arbor-nav-accent">About the investor</span>
+            </a>
+            <a href="/contact.html" class="arbor-nav-item">
+              <span class="arbor-nav-primary">Contact</span>
+              <span class="arbor-nav-accent">Contact</span>
+            </a>
+          </nav>
+
+          <div class="arbor-menu-footer">
+            <div class="arbor-lang-group">
+              <a href="/retail-spaces.html" class="arbor-lang-item is-active">FR</a>
+              <span class="opacity-40">|</span>
+              <a href="/retail-spaces.html" class="arbor-lang-item">ENG</a>
+            </div>
+            <div class="text-xs uppercase tracking-widest text-pine-green/60">
+              Jardins de Bali Marrakech
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FLOATING MENU BACKDROP OVERLAY -->
+  <div class="arbor-menu-backdrop" id="arborMenuBackdrop" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================== -->
+  <main class="min-h-screen w-full">
+    <div id="Residences" class="overflow-x-clip">
+
+      <!-- ==========================================================================
+           1. HERO SECTION (1:1 MATCH WITH BELGRADE ARBOR RETAIL SPACES)
+           ========================================================================== -->
+      <section id="Hero" class="flex min-h-screen items-stretch relative overflow-hidden">
+        <div class="trigger relative w-full flex items-center">
+          <img
+            src="/jardins_de_bali/14_rendu_3d_facade_rue.jpg"
+            alt="Retail &amp; Business Spaces - Jardins de Bali Marrakech"
+            class="background absolute inset-0 h-full w-full object-cover object-center"
+            loading="eager"
+          />
+          <!-- Luxury Dark Vignette Gradient Scrim for Crystal Clear Legibility & Contrast -->
+          <div class="retail-hero-scrim"></div>
+
+          <div class="wrapper relative z-2 flex h-full flex-col justify-center pt-48 pb-28 max-lg:pt-36 max-lg:pb-28" style="position: relative; z-index: 2;">
+            <div class="w-3/5 max-xl:w-4/5 max-md:w-full">
+              <span class="retail-hero-tag">Marrakech Menara — Boulevard M-16</span>
+              <h1 class="retail-hero-title mb-6">
+                RETAIL &amp; BUSINESS<br class="hidden sm:inline" /> SPACES
+              </h1>
+              <p class="retail-hero-p">
+                Une adresse de prestige où chaque commerce trouve son rayonnement. Magasins phares en rez-de-chaussée avec vitrines panoramiques sur voie passante, mezzanines showrooms et plateaux de bureaux modulables, façonnés par une architecture contemporaine raffinée au cœur de Marrakech.
+              </p>
+              <div class="flex items-center gap-4 flex-wrap">
+                <a href="#Picker" class="retail-hero-btn group">
+                  <span>Explorer les espaces disponibles</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="group-hover:translate-y-0.5 transition-transform"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           2. INTERACTIVE PICKER & FILTER SECTION (1:1 BELGRADE ARBOR LAYOUT)
+           ========================================================================== -->
+      <section id="Picker" class="relative z-1 pt-10 pb-16 md:pt-14 md:pb-20">
+
+        <!-- FLOATING MOBILE FILTER PILL (1:1 BELGRADE ARBOR LUXURY MOBILE UX) -->
+        <div id="mobileFilterBar" class="mobile-filter-bar">
+          <button id="mobileFilterTrigger" type="button" class="mobile-filter-pill-btn">
+            <span>FILTRES</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#C8A366]">
+              <path d="M10 12H21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              <path d="M3 12H6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              <circle cx="8" cy="12" r="2" stroke="currentColor" stroke-width="1.8"></circle>
+              <path d="M14 6H3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              <path d="M21 6H18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              <circle cx="16" cy="6" r="2" stroke="currentColor" stroke-width="1.8"></circle>
+              <path d="M14 18H3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              <path d="M21 18H18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+              <circle cx="16" cy="18" r="2" stroke="currentColor" stroke-width="1.8"></circle>
+            </svg>
+          </button>
+        </div>
+
+        <div class="wrapper flex items-start gap-8">
+
+          <!-- ========================================================
+               DESKTOP STICKY FILTER SIDEBAR (LEFT COLUMN)
+               ======================================================== -->
+          <div class="relative w-1/3 max-lg:hidden">
+            <div class="sticky top-32 left-0 space-y-12 pr-8 max-xl:top-24">
+              <h2 class="heading-2 text-golden uppercase font-editorialOld text-4xl">Filters</h2>
+
+              <div class="flex flex-col gap-8">
+                <!-- Type Filter Buttons -->
+                <div>
+                  <label class="text-xs uppercase tracking-widest text-dark-grey block mb-3 font-medium">Type d'espace</label>
+                  <div class="flex flex-wrap items-stretch justify-start gap-2">
+                    <div class="w-full">
+                      <button type="button" data-filter-type="all" class="small cursor-pointer rounded-full border p-3 uppercase no-underline transition border-golden bg-golden text-sand w-full text-center font-medium text-xs tracking-wider">
+                        All Spaces
+                      </button>
+                    </div>
+                    <button type="button" data-filter-type="Retail" class="small border-grey flex cursor-pointer flex-1 items-center justify-center rounded-full border px-4 py-2.5 uppercase no-underline transition hover:bg-[#DCDCDC]/50 text-pine-green text-xs font-medium tracking-wider">
+                      <span>Retail / Magasins</span>
+                    </button>
+                    <button type="button" data-filter-type="Offices" class="small border-grey flex cursor-pointer flex-1 items-center justify-center rounded-full border px-4 py-2.5 uppercase no-underline transition hover:bg-[#DCDCDC]/50 text-pine-green text-xs font-medium tracking-wider">
+                      <span>Bureaux</span>
+                    </button>
+                    <button type="button" data-filter-type="Duplex" class="small border-grey flex cursor-pointer w-full items-center justify-center rounded-full border px-4 py-2.5 uppercase no-underline transition hover:bg-[#DCDCDC]/50 text-pine-green text-xs font-medium tracking-wider">
+                      <span>Duplex Flagships (406 m²)</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Sliders Section -->
+                <div class="space-y-10">
+                  <!-- Surface Range Slider -->
+                  <div class="relative space-y-2">
+                    <div class="small flex justify-between text-xs text-dark-grey font-medium">
+                      <span>40 m²</span>
+                      <span id="surfaceMaxLabel" class="text-golden font-semibold">450</span>
+                    </div>
+                    <p class="small text-dark-grey/70 uppercase text-[0.65rem] tracking-wider text-center">Surface maximale (m²)</p>
+                    <input id="surfaceSlider" type="range" min="40" max="450" step="5" value="450" class="w-full" />
+                  </div>
+
+                  <!-- Floor Slider -->
+                  <div class="relative space-y-2">
+                    <div class="small flex justify-between text-xs text-dark-grey font-medium">
+                      <span>RDC</span>
+                      <span id="floorMaxLabel" class="text-golden font-semibold">All</span>
+                    </div>
+                    <p class="small text-dark-grey/70 uppercase text-[0.65rem] tracking-wider text-center">Niveau / Étage</p>
+                    <input id="floorSlider" type="range" min="-1" max="5" step="1" value="-1" class="w-full" />
+                  </div>
+                </div>
+
+                <!-- Wing / Orientation Filter -->
+                <div class="space-y-3">
+                  <p class="detail uppercase text-xs text-dark-grey font-medium tracking-widest">Emplacement / Aile</p>
+                  <div class="flex flex-wrap items-stretch justify-start gap-2">
+                    <button type="button" data-filter-wing="Wing A" class="paragraph border-grey cursor-pointer rounded-full border px-4 py-1.5 no-underline transition flex items-center gap-2 hover:border-golden hover:bg-golden/5 text-xs">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M7 17L12 6L17 17"></path><path d="M9 13H15"></path></svg>
+                      Wing A (Boulevard)
+                    </button>
+                    <button type="button" data-filter-wing="Wing B" class="paragraph border-grey cursor-pointer rounded-full border px-4 py-1.5 no-underline transition flex items-center gap-2 hover:border-golden hover:bg-golden/5 text-xs">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M12 6.5C13.38 6.5 14.5 7.6 14.5 9C14.5 10.4 13.38 11.5 12 11.5H8.5V6.5H12Z"></path><path d="M12.5 11.5C14.16 11.5 15.5 12.8 15.5 14.5C15.5 16.2 14.16 17.5 12.5 17.5H8.5V11.5H12.5Z"></path></svg>
+                      Wing B (Avenue &amp; Patio)
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Reset Filters & Results Counter -->
+                <div class="flex items-center justify-between pt-6 border-t border-grey">
+                  <button id="resetFiltersBtn" type="button" class="button border-dark-grey bg-light-grey group flex cursor-pointer items-center gap-4 rounded-full border px-5 py-3 uppercase transition hover:bg-cream text-xs font-medium tracking-wider">
+                    <span>Reset filters</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-dark-grey group-hover:rotate-180 transition-transform duration-500">
+                      <path d="M2.18 12C2.18 17.42 6.58 21.82 12 21.82C17.42 21.82 21.82 17.42 21.82 12C21.82 6.58 17.42 2.18 12 2.18C9.25 2.19 6.62 3.26 4.65 5.17L2.18 7.64"></path>
+                      <path d="M2.18 2.18V7.64H7.64"></path>
+                    </svg>
+                  </button>
+                  <p id="resultsCounter" class="text-dark-grey small uppercase font-medium text-xs tracking-wider">12 Results</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ========================================================
+               CARDS GRID (RIGHT COLUMN)
+               ======================================================== -->
+          <div class="relative w-2/3 max-lg:w-full">
+            <div id="retailGrid" class="grid grid-cols-2 gap-6 max-md:grid-cols-1">
+              <!-- Rendered dynamically by src/retail-spaces.js -->
+            </div>
+
+            <!-- SEE MORE BUTTON (BELGRADE ARBOR STYLE) -->
+            <div class="mt-12 flex justify-center">
+              <button id="loadMoreBtn" type="button" class="menu shrink-0 min-w-55 gap-3 whitespace-nowrap outline-none text-pine-green active:bg-cream-dark h-14 button border-dark-grey bg-light-grey hover:bg-light-grey/60 flex cursor-pointer items-center justify-between rounded-full border px-8 py-4 uppercase transition max-md:w-full group text-xs tracking-widest font-medium shadow-sm">
+                <span>See more spaces</span>
+                <svg width="22" height="22" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-dark-grey group-hover:rotate-90 transition-transform duration-300">
+                  <circle cx="12" cy="13.5" r="11" stroke="currentColor"></circle>
+                  <line x1="12" y1="7.5" x2="12" y2="19.5" stroke="currentColor"></line>
+                  <line x1="18" y1="13.5" x2="6" y2="13.5" stroke="currentColor"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       MOBILE FILTER DRAWER MODAL (LUXURY BOTTOM SHEET)
+       ========================================================================== -->
+  <div id="mobileFilterDrawer" class="mobile-filter-overlay">
+    <!-- Backdrop overlay with blur -->
+    <div id="closeMobileFilterBackdrop" class="mobile-filter-backdrop cursor-pointer"></div>
+    
+    <!-- Bottom Sheet Container -->
+    <div id="mobileFilterSheet" class="mobile-filter-sheet">
+      
+      <!-- Top Grab Bar -->
+      <div id="filterDragHandle" class="filter-drag-handle-zone shrink-0">
+        <div class="filter-grab-bar"></div>
+      </div>
+
+      <!-- Header -->
+      <div id="mobileFilterHeader" class="filter-sheet-header px-6 py-3 flex items-center justify-between border-b border-[#1a2417]/10 shrink-0 select-none cursor-grab active:cursor-grabbing">
+        <div class="flex items-center gap-3 pointer-events-none">
+          <div class="size-9 rounded-full bg-[#C8A366]/15 flex items-center justify-center text-[#C8A366]">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 12H21"></path><path d="M3 12H6"></path>
+              <circle cx="8" cy="12" r="2"></circle>
+              <path d="M14 6H3"></path><path d="M21 6H18"></path>
+              <circle cx="16" cy="6" r="2"></circle>
+              <path d="M14 18H3"></path><path d="M21 18H18"></path>
+              <circle cx="16" cy="18" r="2"></circle>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-editorialOld text-2xl text-[#1a2417] leading-none">Filtres</h3>
+            <p class="font-workSans text-[0.65rem] uppercase tracking-widest text-[#C8A366] font-semibold mt-0.5">Jardins de Bali — Menara</p>
+          </div>
+        </div>
+
+        <button id="closeMobileFilterBtn" type="button" class="pointer-events-auto size-9 rounded-full bg-[#1a2417]/5 hover:bg-[#1a2417]/10 active:scale-95 flex items-center justify-center text-[#1a2417] transition cursor-pointer" aria-label="Fermer les filtres">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Controls Body (Scrollable) -->
+      <div id="mobileFilterContent" class="flex-1 overflow-y-auto px-6 py-5 space-y-5" data-lenis-prevent="true" style="-webkit-overflow-scrolling: touch; overscroll-behavior: contain;">
+        
+        <!-- SECTION 1: TYPE D'ESPACE -->
+        <div class="space-y-2.5">
+          <label class="text-[0.7rem] uppercase tracking-widest text-[#1a2417]/70 font-bold flex items-center gap-1.5">
+            <span class="size-1.5 rounded-full bg-[#C8A366] inline-block"></span>
+            Type d'espace
+          </label>
+          <div class="grid grid-cols-2 gap-2">
+            <button type="button" data-filter-type="all" class="filter-type-pill is-active">
+              <span>Tous les espaces</span>
+            </button>
+            <button type="button" data-filter-type="Retail" class="filter-type-pill">
+              <span>Retail / Magasins</span>
+            </button>
+            <button type="button" data-filter-type="Offices" class="filter-type-pill">
+              <span>Bureaux</span>
+            </button>
+            <button type="button" data-filter-type="Duplex" class="filter-type-pill">
+              <span>Duplex Flagship</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- SECTION 2: SURFACE RANGE SLIDER -->
+        <div class="filter-card-box space-y-2">
+          <div class="flex items-center justify-between">
+            <label class="text-[0.7rem] uppercase tracking-widest text-[#1a2417]/70 font-bold flex items-center gap-1.5">
+              <span class="size-1.5 rounded-full bg-[#C8A366] inline-block"></span>
+              Surface maximale
+            </label>
+            <span class="filter-badge">
+              Jusqu'à <span id="surfaceMaxLabelMobile" class="font-bold ml-1">450</span> m²
+            </span>
+          </div>
+          <input id="surfaceSliderMobile" type="range" min="40" max="450" step="5" value="450" class="luxury-slider" />
+          <div class="flex items-center justify-between text-[0.7rem] text-[#1a2417]/60 font-medium">
+            <span>40 m²</span>
+            <span class="text-[0.65rem] tracking-wider uppercase text-[#1a2417]/40">Modulable</span>
+            <span>450 m²</span>
+          </div>
+        </div>
+
+        <!-- SECTION 3: NIVEAU / ÉTAGE -->
+        <div class="filter-card-box space-y-2">
+          <div class="flex items-center justify-between">
+            <label class="text-[0.7rem] uppercase tracking-widest text-[#1a2417]/70 font-bold flex items-center gap-1.5">
+              <span class="size-1.5 rounded-full bg-[#C8A366] inline-block"></span>
+              Niveau / Étage
+            </label>
+            <span id="floorBadgeLabelMobile" class="filter-badge">
+              Tous les niveaux
+            </span>
+          </div>
+          <input id="floorSliderMobile" type="range" min="-1" max="5" step="1" value="-1" class="luxury-slider" />
+          <div class="flex items-center justify-between text-[0.7rem] text-[#1a2417]/60 font-medium">
+            <span>RDC</span>
+            <span class="text-[0.65rem] tracking-wider uppercase text-[#1a2417]/40">Mezzanine &amp; R+1 à R+5</span>
+            <span>R+5</span>
+          </div>
+        </div>
+
+        <!-- SECTION 4: EMPLACEMENT / AILE -->
+        <div class="space-y-2.5">
+          <label class="text-[0.7rem] uppercase tracking-widest text-[#1a2417]/70 font-bold flex items-center gap-1.5">
+            <span class="size-1.5 rounded-full bg-[#C8A366] inline-block"></span>
+            Emplacement / Aile
+          </label>
+          <div class="grid grid-cols-1 gap-2.5">
+            <button type="button" data-filter-wing="Wing A" class="filter-wing-card group">
+              <div class="flex items-center gap-3">
+                <span class="wing-circle">A</span>
+                <div class="text-left">
+                  <p class="font-bold text-xs text-[#1a2417] uppercase tracking-wider">Wing A — Boulevard Menara</p>
+                  <p class="text-[0.68rem] text-[#1a2417]/60 mt-0.5">Façade principale, vitrines panoramiques &amp; grand flux</p>
+                </div>
+              </div>
+              <div class="wing-radio">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="wing-check-icon opacity-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+            </button>
+            <button type="button" data-filter-wing="Wing B" class="filter-wing-card group">
+              <div class="flex items-center gap-3">
+                <span class="wing-circle">B</span>
+                <div class="text-left">
+                  <p class="font-bold text-xs text-[#1a2417] uppercase tracking-wider">Wing B — Avenue &amp; Patio</p>
+                  <p class="text-[0.68rem] text-[#1a2417]/60 mt-0.5">Accès avenue calme, terrasse patio paysager &amp; double jour</p>
+                </div>
+              </div>
+              <div class="wing-radio">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="wing-check-icon opacity-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pinned Action Footer -->
+      <div class="p-5 border-t border-[#1a2417]/10 bg-[#FAF7EF] space-y-3 shrink-0 shadow-lg">
+        <div class="flex items-center justify-between">
+          <button id="resetFiltersBtnMobile" type="button" class="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-[#1a2417]/70 hover:text-[#C8A366] font-semibold transition cursor-pointer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-[#1a2417]/70">
+              <path d="M2.18 12C2.18 17.42 6.58 21.82 12 21.82C17.42 21.82 21.82 17.42 21.82 12C21.82 6.58 17.42 2.18 12 2.18C9.25 2.19 6.62 3.26 4.65 5.17L2.18 7.64"></path>
+              <path d="M2.18 2.18V7.64H7.64"></path>
+            </svg>
+            <span>Réinitialiser</span>
+          </button>
+          <span id="resultsCounterDrawer" class="text-xs font-serif text-[#C8A366] font-bold tracking-wide">12 Espaces disponibles</span>
+        </div>
+
+        <button id="applyMobileFilterBtn" type="button" class="filter-cta-btn">
+          <span>Afficher les résultats (12)</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       UNIT DETAIL MODAL (BLUEPRINTS, FULL SPECS & INQUIRY)
+       ========================================================================== -->
+  <div id="unitDetailBackdrop" class="unit-modal-backdrop fixed inset-0 z-100 flex items-center justify-center bg-black/75 backdrop-blur-md p-4 sm:p-6 lg:p-10">
+    <div class="relative w-full max-w-5xl max-h-[92vh] overflow-y-auto bg-vanilla rounded-2xl p-6 sm:p-10 shadow-2xl border border-golden/30">
+      <button id="closeUnitModalBtn" type="button" class="absolute top-5 right-5 size-10 rounded-full bg-sand/80 hover:bg-golden hover:text-sand flex items-center justify-center text-pine-green transition z-10" aria-label="Fermer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div id="unitDetailBody">
+        <!-- Rendered dynamically by src/retail-spaces.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       CONTACT / INQUIRY MODAL (1:1 BELGRADE ARBOR)
+       ========================================================================== -->
+  <div class="contact-modal-backdrop fixed inset-0 z-100 flex items-center justify-center bg-black/75 backdrop-blur-md p-4" id="contactModalBackdrop">
+    <div class="modal-window contact-modal-window" role="dialog" aria-modal="true">
+      <button class="modal-close-btn" id="closeContactModalBtn" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <h3 class="contact-modal-title">Inquire — Retail &amp; Business Spaces</h3>
+      <p class="contact-modal-sub">Partagez votre projet d'implantation et notre service commercial vous contactera sous 24h.</p>
+
+      <form id="contactForm">
+        <div class="form-group">
+          <label class="form-label" for="contactFullName">Nom &amp; Prénom *</label>
+          <input type="text" id="contactFullName" class="form-input" placeholder="Votre nom complet" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="contactCompany">Société / Enseigne</label>
+          <input type="text" id="contactCompany" class="form-input" placeholder="Nom de votre entreprise" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="contactEmail">Email *</label>
+          <input type="email" id="contactEmail" class="form-input" placeholder="contact@entreprise.com" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="contactPhone">Téléphone / WhatsApp *</label>
+          <input type="tel" id="contactPhone" class="form-input" placeholder="+212 6 XX XX XX XX" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="contactMessage">Message / Espace sélectionné</label>
+          <textarea id="contactMessage" class="form-textarea" placeholder="Indiquez vos besoins d'espace ou le lot qui vous intéresse..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit-btn">
+          <span>Envoyer la demande</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Mobile Conversion Sticky CTA Bar -->
+  <div class="mobile-sticky-cta-bar" id="mobileStickyCta">
+    <a href="https://wa.me/212661550905?text=Bonjour%20BaytImmo%2C%20je%20souhaite%20des%20informations%20sur%20les%20commerces%20Jardins%20de%20Bali%20Marrakech." target="_blank" rel="noopener noreferrer" class="mobile-sticky-cta-btn whatsapp" aria-label="WhatsApp Direct">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="#footer" class="mobile-sticky-cta-btn inquire open-contact-btn" aria-label="Contacter">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+        <polyline points="22,6 12,13 2,6"/>
+      </svg>
+      <span>Demande</span>
+    </a>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toastNotice">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B38E5D" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+    <span>Votre demande d'information a été transmise à l'équipe commerciale BaytImmo.</span>
+  </div>
+
+  <!-- ==========================================================================
+       LUXURY FOOTER WITH REAL JARDINS DE BALI ROOFTOP POOLS
+       ========================================================================== -->
+  <footer class="to-vanilla relative bg-linear-to-t from-[#8AB6D2] pt-14 md:pt-18 overflow-hidden" id="footer">
+    <div class="wrapper pt-4">
+      <div class="content flex gap-5 max-2xl:gap-15 max-lg:flex-wrap max-lg:justify-start max-lg:gap-5 max-lg:gap-y-22 max-md:gap-y-12!">
+        <!-- Left form column -->
+        <div class="w-1/3 max-2xl:w-1/2 max-lg:w-2/3 max-md:w-full">
+          <p class="heading-2 leading-tight font-light uppercase">JOIN THE WORLD OF BAYTIMMO</p>
+          <form id="arborFooterForm" class="mt-10 flex w-3/4 flex-col items-start gap-6 max-md:mt-15 max-md:w-full">
+            <div class="flex w-full gap-4 max-md:flex-wrap max-md:gap-6">
+              <div class="fadeElement w-1/2 max-md:w-full">
+                <label class="small mb-2 block text-golden uppercase" for="footer-first-name">Prénom*</label>
+                <input class="paragraph border-pine-green text-pine-green placeholder:text-pine-green focus:border-green w-full border-0 border-b bg-transparent pb-1 outline-none transition-colors" id="footer-first-name" name="firstName" required type="text" />
+              </div>
+              <div class="fadeElement w-1/2 max-md:w-full">
+                <label class="small mb-2 block text-golden uppercase" for="footer-last-name">Nom*</label>
+                <input class="paragraph border-pine-green text-pine-green placeholder:text-pine-green focus:border-green w-full border-0 border-b bg-transparent pb-1 outline-none transition-colors" id="footer-last-name" name="lastName" required type="text" />
+              </div>
+            </div>
+            <div class="fadeElement w-full">
+              <label class="small mb-2 block text-golden uppercase" for="footer-email">Email*</label>
+              <input class="paragraph border-pine-green text-pine-green placeholder:text-pine-green focus:border-green w-full border-0 border-b bg-transparent pb-1 outline-none transition-colors" id="footer-email" name="email" required type="email" />
+            </div>
+            <label class="fadeElement my-4 flex cursor-pointer items-start gap-3">
+              <input type="checkbox" name="consent" required class="border-green accent-[#2e3a26] mt-1 size-4 shrink-0 cursor-pointer" />
+              <span class="small text-golden">J'accepte que mes coordonnées soient traitées conformément à la politique de confidentialité BaytImmo</span>
+            </label>
+            <div class="fadeElement flex w-full justify-start max-md:justify-center">
+              <button class="inline-flex menu cursor-pointer border shrink-0 min-w-55 items-center justify-center gap-2 uppercase whitespace-nowrap [&_svg]:transition-all transition-all outline-none border-pine-green bg-pine-green text-cream hover:bg-green hover:border-green h-14 px-8 rounded-full" type="submit">
+                <span>S'inscrire</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="w-1/12 max-2xl:hidden"></div>
+
+        <!-- Navigation Links -->
+        <div class="w-1/6 max-xl:w-1/4 max-lg:w-1/3 max-md:w-full">
+          <ul class="space-y-3 max-md:flex max-md:flex-col max-md:items-center">
+            <li class="fadeElement max-md:text-center"><a class="hover:text-green paragraph font-normal uppercase transition" href="/index.html">Home</a></li>
+            <li class="fadeElement max-md:text-center"><a class="hover:text-green paragraph font-normal uppercase transition" href="/maquette3d.html">3D Experience</a></li>
+            <li class="fadeElement max-md:text-center"><a class="hover:text-green paragraph font-normal uppercase transition" href="/residences.html">Residences</a></li>
+            <li class="fadeElement max-md:text-center"><a class="hover:text-green paragraph font-normal uppercase transition" href="/business.html">Business</a></li>
+            <li class="fadeElement max-md:text-center"><a class="hover:text-green paragraph font-normal uppercase transition text-golden" href="/retail-spaces.html">Retail Spaces</a></li>
+                        <li class="fadeElement max-md:text-center"><a class="hover:text-green paragraph font-normal uppercase transition" href="/index.html#Amenities">Amenities</a></li>
+            <li class="fadeElement max-md:text-center"><a class="hover:text-green paragraph font-normal uppercase transition" href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Links -->
+        <div class="w-1/12 max-lg:w-1/6 max-md:w-full">
+          <ul class="space-y-3 max-md:flex max-md:flex-col max-md:items-center">
+            <li class="fadeElement"><a target="_blank" rel="noopener noreferrer" class="hover:text-green text-golden paragraph font-normal transition" href="https://instagram.com">Instagram</a></li>
+            <li class="fadeElement"><a target="_blank" rel="noopener noreferrer" class="hover:text-green text-golden paragraph font-normal transition" href="https://linkedin.com">Linkedin</a></li>
+            <li class="fadeElement"><a target="_blank" rel="noopener noreferrer" class="hover:text-green text-golden paragraph font-normal transition" href="https://wa.me/212661550905">WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <div class="w-1/12 max-2xl:hidden"></div>
+
+        <!-- Project Details & Address -->
+        <div class="w-1/4 max-lg:w-5/12 max-md:w-full">
+          <p class="small">
+            Projet Jardins de Bali Marrakech Menara : Titre Foncier 34 603 / M. Ensemble immobilier d'exception en R+5 intégrant 4 magasins flagships (554 m²), plateaux de bureaux, 230 résidences et 234 places de stationnement en sous-sol.
+          </p>
+          <div class="mt-6 flex flex-col max-sm:w-2/3">
+            <span class="small uppercase text-golden">Service Commercial BaytImmo :</span>
+            <p class="mt-1"><a href="tel:+212661550905" class="text-golden detail font-serif text-lg">+212 661 55 09 05</a></p>
+            <p class="small text-pine-green/80 mt-1">Boulevard M-16, Menara Marrakech, Maroc</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Illustration Graphics: Real Jardins de Bali Architecture -->
+    <div class="pointer-events-none -mt-40 w-full overflow-clip select-none max-lg:-mt-20 relative">
+      <img
+        alt="Jardins de Bali Marrakech Menara"
+        loading="eager"
+        width="1920"
+        height="1200"
+        class="front h-[36rem] max-2xl:h-[32rem] max-lg:h-[26rem] max-md:h-[20rem] w-full object-cover object-top filter contrast-[1.05] brightness-[1.02]"
+        style="-webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 8%, black 20%, black 100%); mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 8%, black 20%, black 100%);"
+        src="/home/footer/jardins_bali_rooftop_pools.jpg"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none"></div>
+      <div class="absolute bottom-0 left-0 h-auto w-full">
+        <img alt="footer tree left" loading="lazy" width="387" height="559" class="absolute bottom-0 left-0 h-auto w-96 max-w-none max-2xl:w-75 max-lg:hidden opacity-90" src="/home/footer/tree-l.webp"/>
+        <img alt="footer tree right" loading="lazy" width="1354" height="641" class="absolute right-0 bottom-0 h-auto w-335 max-w-none max-2xl:w-250 max-lg:w-[150%] max-md:w-150 opacity-90" src="/home/footer/tree-r.webp"/>
+      </div>
+    </div>
+
+    <!-- Footer Copyright Row -->
+    <div class="absolute bottom-15 left-0 z-10 w-full max-md:bottom-10">
+      <div class="wrapper flex items-end justify-between max-lg:flex-col-reverse max-lg:items-center max-lg:gap-5">
+        <div class="small text-cream w-1/4 max-lg:w-full max-lg:text-center max-md:text-[0.625rem]">© 2026 BaytImmo. All Rights Reserved.</div>
+        <div class="heading-1 text-cream w-7/12 text-right font-light uppercase max-xl:w-2/3 max-lg:w-full max-lg:text-center"><span>Jardins de Bali</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/retail-spaces.js"></script>
+</body>
+</html>
+
