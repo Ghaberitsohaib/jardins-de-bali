@@ -8,6 +8,7 @@ dist/
 temp_recordings_all/
 test_vibrant.png
 scripts/*.png
+scripts/snap_*.mjs
 *.tmp
 
 # Environment variables

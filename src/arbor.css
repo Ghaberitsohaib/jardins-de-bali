@@ -1149,23 +1149,52 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
   }
 
   .arbor-header-top {
-    flex-direction: row-reverse;
-    padding: 0 0.85rem;
-    min-height: 2.25rem;
+    position: relative !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0 0.85rem !important;
+    min-height: 2.35rem !important;
+  }
+
+  .arbor-logo-link {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 15 !important;
   }
 
   .arbor-header.is-open .arbor-header-top {
     display: flex !important;
     flex-direction: row !important;
     justify-content: space-between !important;
-    align-items: flex-start !important;
+    align-items: center !important;
     width: 100% !important;
-    padding: 0 !important;
+    padding: 0 0.25rem !important;
     min-height: auto !important;
   }
 
   .arbor-header.is-open .arbor-logo-link {
-    display: none !important;
+    display: inline-flex !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: 0.5rem !important;
+    transform: translateX(-50%) !important;
+    z-index: 20 !important;
+    pointer-events: auto !important;
+  }
+
+  .arbor-header.is-open .arbor-logo-symbol {
+    display: block !important;
+    width: 2.15rem !important;
+    height: 2.15rem !important;
+    color: var(--arbor-golden, #C5A880) !important;
+    opacity: 1 !important;
   }
 
   .arbor-header-left {
@@ -1181,7 +1210,25 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
   }
 
   .arbor-header-right {
-    display: none;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    flex: 0 0 auto !important;
+  }
+
+  .arbor-inquire-btn {
+    padding: 0.35rem 0.85rem !important;
+    font-size: 0.6875rem !important;
+    height: 30px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    border-radius: 9999px !important;
+    border: 1px solid rgba(204, 191, 153, 0.4) !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+  }
+
+  .arbor-header.is-open .arbor-header-right {
+    display: none !important;
   }
 
   .arbor-menu-btn {

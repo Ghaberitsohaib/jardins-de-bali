@@ -40,6 +40,14 @@
   <header class="arbor-header" id="overlayHeader">
     <div class="arbor-header-inner">
       <div class="arbor-header-top">
+        <!-- Mobile wordmark displayed at top-left ONLY when menu is open on mobile -->
+        <a href="/index.html" class="arbor-wordmark-mobile hidden" aria-label="Bayt Immo">
+          <h2 class="arbor-wordmark-title">
+            <span class="arbor-wordmark-line">Bayt</span>
+            <span class="arbor-wordmark-line">Immo</span>
+          </h2>
+        </a>
+
         <div class="arbor-header-left">
           <button
             type="button"
@@ -56,7 +64,7 @@
           </button>
         </div>
 
-        <a href="#top" class="arbor-logo-link" aria-label="BaytImmo">
+        <a href="/index.html" class="arbor-logo-link" aria-label="BaytImmo">
           <svg width="24" height="24" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="arbor-logo-symbol" id="arborHeaderSymbol">
             <path d="M0.00542084 6.72846V12.2388C0.00542084 14.8968 2.16022 17.0516 4.81573 17.0516H9.2175C10.6897 13.9501 13.8559 11.8003 17.5203 11.8003H19.2616C21.663 11.8003 23.6509 10.0441 24.0146 7.74233C20.1559 7.24411 17.1616 3.97579 17.0844 0H14.9844V2.96441C14.9844 6.62632 12.5132 9.70781 9.14775 10.6395C9.98974 11.3644 11.0858 11.8003 12.284 11.8003H13.0164C12.3887 12.1491 11.8107 12.5825 11.3026 13.0907C10.5901 13.8032 10.0221 14.6526 9.63601 15.5868C9.61359 15.6466 9.58618 15.7064 9.56626 15.7662C5.95167 14.6477 3.2862 11.3544 3.10684 7.416C2.01076 7.36618 0.966985 7.12703 0.00292969 6.72596H0.00542084V6.72846Z" fill="currentColor"></path>
             <path d="M10.6076 0.00242615H7.46387L7.46885 6.52661C9.23753 6.3049 10.6076 4.79779 10.6076 2.96683V0.00242615Z" fill="currentColor"></path>
@@ -94,7 +102,7 @@
       <!-- Expandable Menu Grid inside the floating card -->
       <div class="arbor-menu-collapse" id="arborDropdownMenu">
         <div class="arbor-menu-body">
-          <a href="/index.html" class="arbor-wordmark-link" aria-label="BaytImmo">
+          <a href="/index.html" class="arbor-wordmark-link max-md:hidden" aria-label="BaytImmo">
             <h2 class="arbor-wordmark-title">
               <span class="arbor-wordmark-line">Bayt</span>
               <span class="arbor-wordmark-line">Immo</span>
@@ -122,7 +130,7 @@
               <span class="arbor-nav-primary">Retail Spaces</span>
               <span class="arbor-nav-accent">Retail Spaces</span>
             </a>
-                        <a href="/index.html#Amenities" class="arbor-nav-item">
+            <a href="/index.html#Amenities" class="arbor-nav-item">
               <span class="arbor-nav-primary">Amenities</span>
               <span class="arbor-nav-accent">Amenities</span>
             </a>
@@ -138,8 +146,19 @@
 
           <div class="arbor-menu-footer">
             <div class="arbor-lang-group">
-              <a href="/business.html" class="arbor-lang-item is-active">ENG</a>
-              <a href="/business.html" class="arbor-lang-item">FR</a>
+              <a href="#top" class="arbor-lang-item is-active">ENG</a>
+              <a href="#top" class="arbor-lang-item">SRB</a>
+            </div>
+
+            <!-- Full-width INQUIRE -> pill button on mobile menu -->
+            <div class="arbor-menu-bottom-cta md:hidden">
+              <a href="https://wa.me/212661550905?text=Bonjour%20BaytImmo%2C%20je%20souhaite%20des%20informations%20sur%20les%20espaces%20commerciaux%20et%20bureaux%20Jardins%20de%20Bali" target="_blank" rel="noopener" class="arbor-mobile-inquire-pill" aria-label="Inquire">
+                <span class="arbor-mobile-inquire-text">INQUIRE</span>
+                <svg width="24" height="24" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arbor-mobile-inquire-arrow">
+                  <path d="M0.5 5L24.5 5" stroke="currentColor" stroke-linecap="round"></path>
+                  <path d="M19.5 0.5L24.5 5L19.5 9.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                </svg>
+              </a>
             </div>
           </div>
         </div>

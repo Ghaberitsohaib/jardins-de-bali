@@ -58,6 +58,14 @@
   <header class="arbor-header" id="overlayHeader">
     <div class="arbor-header-inner">
       <div class="arbor-header-top">
+        <!-- Mobile wordmark displayed at top-left ONLY when menu is open on mobile -->
+        <a href="/index.html" class="arbor-wordmark-mobile hidden" aria-label="Bayt Immo">
+          <h2 class="arbor-wordmark-title">
+            <span class="arbor-wordmark-line">Bayt</span>
+            <span class="arbor-wordmark-line">Immo</span>
+          </h2>
+        </a>
+
         <div class="arbor-header-left">
           <button
             type="button"
@@ -88,7 +96,7 @@
         </a>
 
         <div class="arbor-header-right">
-          <a href="/contact.html" class="arbor-inquire-btn" aria-label="Inquire">
+          <a href="https://wa.me/212661550905?text=Bonjour%20BaytImmo%2C%20je%20souhaite%20des%20informations%20sur%20les%20Jardins%20de%20Bali" target="_blank" rel="noopener" class="arbor-inquire-btn" aria-label="Inquire">
             <span class="arbor-inquire-clip">
               <span class="arbor-inquire-row arbor-inquire-row-1">
                 <span>Inquire</span>
@@ -112,7 +120,7 @@
       <!-- Expandable Menu Grid inside the floating card -->
       <div class="arbor-menu-collapse" id="arborDropdownMenu">
         <div class="arbor-menu-body">
-          <a href="/index.html" class="arbor-wordmark-link" aria-label="BaytImmo">
+          <a href="/index.html" class="arbor-wordmark-link max-md:hidden" aria-label="BaytImmo">
             <h2 class="arbor-wordmark-title">
               <span class="arbor-wordmark-line">Bayt</span>
               <span class="arbor-wordmark-line">Immo</span>
@@ -144,21 +152,31 @@
               <span class="arbor-nav-primary">Amenities</span>
               <span class="arbor-nav-accent">Amenities</span>
             </a>
-            <a href="/about-the-investor.html" class="arbor-nav-item is-active">
-              <span class="arbor-nav-primary" style="color: var(--arbor-accent); font-style: italic;">About the investor</span>
-              <span class="arbor-nav-accent">About the investor</span>
-            </a>
             <a href="/contact.html" class="arbor-nav-item">
               <span class="arbor-nav-primary">Contact</span>
               <span class="arbor-nav-accent">Contact</span>
+            </a>
+            <a href="/about-the-investor.html" class="arbor-nav-item is-active">
+              <span class="arbor-nav-primary" style="color: var(--arbor-accent); font-style: italic;">About the investor</span>
+              <span class="arbor-nav-accent">About the investor</span>
             </a>
           </nav>
 
           <div class="arbor-menu-footer">
             <div class="arbor-lang-group">
-              <a href="/about-the-investor.html" class="arbor-lang-item is-active">FR</a>
-              <span class="opacity-40">|</span>
-              <a href="/about-the-investor.html" class="arbor-lang-item">ENG</a>
+              <a href="#top" class="arbor-lang-item is-active">ENG</a>
+              <a href="#top" class="arbor-lang-item">SRB</a>
+            </div>
+
+            <!-- Full-width INQUIRE -> pill button on mobile menu -->
+            <div class="arbor-menu-bottom-cta md:hidden">
+              <a href="https://wa.me/212661550905?text=Bonjour%20BaytImmo%2C%20je%20souhaite%20des%20informations%20sur%20les%20Jardins%20de%20Bali" target="_blank" rel="noopener" class="arbor-mobile-inquire-pill" aria-label="Inquire">
+                <span class="arbor-mobile-inquire-text">INQUIRE</span>
+                <svg width="24" height="24" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arbor-mobile-inquire-arrow">
+                  <path d="M0.5 5L24.5 5" stroke="currentColor" stroke-linecap="round"></path>
+                  <path d="M19.5 0.5L24.5 5L19.5 9.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
