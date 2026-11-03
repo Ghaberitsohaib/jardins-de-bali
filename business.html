@@ -210,9 +210,9 @@
         <div class="retail-spaces-trigger trigger relative flex min-h-screen items-stretch max-lg:min-h-0 max-lg:flex-col">
           
           <!-- Image Column (Right side on desktop, Top on mobile) -->
-          <div class="retail-spaces-reveal-image absolute top-0 right-0 z-0 h-full w-[55vw] max-xl:w-1/2 max-lg:relative max-lg:h-[45vh] max-lg:min-h-[300px] max-lg:max-h-[380px] max-lg:w-full">
+          <div class="retail-spaces-reveal-image absolute top-0 right-0 z-0 h-full w-[55vw] max-xl:w-1/2 max-lg:relative max-lg:w-full">
             <div class="relative h-full w-full">
-              <div class="reveal-image-zoom relative h-full w-full overflow-hidden">
+              <div class="biz-photo-card reveal-image-zoom relative h-full w-full overflow-hidden">
                 <img
                   src="/jardins_de_bali/13_facade_angle_terrasses.jpg"
                   alt="Business spaces Jardins de Bali"
@@ -220,9 +220,14 @@
                   loading="lazy"
                   decoding="async"
                 />
+                <!-- Subtle inner vignette & lighting -->
+                <div class="biz-photo-scrim"></div>
+                <!-- Luxury floating badge on mobile -->
+                <div class="biz-photo-badge">
+                  <span class="biz-photo-dot"></span>
+                  <span>Façade &amp; Espaces Commerciaux</span>
+                </div>
               </div>
-              <!-- Seamless gradient scrim: melts image into dark container below with zero gap -->
-              <div class="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#1A2218] to-transparent"></div>
             </div>
           </div>
 
