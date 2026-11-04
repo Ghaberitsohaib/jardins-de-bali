@@ -987,12 +987,24 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // 3. Cinematic Curtain Reveal + Image counter-zoom
+    // 3. Cinematic Curtain Reveal + Image counter-zoom (100% persistent on reverse scroll)
     const revealTl = gsap.timeline({
       scrollTrigger: {
         trigger: trigger,
-        start: 'top 70%',
-        toggleActions: 'play none none none',
+        start: 'top 80%',
+        once: true,
+      },
+      onComplete: () => {
+        // Permanently clear clipPath and opacity overrides so content never disappears on scroll back
+        gsap.set(trigger, { clearProps: 'clipPath' });
+        if (heading) {
+          gsap.set(heading, { opacity: 1, visibility: 'visible' });
+          const headingTargets = heading.querySelectorAll('.char, .word');
+          if (headingTargets.length) gsap.set(headingTargets, { opacity: 1, y: 0, rotateX: 0, filter: 'none', clearProps: 'transform,filter' });
+        }
+        if (paragraph) gsap.set(paragraph, { opacity: 1, y: 0, filter: 'none', clearProps: 'transform,filter' });
+        if (kicker) gsap.set(kicker, { opacity: 1, y: 0, clearProps: 'transform' });
+        if (actionBtn) gsap.set(actionBtn, { opacity: 1, y: 0, scale: 1, clearProps: 'transform' });
       },
     });
 
@@ -1000,13 +1012,13 @@ document.addEventListener('DOMContentLoaded', () => {
       .fromTo(
         trigger,
         { clipPath: 'inset(0% 100% 0% 0%)' },
-        { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.7, ease: 'power2.inOut' },
+        { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.4, ease: 'power2.inOut' },
         0
       )
       .fromTo(
         bg,
-        { scale: 1.1 },
-        { scale: 1, duration: 1.7, ease: 'power2.inOut' },
+        { scale: 1.08 },
+        { scale: 1, duration: 1.4, ease: 'power2.inOut' },
         0
       );
 
@@ -1016,17 +1028,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const targets = headingSplit.chars.length ? headingSplit.chars : headingSplit.words;
       revealTl.fromTo(
         targets,
-        { y: '80%', opacity: 0, rotateX: 20, filter: 'blur(6px)' },
+        { y: '50%', opacity: 0, rotateX: 15, filter: 'blur(4px)' },
         {
           y: '0%',
           opacity: 1,
           rotateX: 0,
           filter: 'blur(0px)',
-          duration: 1.1,
-          stagger: 0.03,
+          duration: 0.9,
+          stagger: 0.02,
           ease: 'power3.out',
         },
-        0.5
+        0.3
       );
     }
 
@@ -1034,26 +1046,26 @@ document.addEventListener('DOMContentLoaded', () => {
       revealTl.fromTo(
         kicker,
         { opacity: 0, y: 15, letterSpacing: '0.1em' },
-        { opacity: 1, y: 0, letterSpacing: '0.3em', duration: 1, ease: 'power2.out' },
-        0.4
+        { opacity: 1, y: 0, letterSpacing: '0.3em', duration: 0.8, ease: 'power2.out' },
+        0.3
       );
     }
 
     if (paragraph) {
       revealTl.fromTo(
         paragraph,
-        { opacity: 0, y: 25, filter: 'blur(4px)' },
-        { opacity: 1, y: 0, filter: 'blur(0px)', duration: 1.1, ease: 'power3.out' },
-        0.7
+        { opacity: 0, y: 20, filter: 'blur(3px)' },
+        { opacity: 1, y: 0, filter: 'blur(0px)', duration: 0.9, ease: 'power3.out' },
+        0.5
       );
     }
 
     if (actionBtn) {
       revealTl.fromTo(
         actionBtn,
-        { opacity: 0, y: 20, scale: 0.95 },
-        { opacity: 1, y: 0, scale: 1, duration: 0.9, ease: 'power2.out' },
-        0.85
+        { opacity: 0, y: 15, scale: 0.96 },
+        { opacity: 1, y: 0, scale: 1, duration: 0.8, ease: 'power2.out' },
+        0.6
       );
     }
 

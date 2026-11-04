@@ -1835,3 +1835,44 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
   background-color: rgba(200, 163, 102, 0.18) !important;
   border-color: #C8A366 !important;
 }
+
+/* ==========================================================================
+   PERMANENT CONTENT VISIBILITY & ZERO SUBPIXEL SEAMS (SUPERPOWERS)
+   ========================================================================== */
+#Residences,
+#BusinessSpaces,
+#Amenities,
+#Roots,
+#RootsMobile {
+  position: relative;
+}
+
+#Residences .wrapper,
+#BusinessSpaces .wrapper,
+#Amenities .wrapper {
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+#Residences h2, #Residences p,
+#BusinessSpaces h2, #BusinessSpaces p,
+#Amenities h2, #Amenities p {
+  visibility: visible !important;
+}
+
+/* Eliminate subpixel seams/white line gaps between sections */
+#BusinessSpaces {
+  margin-bottom: -2px !important;
+  background-color: #1a2315 !important;
+}
+
+#BusinessSpacesOptions {
+  margin-top: -2px !important;
+  margin-bottom: -2px !important;
+  background-color: #1a2315 !important;
+}
+
+#Roots, #RootsMobile {
+  margin-top: -2px !important;
+  background-color: #0c120d !important;
+}

@@ -293,3 +293,52 @@ body {
     overflow: hidden;
   }
 }
+
+/* ==========================================================================
+   ZERO-SEAM & ZERO WHITE LINE GUARANTEE (MOBILE & DESKTOP)
+   ========================================================================== */
+html, body {
+  background-color: #10150F !important;
+}
+
+#Hero {
+  position: relative;
+  z-index: 1;
+  background-color: #10150F !important;
+}
+
+#BusinessSpacesOptions {
+  position: relative;
+  z-index: 2;
+  background-color: #1A2218 !important;
+  margin-top: -2px !important;
+  margin-bottom: -2px !important;
+}
+
+#BusinessSpacesOptions .retail-spaces-reveal-content {
+  background-color: #1A2218 !important;
+}
+
+#Panorama {
+  position: relative;
+  z-index: 1;
+  background-color: #0E140F !important;
+  margin-top: -2px !important;
+}
+
+/* Permanent Visibility & Proper Z-Index on Hero & Options Content */
+#Hero .wrapper,
+#BusinessSpacesOptions .wrapper,
+#Panorama .wrapper {
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+.business-hero-title,
+.business-hero-tag,
+.business-hero-p,
+.panorama-title,
+.panorama-p {
+  visibility: visible !important;
+  opacity: 1;
+}
