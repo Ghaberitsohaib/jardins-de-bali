@@ -385,14 +385,21 @@
        BELGRADE ARBOR LUXURY PICKER SIDEBAR (1:1 RESIDENCES)
        ======================================================== */
     .picker-sidebar {
-      width: 21rem;
+      width: 22rem;
       flex-shrink: 0;
       position: sticky;
-      top: 6.5rem;
+      top: 1.75rem;
+      max-height: calc(100vh - 2.5rem);
+      overflow-y: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      padding-right: 0.5rem;
       background: transparent !important;
       border: none !important;
       box-shadow: none !important;
-      padding: 0;
+    }
+    .picker-sidebar::-webkit-scrollbar {
+      display: none;
     }
     .filter-heading {
       font-family: 'Cinzel', serif;
@@ -401,7 +408,7 @@
       color: #C5A880;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -435,7 +442,7 @@
     }
 
     .filter-group {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
     }
     .filter-label {
       font-family: 'Work Sans', sans-serif;
@@ -952,7 +959,7 @@
       <!-- ==========================================================================
            2. INTERACTIVE PICKER & FILTER SECTION (1:1 BELGRADE ARBOR LAYOUT)
            ========================================================================== -->
-      <section id="Picker" class="relative z-1 pt-10 pb-16 md:pt-14 md:pb-20">
+      <section id="Picker" class="relative z-1 pt-6 pb-16 md:pt-8 md:pb-20">
 
         <!-- FLOATING MOBILE FILTER PILL (1:1 BELGRADE ARBOR LUXURY MOBILE UX) -->
         <div id="mobileFilterBar" class="mobile-filter-bar">
