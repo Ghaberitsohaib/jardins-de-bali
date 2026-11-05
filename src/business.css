@@ -134,13 +134,13 @@ body {
 }
 
 .business-hero-p {
-  color: rgba(248, 245, 233, 0.93);
+  color: rgba(248, 245, 233, 0.96);
   font-family: var(--font-workSans), sans-serif;
   font-size: clamp(1rem, 1.2vw, 1.15rem);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7;
   max-width: 44rem;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.9), 0 1px 5px rgba(0, 0, 0, 0.95);
   margin-bottom: 1.75rem;
 }
 
@@ -286,8 +286,9 @@ body {
   font-size: 0.6875rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: rgba(250, 247, 239, 0.72);
-  font-weight: 500;
+  color: rgba(250, 247, 239, 0.92);
+  font-weight: 600;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95);
 }
 
 @media (max-width: 900px) {
