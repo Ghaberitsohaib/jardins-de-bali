@@ -654,17 +654,19 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
 
 /* Heading: heading huge text-sand text-center font-normal uppercase */
 .arbor-huge-heading {
-  font-family: var(--font-editorialOld, 'Playfair Display', serif);
-  font-size: 10.5vw;
+  font-family: 'Great Vibes', cursive, serif;
+  font-size: 11vw;
   font-weight: 400;
-  line-height: 0.92;
-  letter-spacing: 0.01em;
-  color: var(--arbor-sand, #eae4d6);
-  text-align: center;
-  text-transform: uppercase;
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  color: #FAF7EF;
+  text-align: right;
+  text-transform: none;
   margin: 0;
   white-space: normal;
-  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.85), 0 0 40px rgba(197, 168, 128, 0.2);
+  transform: rotate(-1.5deg);
+  display: inline-block;
 }
 
 .arbor-huge-heading .arbor-title-line {
@@ -673,34 +675,41 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
 
 .arbor-hero-city {
   display: block;
-  font-family: var(--font-editorialOld);
-  font-size: 2.3vw;
-  font-weight: 300;
-  letter-spacing: 0.42em;
+  font-family: 'Cinzel', serif;
+  font-size: 2vw;
+  font-weight: 600;
+  letter-spacing: 0.52em;
   text-transform: uppercase;
-  color: var(--arbor-sand);
+  color: #C5A880;
   text-align: right;
-  margin-top: -0.6vw;
-  transform: translateX(4.5vw);
+  margin-top: 0.2vw;
+  transform: translateX(0);
   opacity: 0.95;
-  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.85);
   transition: transform 0.3s ease;
 }
 
 @media (max-width: 1024px) {
+  .arbor-huge-heading {
+    font-size: 15vw;
+  }
   .arbor-hero-city {
-    font-size: 3.4vw;
-    letter-spacing: 0.35em;
-    transform: translateX(3vw);
+    font-size: 3vw;
+    letter-spacing: 0.42em;
+    transform: none;
   }
 }
 
 @media (max-width: 768px) {
+  .arbor-huge-heading {
+    font-size: 19vw;
+    line-height: 1;
+  }
   .arbor-hero-city {
-    font-size: 4.6vw;
-    letter-spacing: 0.28em;
+    font-size: 4vw;
+    letter-spacing: 0.32em;
     margin-top: 0.25rem;
-    transform: translateX(1.5vw);
+    transform: none;
   }
 }
 

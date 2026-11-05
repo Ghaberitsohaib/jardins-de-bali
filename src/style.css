@@ -626,16 +626,19 @@ button {
 
 /* Heading: heading huge text-sand text-center font-normal uppercase */
 .arbor-huge-heading {
-  font-family: var(--font-editorialOld);
+  font-family: 'Great Vibes', cursive, serif;
   font-size: 11vw;
   font-weight: 400;
-  line-height: 1;
+  line-height: 0.95;
   letter-spacing: 0.02em;
-  color: var(--arbor-sand); /* #f4f0db */
-  text-align: center;
-  text-transform: uppercase;
+  color: #FAF7EF;
+  text-align: right;
+  text-transform: none;
   margin: 0;
-  white-space: nowrap;
+  white-space: normal;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.85);
+  transform: rotate(-1.5deg);
+  display: inline-block;
 }
 
 .arbor-char {
