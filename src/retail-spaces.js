@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const total = filtered.length;
 
     // Update counter
-    const countText = `${total} Results`;
+    const countText = `${total} Espaces`;
     const countFullText = `${total} Espaces disponibles`;
     if (resultsCounter) resultsCounter.textContent = countText;
     if (resultsCounterMobile) resultsCounterMobile.textContent = countText;
@@ -442,7 +442,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const val = Number(this.value);
       state.floor = val === -1 ? 'all' : val;
       const text = val === -1 ? 'Tous les niveaux' : (val === 0 ? 'Rez-de-chaussée (RDC)' : (val === 0.5 ? 'Mezzanine' : `Étage R+${val}`));
-      if (floorMaxLabel) floorMaxLabel.textContent = val === -1 ? 'All' : (val === 0 ? 'RDC' : `R+${val}`);
+      const shortText = val === -1 ? 'Tous les niveaux' : (val === 0 ? 'RDC' : (val === 0.5 ? 'Mezzanine' : `R+${val}`));
+      if (floorMaxLabel) floorMaxLabel.textContent = shortText;
       const floorBadge = document.getElementById('floorBadgeLabelMobile');
       if (floorBadge) floorBadge.textContent = text;
       const floorSliderMobile = document.getElementById('floorSliderMobile');
@@ -476,7 +477,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (floorSlider) {
       floorSlider.value = -1;
-      if (floorMaxLabel) floorMaxLabel.textContent = 'All';
+      if (floorMaxLabel) floorMaxLabel.textContent = 'Tous les niveaux';
     }
     const floorSliderMobile = document.getElementById('floorSliderMobile');
     const floorBadgeLabelMobile = document.getElementById('floorBadgeLabelMobile');
@@ -834,9 +835,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const val = Number(this.value);
       state.floor = val === -1 ? 'all' : val;
       const text = val === -1 ? 'Tous les niveaux' : (val === 0 ? 'Rez-de-chaussée (RDC)' : (val === 0.5 ? 'Mezzanine' : `Étage R+${val}`));
+      const shortText = val === -1 ? 'Tous les niveaux' : (val === 0 ? 'RDC' : (val === 0.5 ? 'Mezzanine' : `R+${val}`));
       const floorBadge = document.getElementById('floorBadgeLabelMobile');
       if (floorBadge) floorBadge.textContent = text;
-      if (floorMaxLabel) floorMaxLabel.textContent = val === -1 ? 'All' : (val === 0 ? 'RDC' : `R+${val}`);
+      if (floorMaxLabel) floorMaxLabel.textContent = shortText;
       if (floorSlider) floorSlider.value = this.value;
       state.page = 1;
       renderGrid();

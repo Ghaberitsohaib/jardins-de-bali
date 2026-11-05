@@ -284,7 +284,7 @@ footer {
   position: relative;
   z-index: 10;
   background-color: var(--arbor-vanilla);
-  padding: 4rem 0 6rem 0;
+  padding: 2rem 0 6rem 0;
 }
 
 .picker-container {
@@ -309,8 +309,8 @@ footer {
   width: 24rem;
   flex-shrink: 0;
   position: sticky;
-  top: 6rem;
-  max-height: calc(100vh - 7rem);
+  top: 1.75rem;
+  max-height: calc(100vh - 2.5rem);
   overflow-y: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -336,7 +336,7 @@ footer {
   font-weight: 300;
   color: var(--arbor-golden);
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -345,17 +345,17 @@ footer {
 @media (max-width: 768px) {
   .filter-heading {
     font-size: 1.75rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
   }
 }
 
 .filter-group {
-  margin-bottom: 2.25rem;
+  margin-bottom: 1.35rem;
 }
 
 @media (max-width: 768px) {
   .filter-group {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.15rem;
   }
 }
 
@@ -365,7 +365,7 @@ footer {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--arbor-golden);
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.55rem;
   display: block;
 }
 
