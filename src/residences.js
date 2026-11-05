@@ -400,13 +400,22 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Reveal newly rendered cards with smooth soft fade
-    initScrollReveals(document.querySelectorAll('.residence-card'), {
-      distance: 25,
-      stagger: 0.04,
-      duration: 0.9,
-    });
-    ScrollTrigger.refresh();
+    // Smooth reveal for newly rendered cards (Always visible, zero invisible bugs)
+    const cards = document.querySelectorAll('.residence-card');
+    if (cards.length > 0) {
+      gsap.fromTo(
+        cards,
+        { opacity: 0, y: 15 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.35,
+          stagger: 0.02,
+          ease: 'power2.out',
+          clearProps: 'all'
+        }
+      );
+    }
   }
 
   // Surface slider change
