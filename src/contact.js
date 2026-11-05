@@ -226,10 +226,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
-  // 4. CONTACT FORM SUBMISSION & WHATSAPP SYNC
+  // 4. CONTACT FORM SUBMISSION & EMAIL / WHATSAPP
   // ==========================================
   const contactForm = document.getElementById('mainContactForm');
+  const contactSubmitBtn = document.getElementById('contactSubmitBtn');
   const toastNotice = document.getElementById('toastNotice');
+
+  // CONFIGURATION EMAIL (Web3Forms / Formspree)
+  // Pour recevoir les emails directement sur contact@bayt-immo.com ou votre Gmail :
+  // Obtenez votre clé gratuite en 10 secondes sur https://web3forms.com avec l'adresse contact@bayt-immo.com
+  const EMAIL_CONFIG = {
+    web3formsKey: '4a4e186e-4647-4241-8594-76a7af13060d', // Clé Web3Forms active
+    recipientEmail: 'contact@bayt-immo.com'
+  };
 
   function showToast(msg) {
     if (!toastNotice) return;
@@ -238,34 +247,199 @@ document.addEventListener('DOMContentLoaded', () => {
     toastNotice.classList.add('is-visible');
     setTimeout(() => {
       toastNotice.classList.remove('is-visible');
-    }, 5500);
+    }, 6000);
   }
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
+
       const formData = new FormData(contactForm);
-      const firstName = formData.get('firstName') || '';
-      const lastName = formData.get('lastName') || '';
-      const phone = formData.get('phone') || '';
-      const email = formData.get('email') || '';
-      const callTime = formData.get('callTime') || '';
-      const propertyType = formData.get('propertyType') || '';
+      const firstName = (formData.get('firstName') || '').toString().trim();
+      const lastName = (formData.get('lastName') || '').toString().trim();
+      const phone = (formData.get('phone') || '').toString().trim();
+      const email = (formData.get('email') || '').toString().trim();
+      const callTime = (formData.get('callTime') || '').toString().trim();
+      const propertyType = (formData.get('propertyType') || '').toString().trim();
       const whatsappConsent = contactForm.querySelector('#callback-whatsappConsent')?.checked;
 
-      // Construct WhatsApp message if user consented
+      // 1. Bouton en état de chargement "Envoi en cours..."
+      const btnContent = contactSubmitBtn?.querySelector('.contact-btn-content');
+      const originalBtnHTML = btnContent ? btnContent.innerHTML : (contactSubmitBtn?.innerHTML || '');
+      
+      if (contactSubmitBtn) {
+        contactSubmitBtn.disabled = true;
+        if (btnContent) {
+          btnContent.innerHTML = `
+            <span class="contact-btn-spinner"></span>
+            <span class="contact-btn-text">Envoi en cours...</span>
+          `;
+        }
+      }
+
+      // 2. Préparation des données d'email
+      const emailPayload = {
+        access_key: EMAIL_CONFIG.web3formsKey,
+        subject: `[BaytImmo] Nouvelle Demande - ${firstName} ${lastName} (${propertyType})`,
+        from_name: `${firstName} ${lastName}`,
+        to_email: EMAIL_CONFIG.recipientEmail,
+        reply_to: email,
+        nom_complet: `${firstName} ${lastName}`,
+        prenom: firstName,
+        nom: lastName,
+        telephone: phone,
+        email: email,
+        type_de_bien: propertyType,
+        creneau_de_rappel: callTime,
+        contact_whatsapp_souhaite: whatsappConsent ? 'Oui' : 'Non',
+        projet: 'Jardins de Bali Marrakech - Boulevard M-16 Menara',
+        date_heure: new Date().toLocaleString('fr-FR', { timeZone: 'Africa/Casablanca' })
+      };
+
+      let emailSent = false;
+
+      // 3. Envoi via l'API Web3Forms si une clé valide est renseignée
+      if (EMAIL_CONFIG.web3formsKey && EMAIL_CONFIG.web3formsKey !== 'YOUR_WEB3FORMS_ACCESS_KEY') {
+        try {
+          const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify(emailPayload)
+          });
+          const result = await response.json();
+          if (response.ok && result.success) {
+            emailSent = true;
+          } else {
+            console.warn('Web3Forms response:', result);
+          }
+        } catch (err) {
+          console.error('Erreur lors de l envoi de l email:', err);
+        }
+      }
+
+      // 4. Ouverture WhatsApp si le client a coché l'option
       if (whatsappConsent) {
         const text = `Bonjour BaytImmo, je m'appelle ${firstName} ${lastName} (Tél: ${phone}, Email: ${email}). ` +
                      `Je suis intéressé(e) par: ${propertyType}. ` +
                      `Créneau souhaité pour l'appel: ${callTime}.`;
 
-        window.open(`https://wa.me/212661550905?text=${encodeURIComponent(text)}`, '_blank');
+        window.open(`https://wa.me/212665644391?text=${encodeURIComponent(text)}`, '_blank');
+      }
+
+      // 5. Restauration du bouton et confirmation
+      if (contactSubmitBtn) {
+        contactSubmitBtn.disabled = false;
+        if (btnContent) {
+          btnContent.innerHTML = originalBtnHTML;
+        }
       }
 
       contactForm.reset();
-      showToast(`Merci ${firstName} ! Votre demande pour les Jardins de Bali Marrakech a été transmise avec succès à notre équipe commerciale.`);
+
+      if (emailSent) {
+        showToast(`Merci ${firstName} ! Votre demande a été transmise directement par email à contact@bayt-immo.com.`);
+      } else {
+        showToast(`Merci ${firstName} ! Votre demande pour les Jardins de Bali a bien été enregistrée.`);
+      }
     });
   }
+
+  // ==========================================
+  // 5. ULTRA-LUXURY CUSTOM SELECT COMPONENT
+  // ==========================================
+  function initCustomSelects() {
+    const wrappers = document.querySelectorAll('.custom-select-wrapper');
+
+    wrappers.forEach((wrapper) => {
+      const trigger = wrapper.querySelector('.custom-select-trigger');
+      const valueSpan = wrapper.querySelector('.custom-select-value');
+      const dropdown = wrapper.querySelector('.custom-select-dropdown');
+      const options = wrapper.querySelectorAll('.custom-select-option');
+      const nativeSelect = wrapper.querySelector('select');
+
+      if (!trigger || !dropdown || !nativeSelect) return;
+
+      trigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = wrapper.classList.contains('is-open');
+        // Close all other selects
+        wrappers.forEach((w) => {
+          if (w !== wrapper) {
+            w.classList.remove('is-open');
+            w.querySelector('.custom-select-trigger')?.setAttribute('aria-expanded', 'false');
+          }
+        });
+
+        wrapper.classList.toggle('is-open', !isOpen);
+        trigger.setAttribute('aria-expanded', String(!isOpen));
+      });
+
+      options.forEach((opt) => {
+        opt.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const val = opt.getAttribute('data-value') || '';
+          const labelText = opt.querySelector('span')?.textContent || val;
+
+          // Update trigger text
+          if (valueSpan) valueSpan.textContent = labelText;
+
+          // Update native select
+          nativeSelect.value = val;
+          nativeSelect.dispatchEvent(new Event('change', { bubbles: true }));
+
+          // Update active class
+          options.forEach((o) => o.classList.remove('is-selected'));
+          opt.classList.add('is-selected');
+
+          // Close dropdown
+          wrapper.classList.remove('is-open');
+          trigger.setAttribute('aria-expanded', 'false');
+        });
+      });
+    });
+
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.custom-select-wrapper')) {
+        wrappers.forEach((w) => {
+          w.classList.remove('is-open');
+          w.querySelector('.custom-select-trigger')?.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
+
+    // Close on escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        wrappers.forEach((w) => {
+          w.classList.remove('is-open');
+          w.querySelector('.custom-select-trigger')?.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
+
+    // Reset support
+    if (contactForm) {
+      contactForm.addEventListener('reset', () => {
+        setTimeout(() => {
+          wrappers.forEach((w) => {
+            const firstOpt = w.querySelector('.custom-select-option');
+            const valueSpan = w.querySelector('.custom-select-value');
+            if (firstOpt && valueSpan) {
+              w.querySelectorAll('.custom-select-option').forEach((o) => o.classList.remove('is-selected'));
+              firstOpt.classList.add('is-selected');
+              valueSpan.textContent = firstOpt.querySelector('span')?.textContent || '';
+            }
+          });
+        }, 10);
+      });
+    }
+  }
+
+  initCustomSelects();
 
   // Soft stagger reveal for contact form elements
   initScrollReveals('#mainContactForm .grid > div', { stagger: 0.06 });

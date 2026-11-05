@@ -172,10 +172,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (busSection) {
     const retailTrigger = busSection.querySelector('.retail-spaces-trigger') || busSection;
 
-    // Image Parallax
-    const parallaxImg = busSection.querySelector('.retail-spaces-parallax');
-    if (parallaxImg) {
-      gsap.to(parallaxImg, {
+    // Image Parallax (Desktop only to keep mobile pristine)
+    const slideImgs = Array.from(busSection.querySelectorAll('.biz-slide-img'));
+    if (slideImgs.length && window.innerWidth >= 1024) {
+      gsap.to(slideImgs, {
         y: '5rem',
         ease: 'none',
         scrollTrigger: {
@@ -193,16 +193,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const blueprintBtn = document.getElementById('bizBlueprintBtn');
 
     const blueprintData = [
-      { url: '/jardins_de_bali/plan_03_rez_de_chaussee.jpg', title: 'Plan RDC - 4 Grands Magasins Commerciaux (554 m²)' },
-      { url: '/jardins_de_bali/plan_04_mezzanine.jpg', title: 'Plan Mezzanines Showrooms' },
-      { url: '/jardins_de_bali/plan_05_etage_courant.jpg', title: 'Plan Plateaux Bureaux Modulables' },
-      { url: '/jardins_de_bali/plan_01_sous_sol_2.jpg', title: 'Plan Sous-Sol - Parkings Privatifs' },
+      { 
+        url: '/jardins_de_bali/plan_03_rez_de_chaussee.jpg', 
+        title: 'Plan RDC - 4 Grands Magasins Commerciaux (554 m²)', 
+        img: '/business/retail/magasin_2_flagship.jpg',
+        alt: 'Flagship Stores RDC Jardins de Bali'
+      },
+      { 
+        url: '/jardins_de_bali/plan_04_mezzanine.jpg', 
+        title: 'Plan Mezzanines Showrooms', 
+        img: '/business/retail/magasin_4_showroom.jpg',
+        alt: 'Mezzanines Showrooms Jardins de Bali'
+      },
+      { 
+        url: '/jardins_de_bali/plan_05_etage_courant.jpg', 
+        title: 'Plan Plateaux Bureaux Modulables', 
+        img: '/business/retail/bureau_executive_suite_bali.jpg',
+        alt: 'Bureaux et Suites Professionnelles Jardins de Bali'
+      },
+      { 
+        url: '/jardins_de_bali/plan_01_sous_sol_2.jpg', 
+        title: 'Plan Sous-Sol - Parkings Privatifs', 
+        img: '/business/retail/parking_prestige_jardins_bali.jpg',
+        alt: 'Parkings Sécurisés et Logistique Jardins de Bali'
+      },
     ];
 
     let currentOptionIdx = 0;
+    let autoPlayTimer = null;
+    const AUTOPLAY_INTERVAL = 3500; // 3.5s smooth, calm luxury rhythm (Zero lag)
 
     const setActiveOption = (idx) => {
       currentOptionIdx = idx;
+
+      // 1. Update tab indicators & text style
       optionItems.forEach((item, i) => {
         if (i === idx) {
           item.classList.add('is-active');
@@ -211,6 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
+      // 2. Update detail panels
       detailPanels.forEach((panel, i) => {
         if (i === idx) {
           panel.classList.add('is-active');
@@ -218,10 +243,40 @@ document.addEventListener('DOMContentLoaded', () => {
           panel.classList.remove('is-active');
         }
       });
+
+      // 3. Pure GPU hardware-accelerated crossfade (zero decode lag)
+      slideImgs.forEach((img, i) => {
+        if (i === idx) {
+          img.classList.add('is-active');
+        } else {
+          img.classList.remove('is-active');
+        }
+      });
     };
 
+    const nextOption = () => {
+      const nextIdx = (currentOptionIdx + 1) % optionItems.length;
+      setActiveOption(nextIdx);
+    };
+
+    const startAutoPlay = () => {
+      stopAutoPlay();
+      autoPlayTimer = setInterval(nextOption, AUTOPLAY_INTERVAL);
+    };
+
+    const stopAutoPlay = () => {
+      if (autoPlayTimer) {
+        clearInterval(autoPlayTimer);
+        autoPlayTimer = null;
+      }
+    };
+
+    // User click switches immediately and resets the timer
     optionItems.forEach((item, idx) => {
-      item.addEventListener('click', () => setActiveOption(idx));
+      item.addEventListener('click', () => {
+        setActiveOption(idx);
+        startAutoPlay();
+      });
     });
 
     if (blueprintBtn) {
@@ -233,7 +288,27 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
+    // Initialize with index 0
     setActiveOption(0);
+
+    // Auto-cycle only when in view, pause when out of view
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              startAutoPlay();
+            } else {
+              stopAutoPlay();
+            }
+          });
+        },
+        { rootMargin: '50px 0px 50px 0px', threshold: 0.1 }
+      );
+      observer.observe(busSection);
+    } else {
+      startAutoPlay();
+    }
   }
 
   // ==========================================
@@ -316,15 +391,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (blueprintModal && blueprintModalImg) {
       blueprintModalImg.src = src;
       if (blueprintModalTitle) {
-        blueprintModalTitle.textContent = title || 'Plan Architectural';
+        blueprintModalTitle.textContent = title || 'Plan Architectural Officiel';
       }
       blueprintModal.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
     }
   };
 
   const closeBlueprint = () => {
     if (blueprintModal) {
       blueprintModal.classList.remove('is-open');
+      document.body.style.overflow = '';
     }
   };
 
@@ -334,6 +411,14 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.target === blueprintModal) closeBlueprint();
     });
   }
+
+  // Close modals on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (blueprintModal && blueprintModal.classList.contains('is-open')) closeBlueprint();
+      if (videoModal && videoModal.classList.contains('is-open')) closeVideo();
+    }
+  });
 
   // ==========================================
   // 6. BUSINESS FOOTER FORM & TOAST

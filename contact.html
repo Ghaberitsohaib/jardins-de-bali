@@ -19,7 +19,8 @@
     "mainEntity": {
       "@type": "RealEstateAgent",
       "name": "BaytImmo Marrakech",
-      "telephone": "+212661550905",
+      "telephone": "+212665644391",
+      "email": "contact@bayt-immo.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Boulevard M-16, Quartier Rahham, Lot B5, Arrondissement Menara",
@@ -32,6 +33,471 @@
 
   <link rel="stylesheet" href="/src/arbor.css" />
   <link rel="stylesheet" href="/src/business.css" />
+
+  <style>
+    /* ==========================================================================
+       BAYTIMMO MARRAKECH - ULTRA-LUXURY CONTACT PAGE & MOBILE REFINEMENT
+       ========================================================================== */
+    .contact-hero-section {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      background-color: #10150F;
+    }
+
+    @media (max-width: 1023px) {
+      .contact-hero-section {
+        flex-direction: column;
+        min-height: auto;
+      }
+    }
+
+    /* Left Column: Cover photo & prominent typography */
+    .contact-visual-col {
+      position: relative;
+      width: 50%;
+      min-height: 100vh;
+      background-color: #10150F;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      padding: 0 4rem 5rem 4.5rem;
+    }
+
+    @media (max-width: 1279px) {
+      .contact-visual-col {
+        width: 50%;
+        padding: 0 3rem 4rem 3.5rem;
+      }
+    }
+
+    @media (max-width: 1023px) {
+      .contact-visual-col {
+        width: 100%;
+        min-height: auto;
+        /* Ample padding to ensure zero collision with fixed floating navbar */
+        padding: 8.75rem 1.5rem 2.25rem 1.5rem !important;
+        align-items: flex-start;
+      }
+    }
+
+    /* Background image & luxury vignette layer */
+    .contact-bg-layer {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .contact-bg-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transform: scale(1.05);
+    }
+
+    .contact-bg-scrim {
+      position: absolute;
+      inset: 0;
+      background: 
+        linear-gradient(180deg, rgba(16, 21, 15, 0.45) 0%, rgba(16, 21, 15, 0.75) 45%, rgba(16, 21, 15, 0.95) 85%, #10150F 100%),
+        linear-gradient(90deg, rgba(16, 21, 15, 0.7) 0%, transparent 50%, rgba(16, 21, 15, 0.8) 100%);
+    }
+
+    @media (max-width: 1023px) {
+      .contact-bg-scrim {
+        background: linear-gradient(180deg, 
+          rgba(16, 21, 15, 0.35) 0%, 
+          rgba(16, 21, 15, 0.65) 30%, 
+          rgba(16, 21, 15, 0.95) 65%, 
+          #10150F 85%, 
+          #10150F 100%
+        );
+      }
+    }
+
+
+    /* Headline Typography */
+    .contact-headline {
+      font-family: var(--font-editorialOld, 'Playfair Display', serif);
+      font-size: clamp(2.75rem, 4.8vw, 4.75rem);
+      line-height: 1.02;
+      color: #FAF7EF;
+      text-transform: uppercase;
+      font-weight: 300;
+      margin-bottom: 1.25rem;
+      text-shadow: 0 4px 24px rgba(0, 0, 0, 0.85);
+    }
+
+    @media (max-width: 1023px) {
+      .contact-headline {
+        font-size: 2.85rem;
+        line-height: 1.05;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .contact-headline-italic {
+      display: block;
+      font-style: italic;
+      font-weight: 300;
+      text-transform: lowercase;
+      color: #C5A880;
+    }
+
+    /* Description paragraph */
+    .contact-desc {
+      font-family: var(--font-workSans), sans-serif;
+      color: rgba(250, 247, 239, 0.92);
+      font-size: clamp(0.9375rem, 1.1vw, 1.08rem);
+      line-height: 1.7;
+      max-width: 32rem;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85);
+      font-weight: 300;
+    }
+
+    /* Right Column: Form Container */
+    .contact-form-col {
+      position: relative;
+      width: 50%;
+      min-height: 100vh;
+      background-color: #10150F;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 4rem 5rem 4rem;
+    }
+
+    @media (max-width: 1279px) {
+      .contact-form-col {
+        padding: 5rem 3rem 4rem 3rem;
+      }
+    }
+
+    @media (max-width: 1023px) {
+      .contact-form-col {
+        width: 100%;
+        min-height: auto;
+        margin-top: -6px;
+        position: relative;
+        z-index: 2;
+        background-color: #10150F;
+        padding: 1.5rem 1.5rem 5rem 1.5rem !important;
+      }
+    }
+
+    .contact-form-wrap {
+      width: 100%;
+      max-width: 34rem;
+    }
+
+    /* Form Fields Grid */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2rem 1.5rem;
+    }
+
+    @media (max-width: 767px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+
+    .contact-field-full {
+      grid-column: 1 / -1;
+    }
+
+    .contact-input-field {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .contact-input-label {
+      font-family: var(--font-workSans), sans-serif;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #C5A880;
+      font-weight: 600;
+      user-select: none;
+    }
+
+    .contact-input-control {
+      width: 100%;
+      height: 46px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(197, 168, 128, 0.35);
+      color: #FAF7EF;
+      font-family: var(--font-workSans), sans-serif;
+      font-size: 16px; /* 16px strictly avoids iOS auto-zoom */
+      padding: 0 0 6px 0;
+      border-radius: 0;
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
+      outline: none;
+    }
+
+    .contact-input-control:focus {
+      border-bottom-color: #C5A880;
+      box-shadow: 0 1px 0 #C5A880;
+    }
+
+    .contact-input-control::placeholder {
+      color: rgba(250, 247, 239, 0.28);
+      font-size: 14px;
+    }
+
+    /* ==========================================================================
+       LUXURY CUSTOM SELECT COMPONENT
+       ========================================================================== */
+    .custom-select-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .sr-only-select {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .custom-select-trigger {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 50px;
+      padding: 0 1.25rem;
+      background: rgba(22, 29, 21, 0.95);
+      border: 1px solid rgba(197, 168, 128, 0.35);
+      border-radius: 12px;
+      color: #FAF7EF;
+      font-family: var(--font-workSans), sans-serif;
+      font-size: 15px;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      outline: none;
+      user-select: none;
+    }
+
+    .custom-select-trigger:hover,
+    .custom-select-wrapper.is-open .custom-select-trigger {
+      border-color: #C5A880;
+      box-shadow: 0 0 0 1px #C5A880, 0 4px 16px rgba(0, 0, 0, 0.35);
+    }
+
+    .custom-select-value {
+      flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-right: 0.75rem;
+      color: #FAF7EF;
+    }
+
+    .custom-select-chevron {
+      flex-shrink: 0;
+      color: #C5A880;
+      transition: transform 0.3s cubic-bezier(0.2, 0.9, 0.3, 1);
+    }
+
+    .custom-select-wrapper.is-open .custom-select-chevron {
+      transform: rotate(180deg);
+    }
+
+    .custom-select-dropdown {
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 0;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      background: #141c12;
+      border: 1px solid rgba(197, 168, 128, 0.45);
+      border-radius: 12px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(197, 168, 128, 0.15);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 0.35rem 0;
+      z-index: 60;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-8px);
+      transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+      pointer-events: none;
+      max-height: 250px;
+      overflow-y: auto;
+    }
+
+    .custom-select-wrapper.is-open .custom-select-dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .custom-select-option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.75rem 1.15rem;
+      font-family: var(--font-workSans), sans-serif;
+      font-size: 0.875rem;
+      color: rgba(250, 247, 239, 0.85);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+
+    .custom-select-option:hover {
+      background: rgba(197, 168, 128, 0.15);
+      color: #C5A880;
+      padding-left: 1.35rem;
+    }
+
+    .custom-select-option.is-selected {
+      background: rgba(197, 168, 128, 0.22);
+      color: #C5A880;
+      font-weight: 500;
+    }
+
+    .custom-select-check {
+      color: #C5A880;
+      opacity: 0;
+      transform: scale(0.6);
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .custom-select-option.is-selected .custom-select-check {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Custom scrollbar for options dropdown */
+    .custom-select-dropdown::-webkit-scrollbar {
+      width: 5px;
+    }
+    .custom-select-dropdown::-webkit-scrollbar-track {
+      background: rgba(20, 28, 18, 0.6);
+    }
+    .custom-select-dropdown::-webkit-scrollbar-thumb {
+      background: rgba(197, 168, 128, 0.4);
+      border-radius: 10px;
+    }
+    .custom-select-dropdown::-webkit-scrollbar-thumb:hover {
+      background: #C5A880;
+    }
+
+    /* Custom Luxury Checkbox */
+    .contact-checkbox {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 1px solid rgba(197, 168, 128, 0.45);
+      border-radius: 4px;
+      background: rgba(22, 29, 21, 0.85);
+      cursor: pointer;
+      display: inline-grid;
+      place-content: center;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+      margin-top: 2px;
+      outline: none;
+    }
+
+    .contact-checkbox:hover {
+      border-color: #C5A880;
+    }
+
+    .contact-checkbox:checked {
+      background: #C5A880;
+      border-color: #C5A880;
+    }
+
+    .contact-checkbox:checked::before {
+      content: "";
+      width: 9px;
+      height: 5px;
+      border-left: 2px solid #10150F;
+      border-bottom: 2px solid #10150F;
+      transform: rotate(-45deg) translate(0.5px, -1px);
+    }
+
+    /* Luxury Submit Button */
+    .contact-submit-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      width: 100%;
+      height: 54px;
+      border-radius: 9999px;
+      background: #C5A880;
+      border: 1px solid #C5A880;
+      color: #10150F;
+      font-family: var(--font-workSans), sans-serif;
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+      transition: all 0.3s cubic-bezier(0.2, 0.9, 0.3, 1);
+      margin-top: 0.75rem;
+    }
+
+    .contact-submit-btn:hover {
+      background: #d4b890;
+      border-color: #d4b890;
+      box-shadow: 0 12px 35px rgba(197, 168, 128, 0.35);
+      transform: translateY(-2px);
+    }
+
+    .contact-submit-btn:active {
+      transform: translateY(0);
+    }
+
+    .contact-submit-btn:disabled {
+      opacity: 0.75;
+      cursor: not-allowed;
+      transform: none !important;
+      box-shadow: none !important;
+    }
+
+    .contact-btn-spinner {
+      width: 18px;
+      height: 18px;
+      border: 2px solid rgba(16, 21, 15, 0.25);
+      border-top-color: #10150F;
+      border-radius: 50%;
+      animation: contactSpin 0.75s linear infinite;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    @keyframes contactSpin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body class="work_sans_85248dc3-module__gzDsyq__variable editorialold_ad1a3d18-module__UoXJ4a__variable antialiased bg-pine-green text-sand arbor-home-body selection:bg-golden selection:text-vanilla">
 
@@ -85,7 +551,7 @@
         </a>
 
         <div class="arbor-header-right">
-          <a href="https://wa.me/212661550905?text=Bonjour%20BaytImmo%2C%20je%20souhaite%20des%20informations%20sur%20les%20Jardins%20de%20Bali" target="_blank" rel="noopener" class="arbor-inquire-btn" aria-label="Inquire">
+          <a href="#mainContactForm" class="arbor-inquire-btn" aria-label="Contactez-nous">
             <span class="arbor-inquire-clip">
               <span class="arbor-inquire-row arbor-inquire-row-1">
                 <span>Inquire</span>
@@ -159,7 +625,7 @@
 
             <!-- Full-width INQUIRE -> pill button on mobile menu -->
             <div class="arbor-menu-bottom-cta md:hidden">
-              <a href="https://wa.me/212661550905?text=Bonjour%20BaytImmo%2C%20je%20souhaite%20des%20informations%20sur%20les%20Jardins%20de%20Bali" target="_blank" rel="noopener" class="arbor-mobile-inquire-pill" aria-label="Inquire">
+              <a href="#mainContactForm" class="arbor-mobile-inquire-pill" aria-label="Contactez-nous">
                 <span class="arbor-mobile-inquire-text">INQUIRE</span>
                 <svg width="24" height="24" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arbor-mobile-inquire-arrow">
                   <path d="M0.5 5L24.5 5" stroke="currentColor" stroke-linecap="round"></path>
@@ -178,227 +644,280 @@
        MAIN CONTENT: 1:1 BELGRADE ARBOR CONTACT PAGE
        ========================================================================== -->
   <main class="min-h-screen w-full">
-    <section class="flex min-h-screen transition max-lg:flex-col bg-pine-green">
+    <section class="contact-hero-section">
       
-      <!-- LEFT COLUMN: COVER IMAGE & PROMINENT HEADLINE (EXACT USER SPECIFIED SCREENSHOT) -->
-      <div class="w-1/2 max-xl:w-[55%] max-lg:w-full relative overflow-hidden bg-pine-green">
-        <div class="relative flex h-full w-full items-end pb-25 pl-24 max-lg:items-start max-lg:px-10 max-lg:pt-30 max-lg:pb-20 max-md:px-6 max-md:pt-27 max-md:pb-15 min-h-[50vh] lg:min-h-screen">
-          
-          <!-- Background image: Exact rooftop pool & palm trees visual -->
-          <div class="absolute inset-0 overflow-hidden pointer-events-none">
-            <img
-              alt="Façade officielle Jardins de Bali Marrakech"
-              draggable="false"
-              loading="eager"
-              decoding="async"
-              src="/jardins_de_bali/11_facade_ondulante_et_rooftop.jpg"
-              style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; transform: scale(1.05);"
-            />
-            <!-- Luxury Scrim: Smooth dark gradient at the bottom so photo is vivid on top and text is 100% crisp at bottom -->
-            <div style="position: absolute; inset: 0; background: linear-gradient(to top, #141c11 0%, rgba(20, 28, 17, 0.92) 32%, rgba(20, 28, 17, 0.5) 55%, rgba(20, 28, 17, 0.1) 72%, transparent 90%);"></div>
-            <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(20, 28, 17, 0.4) 0%, transparent 40%, rgba(20, 28, 17, 0.5) 100%);"></div>
-          </div>
+      <!-- LEFT COLUMN: COVER IMAGE & PROMINENT HEADLINE -->
+      <div class="contact-visual-col">
+        
+        <!-- Background image: Exact rooftop pool & palm trees visual with luxury dark vignette -->
+        <div class="contact-bg-layer">
+          <img
+            alt="Rooftop et terrasses Jardins de Bali Marrakech Menara"
+            draggable="false"
+            loading="eager"
+            decoding="async"
+            src="/jardins_de_bali/11_facade_ondulante_et_rooftop.jpg"
+            class="contact-bg-img"
+          />
+          <div class="contact-bg-scrim"></div>
+        </div>
 
-          <div class="relative z-1 max-w-xl max-lg:max-w-full">
-            <!-- Luxury Official Sales Office Badge -->
-            <div style="display: inline-flex; align-items: center; gap: 10px; padding: 6px 16px; border-radius: 9999px; border: 1px solid rgba(194, 166, 117, 0.6); background: rgba(17, 24, 14, 0.85); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 4px 20px rgba(0,0,0,0.5); margin-bottom: 24px;">
-              <span style="width: 8px; height: 8px; border-radius: 9999px; background-color: #c2a675; box-shadow: 0 0 10px #c2a675;"></span>
-              <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; color: #c2a675; font-weight: 600;">Bureau de Vente Officiel</span>
-            </div>
+        <div class="relative z-1 w-full max-w-xl">
+          <h1 class="contact-headline">
+            Prendre <span class="contact-headline-italic">contact</span>
+          </h1>
 
-            <h1 class="heading-1" style="color: #e6dec8; text-transform: uppercase; font-family: var(--font-editorialOld, serif); font-size: clamp(3rem, 5vw, 4.5rem); line-height: 1.05; text-shadow: 0 4px 24px rgba(0,0,0,0.85); margin-bottom: 24px;">
-              Prendre <span style="display: block; color: #fdfbef; font-style: italic; font-weight: 300; text-transform: lowercase; font-family: var(--font-editorialOld, serif);">contact</span>
-            </h1>
-
-            <p style="color: rgba(243, 240, 230, 0.95); font-size: clamp(1rem, 1.2vw, 1.15rem); line-height: 1.7; max-width: 520px; text-shadow: 0 2px 10px rgba(0,0,0,0.9); font-weight: 400;">
-              Pour toute information concernant les appartements résidentiels ou les locaux commerciaux aux Jardins de Bali à Marrakech Menara, remplissez ce formulaire. Notre équipe dédiée vous contactera dans les plus brefs délais.
-            </p>
-          </div>
+          <p class="contact-desc">
+            Pour toute information concernant les appartements résidentiels ou les locaux commerciaux aux Jardins de Bali à Marrakech Menara, remplissez ce formulaire. Notre équipe dédiée vous contactera dans les plus brefs délais.
+          </p>
         </div>
       </div>
 
-      <!-- RIGHT COLUMN: LUXURY FORM (EXACT MATCH WITH SCREENSHOT) -->
-      <div class="w-1/2 pt-40 pb-20 transition max-xl:w-[45%] max-lg:w-full max-lg:pt-0 max-lg:pb-16 flex items-center">
-        <div class="flex max-w-219 w-full items-stretch gap-5 max-lg:max-w-full max-md:px-6">
-          <div class="w-1/6 max-xl:hidden"></div>
-          <div class="w-2/3 max-xl:w-full max-xl:px-17 max-lg:w-5/6 max-lg:px-10 max-md:w-full max-md:px-0">
+      <!-- RIGHT COLUMN: LUXURY FORM -->
+      <div class="contact-form-col">
+        <div class="contact-form-wrap">
+          
+          <form id="mainContactForm" class="flex flex-col gap-8">
             
-            <form id="mainContactForm" class="flex h-full flex-col justify-start gap-10 max-md:justify-start max-md:gap-8">
+            <div class="contact-grid">
               
-              <div class="grid grid-cols-2 gap-5 gap-y-12 max-lg:gap-y-8">
-                
-                <!-- First Name -->
-                <div class="relative max-md:col-span-2">
-                  <div class="flex flex-col-reverse">
-                    <input
-                      type="text"
-                      required
-                      class="border-0 border-b border-green rounded-none px-0 pb-1.5 paragraph bg-transparent text-sand shadow-none focus:outline-none focus:border-cream transition-all h-9 w-full min-w-0"
-                      id="callback-first-name"
-                      name="firstName"
-                      placeholder=" "
-                    />
-                    <label class="text-golden text-xs uppercase tracking-wider mb-2 select-none" for="callback-first-name">
-                      Prénom *
-                    </label>
-                  </div>
-                </div>
-
-                <!-- Last Name -->
-                <div class="relative max-md:col-span-2">
-                  <div class="flex flex-col-reverse">
-                    <input
-                      type="text"
-                      required
-                      class="border-0 border-b border-green rounded-none px-0 pb-1.5 paragraph bg-transparent text-sand shadow-none focus:outline-none focus:border-cream transition-all h-9 w-full min-w-0"
-                      id="callback-last-name"
-                      name="lastName"
-                      placeholder=" "
-                    />
-                    <label class="text-golden text-xs uppercase tracking-wider mb-2 select-none" for="callback-last-name">
-                      Nom *
-                    </label>
-                  </div>
-                </div>
-
-                <!-- Phone -->
-                <div class="relative max-md:col-span-2">
-                  <div class="flex flex-col-reverse">
-                    <input
-                      type="tel"
-                      required
-                      class="border-0 border-b border-green rounded-none px-0 pb-1.5 paragraph bg-transparent text-sand shadow-none focus:outline-none focus:border-cream transition-all h-9 w-full min-w-0"
-                      id="callback-phone"
-                      name="phone"
-                      placeholder="+212 ..."
-                    />
-                    <label class="text-golden text-xs uppercase tracking-wider mb-2 select-none" for="callback-phone">
-                      Téléphone (WhatsApp) *
-                    </label>
-                  </div>
-                </div>
-
-                <!-- Email -->
-                <div class="relative max-md:col-span-2">
-                  <div class="flex flex-col-reverse">
-                    <input
-                      type="email"
-                      required
-                      class="border-0 border-b border-green rounded-none px-0 pb-1.5 paragraph bg-transparent text-sand shadow-none focus:outline-none focus:border-cream transition-all h-9 w-full min-w-0"
-                      id="callback-email"
-                      name="email"
-                      placeholder="nom@exemple.com"
-                    />
-                    <label class="text-golden text-xs uppercase tracking-wider mb-2 select-none" for="callback-email">
-                      Adresse Email *
-                    </label>
-                  </div>
-                </div>
-
-                <!-- Property Type Selector -->
-                <div class="relative col-span-2">
-                  <div class="flex flex-col-reverse">
-                    <select
-                      id="callback-propertyType"
-                      name="propertyType"
-                      class="border-0 border-b border-green rounded-none px-0 pb-1.5 paragraph bg-[#1c2517] text-sand shadow-none focus:outline-none focus:border-cream transition-all h-10 w-full min-w-0 cursor-pointer"
-                    >
-                      <option value="Appartement Résidentiel (Studio, F2, F3)">Appartement Résidentiel (Studio, F2, F3)</option>
-                      <option value="Penthouse Rooftop avec vue Atlas">Penthouse Rooftop avec vue Atlas</option>
-                      <option value="Grand Magasin Flagship (554 m²)">Grand Magasin Flagship (554 m²)</option>
-                      <option value="Plateau de Bureaux Modulable">Plateau de Bureaux Modulable</option>
-                      <option value="Dossier d'Investissement Global">Dossier Complet d'Investissement</option>
-                    </select>
-                    <label class="text-golden text-xs uppercase tracking-wider mb-2 select-none" for="callback-propertyType">
-                      Type de Bien Recherché
-                    </label>
-                  </div>
-                </div>
-
-                <!-- Preferred Call Time -->
-                <div class="relative col-span-2">
-                  <div class="flex flex-col-reverse">
-                    <select
-                      id="callback-callTime"
-                      name="callTime"
-                      class="border-0 border-b border-green rounded-none px-0 pb-1.5 paragraph bg-[#1c2517] text-sand shadow-none focus:outline-none focus:border-cream transition-all h-10 w-full min-w-0 cursor-pointer"
-                    >
-                      <option value="Dès que possible">Dès que possible</option>
-                      <option value="Matinée (09h00 - 12h00)">Matinée (09h00 - 12h00)</option>
-                      <option value="Après-midi (14h00 - 18h00)">Après-midi (14h00 - 18h00)</option>
-                      <option value="Fin de journée (18h00 - 20h00)">Fin de journée (18h00 - 20h00)</option>
-                    </select>
-                    <label class="text-golden text-xs uppercase tracking-wider mb-2 select-none" for="callback-callTime">
-                      Créneau Souhaité pour le Rappel
-                    </label>
-                  </div>
-                </div>
-
+              <!-- First Name -->
+              <div class="contact-input-field">
+                <label class="contact-input-label" for="callback-first-name">
+                  Prénom *
+                </label>
+                <input
+                  type="text"
+                  required
+                  class="contact-input-control"
+                  id="callback-first-name"
+                  name="firstName"
+                  placeholder="Votre prénom"
+                />
               </div>
 
-              <!-- Checkboxes (1:1 Belgrade Arbor) -->
-              <div class="space-y-4 pt-2">
-                <div class="flex items-start gap-3">
-                  <input
-                    type="checkbox"
-                    id="callback-privacyConsent"
-                    name="privacyConsent"
-                    required
-                    checked
-                    class="mt-1 size-4 rounded border-green bg-transparent text-golden focus:ring-0 cursor-pointer accent-[#a68150]"
-                  />
-                  <label for="callback-privacyConsent" class="text-xs text-sand/80 cursor-pointer leading-relaxed">
-                    J'ai lu et j'accepte la <a href="/index.html#footer" class="underline underline-offset-2 text-golden hover:text-cream">politique de confidentialité</a>
-                  </label>
-                </div>
+              <!-- Last Name -->
+              <div class="contact-input-field">
+                <label class="contact-input-label" for="callback-last-name">
+                  Nom *
+                </label>
+                <input
+                  type="text"
+                  required
+                  class="contact-input-control"
+                  id="callback-last-name"
+                  name="lastName"
+                  placeholder="Votre nom"
+                />
+              </div>
 
-                <div class="flex items-start gap-3">
-                  <input
-                    type="checkbox"
-                    id="callback-whatsappConsent"
-                    name="whatsappConsent"
-                    checked
-                    class="mt-1 size-4 rounded border-green bg-transparent text-golden focus:ring-0 cursor-pointer accent-[#a68150]"
-                  />
-                  <label for="callback-whatsappConsent" class="text-xs text-sand/80 cursor-pointer leading-relaxed">
-                    Je souhaite être contacté(e) et recevoir la brochure directement via <strong class="text-golden font-medium">WhatsApp</strong>
-                  </label>
+              <!-- Phone -->
+              <div class="contact-input-field">
+                <label class="contact-input-label" for="callback-phone">
+                  Téléphone (WhatsApp) *
+                </label>
+                <input
+                  type="tel"
+                  required
+                  class="contact-input-control"
+                  id="callback-phone"
+                  name="phone"
+                  placeholder="+212 6..."
+                />
+              </div>
+
+              <!-- Email -->
+              <div class="contact-input-field">
+                <label class="contact-input-label" for="callback-email">
+                  Adresse Email *
+                </label>
+                <input
+                  type="email"
+                  required
+                  class="contact-input-control"
+                  id="callback-email"
+                  name="email"
+                  placeholder="votre@email.com"
+                />
+              </div>
+
+              <!-- Property Type Selector -->
+              <div class="contact-input-field contact-field-full">
+                <label class="contact-input-label" for="callback-propertyType">
+                  Type de Bien Recherché
+                </label>
+                <div class="custom-select-wrapper" data-select-id="callback-propertyType">
+                  <select
+                    id="callback-propertyType"
+                    name="propertyType"
+                    class="sr-only-select"
+                    tabindex="-1"
+                    aria-hidden="true"
+                  >
+                    <option value="Appartement Résidentiel (Studio, F2, F3)">Appartement Résidentiel (Studio, F2, F3)</option>
+                    <option value="Penthouse Rooftop avec vue Atlas">Penthouse Rooftop avec vue Atlas</option>
+                    <option value="Grand Magasin Flagship (554 m²)">Grand Magasin Flagship (554 m²)</option>
+                    <option value="Plateau de Bureaux Modulable">Plateau de Bureaux Modulable</option>
+                    <option value="Dossier d'Investissement Global">Dossier Complet d'Investissement</option>
+                  </select>
+
+                  <button
+                    type="button"
+                    class="custom-select-trigger"
+                    aria-haspopup="listbox"
+                    aria-expanded="false"
+                  >
+                    <span class="custom-select-value">Appartement Résidentiel (Studio, F2, F3)</span>
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" class="custom-select-chevron" aria-hidden="true">
+                      <path d="M1 1L7 7L13 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+
+                  <div class="custom-select-dropdown" role="listbox">
+                    <div class="custom-select-option is-selected" role="option" data-value="Appartement Résidentiel (Studio, F2, F3)">
+                      <span>Appartement Résidentiel (Studio, F2, F3)</span>
+                      <svg class="custom-select-check" width="14" height="11" viewBox="0 0 14 11" fill="none"><path d="M1 5.5L5 9.5L13 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="custom-select-option" role="option" data-value="Penthouse Rooftop avec vue Atlas">
+                      <span>Penthouse Rooftop avec vue Atlas</span>
+                      <svg class="custom-select-check" width="14" height="11" viewBox="0 0 14 11" fill="none"><path d="M1 5.5L5 9.5L13 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="custom-select-option" role="option" data-value="Grand Magasin Flagship (554 m²)">
+                      <span>Grand Magasin Flagship (554 m²)</span>
+                      <svg class="custom-select-check" width="14" height="11" viewBox="0 0 14 11" fill="none"><path d="M1 5.5L5 9.5L13 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="custom-select-option" role="option" data-value="Plateau de Bureaux Modulable">
+                      <span>Plateau de Bureaux Modulable</span>
+                      <svg class="custom-select-check" width="14" height="11" viewBox="0 0 14 11" fill="none"><path d="M1 5.5L5 9.5L13 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="custom-select-option" role="option" data-value="Dossier d'Investissement Global">
+                      <span>Dossier Complet d'Investissement</span>
+                      <svg class="custom-select-check" width="14" height="11" viewBox="0 0 14 11" fill="none"><path d="M1 5.5L5 9.5L13 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <!-- Submit Button (1:1 Belgrade Arbor Styling & Sliding Animation) -->
-              <button
-                type="submit"
-                class="inline-flex menu cursor-pointer border shrink-0 min-w-55 items-center justify-center gap-2 uppercase whitespace-nowrap transition-all outline-none border-cream-dark bg-cream-dark text-pine-green hover:bg-cream hover:border-cream active:bg-golden h-14 px-8 py-5 rounded-full max-md:h-12 max-md:py-3 max-md:w-full group relative mt-2"
-              >
-                <span class="relative z-1 block w-full overflow-hidden">
-                  <span class="flex w-full items-center justify-between gap-6 transition-all duration-600 group-hover:-translate-y-full">
-                    <span>Envoyer ma demande</span>
-                    <svg width="24" height="24" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-2.25 w-6">
-                      <path d="M0.5 5L24.5 5" stroke="currentColor" stroke-linecap="round"></path>
-                      <path d="M19.5 0.5L24.5 5L19.5 9.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="bevel"></path>
-                    </svg>
-                  </span>
-                  <span class="absolute top-full left-0 flex w-full items-center justify-between gap-6 transition-all duration-600 group-hover:top-0">
-                    <span>Envoyer ma demande</span>
-                    <svg width="24" height="24" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-2.25 w-6">
-                      <path d="M0.5 5L24.5 5" stroke="currentColor" stroke-linecap="round"></path>
-                      <path d="M19.5 0.5L24.5 5L19.5 9.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="bevel"></path>
-                    </svg>
-                  </span>
-                </span>
-              </button>
+              <!-- Preferred Call Time -->
+              <div class="contact-input-field contact-field-full">
+                <label class="contact-input-label" for="callback-callTime">
+                  Créneau Souhaité pour le Rappel
+                </label>
+                <div class="custom-select-wrapper" data-select-id="callback-callTime">
+                  <select
+                    id="callback-callTime"
+                    name="callTime"
+                    class="sr-only-select"
+                    tabindex="-1"
+                    aria-hidden="true"
+                  >
+                    <option value="Dès que possible">Dès que possible</option>
+                    <option value="Matinée (09h00 - 12h00)">Matinée (09h00 - 12h00)</option>
+                    <option value="Après-midi (14h00 - 18h00)">Après-midi (14h00 - 18h00)</option>
+                    <option value="Fin de journée (18h00 - 20h00)">Fin de journée (18h00 - 20h00)</option>
+                  </select>
 
-              <!-- Direct Inquiries Footer Note (1:1 Belgrade Arbor) -->
-              <div class="mt-4 flex flex-row items-center gap-2 max-md:flex-col max-md:items-start text-xs">
-                <span class="text-green">Pour toute demande directe, notre équipe est joignable au</span>
-                <a href="tel:+212661550905" class="text-golden font-medium underline underline-offset-2 hover:text-cream transition">
-                  +212 661 550 905
+                  <button
+                    type="button"
+                    class="custom-select-trigger"
+                    aria-haspopup="listbox"
+                    aria-expanded="false"
+                  >
+                    <span class="custom-select-value">Dès que possible</span>
+                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" class="custom-select-chevron" aria-hidden="true">
+                      <path d="M1 1L7 7L13 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+
+                  <div class="custom-select-dropdown" role="listbox">
+                    <div class="custom-select-option is-selected" role="option" data-value="Dès que possible">
+                      <span>Dès que possible</span>
+                      <svg class="custom-select-check" width="14" height="11" viewBox="0 0 14 11" fill="none"><path d="M1 5.5L5 9.5L13 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="custom-select-option" role="option" data-value="Matinée (09h00 - 12h00)">
+                      <span>Matinée (09h00 - 12h00)</span>
+                      <svg class="custom-select-check" width="14" height="11" viewBox="0 0 14 11" fill="none"><path d="M1 5.5L5 9.5L13 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="custom-select-option" role="option" data-value="Après-midi (14h00 - 18h00)">
+                      <span>Après-midi (14h00 - 18h00)</span>
+                      <svg class="custom-select-check" width="14" height="11" viewBox="0 0 14 11" fill="none"><path d="M1 5.5L5 9.5L13 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="custom-select-option" role="option" data-value="Fin de journée (18h00 - 20h00)">
+                      <span>Fin de journée (18h00 - 20h00)</span>
+                      <svg class="custom-select-check" width="14" height="11" viewBox="0 0 14 11" fill="none"><path d="M1 5.5L5 9.5L13 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="space-y-3 pt-2">
+              <div class="flex items-start gap-3">
+                <input
+                  type="checkbox"
+                  id="callback-privacyConsent"
+                  name="privacyConsent"
+                  required
+                  checked
+                  class="contact-checkbox"
+                />
+                <label for="callback-privacyConsent" class="text-xs text-sand/80 cursor-pointer leading-relaxed">
+                  J'ai lu et j'accepte la <a href="/index.html#footer" class="underline underline-offset-2 text-golden hover:text-cream">politique de confidentialité</a>
+                </label>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <input
+                  type="checkbox"
+                  id="callback-whatsappConsent"
+                  name="whatsappConsent"
+                  checked
+                  class="contact-checkbox"
+                />
+                <label for="callback-whatsappConsent" class="text-xs text-sand/80 cursor-pointer leading-relaxed">
+                  Je souhaite être contacté(e) et recevoir la brochure directement via <strong class="text-golden font-medium">WhatsApp</strong>
+                </label>
+              </div>
+            </div>
+
+            <!-- Luxury Submit Button -->
+            <button
+              type="submit"
+              id="contactSubmitBtn"
+              class="contact-submit-btn group"
+            >
+              <span class="contact-btn-content inline-flex items-center gap-3">
+                <span class="contact-btn-text">Envoyer ma demande</span>
+                <svg width="22" height="10" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:translate-x-1 transition-transform">
+                  <path d="M0.5 5L24.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                  <path d="M19.5 0.5L24.5 5L19.5 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                </svg>
+              </span>
+            </button>
+
+            <!-- Direct Inquiries Footer Note -->
+            <div class="pt-3 border-t border-[rgba(197,168,128,0.2)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-sand/75 text-center sm:text-left">
+              <span>Une question directe ? Contactez-nous :</span>
+              <div class="flex flex-wrap items-center justify-center sm:justify-end gap-4">
+                <a href="tel:+212665644391" class="inline-flex items-center gap-1.5 text-golden font-medium hover:text-cream transition underline underline-offset-4">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <span>+212 665-644391</span>
+                </a>
+                <a href="mailto:contact@bayt-immo.com" class="inline-flex items-center gap-1.5 text-golden font-medium hover:text-cream transition underline underline-offset-4">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                  <span>contact@bayt-immo.com</span>
                 </a>
               </div>
+            </div>
 
-            </form>
-          </div>
+          </form>
         </div>
       </div>
     </section>

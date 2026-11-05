@@ -16,6 +16,29 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================
   const lenis = initMotion({ pageName: 'home' });
 
+  // Flag to know whether the hero video has finished / final 3D image revealed
+  let heroVideoFinished = false;
+
+  // Guarantee hero title is 100% visible whenever returning to the top of the page AFTER video has finished
+  if (lenis) {
+    lenis.on('scroll', (e) => {
+      if (heroVideoFinished && e.scroll <= 40) {
+        const titleOverlay = document.getElementById('arborGiantTitle');
+        if (titleOverlay) {
+          gsap.set(titleOverlay, { opacity: 1, yPercent: 0, filter: 'none' });
+        }
+      }
+    });
+  }
+  window.addEventListener('scroll', () => {
+    if (heroVideoFinished && window.scrollY <= 40) {
+      const titleOverlay = document.getElementById('arborGiantTitle');
+      if (titleOverlay) {
+        gsap.set(titleOverlay, { opacity: 1, yPercent: 0, filter: 'none' });
+      }
+    }
+  }, { passive: true });
+
   // ==========================================
   // 2. TEXT SPLITTING UTILITY (Words & Chars)
   // ==========================================
@@ -428,59 +451,83 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     let finalShown = false;
+    let titleScrub = null;
+
+    function initTitleScrub() {
+      if (titleScrub || !heroTitleOverlay) return;
+      titleScrub = gsap.fromTo(
+        heroTitleOverlay,
+        { opacity: 1, yPercent: 0, filter: 'blur(0px)' },
+        {
+          yPercent: -25,
+          opacity: 0,
+          filter: 'blur(8px)',
+          ease: 'none',
+          scrollTrigger: {
+            trigger: '#top',
+            start: '15% top',
+            end: '55% top',
+            scrub: true,
+            onLeave: () => {
+              gsap.set(heroTitleOverlay, { opacity: 0 });
+            },
+            onLeaveBack: () => {
+              if (heroVideoFinished) {
+                gsap.set(heroTitleOverlay, { opacity: 1, yPercent: 0, filter: 'none' });
+              }
+            },
+            onRefresh: () => {
+              if (heroVideoFinished && window.scrollY <= 40) {
+                gsap.set(heroTitleOverlay, { opacity: 1, yPercent: 0, filter: 'none' });
+              }
+            },
+          },
+        }
+      );
+    }
+
     const showFinalImage = () => {
       if (finalShown) return;
       finalShown = true;
+      heroVideoFinished = true;
+
+      // Reveal final 3D realistic facade image
       heroFinalImg.classList.add('is-visible');
-      gsap.to(heroFinalImg, { opacity: 1, duration: 1.2, ease: 'power2.out' });
+      gsap.to(heroFinalImg, { opacity: 1, duration: 1, ease: 'power2.out' });
+
+      // Reveal the giant title ONLY when the video has finished
       if (heroTitleOverlay) {
         heroTitleOverlay.classList.add('is-visible');
-        gsap.to(heroTitleOverlay, { opacity: 1, duration: 1, ease: 'power2.out' });
-      }
-      if (heroTitleHeading) {
-        const titleLines = heroTitleHeading.querySelectorAll('.arbor-title-line');
-        const cityEl = heroTitleHeading.querySelector('.arbor-hero-city');
 
-        if (titleLines && titleLines.length) {
+        if (window.scrollY <= 25) {
+          // User is at the top watching: animate title in with smooth luxury fade
           gsap.fromTo(
-            titleLines,
-            { y: 35, opacity: 0, filter: 'blur(6px)' },
+            heroTitleOverlay,
+            { opacity: 0, yPercent: 3, filter: 'blur(6px)' },
             {
-              y: 0,
               opacity: 1,
+              yPercent: 0,
               filter: 'blur(0px)',
               duration: 1.1,
-              stagger: 0.12,
-              ease: 'power3.out',
+              ease: 'power2.out',
+              clearProps: 'filter',
+              onComplete: () => {
+                initTitleScrub();
+              },
             }
           );
         } else {
-          gsap.fromTo(
-            heroTitleHeading,
-            { y: 35, opacity: 0, filter: 'blur(6px)' },
-            { y: 0, opacity: 1, filter: 'blur(0px)', duration: 1.1, ease: 'power3.out' }
-          );
-        }
-
-        if (cityEl) {
-          gsap.fromTo(
-            cityEl,
-            { y: 20, opacity: 0, letterSpacing: '0.08em' },
-            {
-              y: 0,
-              opacity: 1,
-              letterSpacing: '0.32em',
-              duration: 1.4,
-              delay: 0.35,
-              ease: 'power2.out',
-            }
-          );
+          // User has already scrolled: activate scrub immediately
+          initTitleScrub();
         }
       }
+
       setTimeout(() => {
-        heroVideo.pause();
-        heroVideo.style.opacity = '0';
-      }, 600);
+        if (heroVideo) {
+          heroVideo.pause();
+          heroVideo.style.opacity = '0';
+        }
+      }, 500);
     };
 
     heroVideo.addEventListener('timeupdate', () => {
@@ -497,6 +544,13 @@ document.addEventListener('DOMContentLoaded', () => {
       onEnter: showFinalImage,
     });
 
+    // If user starts scrolling after video finishes, attach scrub immediately
+    window.addEventListener('scroll', () => {
+      if (heroVideoFinished && !titleScrub) {
+        initTitleScrub();
+      }
+    }, { passive: true });
+
     // High-end Hero Stage Parallax on Scroll (GSAP ScrollTrigger Best Practice)
     gsap.to('#arborStage', {
       yPercent: 18,
@@ -509,21 +563,6 @@ document.addEventListener('DOMContentLoaded', () => {
         scrub: 1,
       },
     });
-
-    if (heroTitleOverlay) {
-      gsap.to(heroTitleOverlay, {
-        yPercent: -25,
-        opacity: 0,
-        filter: 'blur(10px)',
-        ease: 'none',
-        scrollTrigger: {
-          trigger: '#top',
-          start: '10% top',
-          end: '55% top',
-          scrub: 1,
-        },
-      });
-    }
   }
 
   // ==========================================

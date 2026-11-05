@@ -27,7 +27,8 @@
       "addressLocality": "Marrakech",
       "addressCountry": "MA"
     },
-    "telephone": "+212661550905"
+    "telephone": "+212665644391",
+    "email": "contact@bayt-immo.com"
   }
   </script>
   <link rel="stylesheet" href="/src/arbor.css" />
@@ -82,7 +83,7 @@
         </a>
 
         <div class="arbor-header-right">
-          <a href="https://wa.me/212661550905?text=Bonjour%20BaytImmo%2C%20je%20souhaite%20des%20informations%20sur%20les%20r%C3%A9sidences%20Jardins%20de%20Bali" target="_blank" rel="noopener" class="arbor-inquire-btn" aria-label="Inquire">
+          <a href="/contact.html" class="arbor-inquire-btn" aria-label="Contact">
             <span class="arbor-inquire-clip">
               <span class="arbor-inquire-row arbor-inquire-row-1">
                 <span>Inquire</span>
@@ -156,7 +157,7 @@
 
             <!-- Full-width INQUIRE -> pill button on mobile menu -->
             <div class="arbor-menu-bottom-cta md:hidden">
-              <a href="https://wa.me/212661550905?text=Bonjour%20BaytImmo%2C%20je%20souhaite%20des%20informations%20sur%20les%20r%C3%A9sidences%20Jardins%20de%20Bali" target="_blank" rel="noopener" class="arbor-mobile-inquire-pill" aria-label="Inquire">
+              <a href="/contact.html" class="arbor-mobile-inquire-pill" aria-label="Contact">
                 <span class="arbor-mobile-inquire-text">INQUIRE</span>
                 <svg width="24" height="24" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="arbor-mobile-inquire-arrow">
                   <path d="M0.5 5L24.5 5" stroke="currentColor" stroke-linecap="round"></path>
@@ -216,6 +217,14 @@
         </div>
       </div>
     </div>
+
+    <!-- Bouncing Circle Arrow Down Scroll Indicator (1:1 Belgrade Arbor) -->
+    <a href="#Picker" class="hero-scroll-down-btn" id="scrollDownBtn" aria-label="Défiler vers les résidences">
+      <svg width="24" height="24" viewBox="0 0 10 25" fill="none" class="hero-scroll-down-arrow">
+        <path d="M5 0.5L5 24.5" stroke="currentColor" stroke-linecap="round"></path>
+        <path d="M9.5 19.5L5 24.5L0.5 19.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="bevel"></path>
+      </svg>
+    </a>
   </section>
 
   <!-- ==========================================================================
@@ -590,7 +599,7 @@
           </div>
 
           <div class="modal-actions-row">
-            <a id="modalWaLink" href="https://wa.me/212661550905" target="_blank" rel="noopener" class="modal-inquire-btn">
+            <a id="modalWaLink" href="https://wa.me/212665644391" target="_blank" rel="noopener" class="modal-inquire-btn">
               Réserver ce lot via WhatsApp
             </a>
             <a id="modalPlanDownload" href="#" target="_blank" rel="noopener" class="modal-download-plan-btn">
@@ -604,69 +613,113 @@
   </div>
 
   <!-- ==========================================================================
+       BLUEPRINT LIGHTBOX (HD ARCHITECTURAL VIEWER)
+       ========================================================================== -->
+  <div id="blueprintModal" class="blueprint-modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="blueprint-modal-card">
+      <div class="blueprint-modal-header">
+        <h3 id="blueprintModalTitle" class="blueprint-modal-title">Plan Architectural Officiel</h3>
+        <button id="closeBlueprintBtn" type="button" class="blueprint-close-btn" aria-label="Fermer le plan">✕</button>
+      </div>
+      <div class="blueprint-modal-body">
+        <img id="blueprintModalImg" src="" alt="Plan Architectural" />
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
        LUXURY FOOTER (MATCHING BELGRADE ARBOR DESIGN)
        ========================================================================== -->
-  <footer id="footer" class="to-vanilla relative bg-linear-to-t from-[#8AB6D2] pt-24 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 relative z-10">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-10">
-        <div class="space-y-6">
-          <p class="font-editorialOld text-3xl md:text-4xl uppercase text-pine-green leading-tight">
-            REJOIGNEZ L'UNIVERS DES JARDINS DE BALI
-          </p>
-          <p class="font-workSans text-sm text-pine-green/80">
-            Inscrivez-vous pour recevoir les disponibilités en temps réel, les grilles tarifaires et les actualités du projet.
-          </p>
-          <form id="residencesFooterForm" class="space-y-4">
-            <div class="flex gap-4">
-              <input type="text" placeholder="Prénom" class="w-1/2 border-b border-pine-green bg-transparent pb-2 text-sm outline-none placeholder:text-pine-green/60" required />
-              <input type="text" placeholder="Nom" class="w-1/2 border-b border-pine-green bg-transparent pb-2 text-sm outline-none placeholder:text-pine-green/60" required />
+  <footer class="to-vanilla relative bg-linear-to-t from-[#8AB6D2] pt-14 md:pt-18 overflow-hidden text-pine-green" id="footer">
+    <div class="wrapper pt-4">
+      <div class="content flex gap-5 max-2xl:gap-15 max-lg:flex-wrap max-lg:justify-start max-lg:gap-5 max-lg:gap-y-22 max-md:gap-y-12!">
+        <!-- Left form column -->
+        <div class="w-1/3 max-2xl:w-1/2 max-lg:w-2/3 max-md:w-full">
+          <p class="heading-2 leading-tight font-light uppercase text-pine-green">REJOIGNEZ L'UNIVERS DES JARDINS DE BALI</p>
+          <form id="residencesFooterForm" class="mt-10 flex w-3/4 flex-col items-start gap-6 max-md:mt-15 max-md:w-full">
+            <div class="flex w-full gap-4 max-md:flex-wrap max-md:gap-6">
+              <div class="fadeElement w-1/2 max-md:w-full">
+                <label class="small mb-2 block text-golden uppercase" for="footer-first-name">Prénom*</label>
+                <input class="paragraph border-pine-green text-pine-green placeholder:text-pine-green focus:border-green w-full border-0 border-b bg-transparent pb-1 outline-none transition-colors" id="footer-first-name" name="firstName" required type="text" />
+              </div>
+              <div class="fadeElement w-1/2 max-md:w-full">
+                <label class="small mb-2 block text-golden uppercase" for="footer-last-name">Nom*</label>
+                <input class="paragraph border-pine-green text-pine-green placeholder:text-pine-green focus:border-green w-full border-0 border-b bg-transparent pb-1 outline-none transition-colors" id="footer-last-name" name="lastName" required type="text" />
+              </div>
             </div>
-            <input type="email" placeholder="Adresse email" class="w-full border-b border-pine-green bg-transparent pb-2 text-sm outline-none placeholder:text-pine-green/60" required />
-            <button type="submit" class="mt-4 px-8 py-3 rounded-full bg-pine-green text-sand text-xs tracking-widest uppercase hover:bg-golden transition">
-              S'inscrire
-            </button>
+            <div class="fadeElement w-full">
+              <label class="small mb-2 block text-golden uppercase" for="footer-email">Email*</label>
+              <input class="paragraph border-pine-green text-pine-green placeholder:text-pine-green focus:border-green w-full border-0 border-b bg-transparent pb-1 outline-none transition-colors" id="footer-email" name="email" required type="email" />
+            </div>
+            <label class="fadeElement my-4 flex cursor-pointer items-start gap-3">
+              <input type="checkbox" name="consent" required class="border-green accent-[#2e3a26] mt-1 size-4 shrink-0 cursor-pointer" />
+              <span class="small text-golden">J'accepte que mes coordonnées soient traitées conformément à la politique de confidentialité BaytImmo</span>
+            </label>
+            <div class="fadeElement mt-6 mb-8 flex w-full justify-start max-md:justify-center">
+              <button class="luxury-submit-btn group w-full sm:w-auto" type="submit">
+                <span class="luxury-btn-content">
+                  <span>Envoyer ma demande</span>
+                  <svg width="20" height="10" viewBox="0 0 25 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="luxury-btn-arrow">
+                    <path d="M0.5 5L24.5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+                    <path d="M19.5 0.5L24.5 5L19.5 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="bevel"></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
           </form>
         </div>
 
-        <div class="space-y-4">
-          <p class="text-xs uppercase tracking-widest text-golden font-sans font-medium">Localisation & Projet</p>
-          <p class="font-workSans text-sm text-pine-green/80 leading-relaxed">
-            <strong>Projet :</strong> Jardins de Bali<br>
-            <strong>Adresse :</strong> Quartier Rahham, Zone B5, Arrondissement Menara, Marrakech, Maroc<br>
-            <strong>Titre Foncier :</strong> 34 603 / M<br>
-            <strong>Cabinet d'Architecture :</strong> AMA Architecture (Guéliz, Marrakech)
-          </p>
-          <div class="pt-4">
-            <p class="text-xs uppercase tracking-widest text-golden font-sans font-medium">Contact Commercial</p>
-            <p class="font-workSans text-sm text-pine-green/80 mt-1">
-              Téléphone : +212 6 61 55 09 05<br>
-              Email : contact@baytimmo.ma
-            </p>
-          </div>
+        <div class="w-1/12 max-2xl:hidden"></div>
+
+        <!-- Navigation Links -->
+        <div class="w-1/6 max-xl:w-1/4 max-lg:w-1/3 max-md:w-full">
+          <ul class="space-y-3 max-md:flex max-md:flex-col max-md:items-center">
+            <li class="fadeElement max-md:text-center"><a class="hover:text-golden paragraph font-normal uppercase text-pine-green transition" href="/index.html">Home</a></li>
+            <li class="fadeElement max-md:text-center"><a class="hover:text-golden paragraph font-normal uppercase text-pine-green transition" href="/maquette3d.html">3D Experience</a></li>
+            <li class="fadeElement max-md:text-center"><a class="hover:text-golden paragraph font-normal uppercase text-golden font-medium transition" href="/residences.html">Residences</a></li>
+            <li class="fadeElement max-md:text-center"><a class="hover:text-golden paragraph font-normal uppercase text-pine-green transition" href="/business.html">Business</a></li>
+            <li class="fadeElement max-md:text-center"><a class="hover:text-golden paragraph font-normal uppercase text-pine-green transition" href="/retail-spaces.html">Retail Spaces</a></li>
+            <li class="fadeElement max-md:text-center"><a class="hover:text-golden paragraph font-normal uppercase text-pine-green transition" href="/index.html#Amenities">Amenities</a></li>
+            <li class="fadeElement max-md:text-center"><a class="hover:text-golden paragraph font-normal uppercase text-pine-green transition" href="/about-the-investor.html">About the investor</a></li>
+            <li class="fadeElement max-md:text-center"><a class="hover:text-golden paragraph font-normal uppercase text-pine-green transition" href="/contact.html">Contact</a></li>
+          </ul>
         </div>
 
-        <div class="space-y-4">
-          <p class="text-xs uppercase tracking-widest text-golden font-sans font-medium">Navigation</p>
-          <ul class="space-y-2 text-sm font-workSans text-pine-green/80 uppercase">
-            <li><a href="/index.html" class="hover:text-golden transition">Home</a></li>
-            <li><a href="/residences.html" class="text-golden font-medium">Residences</a></li>
-            <li><a href="/maquette3d.html" class="hover:text-golden transition">3D Experience</a></li>
-            <li><a href="/business.html" class="hover:text-golden transition">Business</a></li>
-            <li><a href="/retail-spaces.html" class="hover:text-golden transition">Retail Spaces</a></li>
-                        <li><a href="/index.html#Amenities" class="hover:text-golden transition">Amenities</a></li>
+        <!-- Social Links -->
+        <div class="w-1/12 max-lg:w-1/6 max-md:w-full">
+          <ul class="space-y-3 max-md:flex max-md:flex-col max-md:items-center">
+            <li class="fadeElement"><a target="_blank" rel="noopener noreferrer" class="hover:text-pine-green text-golden paragraph font-normal transition" href="https://instagram.com">Instagram</a></li>
+            <li class="fadeElement"><a target="_blank" rel="noopener noreferrer" class="hover:text-pine-green text-golden paragraph font-normal transition" href="https://linkedin.com">Linkedin</a></li>
+            <li class="fadeElement"><a target="_blank" rel="noopener noreferrer" class="hover:text-pine-green text-golden paragraph font-normal transition" href="https://wa.me/212665644391">WhatsApp</a></li>
           </ul>
+        </div>
+
+        <div class="w-1/12 max-2xl:hidden"></div>
+
+        <!-- Project Details & Address -->
+        <div class="w-1/4 max-lg:w-5/12 max-md:w-full text-pine-green">
+          <p class="small text-pine-green/90 leading-relaxed">
+            Projet Jardins de Bali Marrakech Menara : Titre Foncier 34 603 / M. Ensemble immobilier d'exception en R+5 totalisant 15 746 m² avec 230 résidences de prestige, 4 magasins flagships, 2 sous-sols et double piscine solarium sur le rooftop.
+          </p>
+          <div class="mt-6 flex flex-col max-sm:w-2/3">
+            <span class="small uppercase text-golden font-semibold">Service Commercial BaytImmo :</span>
+            <p class="mt-1"><a href="tel:+212665644391" class="text-golden detail font-serif text-lg hover:underline">+212 665-644391</a></p>
+            <p class="mt-1"><a href="mailto:contact@bayt-immo.com" class="text-golden detail text-sm hover:underline">contact@bayt-immo.com</a></p>
+            <p class="small text-pine-green/80 mt-1">Boulevard M-16, Menara Marrakech, Maroc</p>
+            <p class="small text-pine-green/80">Cabinet AMA Architecture — Guéliz</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Footer Illustration Graphics: Jardins de Bali Signature Architecture -->
-    <div class="pointer-events-none -mt-20 w-full overflow-clip select-none relative max-md:-mt-10">
+    <!-- Footer Illustration Graphics: Real Jardins de Bali Architecture -->
+    <div class="pointer-events-none -mt-40 w-full overflow-clip select-none max-lg:-mt-20 relative">
       <img
         alt="Jardins de Bali Marrakech Menara"
         loading="eager"
         width="1920"
         height="1200"
-        class="front h-[32rem] max-2xl:h-[28rem] max-lg:h-[24rem] max-md:h-[18rem] w-full object-cover object-top filter contrast-[1.05] brightness-[1.02]"
+        class="front h-[36rem] max-2xl:h-[32rem] max-lg:h-[26rem] max-md:h-[20rem] w-full object-cover object-top filter contrast-[1.05] brightness-[1.02]"
         style="-webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 8%, black 20%, black 100%); mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 8%, black 20%, black 100%);"
         src="/home/footer/jardins_bali_rooftop_pools.jpg"
       />
@@ -678,17 +731,17 @@
     </div>
 
     <!-- Footer Copyright Row -->
-    <div class="absolute bottom-10 left-0 z-10 w-full max-md:bottom-6">
-      <div class="max-w-7xl mx-auto px-6 flex items-end justify-between max-lg:flex-col-reverse max-lg:items-center max-lg:gap-4">
-        <div class="text-xs text-cream/90 uppercase">© 2026 BaytImmo — Jardins de Bali Marrakech. Tous droits réservés.</div>
-        <div class="font-editorialOld text-3xl md:text-5xl text-cream uppercase font-light tracking-wide"><span>Jardins de Bali</span></div>
+    <div class="absolute bottom-15 left-0 z-10 w-full max-md:bottom-10">
+      <div class="wrapper flex items-end justify-between max-lg:flex-col-reverse max-lg:items-center max-lg:gap-5">
+        <div class="small text-cream w-1/4 max-lg:w-full max-lg:text-center max-md:text-[0.625rem]">© 2026 BaytImmo. Tous droits réservés.</div>
+        <div class="heading-1 text-cream w-7/12 text-right font-light uppercase max-xl:w-2/3 max-lg:w-full max-lg:text-center"><span>Jardins de Bali</span></div>
       </div>
     </div>
   </footer>
 
   <!-- Mobile Conversion Sticky CTA Bar -->
   <div class="mobile-sticky-cta-bar" id="mobileStickyCta">
-    <a href="https://wa.me/212661550905?text=Bonjour%20BaytImmo%2C%20je%20souhaite%20des%20informations%20sur%20les%20r%C3%A9sidences%20Jardins%20de%20Bali%20Marrakech." target="_blank" rel="noopener noreferrer" class="mobile-sticky-cta-btn whatsapp" aria-label="WhatsApp Direct">
+    <a href="https://wa.me/212665644391?text=Bonjour%20BaytImmo%2C%20je%20souhaite%20des%20informations%20sur%20les%20r%C3%A9sidences%20Jardins%20de%20Bali%20Marrakech." target="_blank" rel="noopener noreferrer" class="mobile-sticky-cta-btn whatsapp" aria-label="WhatsApp Direct">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
       </svg>

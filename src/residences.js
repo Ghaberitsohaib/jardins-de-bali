@@ -78,6 +78,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Smooth scroll links
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      const targetId = link.getAttribute('href');
+      if (targetId && targetId !== '#') {
+        const el = document.querySelector(targetId);
+        if (el) {
+          e.preventDefault();
+          closeArborMenu();
+          lenis.scrollTo(el, { offset: -30, duration: 1.2 });
+        }
+      }
+    });
+  });
+
   // ==========================================
   // 3. SILK CURSOR TRAIL CANVAS
   // ==========================================
@@ -208,7 +223,6 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const resultsGrid = document.getElementById('residencesGrid');
-  const resultsTable = document.getElementById('residencesTable');
   const resultsCount = document.getElementById('resultsCount');
   const surfaceSlider = document.getElementById('surfaceSlider');
   const surfaceBadge = document.getElementById('surfaceBadge');
@@ -279,78 +293,96 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const itemsToDisplay = filtered.slice(0, state.pageLimit);
 
-    if (state.viewMode === 'grid') {
-      if (resultsTable) resultsTable.style.display = 'none';
-      if (resultsGrid) {
-        resultsGrid.style.display = 'grid';
-        if (itemsToDisplay.length === 0) {
-          resultsGrid.innerHTML = `
-            <div class="col-span-2 text-center py-16 text-pine-green/60">
-              <p class="font-editorialOld text-3xl mb-2">Aucune résidence ne correspond à vos filtres</p>
-              <p class="text-sm">Essayez d'élargir votre recherche ou de réinitialiser les filtres.</p>
-            </div>
-          `;
-        } else {
-          resultsGrid.innerHTML = itemsToDisplay.map((item, index) => {
-            // Pick an illustrative layout cutout or preview
-            const planIdx = (index % 12) + 1;
-            const layoutThumb = `/home/residences-options/${planIdx}.webp`;
-            
-            return `
-              <div class="residence-card group" data-id="${item.id}" role="button" tabindex="0">
-                <div class="card-top-preview">
-                  <img src="${layoutThumb}" alt="${item.id}" class="card-preview-img" loading="lazy" />
-                  <div class="card-badges">
-                    <span class="card-badge-icon" title="Exposition Lumineuse">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-                    </span>
-                    <span class="card-badge-icon" title="Parking Sous-sol inclus">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>
-                    </span>
-                  </div>
+    if (resultsGrid) {
+      resultsGrid.style.display = 'grid';
+      if (itemsToDisplay.length === 0) {
+        resultsGrid.innerHTML = `
+          <div class="col-span-2 text-center py-16 text-pine-green/60">
+            <p class="font-editorialOld text-3xl mb-2">Aucune résidence ne correspond à vos filtres</p>
+            <p class="text-sm">Essayez d'élargir votre recherche ou de réinitialiser les filtres.</p>
+          </div>
+        `;
+      } else {
+        resultsGrid.innerHTML = itemsToDisplay.map((item, index) => {
+          // Pick an illustrative preview: Commercial shops have dedicated retail photography
+          let layoutThumb = item.thumbImg;
+          if (item.type === 'Commerce' || item.category === 'Magasin' || item.id.startsWith('MAGASIN')) {
+            layoutThumb = item.thumbImg || `/business/retail/${item.slug || 'magasin-1'}.jpg`;
+          } else {
+            // 100% EXCLUSIVE APARTMENT INTERIORS ONLY (No exterior building / facade / patio)
+            const APARTMENT_INTERIORS_POOL = [
+              '/jardins_de_bali/07_salon_canape_et_tv.jpg',
+              '/residences/interiors/penthouse_salon_terrasse.jpg',
+              '/jardins_de_bali/01_chambre_lit_double.jpg',
+              '/residences/interiors/suite_master_marrakech.jpg',
+              '/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg',
+              '/residences/interiors/penthouse_salle_a_manger.jpg',
+              '/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg',
+              '/residences/interiors/salon_terrasse_lounge.jpg',
+              '/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg',
+              '/jardins_de_bali/02_chambre_tv_baie_vitree.jpg',
+              '/home/residences-options/1.webp',
+              '/home/residences-options/10.webp',
+              '/jardins_de_bali/04_cuisine_equipements_comptoir.jpg',
+              '/home/residences-options/5.webp',
+              '/home/residences-options/11.webp',
+              '/home/residences-options/2.webp',
+              '/home/residences-options/6.webp',
+              '/home/residences-options/3.webp',
+              '/home/residences-options/7.webp',
+              '/home/residences-options/9.webp',
+              '/jardins_de_bali/02b_chambre_placards_dressing.jpg',
+              '/home/residences-options/8.webp',
+              '/home/residences-options/4.webp',
+              '/home/residences-options/12.webp'
+            ];
+
+            const isExterior = !layoutThumb || 
+              layoutThumb.includes('10_rooftop') || 
+              layoutThumb.includes('11_facade') || 
+              layoutThumb.includes('12_facade') || 
+              layoutThumb.includes('13_facade') || 
+              layoutThumb.includes('14_rendu') || 
+              layoutThumb.includes('09_patio');
+
+            if (isExterior) {
+              layoutThumb = APARTMENT_INTERIORS_POOL[index % APARTMENT_INTERIORS_POOL.length];
+            }
+          }
+          
+          return `
+            <div class="residence-card group" data-id="${item.id}" role="button" tabindex="0">
+              <div class="card-top-preview">
+                <img src="${layoutThumb}" alt="${item.id}" class="card-preview-img" loading="lazy" />
+                <div class="card-badges">
+                  <span class="card-badge-icon" title="Exposition Lumineuse">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                  </span>
+                  <span class="card-badge-icon" title="Parking Sous-sol inclus">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>
+                  </span>
                 </div>
-                <div class="card-content">
-                  <div class="flex items-baseline justify-between">
-                    <h3 class="card-apartment-id">${item.id}</h3>
-                    <span class="font-editorialOld text-2xl text-golden">${item.surface.toFixed(2)} m²</span>
+              </div>
+              <div class="card-content">
+                <div class="flex items-baseline justify-between gap-2">
+                  <h3 class="card-apartment-id">${item.id}</h3>
+                  <span class="font-editorialOld text-xl sm:text-2xl text-golden shrink-0">${item.surface.toFixed(2)} m²</span>
+                </div>
+                <div class="card-details-row">
+                  <div class="card-specs-list">
+                    <span class="card-spec-item highlight">${item.floorName}</span>
+                    <span class="card-spec-item">${item.roomsText}</span>
+                    <span class="card-spec-item text-xs text-golden">${item.features[0] || 'Parking Sous-sol'}</span>
                   </div>
-                  <div class="card-details-row">
-                    <div class="card-specs-list">
-                      <span class="card-spec-item highlight">${item.floorName}</span>
-                      <span class="card-spec-item">${item.roomsText}</span>
-                      <span class="card-spec-item text-xs text-golden">${item.features[0] || 'Parking Sous-sol'}</span>
-                    </div>
-                    <div class="card-see-more">
-                      <span>Détails</span>
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </div>
+                  <div class="card-see-more">
+                    <span>Détails</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                   </div>
                 </div>
               </div>
-            `;
-          }).join('');
-        }
-      }
-    } else {
-      // Table view mode
-      if (resultsGrid) resultsGrid.style.display = 'none';
-      if (resultsTable) {
-        resultsTable.style.display = 'table';
-        const tbody = resultsTable.querySelector('tbody');
-        if (tbody) {
-          tbody.innerHTML = itemsToDisplay.map((item) => `
-            <tr class="cursor-pointer" data-id="${item.id}">
-              <td><span class="table-lot-title">${item.id}</span></td>
-              <td><strong>${item.surface.toFixed(2)} m²</strong></td>
-              <td>${item.floorName}</td>
-              <td>${item.roomsText}</td>
-              <td>${item.features.slice(0, 2).join(', ')}</td>
-              <td>
-                <button type="button" class="filter-pill" style="padding: 0.25rem 0.75rem; font-size: 0.75rem;">Voir</button>
-              </td>
-            </tr>
-          `).join('');
-        }
+            </div>
+          `;
+        }).join('');
       }
     }
 
@@ -359,8 +391,8 @@ document.addEventListener('DOMContentLoaded', () => {
       loadMoreWrapper.style.display = itemsToDisplay.length < filtered.length ? 'flex' : 'none';
     }
 
-    // Attach click listeners to cards and rows
-    document.querySelectorAll('.residence-card, tr[data-id]').forEach((el) => {
+    // Attach click listeners to cards
+    document.querySelectorAll('.residence-card').forEach((el) => {
       el.addEventListener('click', () => {
         const id = el.getAttribute('data-id');
         const unit = residencesData.find((u) => u.id === id);
@@ -443,21 +475,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // View mode toggle
+  // View mode indicator (Grid only per user request)
   const gridViewBtn = document.getElementById('gridViewBtn');
-  const tableViewBtn = document.getElementById('tableViewBtn');
-
-  if (gridViewBtn && tableViewBtn) {
+  if (gridViewBtn) {
     gridViewBtn.addEventListener('click', () => {
-      gridViewBtn.classList.add('is-active');
-      tableViewBtn.classList.remove('is-active');
       state.viewMode = 'grid';
-      renderList();
-    });
-    tableViewBtn.addEventListener('click', () => {
-      tableViewBtn.classList.add('is-active');
-      gridViewBtn.classList.remove('is-active');
-      state.viewMode = 'table';
       renderList();
     });
   }
@@ -505,7 +527,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderList();
 
   // ==========================================
-  // 5. APARTMENT DETAILS MODAL
+  // 5. APARTMENT DETAILS MODAL & BLUEPRINT LIGHTBOX
   // ==========================================
   const modalBackdrop = document.getElementById('apartmentModal');
   const modalCloseBtn = document.getElementById('modalCloseBtn');
@@ -519,6 +541,40 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalWaLink = document.getElementById('modalWaLink');
   const modalPlanDownload = document.getElementById('modalPlanDownload');
 
+  const blueprintModal = document.getElementById('blueprintModal');
+  const blueprintModalImg = document.getElementById('blueprintModalImg');
+  const blueprintModalTitle = document.getElementById('blueprintModalTitle');
+  const closeBlueprintBtn = document.getElementById('closeBlueprintBtn');
+
+  function openBlueprintModal(src, title) {
+    if (blueprintModal && blueprintModalImg) {
+      blueprintModalImg.src = src;
+      if (blueprintModalTitle) {
+        blueprintModalTitle.textContent = title || 'Plan Architectural Officiel';
+      }
+      blueprintModal.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+      if (window.__lenis) window.__lenis.stop();
+    }
+  }
+
+  function closeBlueprintModal() {
+    if (blueprintModal) {
+      blueprintModal.classList.remove('is-open');
+      if (!modalBackdrop || !modalBackdrop.classList.contains('is-open')) {
+        document.body.style.overflow = '';
+        if (window.__lenis) window.__lenis.start();
+      }
+    }
+  }
+
+  if (closeBlueprintBtn) closeBlueprintBtn.addEventListener('click', closeBlueprintModal);
+  if (blueprintModal) {
+    blueprintModal.addEventListener('click', (e) => {
+      if (e.target === blueprintModal) closeBlueprintModal();
+    });
+  }
+
   function openModal(unit) {
     if (!modalBackdrop) return;
     if (modalLotId) modalLotId.textContent = unit.id;
@@ -527,28 +583,48 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modalRooms) modalRooms.textContent = unit.roomsText;
     if (modalFeatures) modalFeatures.textContent = unit.features.join(', ');
 
-    // Main image defaults to architectural plan
+    // Main image: Showcase the luxury visual first, with floor plan accessible in gallery
+    const isCommercial = unit.type === 'Commerce' || unit.category === 'Magasin' || unit.id.startsWith('MAGASIN');
+    const initialImg = unit.thumbImg || unit.planImg;
+
     if (modalMainImg) {
-      modalMainImg.src = unit.planImg;
-      modalMainImg.alt = `Plan d'architecte ${unit.id}`;
+      modalMainImg.src = initialImg;
+      modalMainImg.alt = `Visuel ${unit.id}`;
+      modalMainImg.style.cursor = 'zoom-in';
+      modalMainImg.onclick = () => {
+        openBlueprintModal(modalMainImg.src, `Plan / Visuel Architectural — ${unit.id}`);
+      };
     }
 
-    // Download / Fullscreen plan link
+    // Download / Fullscreen plan link -> opens HD blueprint lightbox
     if (modalPlanDownload) {
       modalPlanDownload.href = unit.planImg;
-      modalPlanDownload.setAttribute('target', '_blank');
+      modalPlanDownload.onclick = (e) => {
+        e.preventDefault();
+        openBlueprintModal(unit.planImg, `Plan Architectural Officiel — ${unit.id}`);
+      };
     }
 
     // WhatsApp Direct Inquiry link
     if (modalWaLink) {
       const msg = encodeURIComponent(`Bonjour BaytImmo, je souhaite recevoir le dossier complet pour le lot ${unit.id} (${unit.surface} m², ${unit.floorName}) du projet Jardins de Bali à Marrakech.`);
-      modalWaLink.href = `https://wa.me/212661550905?text=${msg}`;
+      modalWaLink.href = `https://wa.me/212665644391?text=${msg}`;
     }
 
-    // Populate thumbnails (Plan + Show apartment rooms)
+    // Populate thumbnails: showcase main render, technical floor plan, then the rest of the gallery
     if (modalThumbsRow) {
-      const gallery = [unit.planImg, ...unit.gallery];
-      modalThumbsRow.innerHTML = gallery.map((src, i) => `
+      const baseGallery = Array.isArray(unit.gallery) ? unit.gallery : [];
+      const distinctGallery = [];
+      const seen = new Set();
+      
+      [initialImg, unit.planImg, ...baseGallery].forEach((src) => {
+        if (src && !seen.has(src)) {
+          seen.add(src);
+          distinctGallery.push(src);
+        }
+      });
+
+      modalThumbsRow.innerHTML = distinctGallery.map((src, i) => `
         <img src="${src}" alt="Visuel ${i + 1}" class="modal-thumb ${i === 0 ? 'is-active' : ''}" />
       `).join('');
 
@@ -569,8 +645,10 @@ document.addEventListener('DOMContentLoaded', () => {
   function closeModal() {
     if (!modalBackdrop) return;
     modalBackdrop.classList.remove('is-open');
-    document.body.style.overflow = '';
-    if (window.__lenis) window.__lenis.start();
+    if (!blueprintModal || !blueprintModal.classList.contains('is-open')) {
+      document.body.style.overflow = '';
+      if (window.__lenis) window.__lenis.start();
+    }
   }
 
   if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
@@ -579,6 +657,17 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.target === modalBackdrop) closeModal();
     });
   }
+
+  // Close modals on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (blueprintModal && blueprintModal.classList.contains('is-open')) {
+        closeBlueprintModal();
+      } else {
+        closeModal();
+      }
+    }
+  });
 
   // ==========================================
   // 6. ARCHITECTURAL PLANS TABS SHOWCASE
@@ -663,6 +752,23 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  if (planFullscreenLink) {
+    planFullscreenLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      const currentTitle = planInfoTitle ? planInfoTitle.textContent : 'Plan Architectural Officiel';
+      const currentSrc = planDisplayImg ? planDisplayImg.src : '/jardins_de_bali/plan_03_rez_de_chaussee.jpg';
+      openBlueprintModal(currentSrc, currentTitle);
+    });
+  }
+
+  if (planDisplayImg) {
+    planDisplayImg.style.cursor = 'zoom-in';
+    planDisplayImg.addEventListener('click', () => {
+      const currentTitle = planInfoTitle ? planInfoTitle.textContent : 'Plan Architectural Officiel';
+      openBlueprintModal(planDisplayImg.src, currentTitle);
+    });
+  }
 
   // ==========================================
   // FOOTER FORM & TOAST NOTIFICATION

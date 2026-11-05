@@ -1,5 +1,4 @@
 import './arbor.css';
-import './business.css';
 import retailData from './data/retail-spaces-data.json';
 import { initMotion, initScrollReveals, MOTION_CONFIG } from './motion.js';
 import gsap from 'gsap';
@@ -484,96 +483,197 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
-  // 6. UNIT DETAIL MODAL
+  // 6. UNIT DETAIL MODAL & BLUEPRINT LIGHTBOX
   // ==========================================
   const modalBackdrop = document.getElementById('unitDetailBackdrop');
   const modalBody = document.getElementById('unitDetailBody');
   const closeModalBtn = document.getElementById('closeUnitModalBtn');
 
+  const blueprintModal = document.getElementById('blueprintModal');
+  const blueprintModalImg = document.getElementById('blueprintModalImg');
+  const blueprintModalTitle = document.getElementById('blueprintModalTitle');
+  const closeBlueprintBtn = document.getElementById('closeBlueprintBtn');
+
+  function openBlueprintModal(src, title) {
+    if (blueprintModal && blueprintModalImg) {
+      blueprintModalImg.src = src;
+      if (blueprintModalTitle) {
+        blueprintModalTitle.textContent = title || 'Plan Architectural Officiel';
+      }
+      blueprintModal.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeBlueprintModal() {
+    if (blueprintModal) {
+      blueprintModal.classList.remove('is-open');
+      if (!modalBackdrop || !modalBackdrop.classList.contains('is-active')) {
+        document.body.style.overflow = '';
+      }
+    }
+  }
+
+  if (closeBlueprintBtn) closeBlueprintBtn.addEventListener('click', closeBlueprintModal);
+  if (blueprintModal) {
+    blueprintModal.addEventListener('click', (e) => {
+      if (e.target === blueprintModal) closeBlueprintModal();
+    });
+  }
+
+  function getVisualsForUnit(unit) {
+    let renderImg = '/business/retail/magasin_1_boutique.jpg';
+    if (unit.id.includes('MAGASIN 2')) renderImg = '/business/retail/magasin_2_flagship.jpg';
+    else if (unit.id.includes('MAGASIN 3')) renderImg = '/business/retail/magasin_3_concept.jpg';
+    else if (unit.id.includes('MAGASIN 4')) renderImg = '/business/retail/magasin_4_showroom.jpg';
+    else if (unit.type === 'Office' || unit.category === 'Office' || unit.id.includes('BUREAU') || unit.id.includes('CORPORATE')) {
+      renderImg = '/business/retail/bureau_executive_suite_bali.jpg';
+    } else if (unit.id.includes('MEZZANINE')) {
+      renderImg = '/business/retail/magasin_4_showroom.jpg';
+    } else if (unit.id.includes('FLAGSHIP')) {
+      renderImg = '/business/retail/magasin_2_flagship.jpg';
+    } else if (unit.id.includes('ROOFTOP')) {
+      renderImg = '/jardins_de_bali/10_rooftop_piscines_solarium.jpg';
+    }
+
+    return [
+      { label: 'Plan Unité', src: unit.layoutImg },
+      { label: 'Plan Niveau (HD)', src: unit.planPdf },
+      { label: 'Visuel 3D', src: renderImg },
+      { label: 'Façade Menara', src: '/jardins_de_bali/14_rendu_3d_facade_rue.jpg' },
+      { label: 'Patio & Fontaine', src: '/jardins_de_bali/09_patio_interieur_fontaine.jpg' }
+    ];
+  }
+
   function openUnitModal(unitId) {
     const unit = retailData.find((u) => u.id === unitId);
     if (!unit || !modalBackdrop || !modalBody) return;
 
+    const visuals = getVisualsForUnit(unit);
+    let currentVisualSrc = visuals[0].src;
+
     modalBody.innerHTML = `
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+      <div class="modal-content-grid">
         <!-- Left: Large Blueprint & Architectural Plan -->
-        <div class="lg:col-span-7 space-y-4">
-          <div class="bg-sand/30 border border-golden/30 rounded-lg p-6 flex flex-col items-center justify-center relative">
-            <img src="${unit.layoutImg}" alt="${unit.name} Architectural Plan" class="w-full max-h-[440px] object-contain mix-blend-darken" />
-            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-xs px-3 py-1 rounded-full text-xs font-serif text-golden border border-golden/40">
+        <div class="modal-visuals-col">
+          <div class="modal-main-img-wrap" id="unitModalMainImgWrap" style="cursor: zoom-in;" title="Cliquer pour afficher en plein écran">
+            <img id="unitModalMainImg" src="${visuals[0].src}" alt="${unit.name} Architectural Plan" class="modal-main-img" />
+            <div class="modal-img-badge">
               TF 34 603 / M — Lot B5
             </div>
           </div>
-          <div class="flex items-center justify-between text-xs text-pine-green/70 px-1">
+
+          <!-- Interactive Thumbnails -->
+          <div class="modal-thumbs-row" id="unitModalThumbsRow">
+            ${visuals.map((v, idx) => `
+              <img src="${v.src}" class="modal-thumb ${idx === 0 ? 'is-active' : ''}" data-idx="${idx}" alt="${v.label}" title="${v.label}" />
+            `).join('')}
+          </div>
+
+          <div class="flex items-center justify-between text-xs px-1 pt-1" style="color: rgba(46, 58, 38, 0.75);">
             <span>Cabinet AMA ARCHITECTURE (Guéliz, Marrakech)</span>
-            <a href="${unit.planPdf}" target="_blank" class="text-golden underline hover:text-pine-green font-medium">
-              Consulter le plan de niveau officiel (HD) →
-            </a>
+            <button type="button" id="unitOpenHdPlanBtn" class="font-medium bg-transparent border-0 cursor-pointer text-xs" style="color: var(--arbor-golden, #C5A880); text-decoration: underline;">
+              Consulter le plan officiel (HD) ↗
+            </button>
           </div>
         </div>
 
         <!-- Right: Unit Specs & Inquiry Form Trigger -->
-        <div class="lg:col-span-5 space-y-6">
+        <div class="modal-info-col">
           <div>
-            <span class="text-xs uppercase tracking-widest text-golden font-medium">${unit.typeLabel} — ${unit.wing}</span>
-            <h2 class="font-editorialOld text-4xl lg:text-5xl text-pine-green uppercase leading-tight mt-1">
+            <span class="text-xs uppercase tracking-widest font-medium" style="color: var(--arbor-golden, #C5A880);">${unit.typeLabel} — ${unit.wing}</span>
+            <h2 class="modal-lot-id">
               ${unit.name}
             </h2>
-            <p class="font-workSans text-lg text-pine-green/90 mt-1 font-light">${unit.title}</p>
-          </div>
+            <p class="font-workSans text-base mb-3" style="color: rgba(46, 58, 38, 0.9); font-weight: 300;">${unit.title}</p>
 
-          <!-- Key Metrics Grid -->
-          <div class="grid grid-cols-2 gap-3 py-4 border-y border-pine-green/15 text-sm">
-            <div class="bg-vanilla/60 p-3 rounded-md">
-              <span class="text-xs uppercase text-golden block font-medium">Surface</span>
-              <span class="text-xl font-editorialOld text-pine-green font-semibold">${unit.surfaceFormatted}</span>
-            </div>
-            <div class="bg-vanilla/60 p-3 rounded-md">
-              <span class="text-xs uppercase text-golden block font-medium">Niveau / Étage</span>
-              <span class="text-xl font-editorialOld text-pine-green font-semibold">${unit.floorLabel}</span>
-            </div>
-            <div class="bg-vanilla/60 p-3 rounded-md">
-              <span class="text-xs uppercase text-golden block font-medium">Hauteur sous plafond</span>
-              <span class="text-base font-workSans text-pine-green font-medium">${unit.ceilingHeight}</span>
-            </div>
-            <div class="bg-vanilla/60 p-3 rounded-md">
-              <span class="text-xs uppercase text-golden block font-medium">Stationnement</span>
-              <span class="text-base font-workSans text-pine-green font-medium">${unit.parkingSpots}</span>
-            </div>
-          </div>
+            <!-- Key Metrics Grid Table -->
+            <table class="modal-specs-table">
+              <tbody>
+                <tr>
+                  <td class="label">Surface Commerciale</td>
+                  <td class="value">${unit.surfaceFormatted}</td>
+                </tr>
+                <tr>
+                  <td class="label">Niveau / Étage</td>
+                  <td class="value">${unit.floorLabel}</td>
+                </tr>
+                <tr>
+                  <td class="label">Hauteur sous plafond</td>
+                  <td class="value">${unit.ceilingHeight}</td>
+                </tr>
+                <tr>
+                  <td class="label">Linéaire Vitrine</td>
+                  <td class="value">${unit.linearFacade || '7.50 m'}</td>
+                </tr>
+                <tr>
+                  <td class="label">Stationnement</td>
+                  <td class="value">${unit.parkingSpots}</td>
+                </tr>
+                <tr>
+                  <td class="label">Accès Logistique</td>
+                  <td class="value">${unit.deliveryAccess || 'Accès direct rue'}</td>
+                </tr>
+              </tbody>
+            </table>
 
-          <!-- Description -->
-          <p class="font-workSans text-sm text-pine-green/80 leading-relaxed">
-            ${unit.description}
-          </p>
+            <!-- Features list pills -->
+            <div class="modal-features-list">
+              ${unit.features.slice(0, 4).map(f => `<span class="modal-feature-pill">${f}</span>`).join('')}
+            </div>
 
-          <!-- Features list -->
-          <div class="space-y-2">
-            <h4 class="text-xs uppercase tracking-widest text-golden font-medium">Caractéristiques & Prestations :</h4>
-            <ul class="grid grid-cols-1 gap-1.5 text-xs text-pine-green/80 font-workSans">
-              ${unit.features.map(f => `<li class="flex items-center gap-2"><svg class="size-4 text-emerald-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>${f}</li>`).join('')}
-            </ul>
-          </div>
-
-          <!-- Ideal for -->
-          <div class="p-3 bg-golden/10 border-l-2 border-golden rounded-r-md text-xs">
-            <strong class="text-golden uppercase font-medium">Activités recommandées :</strong>
-            <p class="text-pine-green/90 mt-0.5">${unit.idealFor}</p>
+            <!-- Ideal for callout -->
+            <div class="p-3 bg-golden/10 border-l-2 border-golden rounded-r-md text-xs mt-3" style="background: rgba(197, 168, 128, 0.12); border-left: 2px solid var(--arbor-golden, #C5A880); padding: 0.75rem; border-radius: 0 0.5rem 0.5rem 0;">
+              <strong class="uppercase font-medium" style="color: var(--arbor-golden, #C5A880); display: block;">Activités recommandées :</strong>
+              <p style="color: rgba(46, 58, 38, 0.9); margin-top: 0.25rem;">${unit.idealFor}</p>
+            </div>
           </div>
 
           <!-- CTA Buttons -->
-          <div class="pt-4 flex flex-col gap-3">
-            <button id="inquireUnitBtn" class="w-full py-4 rounded-full bg-pine-green text-sand uppercase text-xs tracking-widest font-medium hover:bg-golden transition duration-300 flex items-center justify-center gap-3 shadow-md" data-unit-name="${unit.name}">
+          <div class="modal-actions-row">
+            <button id="inquireUnitBtn" class="modal-inquire-btn" data-unit-name="${unit.name}">
               Demander la grille tarifaire & disponibilité
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </button>
-            <a href="tel:+212661550905" class="w-full py-3 rounded-full border border-pine-green text-pine-green uppercase text-xs tracking-widest font-medium text-center hover:bg-pine-green/5 transition">
-              Contacter le service commercial (+212 661 55 09 05)
+            <a href="https://wa.me/212665644391?text=Bonjour%20BaytImmo%2C%20je%20souhaite%20des%20informations%20sur%20le%20lot%20${encodeURIComponent(unit.name)}%20(${encodeURIComponent(unit.surfaceFormatted)})%20aux%20Jardins%20de%20Bali." target="_blank" rel="noopener noreferrer" class="modal-whatsapp-btn" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              <span>WhatsApp</span>
             </a>
           </div>
         </div>
       </div>
     `;
+
+    // Interactive thumbnail switching
+    const mainImgEl = document.getElementById('unitModalMainImg');
+    const thumbsRow = document.getElementById('unitModalThumbsRow');
+    if (thumbsRow && mainImgEl) {
+      thumbsRow.querySelectorAll('.modal-thumb').forEach((thumb) => {
+        thumb.addEventListener('click', () => {
+          thumbsRow.querySelectorAll('.modal-thumb').forEach(t => t.classList.remove('is-active'));
+          thumb.classList.add('is-active');
+          const idx = parseInt(thumb.getAttribute('data-idx') || '0', 10);
+          const chosen = visuals[idx] || visuals[0];
+          currentVisualSrc = chosen.src;
+          mainImgEl.src = chosen.src;
+        });
+      });
+    }
+
+    // HD Blueprint Lightbox Triggers
+    const openHdPlanBtn = document.getElementById('unitOpenHdPlanBtn');
+    const mainImgWrap = document.getElementById('unitModalMainImgWrap');
+    if (openHdPlanBtn) {
+      openHdPlanBtn.addEventListener('click', () => {
+        openBlueprintModal(unit.planPdf, `Plan Architectural Officiel — ${unit.name}`);
+      });
+    }
+    if (mainImgWrap) {
+      mainImgWrap.addEventListener('click', () => {
+        openBlueprintModal(currentVisualSrc, `Plan Architectural — ${unit.name}`);
+      });
+    }
 
     modalBackdrop.classList.add('is-active');
     document.body.style.overflow = 'hidden';
@@ -590,7 +690,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function closeModal() {
     if (modalBackdrop) modalBackdrop.classList.remove('is-active');
-    document.body.style.overflow = '';
+    if (!blueprintModal || !blueprintModal.classList.contains('is-open')) {
+      document.body.style.overflow = '';
+    }
   }
 
   if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
@@ -599,6 +701,17 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.target === modalBackdrop) closeModal();
     });
   }
+
+  // Close modals on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (blueprintModal && blueprintModal.classList.contains('is-open')) {
+        closeBlueprintModal();
+      } else {
+        closeModal();
+      }
+    }
+  });
 
   // ==========================================
   // 7. CONTACT / INQUIRY MODAL

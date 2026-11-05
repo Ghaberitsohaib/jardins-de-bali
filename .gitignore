@@ -1,5 +1,7 @@
 # Dependencies
 node_modules/
+.worktrees/
+.vscode/
 
 # Production build
 dist/

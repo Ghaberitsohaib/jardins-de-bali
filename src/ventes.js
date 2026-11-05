@@ -344,7 +344,7 @@ function createPropertyCardHTML(item) {
             <button class="btn-card-view view-prop-detail" data-id="${item.id}">
               Voir
             </button>
-            <a href="https://wa.me/212661550905?text=Bonjour%20Kensington%20Morocco,%20je%20souhaite%20des%20informations%20sur%20la%20propriété%20${encodeURIComponent(item.title)}%20(Réf:%20${item.id})." target="_blank" rel="noopener" class="btn-card-whatsapp" title="Contacter par WhatsApp VIP">
+            <a href="https://wa.me/212665644391?text=Bonjour%20BaytImmo,%20je%20souhaite%20des%20informations%20sur%20la%20propriété%20${encodeURIComponent(item.title)}%20(Réf:%20${item.id})." target="_blank" rel="noopener" class="btn-card-whatsapp" title="Contacter par WhatsApp VIP">
               <i class="fa-brands fa-whatsapp"></i>
             </a>
           </div>
@@ -552,7 +552,7 @@ function openPropertyModal(id) {
   // WhatsApp Link
   const waBtn = document.getElementById('modalWhatsAppBtn');
   if (waBtn) {
-    waBtn.href = `https://wa.me/212661550905?text=Bonjour%20Kensington%20Morocco,%20je%20suis%20intéressé(e)%20par%20la%20propriété%20${encodeURIComponent(item.title)}%20(Réf:%20${item.id}).%20Pouvez-vous%20m'organiser%20une%20visite%20privée%20?`;
+    waBtn.href = `https://wa.me/212665644391?text=Bonjour%20BaytImmo,%20je%20suis%20intéressé(e)%20par%20la%20propriété%20${encodeURIComponent(item.title)}%20(Réf:%20${item.id}).%20Pouvez-vous%20m'organiser%20une%20visite%20privée%20?`;
   }
 
   if (modal) modal.classList.add('open');
@@ -599,3 +599,17 @@ function showToast(msg) {
     toast.classList.remove('visible');
   }, 3200);
 }
+
+// Smooth scroll links
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener('click', (e) => {
+    const targetId = link.getAttribute('href');
+    if (targetId && targetId !== '#') {
+      const el = document.querySelector(targetId);
+      if (el) {
+        e.preventDefault();
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+});
