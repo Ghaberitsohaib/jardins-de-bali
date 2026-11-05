@@ -1313,10 +1313,10 @@
       </div>
 
       <!-- Header -->
-      <div id="mobileFilterHeader" class="filter-sheet-header px-6 py-3 flex items-center justify-between border-b border-[#1a2417]/10 shrink-0 select-none cursor-grab active:cursor-grabbing">
+      <div id="mobileFilterHeader" class="filter-sheet-header px-6 py-4 flex items-center justify-between border-b border-[rgba(197,168,128,0.3)] shrink-0 select-none cursor-grab active:cursor-grabbing bg-[#FAF7EF]">
         <div class="flex items-center gap-3 pointer-events-none">
-          <div class="size-9 rounded-full bg-[#C8A366]/15 flex items-center justify-center text-[#C8A366]">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <div class="size-8 rounded-full bg-[#C5A880]/15 border border-[#C5A880]/40 flex items-center justify-center text-[#C5A880]">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M10 12H21"></path><path d="M3 12H6"></path>
               <circle cx="8" cy="12" r="2"></circle>
               <path d="M14 6H3"></path><path d="M21 6H18"></path>
@@ -1326,129 +1326,94 @@
             </svg>
           </div>
           <div>
-            <h3 class="font-['Cinzel',serif] tracking-wider font-semibold text-xl text-[#1a2417] leading-none">Filtres</h3>
-            <p class="font-workSans text-[0.65rem] uppercase tracking-widest text-[#C8A366] font-semibold mt-0.5">Jardins de Bali — Menara</p>
+            <h3 class="font-serif text-lg text-[#10150F] font-semibold tracking-wide">Filtres</h3>
+            <p class="font-workSans text-[0.65rem] uppercase tracking-wider text-[#C5A880] font-semibold">Jardins de Bali — Menara</p>
           </div>
         </div>
 
-        <button id="closeMobileFilterBtn" type="button" class="pointer-events-auto size-9 rounded-full bg-[#1a2417]/5 hover:bg-[#1a2417]/10 active:scale-95 flex items-center justify-center text-[#1a2417] transition cursor-pointer" aria-label="Fermer les filtres">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <button id="closeMobileFilterBtn" type="button" class="pointer-events-auto size-8 rounded-full bg-[#C5A880]/10 hover:bg-[#C5A880]/25 text-[#10150F] flex items-center justify-center transition cursor-pointer" aria-label="Fermer les filtres">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
         </button>
       </div>
 
-      <!-- Controls Body (Scrollable) -->
-      <div id="mobileFilterContent" class="flex-1 overflow-y-auto px-6 py-5 space-y-5" data-lenis-prevent="true" style="-webkit-overflow-scrolling: touch; overscroll-behavior: contain;">
+      <!-- Controls Body (Scrollable, Clean Belgrade Arbor Minimalist Style) -->
+      <div id="mobileFilterContent" class="flex-1 overflow-y-auto px-6 py-5 space-y-6" data-lenis-prevent="true" style="-webkit-overflow-scrolling: touch; overscroll-behavior: contain;">
         
-        <!-- SECTION 1: TYPE D'ESPACE -->
-        <div class="space-y-2.5">
-          <label class="text-[0.7rem] uppercase tracking-widest text-[#1a2417]/70 font-bold flex items-center gap-1.5">
-            <span class="size-1.5 rounded-full bg-[#C8A366] inline-block"></span>
-            Type d'espace
-          </label>
-          <div class="grid grid-cols-2 gap-2">
-            <button type="button" data-filter-type="all" class="filter-type-pill is-active">
-              <span>Tous les espaces</span>
-            </button>
-            <button type="button" data-filter-type="Retail" class="filter-type-pill">
-              <span>Retail / Magasins</span>
-            </button>
-            <button type="button" data-filter-type="Offices" class="filter-type-pill">
-              <span>Bureaux</span>
-            </button>
-            <button type="button" data-filter-type="Duplex" class="filter-type-pill">
-              <span>Duplex Flagship</span>
-            </button>
+        <!-- Group 1: Type d'espace -->
+        <div class="filter-group">
+          <span class="filter-label">Type d'espace</span>
+          <div class="filter-pills">
+            <button type="button" class="filter-pill is-active" data-filter-type="all">Tous</button>
+            <button type="button" class="filter-pill" data-filter-type="Retail">Retail / Magasins</button>
+            <button type="button" class="filter-pill" data-filter-type="Offices">Bureaux</button>
+            <button type="button" class="filter-pill" data-filter-type="Duplex">Duplex Flagships (406 m²)</button>
           </div>
         </div>
 
-        <!-- SECTION 2: SURFACE RANGE SLIDER -->
-        <div class="filter-card-box space-y-2">
+        <!-- Group 2: Surface Maximale Slider -->
+        <div class="filter-group">
           <div class="flex items-center justify-between">
-            <label class="text-[0.7rem] uppercase tracking-widest text-[#1a2417]/70 font-bold flex items-center gap-1.5">
-              <span class="size-1.5 rounded-full bg-[#C8A366] inline-block"></span>
-              Surface maximale
-            </label>
-            <span class="filter-badge">
-              Jusqu'à <span id="surfaceMaxLabelMobile" class="font-bold ml-1">450</span> m²
-            </span>
+            <span class="filter-label !mb-0">Surface Maximale</span>
+            <span class="range-current-badge"><span id="surfaceMaxLabelMobile">450</span> m²</span>
           </div>
-          <input id="surfaceSliderMobile" type="range" min="40" max="450" step="5" value="450" class="luxury-slider" />
-          <div class="flex items-center justify-between text-[0.7rem] text-[#1a2417]/60 font-medium">
-            <span>40 m²</span>
-            <span class="text-[0.65rem] tracking-wider uppercase text-[#1a2417]/40">Modulable</span>
-            <span>450 m²</span>
-          </div>
-        </div>
-
-        <!-- SECTION 3: NIVEAU / ÉTAGE -->
-        <div class="filter-card-box space-y-2">
-          <div class="flex items-center justify-between">
-            <label class="text-[0.7rem] uppercase tracking-widest text-[#1a2417]/70 font-bold flex items-center gap-1.5">
-              <span class="size-1.5 rounded-full bg-[#C8A366] inline-block"></span>
-              Niveau / Étage
-            </label>
-            <span id="floorBadgeLabelMobile" class="filter-badge">
-              Tous les niveaux
-            </span>
-          </div>
-          <input id="floorSliderMobile" type="range" min="-1" max="5" step="1" value="-1" class="luxury-slider" />
-          <div class="flex items-center justify-between text-[0.7rem] text-[#1a2417]/60 font-medium">
-            <span>RDC</span>
-            <span class="text-[0.65rem] tracking-wider uppercase text-[#1a2417]/40">Mezzanine &amp; R+1 à R+5</span>
-            <span>R+5</span>
+          <div class="range-slider-wrapper">
+            <div class="range-values">
+              <span>40 m²</span>
+              <span>450 m²</span>
+            </div>
+            <input
+              type="range"
+              id="surfaceSliderMobile"
+              min="40"
+              max="450"
+              value="450"
+              step="5"
+              class="range-slider-input"
+            />
           </div>
         </div>
 
-        <!-- SECTION 4: EMPLACEMENT / AILE -->
-        <div class="space-y-2.5">
-          <label class="text-[0.7rem] uppercase tracking-widest text-[#1a2417]/70 font-bold flex items-center gap-1.5">
-            <span class="size-1.5 rounded-full bg-[#C8A366] inline-block"></span>
-            Emplacement / Aile
-          </label>
-          <div class="grid grid-cols-1 gap-2.5">
-            <button type="button" data-filter-wing="Wing A" class="filter-wing-card group">
-              <div class="flex items-center gap-3">
-                <span class="wing-circle">A</span>
-                <div class="text-left">
-                  <p class="font-bold text-xs text-[#1a2417] uppercase tracking-wider">Wing A — Boulevard Menara</p>
-                  <p class="text-[0.68rem] text-[#1a2417]/60 mt-0.5">Façade principale, vitrines panoramiques &amp; grand flux</p>
-                </div>
-              </div>
-              <div class="wing-radio">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="wing-check-icon opacity-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              </div>
-            </button>
-            <button type="button" data-filter-wing="Wing B" class="filter-wing-card group">
-              <div class="flex items-center gap-3">
-                <span class="wing-circle">B</span>
-                <div class="text-left">
-                  <p class="font-bold text-xs text-[#1a2417] uppercase tracking-wider">Wing B — Avenue &amp; Patio</p>
-                  <p class="text-[0.68rem] text-[#1a2417]/60 mt-0.5">Accès avenue calme, terrasse patio paysager &amp; double jour</p>
-                </div>
-              </div>
-              <div class="wing-radio">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="wing-check-icon opacity-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              </div>
-            </button>
+        <!-- Group 3: Niveau / Étage -->
+        <div class="filter-group">
+          <span class="filter-label">Niveau / Étage</span>
+          <div class="filter-pills">
+            <button type="button" class="filter-pill is-active" data-filter-floor="all">Tous</button>
+            <button type="button" class="filter-pill" data-filter-floor="0">RDC</button>
+            <button type="button" class="filter-pill" data-filter-floor="0.5">Mezzanine</button>
+            <button type="button" class="filter-pill" data-filter-floor="1">1er Étage</button>
+            <button type="button" class="filter-pill" data-filter-floor="2">2ème Étage</button>
+            <button type="button" class="filter-pill" data-filter-floor="5">5ème (Terrasses)</button>
+          </div>
+          <!-- Hidden input for slider sync compatibility -->
+          <input type="range" id="floorSliderMobile" min="-1" max="5" step="1" value="-1" class="hidden" />
+        </div>
+
+        <!-- Group 4: Emplacement / Aile -->
+        <div class="filter-group">
+          <span class="filter-label">Emplacement / Aile</span>
+          <div class="filter-pills">
+            <button type="button" class="filter-pill is-active" data-filter-wing="all">Toutes les Ailes</button>
+            <button type="button" class="filter-pill" data-filter-wing="Wing A">Wing A (Boulevard)</button>
+            <button type="button" class="filter-pill" data-filter-wing="Wing B">Wing B (Avenue &amp; Patio)</button>
           </div>
         </div>
 
       </div>
 
       <!-- Pinned Action Footer -->
-      <div class="p-5 border-t border-[#1a2417]/10 bg-[#FAF7EF] space-y-3 shrink-0 shadow-lg">
+      <div class="p-5 border-t border-[rgba(197,168,128,0.3)] bg-[#FAF7EF] space-y-3 shrink-0 shadow-lg">
         <div class="flex items-center justify-between">
-          <button id="resetFiltersBtnMobile" type="button" class="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-[#1a2417]/70 hover:text-[#C8A366] font-semibold transition cursor-pointer">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-[#1a2417]/70">
-              <path d="M2.18 12C2.18 17.42 6.58 21.82 12 21.82C17.42 21.82 21.82 17.42 21.82 12C21.82 6.58 17.42 2.18 12 2.18C9.25 2.19 6.62 3.26 4.65 5.17L2.18 7.64"></path>
-              <path d="M2.18 2.18V7.64H7.64"></path>
+          <button id="resetFiltersBtnMobile" type="button" class="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-[#10150F]/70 hover:text-[#C5A880] font-semibold transition cursor-pointer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+              <path d="M3 3v5h5"></path>
             </svg>
             <span>Réinitialiser</span>
           </button>
-          <span id="resultsCounterDrawer" class="text-xs font-serif text-[#C8A366] font-bold tracking-wide">12 Espaces disponibles</span>
+          <span id="resultsCounterDrawer" class="text-xs font-serif text-[#C5A880] font-bold tracking-wide">12 Espaces disponibles</span>
         </div>
 
         <button id="applyMobileFilterBtn" type="button" class="filter-cta-btn">
