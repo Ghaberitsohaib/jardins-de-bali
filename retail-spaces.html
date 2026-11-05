@@ -24,6 +24,12 @@
     "email": "contact@bayt-immo.com"
   }
   </script>
+  
+  <!-- Modern Luxury Google Fonts: Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="/src/arbor.css" />
 
   <style>
@@ -468,14 +474,25 @@
     }
 
     .retail-hero-title {
-      font-family: var(--font-editorialOld), 'Editorial Old', serif;
-      color: #F8F5E9;
-      font-weight: 300;
+      font-family: 'Cinzel', -apple-system, BlinkMacSystemFont, sans-serif !important;
       font-size: clamp(2.75rem, 6.2vw, 6.5rem);
-      line-height: 0.98;
-      letter-spacing: -0.015em;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
-      text-shadow: 0 4px 28px rgba(0, 0, 0, 0.75);
+      color: #FFFFFF;
+      background: linear-gradient(135deg, #FFFFFF 15%, #FBF7ED 50%, #C5A880 95%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 4px 28px rgba(0, 0, 0, 0.9));
+    }
+
+    @media (max-width: 768px) {
+      .retail-hero-title {
+        font-size: clamp(2.25rem, 9.5vw, 3.25rem);
+        letter-spacing: 0.06em;
+        line-height: 1.05;
+      }
     }
 
     .retail-hero-tag {
@@ -687,7 +704,7 @@
       <section id="Hero" class="flex min-h-screen items-stretch relative overflow-hidden">
         <div class="trigger relative w-full flex items-center">
           <img
-            src="/jardins_de_bali/14_rendu_3d_facade_rue.jpg"
+            src="/jardins_de_bali/commercial_hero_luxury_hd.jpg"
             alt="Retail &amp; Business Spaces - Jardins de Bali Marrakech"
             class="background absolute inset-0 h-full w-full object-cover object-center"
             loading="eager"
@@ -754,7 +771,7 @@
                ======================================================== -->
           <div class="relative w-1/3 max-lg:hidden">
             <div class="sticky top-32 left-0 space-y-12 pr-8 max-xl:top-24">
-              <h2 class="heading-2 text-golden uppercase font-editorialOld text-4xl">Filters</h2>
+              <h2 class="heading-2 text-golden uppercase font-['Cinzel',serif] tracking-wider font-semibold text-3xl">Filters</h2>
 
               <div class="flex flex-col gap-8">
                 <!-- Type Filter Buttons -->
@@ -766,13 +783,13 @@
                         All Spaces
                       </button>
                     </div>
-                    <button type="button" data-filter-type="Retail" class="small border-grey flex cursor-pointer flex-1 items-center justify-center rounded-full border px-4 py-2.5 uppercase no-underline transition hover:bg-[#DCDCDC]/50 text-pine-green text-xs font-medium tracking-wider">
+                    <button type="button" data-filter-type="Retail" class="small border-grey flex cursor-pointer flex-1 items-center justify-center rounded-full border px-4 py-2.5 uppercase no-underline transition hover:border-golden hover:bg-golden/10 text-pine-green text-xs font-medium tracking-wider">
                       <span>Retail / Magasins</span>
                     </button>
-                    <button type="button" data-filter-type="Offices" class="small border-grey flex cursor-pointer flex-1 items-center justify-center rounded-full border px-4 py-2.5 uppercase no-underline transition hover:bg-[#DCDCDC]/50 text-pine-green text-xs font-medium tracking-wider">
+                    <button type="button" data-filter-type="Offices" class="small border-grey flex cursor-pointer flex-1 items-center justify-center rounded-full border px-4 py-2.5 uppercase no-underline transition hover:border-golden hover:bg-golden/10 text-pine-green text-xs font-medium tracking-wider">
                       <span>Bureaux</span>
                     </button>
-                    <button type="button" data-filter-type="Duplex" class="small border-grey flex cursor-pointer w-full items-center justify-center rounded-full border px-4 py-2.5 uppercase no-underline transition hover:bg-[#DCDCDC]/50 text-pine-green text-xs font-medium tracking-wider">
+                    <button type="button" data-filter-type="Duplex" class="small border-grey flex cursor-pointer w-full items-center justify-center rounded-full border px-4 py-2.5 uppercase no-underline transition hover:border-golden hover:bg-golden/10 text-pine-green text-xs font-medium tracking-wider">
                       <span>Duplex Flagships (406 m²)</span>
                     </button>
                   </div>
@@ -841,9 +858,9 @@
 
             <!-- SEE MORE BUTTON (BELGRADE ARBOR STYLE) -->
             <div class="mt-12 flex justify-center">
-              <button id="loadMoreBtn" type="button" class="menu shrink-0 min-w-55 gap-3 whitespace-nowrap outline-none text-pine-green active:bg-cream-dark h-14 button border-dark-grey bg-light-grey hover:bg-light-grey/60 flex cursor-pointer items-center justify-between rounded-full border px-8 py-4 uppercase transition max-md:w-full group text-xs tracking-widest font-medium shadow-sm">
-                <span>See more spaces</span>
-                <svg width="22" height="22" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-dark-grey group-hover:rotate-90 transition-transform duration-300">
+              <button id="loadMoreBtn" type="button" class="menu shrink-0 min-w-55 gap-3 whitespace-nowrap outline-none text-[#10150F] active:bg-[#FDFBEF] h-14 button border-[#C5A880]/50 bg-[#FAF7EF] hover:bg-white hover:border-[#C5A880] flex cursor-pointer items-center justify-between rounded-full border px-8 py-4 uppercase transition-all duration-300 max-md:w-full group text-xs tracking-widest font-semibold shadow-sm hover:shadow-md">
+                <span>Afficher plus d'espaces</span>
+                <svg width="22" height="22" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#A68150] group-hover:rotate-90 transition-transform duration-300">
                   <circle cx="12" cy="13.5" r="11" stroke="currentColor"></circle>
                   <line x1="12" y1="7.5" x2="12" y2="19.5" stroke="currentColor"></line>
                   <line x1="18" y1="13.5" x2="6" y2="13.5" stroke="currentColor"></line>
@@ -887,7 +904,7 @@
             </svg>
           </div>
           <div>
-            <h3 class="font-editorialOld text-2xl text-[#1a2417] leading-none">Filtres</h3>
+            <h3 class="font-['Cinzel',serif] tracking-wider font-semibold text-xl text-[#1a2417] leading-none">Filtres</h3>
             <p class="font-workSans text-[0.65rem] uppercase tracking-widest text-[#C8A366] font-semibold mt-0.5">Jardins de Bali — Menara</p>
           </div>
         </div>

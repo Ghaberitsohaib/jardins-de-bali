@@ -279,48 +279,48 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     gridContainer.innerHTML = visibleItems.map((u) => `
-      <div class="retail-card-item cursor-pointer border-grey space-y-10 border px-6 pt-8 pb-10 transition duration-300 hover:bg-[#DCDCDC]/50 max-lg:space-y-8 max-lg:px-4 max-lg:pt-6 max-lg:pb-6 group relative bg-white/40" data-unit-id="${u.id}">
+      <div class="retail-card-item cursor-pointer space-y-8 border px-6 pt-7 pb-8 transition-all duration-300 hover:bg-white hover:shadow-xl max-lg:space-y-6 max-lg:px-4 max-lg:pt-5 max-lg:pb-6 group relative bg-[#FAF7EF]" style="border-color: rgba(197, 168, 128, 0.28); border-radius: 12px;" data-unit-id="${u.id}">
         <!-- Architectural Plan Image -->
-        <div class="relative overflow-hidden bg-sand/20 rounded-sm p-4 flex items-center justify-center min-h-[220px]">
+        <div class="relative overflow-hidden bg-white rounded-lg p-5 flex items-center justify-center min-h-[230px] border shadow-inner" style="border-color: rgba(197, 168, 128, 0.2);">
           <img
             alt="${u.name} Plan Architectural"
             loading="lazy"
             width="514"
             height="380"
-            class="h-auto w-full max-w-none mix-blend-darken object-contain transition duration-500 group-hover:scale-102"
+            class="h-auto w-full max-w-none mix-blend-multiply object-contain transition duration-500 group-hover:scale-103"
             src="${u.layoutImg}"
           />
           <!-- Badge Top Right -->
-          <div class="absolute top-3 right-3 flex items-center gap-1.5 bg-vanilla/90 backdrop-blur-xs px-2.5 py-1 rounded-full border border-golden/40">
+          <div class="absolute top-3 right-3 flex items-center gap-1.5 bg-[#FDFBEF]/95 backdrop-blur-md px-3 py-1 rounded-full border shadow-xs" style="border-color: rgba(197, 168, 128, 0.5);">
             <span class="inline-block size-2 rounded-full bg-emerald-600 animate-pulse"></span>
-            <span class="text-[0.65rem] tracking-wider uppercase text-pine-green font-medium">${u.status}</span>
+            <span class="text-[0.6875rem] tracking-wider uppercase text-[#10150F] font-semibold">${u.status}</span>
           </div>
           <!-- Type Badge Top Left -->
-          <div class="absolute top-3 left-3 bg-pine-green/90 text-sand text-[0.65rem] tracking-widest uppercase px-2.5 py-1 rounded-full">
+          <div class="absolute top-3 left-3 bg-[#10150F] text-[#FDFBEF] text-[0.6875rem] tracking-widest uppercase px-3 py-1 rounded-full font-medium shadow-xs border" style="border-color: rgba(197, 168, 128, 0.35);">
             ${u.typeLabel}
           </div>
         </div>
 
-        <!-- Typography & Specs (1:1 Match with Belgrade Arbor) -->
-        <div class="gap-5 space-y-6 max-lg:flex max-lg:space-y-0">
-          <h3 class="text-golden font-serif text-[3.8rem] xl:text-[4.8rem] leading-none max-lg:w-2/3 max-lg:text-[2.8rem] tracking-tight group-hover:text-pine-green transition-colors">
+        <!-- Typography & Specs (Belgrade Arbor Luxury Standard) -->
+        <div class="gap-5 space-y-5 max-lg:flex max-lg:space-y-0">
+          <h3 class="font-editorialOld leading-none max-lg:w-2/3 tracking-tight transition-colors duration-300 group-hover:text-[#10150F]" style="font-size: clamp(2.4rem, 4vw, 3.8rem); color: #A68150;">
             ${u.name}
           </h3>
           <div class="flex items-end justify-between max-lg:w-1/3">
             <div class="w-2/3 max-lg:w-full space-y-1">
               <div class="item">
-                <p class="paragraph text-dark-grey font-medium text-lg">${u.surfaceFormatted}</p>
+                <p class="font-workSans text-[#10150F] font-semibold text-lg tracking-tight">${u.surfaceFormatted}</p>
               </div>
               <div class="item">
-                <p class="small text-dark-grey/80">${u.floorLabel}</p>
+                <p class="font-workSans text-xs text-[#60735C] font-medium tracking-wide uppercase">${u.floorLabel}</p>
               </div>
               <div class="item">
-                <p class="text-xs text-golden tracking-wider uppercase font-medium">${u.wingLabel.split('(')[0]}</p>
+                <p class="font-workSans text-xs tracking-wider uppercase font-semibold" style="color: #A68150;">${u.wingLabel.split('(')[0]}</p>
               </div>
             </div>
             <!-- See more button -->
-            <span class="link text-sm uppercase tracking-wider text-golden group-hover:text-pine-green font-medium flex items-center gap-2 transition max-lg:hidden">
-              See more
+            <span class="link text-xs uppercase tracking-widest font-semibold flex items-center gap-2 transition-all duration-300 max-lg:hidden group-hover:translate-x-1" style="color: #A68150;">
+              Consulter
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:translate-x-1"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </span>
           </div>
