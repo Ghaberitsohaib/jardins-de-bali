@@ -40,6 +40,33 @@
     }
     #Picker {
       background-color: #FDFBEF !important;
+      padding-top: 2.5rem !important;
+      padding-bottom: 8.5rem !important;
+      position: relative;
+      z-index: 10;
+    }
+    @media (max-width: 768px) {
+      #Picker {
+        padding-top: 1.5rem !important;
+        padding-bottom: 4.5rem !important;
+      }
+    }
+    .picker-load-more-container {
+      margin-top: 3.5rem !important;
+      margin-bottom: 2.5rem !important;
+      display: flex;
+      justify-content: center;
+    }
+    footer#footer {
+      padding-top: 7.5rem !important;
+      position: relative;
+      z-index: 10;
+      border-top: 1px solid rgba(197, 168, 128, 0.28) !important;
+    }
+    @media (max-width: 768px) {
+      footer#footer {
+        padding-top: 4.5rem !important;
+      }
     }
     .retail-card-item {
       background-color: #FAF7EF !important;
@@ -1074,7 +1101,7 @@
             </div>
 
             <!-- SEE MORE BUTTON (LUXURY NOBLE MARRON EDITION) -->
-            <div class="mt-12 flex justify-center">
+            <div class="picker-load-more-container">
               <button id="loadMoreBtn" type="button" class="load-more-luxury-btn menu shrink-0 min-w-65 gap-4 whitespace-nowrap outline-none flex cursor-pointer items-center justify-between rounded-full px-8 py-4 uppercase transition-all duration-300 max-md:w-full group text-xs tracking-widest font-semibold">
                 <span class="tracking-[0.14em]">Afficher plus d'espaces</span>
                 <div class="flex items-center justify-center size-8 rounded-full bg-[#C5A880]/20 border border-[#C5A880]/50 text-[#C5A880] group-hover:bg-[#C5A880] group-hover:text-[#382417] transition-all duration-300">
