@@ -217,6 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Type filter buttons
   const typeButtons = document.querySelectorAll('[data-filter-type]');
   const wingButtons = document.querySelectorAll('[data-filter-wing]');
+  const floorButtons = document.querySelectorAll('[data-filter-floor]');
 
   function getFilteredUnits() {
     return retailData.filter((u) => {
@@ -378,12 +379,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const bType = b.getAttribute('data-filter-type');
       if (bType === state.type) {
         b.classList.add('is-active');
-        b.classList.add('border-golden', 'bg-golden', 'text-sand');
-        b.classList.remove('border-grey', 'text-pine-green');
       } else {
         b.classList.remove('is-active');
-        b.classList.remove('border-golden', 'bg-golden', 'text-sand');
-        b.classList.add('border-grey', 'text-pine-green');
       }
     });
   }
@@ -398,17 +395,42 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  function updateFloorButtonsUI() {
+    floorButtons.forEach((b) => {
+      const bFloor = b.getAttribute('data-filter-floor');
+      const isMatch = (state.floor === 'all' && bFloor === 'all') || (String(state.floor) === bFloor);
+      if (isMatch) {
+        b.classList.add('is-active');
+      } else {
+        b.classList.remove('is-active');
+      }
+    });
+  }
+
+  floorButtons.forEach((btn) => {
+    btn.addEventListener('click', function () {
+      const val = this.getAttribute('data-filter-floor');
+      state.floor = val === 'all' ? 'all' : Number(val);
+      state.page = 1;
+      updateFloorButtonsUI();
+      if (floorSlider) floorSlider.value = val === 'all' ? -1 : Number(val);
+      const floorSliderMobile = document.getElementById('floorSliderMobile');
+      if (floorSliderMobile) floorSliderMobile.value = val === 'all' ? -1 : Number(val);
+      const shortText = val === 'all' ? 'Tous' : (Number(val) === 0 ? 'RDC' : (Number(val) === 0.5 ? 'Mezzanine' : `R+${val}`));
+      if (floorMaxLabel) floorMaxLabel.textContent = shortText;
+      renderGrid();
+    });
+  });
+
   function updateWingButtonsUI() {
     wingButtons.forEach((b) => {
       const bWing = b.getAttribute('data-filter-wing');
       const check = b.querySelector('.wing-check-icon');
       if (bWing === state.wing) {
         b.classList.add('is-active');
-        b.classList.add('border-golden', 'bg-golden/10');
         if (check) check.classList.remove('opacity-0');
       } else {
         b.classList.remove('is-active');
-        b.classList.remove('border-golden', 'bg-golden/10');
         if (check) check.classList.add('opacity-0');
       }
     });
@@ -462,6 +484,7 @@ document.addEventListener('DOMContentLoaded', () => {
     state.page = 1;
 
     updateTypeButtonsUI();
+    updateFloorButtonsUI();
     updateWingButtonsUI();
 
     if (surfaceSlider) {
