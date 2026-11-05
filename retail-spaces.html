@@ -415,6 +415,24 @@
       transform: scale(0.96);
     }
 
+    /* Luxury Brown Load More Button */
+    .load-more-luxury-btn {
+      background: linear-gradient(135deg, #4A3323 0%, #382417 100%) !important;
+      color: #FDFBEF !important;
+      border: 1.5px solid #C5A880 !important;
+      box-shadow: 0 8px 24px rgba(56, 36, 23, 0.22);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .load-more-luxury-btn:hover {
+      background: linear-gradient(135deg, #5A3E2B 0%, #442B1A 100%) !important;
+      border-color: #E2C9A5 !important;
+      box-shadow: 0 12px 30px rgba(56, 36, 23, 0.35);
+      transform: translateY(-2px);
+    }
+    .load-more-luxury-btn:active {
+      transform: translateY(0) scale(0.98);
+    }
+
     .contact-modal-backdrop {
       position: fixed;
       inset: 0;
@@ -856,15 +874,16 @@
               <!-- Rendered dynamically by src/retail-spaces.js -->
             </div>
 
-            <!-- SEE MORE BUTTON (BELGRADE ARBOR STYLE) -->
+            <!-- SEE MORE BUTTON (LUXURY NOBLE MARRON EDITION) -->
             <div class="mt-12 flex justify-center">
-              <button id="loadMoreBtn" type="button" class="menu shrink-0 min-w-55 gap-3 whitespace-nowrap outline-none text-[#10150F] active:bg-[#FDFBEF] h-14 button border-[#C5A880]/50 bg-[#FAF7EF] hover:bg-white hover:border-[#C5A880] flex cursor-pointer items-center justify-between rounded-full border px-8 py-4 uppercase transition-all duration-300 max-md:w-full group text-xs tracking-widest font-semibold shadow-sm hover:shadow-md">
-                <span>Afficher plus d'espaces</span>
-                <svg width="22" height="22" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[#A68150] group-hover:rotate-90 transition-transform duration-300">
-                  <circle cx="12" cy="13.5" r="11" stroke="currentColor"></circle>
-                  <line x1="12" y1="7.5" x2="12" y2="19.5" stroke="currentColor"></line>
-                  <line x1="18" y1="13.5" x2="6" y2="13.5" stroke="currentColor"></line>
-                </svg>
+              <button id="loadMoreBtn" type="button" class="load-more-luxury-btn menu shrink-0 min-w-65 gap-4 whitespace-nowrap outline-none flex cursor-pointer items-center justify-between rounded-full px-8 py-4 uppercase transition-all duration-300 max-md:w-full group text-xs tracking-widest font-semibold">
+                <span class="tracking-[0.14em]">Afficher plus d'espaces</span>
+                <div class="flex items-center justify-center size-8 rounded-full bg-[#C5A880]/20 border border-[#C5A880]/50 text-[#C5A880] group-hover:bg-[#C5A880] group-hover:text-[#382417] transition-all duration-300">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:rotate-90 transition-transform duration-300">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                  </svg>
+                </div>
               </button>
             </div>
           </div>
