@@ -60,6 +60,25 @@ body {
   z-index: 1;
 }
 
+#Panorama .trigger {
+  padding-top: 10rem !important;
+  padding-bottom: 7rem !important;
+}
+
+@media (max-width: 1024px) {
+  #Panorama .trigger {
+    padding-top: 7.5rem !important;
+    padding-bottom: 5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #Panorama .trigger {
+    padding-top: 6.5rem !important;
+    padding-bottom: 4rem !important;
+  }
+}
+
 /* ==========================================================================
    HERO SCRIM & DESIGN (1:1 MATCH WITH RETAIL-SPACES.HTML)
    ========================================================================== */
@@ -326,7 +345,16 @@ body {
   text-transform: uppercase;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
   display: inline-block;
+  margin-top: 3rem;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .panorama-tag {
+    margin-top: 2rem;
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+  }
 }
 
 .panorama-title {
