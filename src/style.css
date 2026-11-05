@@ -2772,12 +2772,13 @@ button {
   }
 
   .arbor-title-overlay {
-    padding-block: 2.5rem; /* max-md:py-10 */
+    padding-bottom: 5.5rem;
   }
 
   .arbor-huge-heading {
-    font-size: 17vw; /* max-md:text-[17vw] */
-    white-space: normal;
+    font-size: 22.5vw;
+    line-height: 0.88;
+    white-space: nowrap;
   }
 }
 
