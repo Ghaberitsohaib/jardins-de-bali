@@ -279,16 +279,19 @@ button {
 
 .arbor-logo-symbol {
   width: auto;
-  height: 1.35rem;
-  max-width: 4.5rem;
+  height: 1.75rem;
+  max-width: 6.5rem;
   color: var(--arbor-golden); /* #a68150 */
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease, height 0.4s ease;
   display: block;
 }
 
 .arbor-header.is-open .arbor-logo-symbol {
-  opacity: 0;
-  pointer-events: none;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  height: 2.75rem;
+  max-width: 9.5rem;
+  transform: none;
 }
 
 /* Right Inquire Button */

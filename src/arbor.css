@@ -229,17 +229,19 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
 
 .arbor-logo-symbol {
   width: auto;
-  height: 1.35rem;
-  max-width: 4.5rem;
+  height: 1.75rem;
+  max-width: 6.5rem;
   color: var(--arbor-golden); /* #a68150 */
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease, height 0.4s ease;
   display: block;
 }
 
 .arbor-header.is-open .arbor-logo-symbol {
   opacity: 1 !important;
   pointer-events: auto !important;
-  transform: scale(1.08);
+  height: 2.75rem;
+  max-width: 9.5rem;
+  transform: none;
 }
 
 /* Right Inquire Button */
@@ -1363,16 +1365,17 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
     display: inline-flex !important;
     position: absolute !important;
     left: 50% !important;
-    top: 0.5rem !important;
-    transform: translateX(-50%) !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
     z-index: 20 !important;
     pointer-events: auto !important;
   }
 
   .arbor-header.is-open .arbor-logo-symbol {
     display: block !important;
-    width: 2.15rem !important;
-    height: 2.15rem !important;
+    width: auto !important;
+    height: 2.6rem !important;
+    max-width: 8.5rem !important;
     color: var(--arbor-golden, #C5A880) !important;
     opacity: 1 !important;
   }
