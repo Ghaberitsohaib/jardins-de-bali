@@ -228,8 +228,9 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
 }
 
 .arbor-logo-symbol {
-  width: 2rem;
-  height: 2rem;
+  width: auto;
+  height: 1.35rem;
+  max-width: 4.5rem;
   color: var(--arbor-golden); /* #a68150 */
   transition: opacity 0.4s ease, transform 0.4s ease;
   display: block;
@@ -595,8 +596,9 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
 }
 
 .arbor-loader-symbol {
-  width: 5rem; /* h-20 w-20 = 80px */
-  height: 5rem;
+  width: auto;
+  height: 3.5rem;
+  max-width: 12rem;
   color: var(--arbor-golden);
 }
 

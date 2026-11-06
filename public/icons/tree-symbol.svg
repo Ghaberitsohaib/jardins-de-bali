@@ -1,17 +1,20 @@
-<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
   <defs>
-    <linearGradient id="goldGradFav" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#182017"/>
+      <stop offset="100%" stop-color="#0A0E0A"/>
+    </linearGradient>
+    <linearGradient id="goldRoof" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FCEFD8"/>
       <stop offset="50%" stop-color="#C5A880"/>
-      <stop offset="100%" stop-color="#8E7148"/>
+      <stop offset="100%" stop-color="#9E8055"/>
     </linearGradient>
   </defs>
-  <rect width="100" height="100" rx="50" fill="#10150F"/>
-  <circle cx="50" cy="50" r="46" stroke="url(#goldGradFav)" stroke-width="1.5" stroke-dasharray="2 3" opacity="0.6"/>
-  <circle cx="50" cy="50" r="42" stroke="url(#goldGradFav)" stroke-width="1.2"/>
-  <path d="M34 26H52C59 26 64 30 64 36C64 41 60 44.5 55 45.5C61 46.8 66 51 66 58C66 65 60 70 51 70H34V26Z" stroke="url(#goldGradFav)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M42 26V70" stroke="url(#goldGradFav)" stroke-width="3"/>
-  <path d="M42 33H50C53 33 55 35 55 38C55 41 53 43 50 43H42" stroke="url(#goldGradFav)" stroke-width="2.5"/>
-  <path d="M42 52H50C54 52 57 54.5 57 58.5C57 62.5 54 65 50 65H42" stroke="url(#goldGradFav)" stroke-width="2.5"/>
-  <path d="M50 16L53 21L50 22L47 21L50 16Z" fill="url(#goldGradFav)"/>
+  <!-- Luxury Circular Badge with Gold Trim -->
+  <circle cx="60" cy="60" r="58" fill="url(#bgGrad)" stroke="#C5A880" stroke-width="2.5" />
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#C5A880" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.5" />
+  <!-- Scaled BaytImmo Roof Symbol -->
+  <g transform="translate(22, 47.5) scale(0.2868)" fill="url(#goldRoof)">
+    <path fill-rule="evenodd" d="M 123 48 L 123 64 L 138 64 L 138 48 Z M 142 48 L 142 64 L 157 64 L 157 48 Z M 123 68 L 123 84 L 138 84 L 138 68 Z M 142 68 L 142 84 L 157 84 L 157 68 Z M 0 86 L 32 86 L 140 5 L 200 53 L 164 87 L 182 87 L 211 62 L 240 84 L 213 61 L 221 53 L 265 85 L 224 49 L 214 44 L 183 18 L 160 17 L 140 0 L 107 0 Z M 173 27 L 181 21 L 214 47 L 207 48 L 202 52 Z" />
+  </g>
 </svg>
