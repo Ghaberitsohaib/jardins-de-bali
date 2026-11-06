@@ -20,3 +20,4 @@ for html_file in glob.glob('*.html'):
             with open(html_file, 'w', encoding='utf-8') as f:
                 f.write(content)
             print(f'Added theme-color meta to {html_file}')
+

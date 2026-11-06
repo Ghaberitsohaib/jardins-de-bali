@@ -15,3 +15,4 @@ for f in ['index.html', 'retail-spaces.html', 'residences.html', 'business.html'
     for s in inline_styles:
         if 'background' in s.lower() or 'hero' in s.lower():
             print("  STYLE SNIPPET:", s[:200].replace('\n', ' '))
+

@@ -11,3 +11,4 @@ for f in glob.glob('*.html'):
     print(f"=== {f} ===")
     print("  Theme color:", theme_color if theme_color else "NONE")
     print("  Viewport:", viewport if viewport else "NONE")
+
