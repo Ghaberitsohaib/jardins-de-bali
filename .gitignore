@@ -13,6 +13,10 @@ test_vibrant.png
 scripts/*.png
 scripts/snap_*.mjs
 *.tmp
+public_archive/
+videos_archive/
+audit_archive/
+image_originals_backup/
 
 # Environment variables
 .env
