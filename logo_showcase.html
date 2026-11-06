@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BaytImmo — Showcase Logos & Favicons de Prestige</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #0B0E0A;
+      color: #FAF7EF;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      padding: 40px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .header {
+      text-align: center;
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+    .kicker {
+      font-size: 13px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #C5A880;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 32px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: #FAF7EF;
+      margin-bottom: 12px;
+    }
+    p.sub {
+      color: #9E9D93;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+      width: 100%;
+      max-width: 1100px;
+    }
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background: #121711;
+      border: 1px solid rgba(197, 168, 128, 0.25);
+      border-radius: 18px;
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      transition: border-color 0.3s ease;
+    }
+    .card.recommended {
+      border-color: #C5A880;
+      background: radial-gradient(circle at top, #1A2317 0%, #121711 70%);
+    }
+    .badge {
+      position: absolute;
+      top: -12px;
+      right: 24px;
+      background: linear-gradient(135deg, #DFC298, #C5A880);
+      color: #10150F;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 9999px;
+    }
+
+    .opt-number {
+      font-family: 'Cinzel', serif;
+      font-size: 13px;
+      letter-spacing: 0.2em;
+      color: #C5A880;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .opt-title {
+      font-family: 'Cinzel', serif;
+      font-size: 20px;
+      color: #FAF7EF;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+    .opt-desc {
+      font-size: 13px;
+      color: #8E988A;
+      text-align: center;
+      margin-bottom: 24px;
+      max-width: 380px;
+      line-height: 1.4;
+    }
+
+    /* Logo Display Area */
+    .logo-stage {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: #182017;
+      border: 1px solid rgba(197, 168, 128, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 28px;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+      position: relative;
+    }
+    .logo-stage svg {
+      width: 80px;
+      height: 80px;
+    }
+
+    /* Browser Tab Simulation */
+    .tab-simulation {
+      width: 100%;
+      background: #1C221A;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: auto;
+    }
+    .tab-pill {
+      background: #273124;
+      border: 1px solid rgba(197, 168, 128, 0.3);
+      border-radius: 8px;
+      padding: 7px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1;
+    }
+    .tab-fav-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #10150F;
+      border: 1px solid rgba(197, 168, 128, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .tab-fav-icon svg {
+      width: 14px;
+      height: 14px;
+    }
+    .tab-text {
+      font-size: 13px;
+      font-weight: 500;
+      color: #FAF7EF;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .tab-close {
+      color: #6C7767;
+      font-size: 13px;
+      margin-left: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="kicker">Identité Visuelle & Favicon Officiel</div>
+    <h1>Choisissez Votre Nouveau Logo BaytImmo</h1>
+    <p class="sub">Remplacement immédiat du favicon placeholder ("sushi") par un emblème haute joaillerie & architecture de luxe pour Marrakech.</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- OPTION 1 -->
+    <div class="card recommended">
+      <div class="badge">Recommandé</div>
+      <div class="opt-number">Option 01</div>
+      <h3 class="opt-title">Le Monogramme Royal "B"</h3>
+      <p class="opt-desc">Lettre "B" stylisée intégrant une arche marocaine contemporaine et une couronne géométrique en or brossé.</p>
+      
+      <div class="logo-stage">
+        <!-- SVG Monogram B -->
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="goldGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FCEFD8"/>
+              <stop offset="50%" stop-color="#C5A880"/>
+              <stop offset="100%" stop-color="#8E7148"/>
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="46" stroke="url(#goldGrad1)" stroke-width="1.5" stroke-dasharray="2 3" opacity="0.6"/>
+          <circle cx="50" cy="50" r="42" stroke="url(#goldGrad1)" stroke-width="1"/>
+          <!-- Royal B with Arch Portal inside -->
+          <path d="M34 26H52C59 26 64 30 64 36C64 41 60 44.5 55 45.5C61 46.8 66 51 66 58C66 65 60 70 51 70H34V26Z" stroke="url(#goldGrad1)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M42 26V70" stroke="url(#goldGrad1)" stroke-width="2"/>
+          <!-- Architectural Arch inside top lobe -->
+          <path d="M42 33H50C53 33 55 35 55 38C55 41 53 43 50 43H42" stroke="url(#goldGrad1)" stroke-width="1.5"/>
+          <!-- Moorish Keyhole Arch in bottom lobe -->
+          <path d="M42 52H50C54 52 57 54.5 57 58.5C57 62.5 54 65 50 65H42" stroke="url(#goldGrad1)" stroke-width="1.5"/>
+          <!-- Crown Diamond Peak -->
+          <path d="M50 16L53 21L50 22L47 21L50 16Z" fill="url(#goldGrad1)"/>
+        </svg>
+      </div>
+
+      <div class="tab-simulation">
+        <div class="tab-pill">
+          <div class="tab-fav-icon">
+            <svg viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="50" r="44" stroke="#C5A880" stroke-width="3"/>
+              <path d="M34 26H52C59 26 64 30 64 36C64 41 60 44.5 55 45.5C61 46.8 66 51 66 58C66 65 60 70 51 70H34V26Z" stroke="#C5A880" stroke-width="6"/>
+              <path d="M42 26V70" stroke="#C5A880" stroke-width="4"/>
+              <path d="M50 14L53 20L47 20Z" fill="#C5A880"/>
+            </svg>
+          </div>
+          <span class="tab-text">BaytImmo — Marrakech</span>
+          <span class="tab-close">×</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION 2 -->
+    <div class="card">
+      <div class="opt-number">Option 02</div>
+      <h3 class="opt-title">Le Palmier & L'Arche Menara</h3>
+      <p class="opt-desc">Évocation directe de Marrakech & des Jardins de Bali : arche architecturale accueillant un palmier royal stylisé.</p>
+      
+      <div class="logo-stage">
+        <!-- SVG Palmier Arch -->
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FCEFD8"/>
+              <stop offset="50%" stop-color="#C5A880"/>
+              <stop offset="100%" stop-color="#8E7148"/>
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="44" stroke="url(#goldGrad2)" stroke-width="1.2" opacity="0.5"/>
+          <!-- Outer Arch -->
+          <path d="M28 74V50C28 37.8497 37.8497 28 50 28C62.1503 28 72 37.8497 72 50V74" stroke="url(#goldGrad2)" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M33 74V50C33 40.6112 40.6112 33 50 33C59.3888 33 67 40.6112 67 50V74" stroke="url(#goldGrad2)" stroke-width="1" opacity="0.7"/>
+          <!-- Palm Trunk -->
+          <path d="M50 74V48" stroke="url(#goldGrad2)" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Palm Fronds -->
+          <path d="M50 48C45 42 36 43 33 46" stroke="url(#goldGrad2)" stroke-width="2" stroke-linecap="round"/>
+          <path d="M50 48C55 42 64 43 67 46" stroke="url(#goldGrad2)" stroke-width="2" stroke-linecap="round"/>
+          <path d="M50 46C46 38 38 37 36 39" stroke="url(#goldGrad2)" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M50 46C54 38 62 37 64 39" stroke="url(#goldGrad2)" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M50 44C50 35 50 32 50 30" stroke="url(#goldGrad2)" stroke-width="2" stroke-linecap="round"/>
+          <!-- Base Baseline -->
+          <path d="M22 74H78" stroke="url(#goldGrad2)" stroke-width="2" stroke-linecap="round"/>
+          <!-- Moroccan Star at Top -->
+          <circle cx="50" cy="22" r="2.5" fill="url(#goldGrad2)"/>
+        </svg>
+      </div>
+
+      <div class="tab-simulation">
+        <div class="tab-pill">
+          <div class="tab-fav-icon">
+            <svg viewBox="0 0 100 100" fill="none">
+              <circle cx="50" cy="50" r="44" stroke="#C5A880" stroke-width="3"/>
+              <path d="M30 74V50C30 38.9543 38.9543 30 50 30C61.0457 30 70 38.9543 70 50V74" stroke="#C5A880" stroke-width="4"/>
+              <path d="M50 74V48" stroke="#C5A880" stroke-width="4"/>
+              <path d="M50 48C44 42 35 43 33 46" stroke="#C5A880" stroke-width="3"/>
+              <path d="M50 48C56 42 65 43 67 46" stroke="#C5A880" stroke-width="3"/>
+              <circle cx="50" cy="22" r="3.5" fill="#C5A880"/>
+            </svg>
+          </div>
+          <span class="tab-text">BaytImmo — Marrakech</span>
+          <span class="tab-close">×</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION 3 -->
+    <div class="card">
+      <div class="opt-number">Option 03</div>
+      <h3 class="opt-title">L'Écusson Géométrique "Bayt"</h3>
+      <p class="opt-desc">Structure architecturale épurée en diamant / zellige moderne, inspirée des portails des grands riads contemporains.</p>
+      
+      <div class="logo-stage">
+        <!-- SVG Geometric Diamond Arch -->
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="goldGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FCEFD8"/>
+              <stop offset="50%" stop-color="#C5A880"/>
+              <stop offset="100%" stop-color="#8E7148"/>
+            </linearGradient>
+          </defs>
+          <!-- Octagonal / Diamond Shield -->
+          <rect x="20" y="20" width="60" height="60" rx="14" transform="rotate(45 50 50)" stroke="url(#goldGrad3)" stroke-width="1.5" opacity="0.6"/>
+          <circle cx="50" cy="50" r="36" stroke="url(#goldGrad3)" stroke-width="1.2"/>
+          <!-- Clean Symmetrical Gate "B" -->
+          <path d="M38 32V68" stroke="url(#goldGrad3)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M38 32H54C60 32 64 35.5 64 40.5C64 45.5 60 49 54 49H38" stroke="url(#goldGrad3)" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M38 49H56C62 49 66 53 66 58.5C66 64 62 68 56 68H38" stroke="url(#goldGrad3)" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Inner architectural accent line -->
+          <circle cx="50" cy="50" r="3" fill="url(#goldGrad3)"/>
+        </svg>
+      </div>
+
+      <div class="tab-simulation">
+        <div class="tab-pill">
+          <div class="tab-fav-icon">
+            <svg viewBox="0 0 100 100" fill="none">
+              <rect x="20" y="20" width="60" height="60" rx="14" transform="rotate(45 50 50)" stroke="#C5A880" stroke-width="3"/>
+              <path d="M38 32V68" stroke="#C5A880" stroke-width="6"/>
+              <path d="M38 32H54C60 32 64 35.5 64 40.5C64 45.5 60 49 54 49H38" stroke="#C5A880" stroke-width="4"/>
+              <path d="M38 49H56C62 49 66 53 66 58.5C66 64 62 68 56 68H38" stroke="#C5A880" stroke-width="4"/>
+            </svg>
+          </div>
+          <span class="tab-text">BaytImmo — Marrakech</span>
+          <span class="tab-close">×</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION 4 -->
+    <div class="card">
+      <div class="opt-number">Option 04</div>
+      <h3 class="opt-title">L'Arbre Botanique d'Or (Belgrade Arbor)</h3>
+      <p class="opt-desc">L'emblème officiel d'origine : l'arbre de vie sculptural stylisé en or champagne, symbole de nature & sérénité.</p>
+      
+      <div class="logo-stage">
+        <!-- SVG Original Tree Symbol -->
+        <svg viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="goldGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FCEFD8"/>
+              <stop offset="50%" stop-color="#C5A880"/>
+              <stop offset="100%" stop-color="#8E7148"/>
+            </linearGradient>
+          </defs>
+          <path d="M0.00542084 6.72846V12.2388C0.00542084 14.8968 2.16022 17.0516 4.81573 17.0516H9.2175C10.6897 13.9501 13.8559 11.8003 17.5203 11.8003H19.2616C21.663 11.8003 23.6509 10.0441 24.0146 7.74233C20.1559 7.24411 17.1616 3.97579 17.0844 0H14.9844V2.96441C14.9844 6.62632 12.5132 9.70781 9.14775 10.6395C9.98974 11.3644 11.0858 11.8003 12.284 11.8003H13.0164C12.3887 12.1491 11.8107 12.5825 11.3026 13.0907C10.5901 13.8032 10.0221 14.6526 9.63601 15.5868C9.61359 15.6466 9.58618 15.7064 9.56626 15.7662C5.95167 14.6477 3.2862 11.3544 3.10684 7.416C2.01076 7.36618 0.966985 7.12703 0.00292969 6.72596H0.00542084V6.72846Z" fill="url(#goldGrad4)"/>
+          <path d="M10.6076 0.00242615H7.46387L7.46885 6.52661C9.23753 6.3049 10.6076 4.79779 10.6076 2.96683V0.00242615Z" fill="url(#goldGrad4)"/>
+          <path d="M3.08984 0.00232697H1.46066C0.656036 0.00232697 0.00585938 0.652504 0.00585938 1.45713V1.5219C0.793046 2.36389 1.87917 2.92439 3.09482 3.03399V0.00232697H3.09233H3.08984Z" fill="url(#goldGrad4)"/>
+          <path d="M21.4619 0.00242615C21.5267 1.58178 22.6128 2.89459 24.0776 3.30562V0.00242615H21.4619Z" fill="url(#goldGrad4)"/>
+          <path d="M28.4562 0.00242615L28.4512 6.03337C30.0156 5.23871 31.0843 3.61452 31.0843 1.74121V0.00242615H28.4562Z" fill="url(#goldGrad4)"/>
+          <path d="M34.9979 4.60857C33.9292 7.86693 31.0819 10.3207 27.6043 10.8313C26.152 13.9876 22.9584 16.1797 19.2567 16.1797H17.5154C14.8574 16.1797 12.7051 18.3345 12.7051 20.99V35H22.3282V20.99C22.3282 19.4082 21.5659 18.0032 20.3826 17.1263C21.12 17.0491 21.8449 16.8673 22.53 16.5808C23.3172 16.2545 24.0421 15.8011 24.6773 15.2406C25.8556 16.7078 26.5954 18.5463 26.6901 20.5541H30.2175C32.6712 20.5541 34.699 18.7157 34.9929 16.3367V4.60857H34.9954H34.9979Z" fill="url(#goldGrad4)"/>
+          <path d="M34.9999 23.5883C33.6099 24.4377 31.9732 24.926 30.2245 24.926H26.707V35H33.5426C34.3472 35 34.9974 34.3498 34.9974 33.5452V23.5883H34.9999Z" fill="url(#goldGrad4)"/>
+          <path d="M8.33272 35V21.426H4.81529C3.05159 21.426 1.4 20.9278 0 20.0634V33.5402C0 34.3448 0.650177 34.995 1.4548 34.995H8.33272V35Z" fill="url(#goldGrad4)"/>
+        </svg>
+      </div>
+
+      <div class="tab-simulation">
+        <div class="tab-pill">
+          <div class="tab-fav-icon">
+            <svg viewBox="0 0 35 35" fill="none">
+              <path d="M0.00542084 6.72846V12.2388C0.00542084 14.8968 2.16022 17.0516 4.81573 17.0516H9.2175C10.6897 13.9501 13.8559 11.8003 17.5203 11.8003H19.2616C21.663 11.8003 23.6509 10.0441 24.0146 7.74233C20.1559 7.24411 17.1616 3.97579 17.0844 0H14.9844V2.96441C14.9844 6.62632 12.5132 9.70781 9.14775 10.6395C9.98974 11.3644 11.0858 11.8003 12.284 11.8003H13.0164C12.3887 12.1491 11.8107 12.5825 11.3026 13.0907C10.5901 13.8032 10.0221 14.6526 9.63601 15.5868C9.61359 15.6466 9.58618 15.7064 9.56626 15.7662C5.95167 14.6477 3.2862 11.3544 3.10684 7.416C2.01076 7.36618 0.966985 7.12703 0.00292969 6.72596H0.00542084V6.72846Z" fill="#C5A880"/>
+              <path d="M10.6076 0H7.46387L7.46885 6.52661C9.23753 6.3049 10.6076 4.79779 10.6076 2.96683V0Z" fill="#C5A880"/>
+              <path d="M21.4619 0C21.5267 1.58178 22.6128 2.89459 24.0776 3.30562V0H21.4619Z" fill="#C5A880"/>
+              <path d="M34.9979 4.60857C33.9292 7.86693 31.0819 10.3207 27.6043 10.8313C26.152 13.9876 22.9584 16.1797 19.2567 16.1797H17.5154C14.8574 16.1797 12.7051 18.3345 12.7051 20.99V35H22.3282V20.99C22.3282 19.4082 21.5659 18.0032 20.3826 17.1263C21.12 17.0491 21.8449 16.8673 22.53 16.5808C23.3172 16.2545 24.0421 15.8011 24.6773 15.2406C25.8556 16.7078 26.5954 18.5463 26.6901 20.5541H30.2175C32.6712 20.5541 34.699 18.7157 34.9929 16.3367V4.60857H34.9954H34.9979Z" fill="#C5A880"/>
+            </svg>
+          </div>
+          <span class="tab-text">BaytImmo — Marrakech</span>
+          <span class="tab-close">×</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

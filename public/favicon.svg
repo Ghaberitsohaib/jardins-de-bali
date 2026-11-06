@@ -1,0 +1,17 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradFav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCEFD8"/>
+      <stop offset="50%" stop-color="#C5A880"/>
+      <stop offset="100%" stop-color="#8E7148"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="50" fill="#10150F"/>
+  <circle cx="50" cy="50" r="46" stroke="url(#goldGradFav)" stroke-width="1.5" stroke-dasharray="2 3" opacity="0.6"/>
+  <circle cx="50" cy="50" r="42" stroke="url(#goldGradFav)" stroke-width="1.2"/>
+  <path d="M34 26H52C59 26 64 30 64 36C64 41 60 44.5 55 45.5C61 46.8 66 51 66 58C66 65 60 70 51 70H34V26Z" stroke="url(#goldGradFav)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M42 26V70" stroke="url(#goldGradFav)" stroke-width="3"/>
+  <path d="M42 33H50C53 33 55 35 55 38C55 41 53 43 50 43H42" stroke="url(#goldGradFav)" stroke-width="2.5"/>
+  <path d="M42 52H50C54 52 57 54.5 57 58.5C57 62.5 54 65 50 65H42" stroke="url(#goldGradFav)" stroke-width="2.5"/>
+  <path d="M50 16L53 21L50 22L47 21L50 16Z" fill="url(#goldGradFav)"/>
+</svg>
