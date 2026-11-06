@@ -1152,20 +1152,10 @@ document.addEventListener('DOMContentLoaded', () => {
         indicator.style.transform = `translate3d(0, ${t}px, 0)`;
       }
       optionItems.forEach((item, i) => {
-        const primary = item.querySelector('.res-item-primary');
-        const italic = item.querySelector('.res-item-italic');
         if (i === idx) {
-          if (primary) primary.classList.add('-translate-y-full');
-          if (italic) {
-            italic.classList.remove('top-[120%]');
-            italic.classList.add('top-0');
-          }
+          item.classList.add('is-active');
         } else {
-          if (primary) primary.classList.remove('-translate-y-full');
-          if (italic) {
-            italic.classList.remove('top-0');
-            italic.classList.add('top-[120%]');
-          }
+          item.classList.remove('is-active');
         }
       });
       detailPanels.forEach((panel, i) => {
@@ -1502,20 +1492,10 @@ document.addEventListener('DOMContentLoaded', () => {
         indicator.style.transform = `translate3d(0, ${t}px, 0)`;
       }
       optionItems.forEach((item, i) => {
-        const primary = item.querySelector('.amen-item-primary');
-        const italic = item.querySelector('.amen-item-italic');
         if (i === idx) {
-          if (primary) primary.classList.add('-translate-y-full');
-          if (italic) {
-            italic.classList.remove('top-full');
-            italic.classList.add('top-0');
-          }
+          item.classList.add('is-active');
         } else {
-          if (primary) primary.classList.remove('-translate-y-full');
-          if (italic) {
-            italic.classList.remove('top-0');
-            italic.classList.add('top-full');
-          }
+          item.classList.remove('is-active');
         }
       });
       detailPanels.forEach((panel, i) => {
