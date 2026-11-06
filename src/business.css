@@ -113,11 +113,36 @@ body {
   filter: drop-shadow(0 4px 28px rgba(0, 0, 0, 0.9));
 }
 
+@media (max-width: 1024px) {
+  #Hero .trigger {
+    align-items: flex-start !important;
+  }
+  .business-hero-wrapper {
+    justify-content: flex-start !important;
+    padding-top: max(8rem, calc(6.5rem + env(safe-area-inset-top, 24px))) !important;
+    padding-bottom: 5rem !important;
+  }
+  .business-hero-title {
+    margin-top: 1.5rem !important;
+  }
+}
+
 @media (max-width: 768px) {
   .business-hero-title {
     font-size: clamp(2.25rem, 9.5vw, 3.25rem);
     letter-spacing: 0.06em;
     line-height: 1.05;
+  }
+}
+
+@media (max-width: 640px) {
+  .business-hero-wrapper {
+    padding-top: max(8.5rem, calc(7rem + env(safe-area-inset-top, 24px))) !important;
+    padding-bottom: 4rem !important;
+  }
+  .business-hero-title {
+    margin-top: 2rem !important;
+    margin-bottom: 1.25rem !important;
   }
 }
 
