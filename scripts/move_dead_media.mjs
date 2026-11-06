@@ -39,3 +39,4 @@ if (fs.existsSync('public/audit')) {
 }
 
 console.log('Done moving dead media to backup.');
+

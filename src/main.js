@@ -969,7 +969,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 6. SHOWCASE SECTIONS: #Residences, #BusinessSpaces, #Amenities
   // Parallax scrub + clip-path reveal
   // ==========================================
-  ['#Residences', '#BusinessSpaces'].forEach((secId) => {
+  ['#Residences', '#BusinessSpaces', '#Amenities'].forEach((secId) => {
     const sec = document.querySelector(secId);
     if (!sec) return;
 
@@ -1458,14 +1458,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const detailPanels = Array.from(amenOptionsSection.querySelectorAll('.amen-detail-panel'));
     const imagePanes = Array.from(amenOptionsSection.querySelectorAll('.amen-image-pane'));
 
-    gsap.timeline({
-      scrollTrigger: {
-        trigger: amenOptionsSection.querySelector('.trigger') || amenOptionsSection,
-        start: 'top 70%',
-      },
-    })
-      .fromTo(firstCol, { clipPath: 'inset(0% 0% 100% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.2, ease: 'power2.inOut' }, 0)
-      .fromTo(secondCol, { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.2, ease: 'power2.inOut' }, 0);
+    if (window.innerWidth >= 1024) {
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: amenOptionsSection.querySelector('.trigger') || amenOptionsSection,
+          start: 'top 70%',
+        },
+      })
+        .fromTo(firstCol, { clipPath: 'inset(0% 0% 100% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.2, ease: 'power2.inOut' }, 0)
+        .fromTo(secondCol, { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.2, ease: 'power2.inOut' }, 0);
+    }
 
     if (parallaxWraps.length) {
       gsap.fromTo(
