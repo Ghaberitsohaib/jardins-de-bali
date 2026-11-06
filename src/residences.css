@@ -72,20 +72,58 @@ footer {
   width: 100%;
   max-width: 90rem;
   margin: 0 auto;
-  padding: 10rem 2.5rem 5rem 2.5rem;
+  padding: 6.5rem 2.5rem 3.5rem 2.5rem;
+}
+
+@media (max-height: 820px) {
+  .residences-hero-content {
+    padding-top: 4.5rem !important;
+    padding-bottom: 1.75rem !important;
+  }
+  .residences-hero-content > div {
+    gap: 1rem !important;
+  }
+  .residences-title {
+    font-size: clamp(2.5rem, 5.5vw, 4.5rem) !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .residences-lead {
+    font-size: 0.875rem !important;
+    line-height: 1.5 !important;
+  }
+  .residences-metrics-bar {
+    margin-top: 1rem !important;
+    padding-top: 0.75rem !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .residences-hero-content {
+    padding: 5rem 1.75rem 2rem 1.75rem;
+  }
+  .residences-metrics-bar {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.65rem 2rem !important;
+    padding-top: 0.85rem !important;
+    margin-top: 1.25rem !important;
+  }
+  .metric-divider {
+    display: none !important;
+  }
 }
 
 @media (max-width: 768px) {
   .residences-hero {
     min-height: 100vh;
-    min-height: 100lvh;
+    min-height: 100svh;
     align-items: center;
   }
   .residences-hero-bg {
     transform: none;
   }
   .residences-hero-content {
-    padding: 6.25rem 1.25rem 2.25rem 1.25rem;
+    padding: max(4.85rem, calc(4rem + env(safe-area-inset-top, 16px))) 1.25rem 1.5rem 1.25rem;
   }
 }
 
@@ -268,15 +306,22 @@ footer {
   .residences-metrics-bar {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem 2rem;
-    padding-top: 1.25rem;
-    margin-top: 1.75rem;
+    gap: 0.65rem 1.5rem;
+    padding-top: 0.85rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
   }
   .metric-divider {
     display: none;
   }
   .metric-number {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.15rem;
+  }
+  .metric-label {
+    font-size: 0.58rem;
+    letter-spacing: 0.08em;
+    line-height: 1.25;
   }
 }
 
