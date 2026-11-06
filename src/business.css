@@ -119,30 +119,84 @@ body {
   }
   .business-hero-wrapper {
     justify-content: flex-start !important;
-    padding-top: max(8rem, calc(6.5rem + env(safe-area-inset-top, 24px))) !important;
-    padding-bottom: 5rem !important;
+    padding-top: max(5.25rem, calc(4.25rem + env(safe-area-inset-top, 20px))) !important;
+    padding-bottom: 2rem !important;
   }
   .business-hero-title {
-    margin-top: 1.5rem !important;
+    margin-top: 0.35rem !important;
+    margin-bottom: 0.65rem !important;
   }
 }
 
 @media (max-width: 768px) {
   .business-hero-title {
-    font-size: clamp(2.25rem, 9.5vw, 3.25rem);
-    letter-spacing: 0.06em;
-    line-height: 1.05;
+    font-size: clamp(1.85rem, 8vw, 2.5rem) !important;
+    letter-spacing: 0.05em !important;
+    line-height: 1.05 !important;
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .business-hero-p {
+    font-size: 0.8125rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 0.85rem !important;
+  }
+  .business-hero-cta {
+    padding: 0.58rem 1.15rem !important;
+    font-size: 0.72rem !important;
+    letter-spacing: 0.05em !important;
+  }
+  .business-metrics-bar {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.5rem 1.25rem !important;
+    padding-top: 0.65rem !important;
+    margin-top: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  .metric-divider {
+    display: none !important;
+  }
+  .metric-number {
+    font-size: clamp(1.4rem, 4.8vw, 1.85rem) !important;
+    margin-bottom: 0.15rem !important;
+  }
+  .metric-label {
+    font-size: 0.58rem !important;
+    letter-spacing: 0.09em !important;
+    line-height: 1.25 !important;
+  }
+  .hero-scroll-down-btn {
+    bottom: max(0.75rem, env(safe-area-inset-bottom, 10px)) !important;
+    width: 2.75rem !important;
+    height: 2.75rem !important;
+  }
+  .hero-scroll-down-arrow {
+    width: 0.55rem !important;
+    height: 1.25rem !important;
   }
 }
 
 @media (max-width: 640px) {
   .business-hero-wrapper {
-    padding-top: max(8.5rem, calc(7rem + env(safe-area-inset-top, 24px))) !important;
-    padding-bottom: 4rem !important;
+    padding-top: max(5rem, calc(4rem + env(safe-area-inset-top, 20px))) !important;
+    padding-bottom: 1.5rem !important;
   }
   .business-hero-title {
-    margin-top: 2rem !important;
-    margin-bottom: 1.25rem !important;
+    margin-top: 0.2rem !important;
+    margin-bottom: 0.45rem !important;
+  }
+  .business-hero-cta {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 0.55rem 1rem !important;
+    font-size: 0.7rem !important;
+    gap: 0.45rem !important;
+  }
+  .business-hero-p {
+    font-size: 0.78rem !important;
+    line-height: 1.42 !important;
+    margin-bottom: 0.75rem !important;
   }
 }
 
