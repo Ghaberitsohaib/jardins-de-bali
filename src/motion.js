@@ -110,7 +110,8 @@ export function initMotion(options = {}) {
   gsap.ticker.add((time) => {
     lenis.raf(time * 1000);
   });
-  gsap.ticker.lagSmoothing(0);
+  // Use optimal lagSmoothing to prevent frame-drop stutter/jumps on mobile touch scroll
+  gsap.ticker.lagSmoothing(500, 33);
 
   // Clean up on page navigation/unload
   window.addEventListener('beforeunload', () => {

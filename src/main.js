@@ -19,26 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Flag to know whether the hero video has finished / final 3D image revealed
   let heroVideoFinished = false;
 
-  // Guarantee hero title is 100% visible whenever returning to the top of the page AFTER video has finished
-  if (lenis) {
-    lenis.on('scroll', (e) => {
-      if (heroVideoFinished && e.scroll <= 40) {
-        const titleOverlay = document.getElementById('arborGiantTitle');
-        if (titleOverlay) {
-          gsap.set(titleOverlay, { opacity: 1, yPercent: 0, filter: 'none' });
-        }
-      }
-    });
-  }
-  window.addEventListener('scroll', () => {
-    if (heroVideoFinished && window.scrollY <= 40) {
-      const titleOverlay = document.getElementById('arborGiantTitle');
-      if (titleOverlay) {
-        gsap.set(titleOverlay, { opacity: 1, yPercent: 0, filter: 'none' });
-      }
-    }
-  }, { passive: true });
-
   // ==========================================
   // 2. TEXT SPLITTING UTILITY (Words & Chars)
   // ==========================================
@@ -455,32 +435,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function initTitleScrub() {
       if (titleScrub || !heroTitleOverlay) return;
+      // Kill any running entrance tweens so there is zero conflict
+      gsap.killTweensOf(heroTitleOverlay);
+
+      const isMob = window.matchMedia('(max-width: 768px)').matches;
+
+      // Ultra-clean, hardware-accelerated scroll scrub:
+      // Starts right at 0 scroll ('top top') so returning to top naturally restores 100% opacity smoothly
       titleScrub = gsap.fromTo(
         heroTitleOverlay,
-        { opacity: 1, yPercent: 0, filter: 'blur(0px)' },
+        { opacity: 1, yPercent: 0 },
         {
-          yPercent: -25,
           opacity: 0,
-          filter: 'blur(8px)',
-          ease: 'none',
+          yPercent: isMob ? -10 : -20,
+          ease: 'power1.out',
           scrollTrigger: {
             trigger: '#top',
-            start: '15% top',
-            end: '55% top',
-            scrub: true,
-            onLeave: () => {
-              gsap.set(heroTitleOverlay, { opacity: 0 });
-            },
-            onLeaveBack: () => {
-              if (heroVideoFinished) {
-                gsap.set(heroTitleOverlay, { opacity: 1, yPercent: 0, filter: 'none' });
-              }
-            },
-            onRefresh: () => {
-              if (heroVideoFinished && window.scrollY <= 40) {
-                gsap.set(heroTitleOverlay, { opacity: 1, yPercent: 0, filter: 'none' });
-              }
-            },
+            start: 'top top',
+            end: isMob ? '45% top' : '55% top',
+            scrub: isMob ? true : 0.5,
+            invalidateOnRefresh: true,
           },
         }
       );
@@ -491,33 +465,36 @@ document.addEventListener('DOMContentLoaded', () => {
       finalShown = true;
       heroVideoFinished = true;
 
+      // Kill any running tweens to prevent fighting animations
+      if (heroTitleOverlay) gsap.killTweensOf(heroTitleOverlay);
+      gsap.killTweensOf(heroFinalImg);
+
       // Reveal final 3D realistic facade image
       heroFinalImg.classList.add('is-visible');
-      gsap.to(heroFinalImg, { opacity: 1, duration: 1, ease: 'power2.out' });
+      gsap.to(heroFinalImg, { opacity: 1, duration: 0.6, ease: 'power2.out' });
 
-      // Reveal the giant title ONLY when the video has finished
+      // Reveal the giant title
       if (heroTitleOverlay) {
         heroTitleOverlay.classList.add('is-visible');
 
-        if (window.scrollY <= 25) {
-          // User is at the top watching: animate title in with smooth luxury fade
+        if (window.scrollY <= 5) {
+          // User is resting at the top watching: gentle, lightweight fade-in
           gsap.fromTo(
             heroTitleOverlay,
-            { opacity: 0, yPercent: 3, filter: 'blur(6px)' },
+            { opacity: 0, y: 12 },
             {
               opacity: 1,
-              yPercent: 0,
-              filter: 'blur(0px)',
-              duration: 1.1,
+              y: 0,
+              duration: 0.8,
               ease: 'power2.out',
-              clearProps: 'filter',
+              clearProps: 'transform',
               onComplete: () => {
                 initTitleScrub();
               },
             }
           );
         } else {
-          // User has already scrolled: activate scrub immediately
+          // User has already scrolled down: attach scrub immediately with 0 latency
           initTitleScrub();
         }
       }
@@ -527,7 +504,7 @@ document.addEventListener('DOMContentLoaded', () => {
           heroVideo.pause();
           heroVideo.style.opacity = '0';
         }
-      }, 500);
+      }, 400);
     };
 
     heroVideo.addEventListener('timeupdate', () => {
@@ -537,9 +514,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     heroVideo.addEventListener('ended', showFinalImage);
 
+    // If user starts scrolling at all, switch to final image immediately
     ScrollTrigger.create({
       trigger: '#top',
-      start: 'top -20px',
+      start: 'top -10px',
       once: true,
       onEnter: showFinalImage,
     });
@@ -551,18 +529,21 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }, { passive: true });
 
-    // High-end Hero Stage Parallax on Scroll (GSAP ScrollTrigger Best Practice)
-    gsap.to('#arborStage', {
-      yPercent: 18,
-      scale: 1.05,
-      ease: 'none',
-      scrollTrigger: {
-        trigger: '#top',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: 1,
-      },
-    });
+    // High-end Hero Stage Parallax on Scroll: DESKTOP ONLY
+    // On mobile devices, disabling container scaling/lag gives 100% native 60fps touch fluidity ("khfif")
+    if (window.matchMedia('(min-width: 769px)').matches) {
+      gsap.to('#arborStage', {
+        yPercent: 18,
+        scale: 1.05,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '#top',
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 1,
+        },
+      });
+    }
   }
 
   // ==========================================

@@ -567,7 +567,7 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
   object-position: center;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity;
 }
 
 .arbor-hero-final-img.is-visible {
@@ -636,7 +636,11 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
   padding-block: 2.5rem;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .arbor-title-overlay.is-visible {
