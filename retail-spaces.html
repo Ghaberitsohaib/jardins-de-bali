@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#10150F" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>Retail &amp; Business Spaces | Jardins de Bali | BaytImmo</title>
   <meta name="description" content="Explorez les locaux commerciaux, magasins flagships et plateaux de bureaux aux Jardins de Bali à Marrakech Menara. Des surfaces modulables de 48 m² à 406 m² avec vitrines sur boulevard principal et parkings sécurisés." />
   <meta name="keywords" content="retail spaces marrakech, magasins jardins de bali, locaux commerciaux menara, bureaux marrakech, baytimmo, showroom marrakech" />
@@ -35,13 +38,37 @@
   <link rel="stylesheet" href="/src/arbor.css" />
 
   <style>
-    /* Bulletproof White / Warm Linen Background Guarantee (Matching Residences) */
-    html, body {
-      background-color: #FDFBEF !important;
-      color: #1A2417 !important;
+    html {
+      background-color: #10150F !important;
+    }
+    body {
+      background-color: #10150F !important;
+      color: #FAF7EF !important;
+    }
+    #Hero {
+      position: relative;
+      min-height: 100vh !important;
+      min-height: 100lvh !important;
+      background-color: #10150F !important;
+    }
+    #Hero .trigger {
+      position: relative;
+      width: 100%;
+      min-height: 100vh !important;
+      min-height: 100lvh !important;
+      height: 100%;
+    }
+    #Hero .background {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
     }
     #Picker {
       background-color: #FDFBEF !important;
+      color: #1A2417 !important;
       padding-top: 2.5rem !important;
       padding-bottom: 8.5rem !important;
       position: relative;

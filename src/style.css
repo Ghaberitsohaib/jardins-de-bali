@@ -172,11 +172,53 @@ button {
 .arbor-hero-wrapper {
   position: relative;
   width: 100%;
-  height: 100svh;
-  min-height: 100svh;
+  height: 100vh;
+  height: 100lvh;
+  min-height: 100vh;
+  min-height: 100lvh;
   max-height: none;
   overflow: clip;
-  background-color: var(--arbor-vanilla);
+  background-color: #10150F;
+}
+
+html {
+  background-color: #10150F !important;
+}
+
+#Hero,
+.residences-hero,
+.arbor-hero-stage,
+.arbor-hero-wrapper {
+  position: relative;
+  min-height: 100vh !important;
+  min-height: 100lvh !important;
+  background-color: #10150F !important;
+}
+
+#Hero .trigger,
+#Hero .background,
+.residences-hero-bg {
+  min-height: 100vh !important;
+  min-height: 100lvh !important;
+  height: 100% !important;
+}
+
+@media (max-width: 1024px) {
+  #Hero,
+  .residences-hero,
+  .arbor-hero-stage,
+  .arbor-hero-wrapper {
+    min-height: 100vh !important;
+    min-height: 100lvh !important;
+    height: 100lvh !important;
+  }
+  #Hero .trigger,
+  #Hero .background,
+  .residences-hero-bg {
+    min-height: 100vh !important;
+    min-height: 100lvh !important;
+    height: 100% !important;
+  }
 }
 
 /* Fixed Floating Pill Header: sleek compact size matching screenshot (max-width: 28.25rem / 452px) */
@@ -530,9 +572,12 @@ button {
 .arbor-hero-stage {
   position: relative;
   width: 100%;
-  height: 100svh;
+  height: 100vh;
+  height: 100lvh;
+  min-height: 100vh;
+  min-height: 100lvh;
   overflow: hidden;
-  background-color: var(--arbor-vanilla);
+  background-color: #10150F;
 }
 
 .arbor-hero-video {

@@ -56,11 +56,56 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
 .arbor-hero-wrapper {
   position: relative;
   width: 100%;
-  height: 100svh;
-  min-height: 100svh;
+  height: 100vh;
+  height: 100lvh;
+  min-height: 100vh;
+  min-height: 100lvh;
   max-height: none;
   overflow: clip;
-  background-color: var(--arbor-vanilla);
+  background-color: #10150F;
+}
+
+/* ==========================================================================
+   IMMERSIVE LUXURY HERO FULLSCREEN GUARANTEE (MOBILE & DESKTOP)
+   ========================================================================== */
+html {
+  background-color: #10150F !important;
+}
+
+#Hero,
+.residences-hero,
+.arbor-hero-stage,
+.arbor-hero-wrapper {
+  position: relative;
+  min-height: 100vh !important;
+  min-height: 100lvh !important;
+  background-color: #10150F !important;
+}
+
+#Hero .trigger,
+#Hero .background,
+.residences-hero-bg {
+  min-height: 100vh !important;
+  min-height: 100lvh !important;
+  height: 100% !important;
+}
+
+@media (max-width: 1024px) {
+  #Hero,
+  .residences-hero,
+  .arbor-hero-stage,
+  .arbor-hero-wrapper {
+    min-height: 100vh !important;
+    min-height: 100lvh !important;
+    height: 100lvh !important;
+  }
+  #Hero .trigger,
+  #Hero .background,
+  .residences-hero-bg {
+    min-height: 100vh !important;
+    min-height: 100lvh !important;
+    height: 100% !important;
+  }
 }
 
 /* Fixed Floating Pill Header: sleek compact size matching screenshot (max-width: 28.25rem / 452px) */
@@ -545,9 +590,12 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
 .arbor-hero-stage {
   position: relative;
   width: 100%;
-  height: 100svh;
+  height: 100vh;
+  height: 100lvh;
+  min-height: 100vh;
+  min-height: 100lvh;
   overflow: hidden;
-  background-color: var(--arbor-vanilla);
+  background-color: #10150F;
 }
 
 .arbor-hero-video {
@@ -1185,7 +1233,7 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
 
 @media (max-width: 768px) {
   .hero-scroll-down-btn {
-    bottom: 1.5rem;
+    bottom: max(1.5rem, calc(5rem + env(safe-area-inset-bottom, 0px)));
     width: 3.25rem;
     height: 3.25rem;
   }
