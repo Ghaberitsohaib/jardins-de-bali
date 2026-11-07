@@ -19,3 +19,4 @@ console.log('USED VIDEOS:');
 Array.from(usedMedia)
   .filter(m => m.endsWith('.mp4') || m.endsWith('.webm'))
   .forEach(v => console.log(' - ', v));
+

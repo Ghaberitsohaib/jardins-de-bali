@@ -43,3 +43,4 @@ console.log('Top 10 largest files in filtered dist:');
 files.sort((a, b) => b.size - a.size).slice(0, 10).forEach(f => {
   console.log(` - ${f.path}: ${(f.size / (1024 * 1024)).toFixed(2)} MB`);
 });
+

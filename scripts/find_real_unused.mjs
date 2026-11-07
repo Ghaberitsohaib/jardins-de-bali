@@ -39,3 +39,4 @@ for (const pf of allPublic) {
 
 console.log('REAL UNUSED IN PUBLIC:', (unusedSize / (1024*1024)).toFixed(2), 'MB');
 unused.sort((a,b) => b.bytes - a.bytes).forEach(u => console.log(' -', u.size, 'MB |', u.rel));
+

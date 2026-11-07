@@ -56,3 +56,4 @@ for (const pf of allPublic) {
 }
 
 console.log(`Archived ${movedCount} unused files (${(movedBytes / (1024*1024)).toFixed(2)} MB) to public_archive/`);
+
