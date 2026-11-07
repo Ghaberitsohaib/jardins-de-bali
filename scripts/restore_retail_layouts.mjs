@@ -22,3 +22,4 @@ if (bJs.includes('/jardins_de_bali/plan_05_etage_courant.jpg')) {
   fs.writeFileSync('src/business.js', bJs, 'utf8');
   console.log('Fixed plan_05 in src/business.js');
 }
+

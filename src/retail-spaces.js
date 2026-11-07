@@ -285,11 +285,13 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="relative overflow-hidden bg-white rounded-lg p-5 flex items-center justify-center min-h-[220px] max-sm:min-h-[190px] border shadow-inner mb-5 max-lg:mb-4" style="border-color: rgba(197, 168, 128, 0.2);">
           <img
             alt="${u.name} Plan Architectural"
-            loading="lazy"
+            loading="eager"
+            decoding="async"
             width="514"
             height="380"
             class="h-auto w-full max-w-none mix-blend-multiply object-contain transition duration-500 group-hover:scale-103"
             src="${u.layoutImg}"
+            onerror="this.onerror=null; this.src='/jardins_de_bali/plan_03_rez_de_chaussee.jpg';"
           />
           <!-- Badge Top Right: Availability Status only (Explicit positioning: Zero badge collisions) -->
           <div class="flex items-center gap-1.5 bg-[#FDFBEF]/95 backdrop-blur-md px-3 py-1 rounded-full border shadow-xs" style="position: absolute; top: 12px; right: 12px; z-index: 10; border-color: rgba(197, 168, 128, 0.5);">
