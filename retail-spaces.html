@@ -261,6 +261,24 @@
     /* ========================================================
        BELGRADE ARBOR LUXURY PICKER SIDEBAR (1:1 RESIDENCES)
        ======================================================== */
+    .retail-picker-container {
+      width: 100%;
+      max-width: 90rem;
+      margin: 0 auto;
+      padding: 0 2.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 3.5rem;
+    }
+
+    @media (max-width: 1024px) {
+      .retail-picker-container {
+        flex-direction: column;
+        padding: 0 1.25rem;
+        gap: 2rem;
+      }
+    }
+
     .picker-sidebar {
       width: 22rem;
       flex-shrink: 0;
@@ -868,7 +886,7 @@
           </button>
         </div>
 
-        <div class="wrapper flex items-start gap-8">
+        <div class="retail-picker-container">
 
           <!-- ========================================================
                DESKTOP MINIMALIST LUXURY FILTER SIDEBAR (LEFT COLUMN)
@@ -957,7 +975,7 @@
           <!-- ========================================================
                CARDS GRID (RIGHT COLUMN)
                ======================================================== -->
-          <div class="relative w-2/3 max-lg:w-full">
+          <div class="relative flex-1 min-w-0 w-full">
             <div id="retailGrid" class="grid grid-cols-2 gap-6 max-md:grid-cols-1">
               <!-- Rendered dynamically by src/retail-spaces.js -->
             </div>
