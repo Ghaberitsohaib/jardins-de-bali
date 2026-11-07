@@ -28,3 +28,4 @@ async function checkRule() {
 }
 
 checkRule().catch(console.error);
+

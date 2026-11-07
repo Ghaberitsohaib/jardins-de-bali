@@ -40,3 +40,4 @@ function scanDir(dir) {
 }
 
 scanDir('.');
+

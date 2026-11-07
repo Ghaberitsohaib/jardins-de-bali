@@ -7,7 +7,7 @@
     "type": "Retail",
     "typeLabel": "Retail / Commerce",
     "category": "Retail",
-    "surface": 56.00,
+    "surface": 56,
     "surfaceFormatted": "56.00 m²",
     "floor": 0,
     "floorName": "Ground floor",
@@ -31,7 +31,8 @@
       "Liaison fibre optique très haut débit"
     ],
     "description": "Magasin de standing bénéficiant d'un linéaire de vitrine de 7.50 mètres avec vue directe sur l'artère passante. Idéal pour une boutique de luxe, une enseigne de cosmétique, une joaillerie ou une agence bancaire haut de gamme.",
-    "idealFor": "Boutique de luxe, Parfumerie, Agence bancaire, Concept store"
+    "idealFor": "Boutique de luxe, Parfumerie, Agence bancaire, Concept store",
+    "thumbImg": "/business/retail/magasin_1_boutique.jpg"
   },
   {
     "id": "MAGASIN 2",
@@ -41,7 +42,7 @@
     "type": "Retail",
     "typeLabel": "Grand Flagship / Retail",
     "category": "Retail",
-    "surface": 221.00,
+    "surface": 221,
     "surfaceFormatted": "221.00 m²",
     "floor": 0,
     "floorName": "Ground floor",
@@ -65,7 +66,8 @@
       "4 places de stationnement réservées au sous-sol (-1 et -2)"
     ],
     "description": "Le fleuron commercial de Jardins de Bali. Situé sur l'angle le plus prestigieux du complexe, ce grand magasin de 221 m² offre une visibilité imbattable de jour comme de nuit grâce à ses 18 mètres de façade vitrée toute hauteur.",
-    "idealFor": "Supermarché Gourmet, Showroom Ameublement/Design, Banque, Restaurant Étoilé"
+    "idealFor": "Supermarché Gourmet, Showroom Ameublement/Design, Banque, Restaurant Étoilé",
+    "thumbImg": "/business/retail/magasin_2_flagship.jpg"
   },
   {
     "id": "MAGASIN 3",
@@ -75,7 +77,7 @@
     "type": "Retail",
     "typeLabel": "Retail / Restauration / Café",
     "category": "Retail",
-    "surface": 56.00,
+    "surface": 56,
     "surfaceFormatted": "56.00 m²",
     "floor": 0,
     "floorName": "Ground floor",
@@ -98,7 +100,8 @@
       "Stationnement visiteurs en sous-sol"
     ],
     "description": "Emplacement de charme bénéficiant d'une double ouverture sur l'avenue et sur le patio intérieur avec sa grande fontaine marocaine. Une atmosphère d'oasis idéale pour la restauration haut de gamme, salon de thé raffiné ou concept café.",
-    "idealFor": "Salon de thé, Chocolatier, Optique, Esthétique & Spa"
+    "idealFor": "Salon de thé, Chocolatier, Optique, Esthétique & Spa",
+    "thumbImg": "/business/retail/magasin_3_concept.jpg"
   },
   {
     "id": "MAGASIN 4",
@@ -108,7 +111,7 @@
     "type": "Retail",
     "typeLabel": "Grand Flagship / Retail",
     "category": "Retail",
-    "surface": 221.00,
+    "surface": 221,
     "surfaceFormatted": "221.00 m²",
     "floor": 0,
     "floorName": "Ground floor",
@@ -132,7 +135,8 @@
       "4 places de stationnement sécurisées incluses"
     ],
     "description": "Espace commercial d'envergure conçu pour accueillir une enseigne internationale de premier plan. Son architecture aux lignes pures et son volume cathédrale garantissent un impact visuel maximal.",
-    "idealFor": "Flagship Mode, Brasserie Chic, Showroom Mobilité / Auto, Salle de Sport Privée"
+    "idealFor": "Flagship Mode, Brasserie Chic, Showroom Mobilité / Auto, Salle de Sport Privée",
+    "thumbImg": "/business/retail/magasin_4_showroom.jpg"
   },
   {
     "id": "MEZZANINE 1",
@@ -142,7 +146,7 @@
     "type": "Offices",
     "typeLabel": "Showroom / Mezzanine",
     "category": "Offices",
-    "surface": 48.00,
+    "surface": 48,
     "surfaceFormatted": "48.00 m²",
     "floor": 0.5,
     "floorName": "Mezzanine",
@@ -165,7 +169,8 @@
       "Accès ascenseur et escalier design"
     ],
     "description": "Espace en mezzanine offrant une vue plongeante sur l'activité commerciale du rez-de-chaussée. Parfait comme salon privé d'essayage, bureau de direction ou extension showroom.",
-    "idealFor": "Bureaux de direction, Salon VIP, Cabinet conseil"
+    "idealFor": "Bureaux de direction, Salon VIP, Cabinet conseil",
+    "thumbImg": "/jardins_de_bali/commercial_hero_luxury_hd.jpg"
   },
   {
     "id": "MEZZANINE 2",
@@ -175,7 +180,7 @@
     "type": "Offices",
     "typeLabel": "Plateau Bureaux / Showroom",
     "category": "Offices",
-    "surface": 185.00,
+    "surface": 185,
     "surfaceFormatted": "185.00 m²",
     "floor": 0.5,
     "floorName": "Mezzanine",
@@ -198,7 +203,8 @@
       "Double entrée indépendante possible"
     ],
     "description": "Plateau d'affaires d'exception en entresol, idéal pour une agence d'architecture, un cabinet d'avocats, un cabinet médical de groupe ou un espace coworking haut de gamme.",
-    "idealFor": "Plateau Coworking, Agence de création, Cabinet d'affaires"
+    "idealFor": "Plateau Coworking, Agence de création, Cabinet d'affaires",
+    "thumbImg": "/jardins_de_bali/14_rendu_3d_facade_rue.jpg"
   },
   {
     "id": "FLAGSHIP DUPLEX A",
@@ -208,7 +214,7 @@
     "type": "Duplex",
     "typeLabel": "Duplex Commercial Prestige",
     "category": "Retail",
-    "surface": 406.00,
+    "surface": 406,
     "surfaceFormatted": "406.00 m²",
     "floor": 0,
     "floorName": "Ground floor & Mezzanine",
@@ -231,7 +237,8 @@
       "Visibilité d'angle la plus stratégique de Marrakech Menara"
     ],
     "description": "L'opportunité commerciale la plus exclusive du projet Jardins de Bali. Réunissant le Magasin 2 (221 m²) et la Mezzanine 2 (185 m²), ce duplex monumental offre 406 m² d'espace de vente et de prestige sans équivalent dans le quartier.",
-    "idealFor": "Maison de luxe, Siège régional de banque, Concessionnaire premium, Clinique privée"
+    "idealFor": "Maison de luxe, Siège régional de banque, Concessionnaire premium, Clinique privée",
+    "thumbImg": "/business/hero.webp"
   },
   {
     "id": "FLAGSHIP DUPLEX B",
@@ -241,7 +248,7 @@
     "type": "Duplex",
     "typeLabel": "Duplex Commercial Prestige",
     "category": "Retail",
-    "surface": 406.00,
+    "surface": 406,
     "surfaceFormatted": "406.00 m²",
     "floor": 0,
     "floorName": "Ground floor & Mezzanine",
@@ -264,7 +271,8 @@
       "7 places de stationnement au sous-sol"
     ],
     "description": "Duplex commercial haut standing combinant vente au rez-de-chaussée et bureaux de direction / salons privés en mezzanine.",
-    "idealFor": "Flagship international, Centre de conférence privé, Restaurant gastronomique sur 2 étages"
+    "idealFor": "Flagship international, Centre de conférence privé, Restaurant gastronomique sur 2 étages",
+    "thumbImg": "/jardins_de_bali/13_facade_angle_terrasses.jpg"
   },
   {
     "id": "BUREAU PRO 101",
@@ -274,7 +282,7 @@
     "type": "Offices",
     "typeLabel": "Offices / Plateaux d'Affaires",
     "category": "Offices",
-    "surface": 75.00,
+    "surface": 75,
     "surfaceFormatted": "75.00 m²",
     "floor": 1,
     "floorName": "1st floor",
@@ -297,7 +305,8 @@
       "Fibre optique haut débit dédiée"
     ],
     "description": "Plateau de bureaux élégant et lumineux au premier étage, conçu pour allier productivité et sérénité grâce à sa vue plongeante sur la fontaine et la végétation du patio central.",
-    "idealFor": "Cabinet médical, Agence de conseil, Étude notariale"
+    "idealFor": "Cabinet médical, Agence de conseil, Étude notariale",
+    "thumbImg": "/business/retail/bureau_executive_suite_bali.jpg"
   },
   {
     "id": "BUREAU PRO 102",
@@ -307,7 +316,7 @@
     "type": "Offices",
     "typeLabel": "Offices / Plateaux d'Affaires",
     "category": "Offices",
-    "surface": 83.00,
+    "surface": 83,
     "surfaceFormatted": "83.00 m²",
     "floor": 1,
     "floorName": "1st floor",
@@ -330,7 +339,8 @@
       "Ascenseurs d'affaires directs depuis les sous-sols"
     ],
     "description": "Espace de travail professionnel haut standing au 1er étage avec une excellente luminosité naturelle et une adresse reconnue sur le boulevard principal de Menara.",
-    "idealFor": "Société de gestion de patrimoine, FinTech, Cabinet d'expertise"
+    "idealFor": "Société de gestion de patrimoine, FinTech, Cabinet d'expertise",
+    "thumbImg": "/business/retail/bureau_executive_suite_bali.jpg"
   },
   {
     "id": "CORPORATE 201",
@@ -340,7 +350,7 @@
     "type": "Offices",
     "typeLabel": "Offices / Suite Corporate",
     "category": "Offices",
-    "surface": 83.00,
+    "surface": 83,
     "surfaceFormatted": "83.00 m²",
     "floor": 2,
     "floorName": "2nd floor",
@@ -363,7 +373,8 @@
       "Service de conciergerie d'affaires BaytImmo"
     ],
     "description": "Suite de bureaux corporate au 2ème étage bénéficiant d'une terrasse privative végétalisée, idéale pour les réunions au grand air et recevoir ses clients dans un cadre 5 étoiles.",
-    "idealFor": "Direction générale, Siège de holding, Bureau d'avocats"
+    "idealFor": "Direction générale, Siège de holding, Bureau d'avocats",
+    "thumbImg": "/jardins_de_bali/12_facade_gradins_vegetalisee.jpg"
   },
   {
     "id": "ROOFTOP LOUNGE 501",
@@ -373,7 +384,7 @@
     "type": "Offices",
     "typeLabel": "Prestige / Business Lounge VIP",
     "category": "Offices",
-    "surface": 116.00,
+    "surface": 116,
     "surfaceFormatted": "116.00 m²",
     "floor": 5,
     "floorName": "5th floor",
@@ -396,7 +407,7 @@
       "Prestations ultra-luxe réservées aux dirigeants et décideurs"
     ],
     "description": "L'espace d'affaires le plus prestigieux de Marrakech. Situé au dernier étage en liaison directe avec le rooftop solarium et les piscines suspendues, ce lounge de 116 m² avec 45 m² de terrasse offre un cadre sans égal pour des réunions de haut vol.",
-    "idealFor": "Club d'affaires privé, Family office, Espace de réception corporate VIP"
+    "idealFor": "Club d'affaires privé, Family office, Espace de réception corporate VIP",
+    "thumbImg": "/jardins_de_bali/rooftop_culinary_lounge_hd.jpg"
   }
 ]
-

@@ -77,3 +77,4 @@ idxHtml = idxHtml.replace('Privacy policy', 'Politique de confidentialité');
 
 fs.writeFileSync('index.html', idxHtml, 'utf8');
 console.log('index.html updated successfully');
+
