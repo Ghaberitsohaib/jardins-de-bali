@@ -1,4 +1,5 @@
 import './arbor.css';
+import './residences.css';
 import retailData from './data/retail-spaces-data.json';
 import { initMotion, initScrollReveals, MOTION_CONFIG } from './motion.js';
 import gsap from 'gsap';
@@ -306,49 +307,63 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     gridContainer.innerHTML = visibleItems.map((u) => `
-      <div class="residence-card group cursor-pointer" data-unit-id="${u.id}" role="button" tabindex="0">
-        <!-- Top Preview (1:1 with residences Screen 2) -->
-        <div class="card-top-preview">
+      <div class="retail-card-item cursor-pointer border px-6 pt-7 pb-8 transition-all duration-300 hover:bg-white hover:shadow-xl max-lg:p-5 group relative bg-[#FAF7EF]" style="border-color: rgba(197, 168, 128, 0.28); border-radius: 14px;" data-unit-id="${u.id}" role="button" tabindex="0">
+        <!-- Architectural Plan Image -->
+        <div class="relative overflow-hidden bg-white rounded-lg p-5 flex items-center justify-center min-h-[220px] max-sm:min-h-[190px] border shadow-inner mb-5 max-lg:mb-4" style="border-color: rgba(197, 168, 128, 0.2);">
           <img
-            src="${u.thumbImg || u.layoutImg}"
-            alt="${u.name}"
-            class="card-preview-img"
+            alt="${u.name} Plan Architectural"
             loading="eager"
-            onerror="this.onerror=null; this.src='${u.layoutImg}';"
+            decoding="async"
+            width="514"
+            height="380"
+            class="h-auto w-full max-w-none mix-blend-multiply object-contain transition duration-500 group-hover:scale-103"
+            src="${u.layoutImg}"
+            onerror="this.onerror=null; this.src='/jardins_de_bali/plan_03_rez_de_chaussee.jpg';"
           />
-          <div class="card-badges">
-            <span class="card-badge-icon" title="Exposition Lumineuse">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-            </span>
-            <span class="card-badge-icon" title="Parking Sous-sol inclus">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>
-            </span>
+          <!-- Badge Top Right: Availability Status only (Explicit positioning: Zero badge collisions) -->
+          <div class="flex items-center gap-1.5 bg-[#FDFBEF]/95 backdrop-blur-md px-3 py-1 rounded-full border shadow-xs" style="position: absolute; top: 12px; right: 12px; z-index: 10; border-color: rgba(197, 168, 128, 0.5);">
+            <span class="inline-block size-2 rounded-full bg-emerald-600 animate-pulse"></span>
+            <span class="text-[0.6875rem] tracking-wider uppercase text-[#10150F] font-semibold">${u.status || 'Disponible'}</span>
           </div>
         </div>
 
-        <!-- Typography & Specs (1:1 with residences Screen 2) -->
-        <div class="card-content">
-          <div class="flex items-baseline justify-between gap-2">
-            <h3 class="card-apartment-id">${u.name}</h3>
-            <span class="font-editorialOld text-xl sm:text-2xl text-golden shrink-0">${u.surfaceFormatted}</span>
+        <!-- Meta info row: Type & Area -->
+        <div class="flex items-baseline justify-between border-b pb-3 mb-4" style="border-color: rgba(197, 168, 128, 0.22);">
+          <span class="font-workSans text-xs font-semibold tracking-widest uppercase" style="color: #60735C;">
+            ${u.typeLabel}
+          </span>
+          <span class="font-editorialOld text-lg font-bold tracking-tight text-[#10150F]">
+            ${u.surfaceFormatted}
+          </span>
+        </div>
+
+        <!-- Title -->
+        <h3 class="font-editorialOld text-3xl font-light text-[#A68150] mb-3 group-hover:text-[#8C6B3D] transition-colors leading-tight">
+          ${u.name}
+        </h3>
+
+        <!-- Details & Action Row -->
+        <div class="flex items-end justify-between gap-4 pt-1">
+          <div class="space-y-1 min-w-0 flex-1">
+            <p class="font-workSans text-xs text-[#60735C] font-medium tracking-wide uppercase">
+              ${u.floorLabel}
+            </p>
+            <p class="font-workSans text-xs tracking-wider uppercase font-semibold text-[#10150F]/80 truncate">
+              ${u.wingLabel.split('(')[0]}
+            </p>
           </div>
-          <div class="card-details-row">
-            <div class="card-specs-list">
-              <span class="card-spec-item highlight">${u.floorLabel.split('(')[0].trim()}</span>
-              <span class="card-spec-item">${u.typeLabel}</span>
-              <span class="card-spec-item text-xs text-golden">${u.wingLabel.split('(')[0].trim()}</span>
-            </div>
-            <div class="card-see-more">
-              <span>Détails</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
-          </div>
+
+          <!-- Consulter CTA button (always visible & accessible) -->
+          <span class="link text-xs uppercase tracking-widest font-semibold inline-flex items-center gap-1.5 transition-all duration-300 group-hover:translate-x-1 shrink-0" style="color: #A68150;">
+            <span>Consulter</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:translate-x-1"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
         </div>
       </div>
     `).join('');
 
     // Attach click events on cards
-    document.querySelectorAll('.residence-card').forEach((card) => {
+    document.querySelectorAll('.retail-card-item, .residence-card').forEach((card) => {
       card.addEventListener('click', () => {
         const uid = card.getAttribute('data-unit-id');
         openUnitModal(uid);
@@ -356,7 +371,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Smooth reveal for newly rendered cards (Always visible, zero invisible bugs)
-    const cards = document.querySelectorAll('.residence-card');
+    const cards = document.querySelectorAll('.retail-card-item, .residence-card');
     if (cards.length > 0) {
       gsap.fromTo(
         cards,

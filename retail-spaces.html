@@ -262,6 +262,7 @@
     /* ========================================================
        BELGRADE ARBOR LUXURY PICKER SIDEBAR (1:1 RESIDENCES)
        ======================================================== */
+    .picker-container,
     .retail-picker-container {
       width: 100%;
       max-width: 90rem;
@@ -273,6 +274,7 @@
     }
 
     @media (max-width: 1024px) {
+      .picker-container,
       .retail-picker-container {
         flex-direction: column;
         padding: 0 1.25rem;
@@ -655,57 +657,7 @@
       max-width: 40rem;
       text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
       margin-bottom: 2.25rem;
-    }
 
-    .retail-hero-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 1rem 2.25rem;
-      border-radius: 9999px;
-      border: 1px solid rgba(200, 163, 102, 0.75);
-      background: rgba(200, 163, 102, 0.22);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      color: #F8F5E9;
-      font-family: var(--font-workSans), sans-serif;
-      font-size: 0.8125rem;
-      font-weight: 500;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
-      transition: all 0.3s ease;
-      text-shadow: 0 1px 4px rgba(0,0,0,0.5);
-    }
-
-    .retail-hero-btn:hover {
-      background: #C8A366;
-      color: #10150F;
-      border-color: #C8A366;
-      box-shadow: 0 12px 35px rgba(200, 163, 102, 0.35);
-      transform: translateY(-2px);
-      text-shadow: none;
-    }
-  </style>
-</head>
-<body class="work_sans_85248dc3-module__gzDsyq__variable editorialold_ad1a3d18-module__UoXJ4a__variable antialiased bg-vanilla text-pine-green arbor-home-body selection:bg-golden selection:text-vanilla">
-
-  <!-- GOLDEN SPRING SILK CURSOR TRAIL (1:1 MATCH WITH BELGRADE ARBOR) -->
-  <canvas id="canvas" class="pointer-events-none fixed inset-0 z-100"></canvas>
-
-  <!-- ANCHOR TOP -->
-  <div id="top" class="absolute top-0 left-0 w-full h-0 pointer-events-none"></div>
-
-  <!-- ==========================================================================
-       HEADER & NAVIGATION PILL (1:1 BELGRADE ARBOR)
-       ========================================================================== -->
-  <header class="arbor-header" id="overlayHeader">
-    <div class="arbor-header-inner">
-      <div class="arbor-header-top">
-        <!-- Mobile wordmark displayed at top-left ONLY when menu is open on mobile -->
-        <a href="/index.html" class="arbor-wordmark-mobile hidden" aria-label="Bayt Immo">
-          <h2 class="arbor-wordmark-title">
-            <span class="arbor-wordmark-line">Bayt</span>
             <span class="arbor-wordmark-line">Immo</span>
           </h2>
         </a>
