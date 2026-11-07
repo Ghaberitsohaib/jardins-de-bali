@@ -40,3 +40,4 @@ content = content.replace(
 
 fs.writeFileSync('retail-spaces.html', content, 'utf8');
 console.log('retail-spaces.html updated with centered 90rem container and flex-1 grid.');
+

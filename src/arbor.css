@@ -2883,3 +2883,38 @@ html {
   pointer-events: auto;
 }
 
+/* ==========================================================================
+   HIGH-CONTRAST LUXURY FOOTER TYPOGRAPHY (BELGRADE ARBOR LUXURY STANDARD)
+   ========================================================================== */
+#footer {
+  color: #2E3A26 !important;
+}
+
+#footer .heading-2,
+#footer .paragraph,
+#footer .small,
+#footer p,
+#footer li a:not(.text-golden),
+#footer a:not(.text-golden):not(.luxury-submit-btn):not([href*="tel"]):not([href*="mailto"]) {
+  color: #2E3A26 !important;
+}
+
+#footer .text-golden {
+  color: #C5A880 !important;
+}
+
+#footer a[href^="tel"],
+#footer a[href^="mailto"] {
+  color: #C5A880 !important;
+}
+
+#footer input.text-pine-green {
+  color: #2E3A26 !important;
+  border-color: #2E3A26 !important;
+}
+
+#footer input.text-pine-green::placeholder {
+  color: rgba(46, 58, 38, 0.6) !important;
+}
+
+
