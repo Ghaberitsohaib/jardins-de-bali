@@ -232,3 +232,4 @@ content = content.replace(
 
 fs.writeFileSync('index.html', content, 'utf8');
 console.log('index.html updated successfully.');
+

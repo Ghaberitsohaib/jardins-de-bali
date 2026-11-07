@@ -28,3 +28,4 @@ if (fs.existsSync('business.html')) {
   fs.writeFileSync('business.html', c, 'utf8');
   console.log('business.html finalized.');
 }
+

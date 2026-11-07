@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alt: 'Mezzanines Showrooms Jardins de Bali'
       },
       { 
-        url: '/jardins_de_bali/plan_05_etage_courant.jpg', 
+        url: '/jardins_de_bali/plan_05_1er_etage.jpg', 
         title: 'Plan Plateaux Bureaux Modulables', 
         img: '/business/retail/bureau_executive_suite_bali.jpg',
         alt: 'Bureaux et Suites Professionnelles Jardins de Bali'

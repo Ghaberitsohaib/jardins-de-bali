@@ -60,3 +60,4 @@ for (const f of files) {
     matches.forEach(m => console.log(`L${m.lineNum}: [${m.text}]`));
   }
 }
+

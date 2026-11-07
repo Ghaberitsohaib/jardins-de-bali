@@ -60,3 +60,4 @@ files.forEach(f => {
     }
   });
 });
+

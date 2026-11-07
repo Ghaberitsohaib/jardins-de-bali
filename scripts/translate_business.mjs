@@ -135,3 +135,4 @@ content = content.replace(
 
 fs.writeFileSync('business.html', content, 'utf8');
 console.log('business.html updated successfully.');
+

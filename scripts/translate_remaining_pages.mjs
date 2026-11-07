@@ -118,3 +118,4 @@ pages.forEach(file => {
   fs.writeFileSync(file, content, 'utf8');
   console.log(`${file} updated.`);
 });
+

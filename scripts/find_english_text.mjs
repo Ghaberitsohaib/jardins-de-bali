@@ -68,3 +68,4 @@ htmlFiles.forEach(file => {
     console.log(' (No targeted English text detected with this filter)');
   }
 });
+

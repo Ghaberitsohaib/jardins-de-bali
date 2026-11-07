@@ -27,3 +27,4 @@ function scanDir(dir) {
 }
 
 scanDir('src');
+
