@@ -8,7 +8,7 @@
     "slug": "magasin-1",
     "category": "Magasin",
     "rooms": 1,
-    "roomsText": "Local Commercial",
+    "roomsText": "Local Commercial Flagship",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -31,7 +31,7 @@
     "slug": "magasin-2",
     "category": "Magasin",
     "rooms": 1,
-    "roomsText": "Local Commercial",
+    "roomsText": "Local Commercial Flagship",
     "features": [
       "Façade Avenue Menara",
       "Parking Sous-Sol Garanti"
@@ -54,7 +54,7 @@
     "slug": "magasin-3",
     "category": "Magasin",
     "rooms": 1,
-    "roomsText": "Local Commercial",
+    "roomsText": "Local Commercial Flagship",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -77,7 +77,7 @@
     "slug": "magasin-4",
     "category": "Magasin",
     "rooms": 1,
-    "roomsText": "Local Commercial",
+    "roomsText": "Local Commercial Flagship",
     "features": [
       "Façade Avenue Menara",
       "Parking Sous-Sol Garanti"
@@ -99,7 +99,7 @@
     "slug": "app-1",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -121,7 +121,7 @@
     "slug": "app-2",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -146,7 +146,7 @@
     "slug": "app-3",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -169,7 +169,7 @@
     "slug": "app-4",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -194,7 +194,7 @@
     "slug": "app-5",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -217,7 +217,7 @@
     "slug": "app-6",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -242,7 +242,7 @@
     "slug": "app-7",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -267,7 +267,7 @@
     "slug": "app-8",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -292,7 +292,7 @@
     "slug": "app-9",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -316,7 +316,7 @@
     "slug": "app-10",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -341,7 +341,7 @@
     "slug": "app-11",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -367,7 +367,7 @@
     "slug": "app-12",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -393,7 +393,7 @@
     "slug": "app-13",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -418,7 +418,7 @@
     "slug": "app-14",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -443,7 +443,7 @@
     "slug": "app-15",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -468,7 +468,7 @@
     "slug": "app-16",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -493,7 +493,7 @@
     "slug": "app-17",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -518,7 +518,7 @@
     "slug": "app-18",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -544,7 +544,7 @@
     "slug": "app-19",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -569,7 +569,7 @@
     "slug": "app-20",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -594,7 +594,7 @@
     "slug": "app-21",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -618,7 +618,7 @@
     "slug": "app-22",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -643,7 +643,7 @@
     "slug": "app-23",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -667,7 +667,7 @@
     "slug": "app-24",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -692,7 +692,7 @@
     "slug": "app-25",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -715,7 +715,7 @@
     "slug": "app-26",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -740,7 +740,7 @@
     "slug": "app-27",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -764,7 +764,7 @@
     "slug": "app-28",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -790,7 +790,7 @@
     "slug": "app-29",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -814,7 +814,7 @@
     "slug": "app-30",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -840,7 +840,7 @@
     "slug": "app-31",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -865,7 +865,7 @@
     "slug": "app-32",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -890,7 +890,7 @@
     "slug": "app-33",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -914,7 +914,7 @@
     "slug": "app-34",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -940,7 +940,7 @@
     "slug": "app-35",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -966,7 +966,7 @@
     "slug": "app-36",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -992,7 +992,7 @@
     "slug": "app-37",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1017,7 +1017,7 @@
     "slug": "app-38",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1042,7 +1042,7 @@
     "slug": "app-39",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1067,7 +1067,7 @@
     "slug": "app-40",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1092,7 +1092,7 @@
     "slug": "app-41",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1118,7 +1118,7 @@
     "slug": "app-42",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1143,7 +1143,7 @@
     "slug": "app-43",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1169,7 +1169,7 @@
     "slug": "app-44",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1194,7 +1194,7 @@
     "slug": "app-45",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1219,7 +1219,7 @@
     "slug": "app-46",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1245,7 +1245,7 @@
     "slug": "app-47",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1269,7 +1269,7 @@
     "slug": "app-48",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1295,7 +1295,7 @@
     "slug": "app-49",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1318,7 +1318,7 @@
     "slug": "app-50",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1343,7 +1343,7 @@
     "slug": "app-51",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1366,7 +1366,7 @@
     "slug": "app-52",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1392,7 +1392,7 @@
     "slug": "app-53",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1416,7 +1416,7 @@
     "slug": "app-54",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1442,7 +1442,7 @@
     "slug": "app-55",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1466,7 +1466,7 @@
     "slug": "app-56",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1491,7 +1491,7 @@
     "slug": "app-57",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1515,7 +1515,7 @@
     "slug": "app-58",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1540,7 +1540,7 @@
     "slug": "app-59",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1566,7 +1566,7 @@
     "slug": "app-60",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1591,7 +1591,7 @@
     "slug": "app-61",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1617,7 +1617,7 @@
     "slug": "app-62",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1642,7 +1642,7 @@
     "slug": "app-63",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1668,7 +1668,7 @@
     "slug": "app-64",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1694,7 +1694,7 @@
     "slug": "app-65",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1720,7 +1720,7 @@
     "slug": "app-66",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1746,7 +1746,7 @@
     "slug": "app-67",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1772,7 +1772,7 @@
     "slug": "app-68",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1797,7 +1797,7 @@
     "slug": "app-69",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1821,7 +1821,7 @@
     "slug": "app-70",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1847,7 +1847,7 @@
     "slug": "app-71",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1871,7 +1871,7 @@
     "slug": "app-72",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -1897,7 +1897,7 @@
     "slug": "app-73",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -1918,7 +1918,7 @@
     "slug": "app-74",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -1942,7 +1942,7 @@
     "slug": "app-75",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -1964,7 +1964,7 @@
     "slug": "app-76",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -1988,7 +1988,7 @@
     "slug": "app-77",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2010,7 +2010,7 @@
     "slug": "app-78",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2034,7 +2034,7 @@
     "slug": "app-79",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2058,7 +2058,7 @@
     "slug": "app-80",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2082,7 +2082,7 @@
     "slug": "app-81",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2105,7 +2105,7 @@
     "slug": "app-82",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2129,7 +2129,7 @@
     "slug": "app-83",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2154,7 +2154,7 @@
     "slug": "app-84",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2179,7 +2179,7 @@
     "slug": "app-85",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2203,7 +2203,7 @@
     "slug": "app-86",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2227,7 +2227,7 @@
     "slug": "app-87",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2251,7 +2251,7 @@
     "slug": "app-88",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2275,7 +2275,7 @@
     "slug": "app-89",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2299,7 +2299,7 @@
     "slug": "app-90",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2324,7 +2324,7 @@
     "slug": "app-91",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2348,7 +2348,7 @@
     "slug": "app-92",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2372,7 +2372,7 @@
     "slug": "app-93",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2395,7 +2395,7 @@
     "slug": "app-94",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2419,7 +2419,7 @@
     "slug": "app-95",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2442,7 +2442,7 @@
     "slug": "app-96",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2466,7 +2466,7 @@
     "slug": "app-97",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2488,7 +2488,7 @@
     "slug": "app-98",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2512,7 +2512,7 @@
     "slug": "app-99",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2535,7 +2535,7 @@
     "slug": "app-100",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2560,7 +2560,7 @@
     "slug": "app-101",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2583,7 +2583,7 @@
     "slug": "app-102",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2608,7 +2608,7 @@
     "slug": "app-103",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2632,7 +2632,7 @@
     "slug": "app-104",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2656,7 +2656,7 @@
     "slug": "app-105",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2679,7 +2679,7 @@
     "slug": "app-106",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2704,7 +2704,7 @@
     "slug": "app-107",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2729,7 +2729,7 @@
     "slug": "app-108",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2754,7 +2754,7 @@
     "slug": "app-109",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2778,7 +2778,7 @@
     "slug": "app-110",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2802,7 +2802,7 @@
     "slug": "app-111",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2826,7 +2826,7 @@
     "slug": "app-112",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2850,7 +2850,7 @@
     "slug": "app-113",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2875,7 +2875,7 @@
     "slug": "app-114",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2899,7 +2899,7 @@
     "slug": "app-115",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2924,7 +2924,7 @@
     "slug": "app-116",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2948,7 +2948,7 @@
     "slug": "app-117",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2972,7 +2972,7 @@
     "slug": "app-118",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -2997,7 +2997,7 @@
     "slug": "app-119",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3020,7 +3020,7 @@
     "slug": "app-120",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3045,7 +3045,7 @@
     "slug": "app-121",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3067,7 +3067,7 @@
     "slug": "app-122",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3091,7 +3091,7 @@
     "slug": "app-123",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3113,7 +3113,7 @@
     "slug": "app-124",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3138,7 +3138,7 @@
     "slug": "app-125",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3161,7 +3161,7 @@
     "slug": "app-126",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3186,7 +3186,7 @@
     "slug": "app-127",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3209,7 +3209,7 @@
     "slug": "app-128",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3233,7 +3233,7 @@
     "slug": "app-129",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3256,7 +3256,7 @@
     "slug": "app-130",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3280,7 +3280,7 @@
     "slug": "app-131",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3305,7 +3305,7 @@
     "slug": "app-132",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3329,7 +3329,7 @@
     "slug": "app-133",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3354,7 +3354,7 @@
     "slug": "app-134",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3378,7 +3378,7 @@
     "slug": "app-135",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3403,7 +3403,7 @@
     "slug": "app-136",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3428,7 +3428,7 @@
     "slug": "app-137",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3453,7 +3453,7 @@
     "slug": "app-138",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3478,7 +3478,7 @@
     "slug": "app-139",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3503,7 +3503,7 @@
     "slug": "app-140",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3527,7 +3527,7 @@
     "slug": "app-141",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3550,7 +3550,7 @@
     "slug": "app-142",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3575,7 +3575,7 @@
     "slug": "app-143",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3598,7 +3598,7 @@
     "slug": "app-144",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3623,7 +3623,7 @@
     "slug": "app-145",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3644,7 +3644,7 @@
     "slug": "app-146",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3668,7 +3668,7 @@
     "slug": "app-147",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3690,7 +3690,7 @@
     "slug": "app-148",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3714,7 +3714,7 @@
     "slug": "app-149",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3736,7 +3736,7 @@
     "slug": "app-150",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3760,7 +3760,7 @@
     "slug": "app-151",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3784,7 +3784,7 @@
     "slug": "app-152",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Parking Sous-Sol Garanti"
     ],
@@ -3808,7 +3808,7 @@
     "slug": "app-153",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -3832,7 +3832,7 @@
     "slug": "app-154",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -3857,7 +3857,7 @@
     "slug": "app-155",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -3883,7 +3883,7 @@
     "slug": "app-156",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -3909,7 +3909,7 @@
     "slug": "app-157",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -3934,7 +3934,7 @@
     "slug": "app-158",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -3959,7 +3959,7 @@
     "slug": "app-159",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -3984,7 +3984,7 @@
     "slug": "app-160",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4009,7 +4009,7 @@
     "slug": "app-161",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4034,7 +4034,7 @@
     "slug": "app-162",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4060,7 +4060,7 @@
     "slug": "app-163",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4085,7 +4085,7 @@
     "slug": "app-164",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4110,7 +4110,7 @@
     "slug": "app-165",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4134,7 +4134,7 @@
     "slug": "app-166",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4159,7 +4159,7 @@
     "slug": "app-167",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4183,7 +4183,7 @@
     "slug": "app-168",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4208,7 +4208,7 @@
     "slug": "app-169",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4231,7 +4231,7 @@
     "slug": "app-170",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4256,7 +4256,7 @@
     "slug": "app-171",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4280,7 +4280,7 @@
     "slug": "app-172",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4306,7 +4306,7 @@
     "slug": "app-173",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4330,7 +4330,7 @@
     "slug": "app-174",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4356,7 +4356,7 @@
     "slug": "app-175",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4381,7 +4381,7 @@
     "slug": "app-176",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4406,7 +4406,7 @@
     "slug": "app-177",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4430,7 +4430,7 @@
     "slug": "app-178",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4456,7 +4456,7 @@
     "slug": "app-179",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4482,7 +4482,7 @@
     "slug": "app-180",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4508,7 +4508,7 @@
     "slug": "app-181",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4533,7 +4533,7 @@
     "slug": "app-182",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4558,7 +4558,7 @@
     "slug": "app-183",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4583,7 +4583,7 @@
     "slug": "app-184",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4608,7 +4608,7 @@
     "slug": "app-185",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4634,7 +4634,7 @@
     "slug": "app-186",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4659,7 +4659,7 @@
     "slug": "app-187",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4685,7 +4685,7 @@
     "slug": "app-188",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4710,7 +4710,7 @@
     "slug": "app-189",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4735,7 +4735,7 @@
     "slug": "app-190",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4761,7 +4761,7 @@
     "slug": "app-191",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4785,7 +4785,7 @@
     "slug": "app-192",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Parking Sous-Sol Garanti"
@@ -4811,7 +4811,7 @@
     "slug": "app-193",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -4835,7 +4835,7 @@
     "slug": "app-194",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -4861,7 +4861,7 @@
     "slug": "app-195",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -4885,7 +4885,7 @@
     "slug": "app-196",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -4912,7 +4912,7 @@
     "slug": "app-197",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -4937,7 +4937,7 @@
     "slug": "app-198",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -4964,7 +4964,7 @@
     "slug": "app-199",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -4989,7 +4989,7 @@
     "slug": "app-200",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5015,7 +5015,7 @@
     "slug": "app-201",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5040,7 +5040,7 @@
     "slug": "app-202",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5066,7 +5066,7 @@
     "slug": "app-203",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5093,7 +5093,7 @@
     "slug": "app-204",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5119,7 +5119,7 @@
     "slug": "app-205",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5146,7 +5146,7 @@
     "slug": "app-206",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5172,7 +5172,7 @@
     "slug": "app-207",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5199,7 +5199,7 @@
     "slug": "app-208",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ rooms (Penthouse)",
+    "roomsText": "4+ Pièces (Penthouse)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5226,7 +5226,7 @@
     "slug": "app-209",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5253,7 +5253,7 @@
     "slug": "app-210",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5280,7 +5280,7 @@
     "slug": "app-211",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5307,7 +5307,7 @@
     "slug": "app-212",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5333,7 +5333,7 @@
     "slug": "app-213",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5358,7 +5358,7 @@
     "slug": "app-214",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5385,7 +5385,7 @@
     "slug": "app-215",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5410,7 +5410,7 @@
     "slug": "app-216",
     "category": "2 BR",
     "rooms": 3,
-    "roomsText": "3 rooms (2 BR)",
+    "roomsText": "3 Pièces (2 Chambres)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5437,7 +5437,7 @@
     "slug": "app-217",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5460,7 +5460,7 @@
     "slug": "app-218",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5486,7 +5486,7 @@
     "slug": "app-219",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5510,7 +5510,7 @@
     "slug": "app-220",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5536,7 +5536,7 @@
     "slug": "app-221",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5560,7 +5560,7 @@
     "slug": "app-222",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5586,7 +5586,7 @@
     "slug": "app-223",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5612,7 +5612,7 @@
     "slug": "app-224",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5638,7 +5638,7 @@
     "slug": "app-225",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5663,7 +5663,7 @@
     "slug": "app-226",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5689,7 +5689,7 @@
     "slug": "app-227",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5716,7 +5716,7 @@
     "slug": "app-228",
     "category": "Studio",
     "rooms": 1,
-    "roomsText": "1 room",
+    "roomsText": "Studio (1 Pièce)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5743,7 +5743,7 @@
     "slug": "app-229",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5769,7 +5769,7 @@
     "slug": "app-230",
     "category": "1 BR",
     "rooms": 2,
-    "roomsText": "2 rooms (1 BR)",
+    "roomsText": "2 Pièces (1 Chambre)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
