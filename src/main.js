@@ -1253,6 +1253,34 @@ document.addEventListener('DOMContentLoaded', () => {
       );
     }
 
+    const leftHeading = firstCol ? firstCol.querySelector('.heading-1') : null;
+    if (leftHeading) {
+      const splitLeft = splitText(leftHeading, { words: true, chars: true });
+      const leftTargets = splitLeft.chars.length ? splitLeft.chars : splitLeft.words;
+      gsap.fromTo(
+        leftTargets,
+        { yPercent: 75, opacity: 0, rotateX: -50, scale: 0.9, filter: 'blur(8px)' },
+        {
+          yPercent: 0,
+          opacity: 1,
+          rotateX: 0,
+          scale: 1,
+          filter: 'blur(0px)',
+          duration: 1.15,
+          stagger: 0.03,
+          ease: 'expo.out',
+          scrollTrigger: {
+            trigger: leftHeading,
+            start: 'top 92%',
+            toggleActions: 'play none none reset',
+          },
+          onComplete: () => {
+            gsap.set(leftTargets, { clearProps: 'filter' });
+          },
+        }
+      );
+    }
+
     const setActiveBusOption = (idx) => {
       optionItems.forEach((item, i) => {
         if (i === idx) {
