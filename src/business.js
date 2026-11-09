@@ -195,27 +195,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const blueprintData = [
       { 
         url: '/jardins_de_bali/plan_03_rez_de_chaussee.jpg', 
-        title: 'Plan RDC - 4 Grands Magasins Commerciaux (554 m²)', 
+        title: 'Plan RDC — 4 Grands Magasins Flagships (56 m² à 221 m²)', 
         img: '/business/retail/magasin_2_flagship.jpg',
-        alt: 'Flagship Stores RDC Jardins de Bali'
+        alt: 'Magasins Flagships RDC Jardins de Bali'
       },
       { 
         url: '/jardins_de_bali/plan_04_mezzanine.jpg', 
-        title: 'Plan Mezzanines Showrooms', 
+        title: 'Plan Mezzanine — 4 Mezzanines Commerciales (244 m²)', 
         img: '/business/retail/magasin_4_showroom.jpg',
         alt: 'Mezzanines Showrooms Jardins de Bali'
       },
       { 
-        url: '/jardins_de_bali/plan_05_1er_etage.jpg', 
-        title: 'Plan Plateaux Bureaux Modulables', 
+        url: '/jardins_de_bali/plan_03_rez_de_chaussee.jpg', 
+        title: 'Plan RDC & Mezzanine — Esplanade & 19 Duplexes (101 à 234 m²)', 
         img: '/business/retail/bureau_executive_suite_bali.jpg',
-        alt: 'Bureaux et Suites Professionnelles Jardins de Bali'
+        alt: 'Esplanade et Duplex RDC Jardins de Bali'
       },
       { 
-        url: '/jardins_de_bali/plan_01_sous_sol_2.jpg', 
-        title: 'Plan Sous-Sol - Parkings Privatifs', 
+        url: '/jardins_de_bali/plan_02_sous_sol_1.jpg', 
+        title: 'Plan Sous-Sol 1 & 2 — 234 Places de Parking & 15 Boxes', 
         img: '/business/retail/parking_prestige_jardins_bali.jpg',
-        alt: 'Parkings Sécurisés et Logistique Jardins de Bali'
+        alt: 'Parkings Sécurisés et Sous-Sols Jardins de Bali'
       },
     ];
 
