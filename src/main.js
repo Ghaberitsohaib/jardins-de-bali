@@ -391,7 +391,7 @@ document.addEventListener('DOMContentLoaded', () => {
         arborHeader.classList.remove('opacity-0', '-translate-y-6', 'pointer-events-none');
       }
       if (heroVideo) {
-        heroVideo.play().catch(() => {});
+        heroVideo.play().catch(() => { });
       }
     }, 100);
   };
@@ -427,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!heroVideo.src.includes(targetSrc)) {
       heroVideo.src = targetSrc;
       heroVideo.load();
-      heroVideo.play().catch(() => {});
+      heroVideo.play().catch(() => { });
     }
 
     let finalShown = false;
@@ -1392,7 +1392,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const rootsVideo = rootsMobile.querySelector('video');
 
     if (rootsVideo) {
-      rootsVideo.play().catch(() => {});
+      rootsVideo.play().catch(() => { });
     }
 
     const hugeSplit = splitText(hugeHeading, { words: true, chars: true });
@@ -1832,7 +1832,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (vid.dataset.src && !vid.src) {
             vid.src = vid.dataset.src;
             vid.load();
-            vid.play().catch(() => {});
+            vid.play().catch(() => { });
           }
           observer.unobserve(vid);
         }
