@@ -2094,6 +2094,25 @@ html {
   visibility: visible !important;
 }
 
+/* #Amenities Luxury Responsive Typography (Zero Collision Guaranteed) */
+#Amenities h2.hero {
+  font-family: var(--font-editorialOld, 'Playfair Display', serif) !important;
+  font-size: clamp(2.75rem, 5vw, 5.25rem) !important;
+  line-height: 0.95 !important;
+  white-space: normal !important;
+  text-align: right !important;
+  max-width: 100% !important;
+  letter-spacing: 0.02em !important;
+}
+
+@media (max-width: 1024px) {
+  #Amenities h2.hero {
+    text-align: left !important;
+    font-size: clamp(2.25rem, 7vw, 3.25rem) !important;
+    line-height: 1.05 !important;
+  }
+}
+
 /* Eliminate subpixel seams/white line gaps between sections */
 #BusinessSpaces {
   margin-bottom: -2px !important;
