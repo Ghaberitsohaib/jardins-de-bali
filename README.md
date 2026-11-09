@@ -1,6 +1,21 @@
 # Jardins de Bali — Menara Marrakech 🌿🏛️
 
+[![Auteur](https://img.shields.io/badge/Auteur-Sohaib%20Ghaberi-C5A880?style=for-the-badge&logo=github)](https://github.com/Ghaberitsohaib)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-jardins--de--bali-10150F?style=for-the-badge&logo=github)](https://github.com/Ghaberitsohaib/jardins-de-bali)
+[![Status](https://img.shields.io/badge/Status-Production%20Active-2E3A26?style=for-the-badge)](https://volatile-bolt-er8we5n.shipstatic.com)
+
 > Vitrine immobilière et commerciale de prestige au cœur de Marrakech (Boulevard M-16, Menara).
+
+---
+
+## 👤 Auteur & Propriétaire
+- **Sohaib Ghaberi** ([@Ghaberitsohaib](https://github.com/Ghaberitsohaib))
+- **Profil GitHub** : [https://github.com/Ghaberitsohaib](https://github.com/Ghaberitsohaib)
+- **Email Contact** : contact@bayt-immo.com
+- **Projet** : Jardins de Bali Menara Marrakech — BaytImmo Group
+- **Dépôt Officiel** : [https://github.com/Ghaberitsohaib/jardins-de-bali](https://github.com/Ghaberitsohaib/jardins-de-bali)
+
+---
 
 ## ✨ Présentation du Projet
 
@@ -62,4 +77,12 @@ npm run build
 
 ## 👤 Auteur & Propriétaire
 - **Sohaib Ghaberi** ([@Ghaberitsohaib](https://github.com/Ghaberitsohaib))
+- **Profil GitHub** : [https://github.com/Ghaberitsohaib](https://github.com/Ghaberitsohaib)
+- **Email Contact** : contact@bayt-immo.com
+- **Projet** : Jardins de Bali Menara Marrakech — BaytImmo Group
+
+---
+
+## 📄 Licence & Droits
+© 2026 **Sohaib Ghaberi** / **BaytImmo Groupe Immobilier**. Tous droits réservés.
 

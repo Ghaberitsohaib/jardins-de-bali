@@ -1,7 +1,13 @@
 {
-  "name": "kensington-morocco",
+  "name": "jardins-de-bali",
   "private": true,
   "version": "2.0.26",
+  "author": "Sohaib Ghaberi (https://github.com/Ghaberitsohaib)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ghaberitsohaib/jardins-de-bali.git"
+  },
+  "homepage": "https://github.com/Ghaberitsohaib/jardins-de-bali#readme",
   "type": "module",
   "scripts": {
     "dev": "vite",
