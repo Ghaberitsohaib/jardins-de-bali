@@ -1836,7 +1836,7 @@ document.addEventListener('DOMContentLoaded', () => {
         contactModalBackdrop.classList.remove('open');
       }
       contactForm.reset();
-      showToast('Thank you! A BaytImmo advisor will contact you shortly.');
+      showToast('Merci ! Un conseiller BaytImmo vous contactera dans les plus brefs délais.');
     });
   }
 
@@ -1844,7 +1844,7 @@ document.addEventListener('DOMContentLoaded', () => {
     arborFooterForm.addEventListener('submit', (e) => {
       e.preventDefault();
       arborFooterForm.reset();
-      showToast('Thank you for subscribing to BaytImmo updates.');
+      showToast('Merci ! Votre inscription aux actualités BaytImmo a bien été enregistrée.');
     });
   }
 
