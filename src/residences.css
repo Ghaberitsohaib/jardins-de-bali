@@ -47,9 +47,9 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
-  filter: brightness(0.9);
-  transform: scale(1.02);
+  object-position: center bottom;
+  filter: brightness(1.02) contrast(1.02);
+  transform: none;
   transition: transform 1.2s cubic-bezier(0.2, 0.9, 0.3, 1);
 }
 
@@ -59,8 +59,8 @@ footer {
   z-index: 1;
   pointer-events: none;
   background: 
-    linear-gradient(90deg, rgba(14, 20, 15, 0.9) 0%, rgba(14, 20, 15, 0.72) 36%, rgba(14, 20, 15, 0.3) 65%, rgba(14, 20, 15, 0.05) 85%, transparent 100%),
-    linear-gradient(180deg, rgba(14, 20, 15, 0.5) 0%, transparent 22%, transparent 72%, rgba(14, 20, 15, 0.75) 92%, #10150F 100%);
+    linear-gradient(90deg, rgba(14, 20, 15, 0.72) 0%, rgba(14, 20, 15, 0.48) 35%, rgba(14, 20, 15, 0.15) 65%, rgba(14, 20, 15, 0.02) 85%, transparent 100%),
+    linear-gradient(180deg, rgba(14, 20, 15, 0.35) 0%, transparent 22%, transparent 75%, rgba(14, 20, 15, 0.5) 94%, #10150F 100%);
 }
 
 .residences-hero-content {
@@ -120,6 +120,7 @@ footer {
     align-items: center;
   }
   .residences-hero-bg {
+    object-position: 65% bottom;
     transform: none;
   }
   .residences-hero-content {
