@@ -155,19 +155,19 @@ export function initScrollReveals(targetSelector = '[data-reveal]', customOption
     return;
   }
 
-  // Pre-set initial hidden state
+  // Pre-set initial hidden state (use opacity: 0 without visibility: hidden so text remains accessible)
   gsap.set(elements, {
-    autoAlpha: 0,
+    opacity: 0,
     y: opts.distance,
     willChange: 'transform, opacity',
   });
 
   ScrollTrigger.batch(elements, {
-    start: opts.start || 'top 88%',
+    start: opts.start || 'top 92%',
     once: opts.once !== undefined ? opts.once : true,
     onEnter: (batch) => {
       gsap.to(batch, {
-        autoAlpha: 1,
+        opacity: 1,
         y: 0,
         duration: opts.duration,
         ease: opts.ease,
