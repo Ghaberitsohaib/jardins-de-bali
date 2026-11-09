@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
         type_de_bien: propertyType,
         creneau_de_rappel: callTime,
         contact_whatsapp_souhaite: whatsappConsent ? 'Oui' : 'Non',
-        projet: 'Jardins de Bali Marrakech - Boulevard M-16 Menara',
+        projet: 'Jardins de Bali Marrakech - Rue Ibn Batouta Menara',
         date_heure: new Date().toLocaleString('fr-FR', { timeZone: 'Africa/Casablanca' })
       };
 

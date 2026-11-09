@@ -4,7 +4,7 @@
 [![GitHub Repository](https://img.shields.io/badge/GitHub-jardins--de--bali-10150F?style=for-the-badge&logo=github)](https://github.com/Ghaberitsohaib/jardins-de-bali)
 [![Status](https://img.shields.io/badge/Status-Production%20Active-2E3A26?style=for-the-badge)](https://volatile-bolt-er8we5n.shipstatic.com)
 
-> Vitrine immobilière et commerciale de prestige au cœur de Marrakech (Boulevard M-16, Menara).
+> Vitrine immobilière et commerciale de prestige au cœur de Marrakech (Rue Ibn Batouta, Menara).
 
 ---
 
@@ -19,7 +19,7 @@
 
 ## ✨ Présentation du Projet
 
-**Jardins de Bali** est un complexe immobilier et commercial exclusif situé sur le Boulevard M-16 à Marrakech, alliant architecture contemporaine raffinée, art de vivre d'exception et espaces d'affaires haut de gamme.
+**Jardins de Bali** est un complexe immobilier et commercial exclusif situé sur la Rue Ibn Batouta à Marrakech, alliant architecture contemporaine raffinée, art de vivre d'exception et espaces d'affaires haut de gamme.
 
 ### 🌟 Caractéristiques Principales
 - **Espaces Commerciaux & Retail** : 4 Flagship Stores en rez-de-chaussée avec vitrines panoramiques sur voie passante, mezzanines showrooms et 12 plateaux de bureaux modulables.
