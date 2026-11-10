@@ -87,14 +87,14 @@ body {
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background: 
+  background:
     linear-gradient(90deg, rgba(8, 10, 8, 0.72) 0%, rgba(8, 10, 8, 0.48) 32%, rgba(8, 10, 8, 0.15) 58%, transparent 75%),
     linear-gradient(180deg, rgba(8, 10, 8, 0.5) 0%, transparent 18%, transparent 75%, rgba(8, 10, 8, 0.65) 100%);
 }
 
 @media (max-width: 768px) {
   .business-hero-scrim {
-    background: 
+    background:
       linear-gradient(180deg, rgba(8, 10, 8, 0.65) 0%, rgba(8, 10, 8, 0.35) 40%, rgba(8, 10, 8, 0.55) 85%, rgba(8, 10, 8, 0.85) 100%);
   }
 }
@@ -115,13 +115,15 @@ body {
 
 @media (max-width: 1024px) {
   #Hero .trigger {
-    align-items: center !important;
+    align-items: flex-start !important;
   }
+
   .business-hero-wrapper {
-    justify-content: center !important;
-    padding-top: max(5rem, calc(4.25rem + env(safe-area-inset-top, 20px))) !important;
-    padding-bottom: max(3.5rem, calc(2.5rem + env(safe-area-inset-bottom, 20px))) !important;
+    justify-content: flex-start !important;
+    padding-top: max(5.25rem, calc(4.25rem + env(safe-area-inset-top, 20px))) !important;
+    padding-bottom: 2rem !important;
   }
+
   .business-hero-title {
     margin-top: 0.35rem !important;
     margin-bottom: 0.65rem !important;
@@ -136,16 +138,19 @@ body {
     margin-top: 0.25rem !important;
     margin-bottom: 0.85rem !important;
   }
+
   .business-hero-p {
     font-size: clamp(0.95rem, 3.9vw, 1.0625rem) !important;
     line-height: 1.58 !important;
     margin-bottom: 1.25rem !important;
   }
+
   .business-hero-cta {
     padding: 0.9rem 1.35rem !important;
     font-size: 0.8125rem !important;
     letter-spacing: 0.08em !important;
   }
+
   .business-metrics-bar {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
@@ -154,23 +159,28 @@ body {
     margin-top: 1.35rem !important;
     margin-bottom: 0.85rem !important;
   }
+
   .metric-divider {
     display: none !important;
   }
+
   .metric-number {
     font-size: clamp(1.95rem, 7.2vw, 2.45rem) !important;
     margin-bottom: 0.25rem !important;
   }
+
   .metric-label {
     font-size: 0.6875rem !important;
     letter-spacing: 0.1em !important;
     line-height: 1.3 !important;
   }
+
   .hero-scroll-down-btn {
     bottom: max(0.75rem, env(safe-area-inset-bottom, 10px)) !important;
     width: 2.75rem !important;
     height: 2.75rem !important;
   }
+
   .hero-scroll-down-arrow {
     width: 0.55rem !important;
     height: 1.25rem !important;
@@ -183,10 +193,12 @@ body {
     padding-top: max(5.25rem, calc(4.5rem + env(safe-area-inset-top, 20px))) !important;
     padding-bottom: max(4rem, calc(2.75rem + env(safe-area-inset-bottom, 20px))) !important;
   }
+
   .business-hero-title {
     margin-top: 0.15rem !important;
     margin-bottom: 0.8rem !important;
   }
+
   .business-hero-cta {
     width: 100% !important;
     justify-content: center !important;
@@ -194,6 +206,7 @@ body {
     font-size: 0.8125rem !important;
     gap: 0.55rem !important;
   }
+
   .business-hero-p {
     font-size: clamp(0.95rem, 3.9vw, 1.05rem) !important;
     line-height: 1.56 !important;
@@ -376,6 +389,7 @@ body {
     padding-top: 4.75rem !important;
     padding-bottom: 1.75rem !important;
   }
+
   .business-metrics-bar {
     margin-top: 1rem !important;
     padding-top: 0.75rem !important;
@@ -392,13 +406,16 @@ body {
     margin-top: 1.25rem;
     margin-bottom: 1rem;
   }
+
   .metric-divider {
     display: none;
   }
+
   .metric-number {
     font-size: 1.5rem;
     margin-bottom: 0.15rem;
   }
+
   .metric-label {
     font-size: 0.6rem;
     letter-spacing: 0.08em;
@@ -410,6 +427,7 @@ body {
     font-size: 0.65rem;
     letter-spacing: 0.16em;
   }
+
   .business-hero-p {
     font-size: 0.875rem;
     line-height: 1.55;
@@ -425,14 +443,14 @@ body {
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background: 
+  background:
     linear-gradient(90deg, rgba(14, 20, 15, 0.92) 0%, rgba(14, 20, 15, 0.75) 38%, rgba(14, 20, 15, 0.3) 62%, rgba(14, 20, 15, 0.05) 85%, transparent 100%),
     linear-gradient(180deg, #0E140F 0%, rgba(14, 20, 15, 0.6) 5%, transparent 20%, transparent 75%, rgba(14, 20, 15, 0.65) 92%, #0E140F 100%);
 }
 
 @media (max-width: 1023px) {
   .panorama-scrim {
-    background: 
+    background:
       linear-gradient(180deg, #0E140F 0%, rgba(12, 17, 13, 0.85) 10%, rgba(12, 17, 13, 0.7) 40%, rgba(12, 17, 13, 0.82) 85%, #0E140F 100%);
   }
 }
@@ -534,7 +552,7 @@ body {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: 
+  background:
     linear-gradient(90deg, rgba(26, 34, 24, 0.95) 0%, rgba(26, 34, 24, 0.4) 15%, rgba(26, 34, 24, 0) 40%),
     linear-gradient(180deg, rgba(16, 21, 15, 0.35) 0%, rgba(16, 21, 15, 0) 30%, rgba(16, 21, 15, 0.6) 100%);
   z-index: 2;
@@ -604,13 +622,11 @@ body {
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: linear-gradient(
-      180deg,
-      rgba(16, 21, 15, 0.2) 0%,
-      rgba(16, 21, 15, 0) 40%,
-      rgba(26, 34, 24, 0.45) 80%,
-      #1A2218 100%
-    ) !important;
+    background: linear-gradient(180deg,
+        rgba(16, 21, 15, 0.2) 0%,
+        rgba(16, 21, 15, 0) 40%,
+        rgba(26, 34, 24, 0.45) 80%,
+        #1A2218 100%) !important;
     z-index: 2;
   }
 
@@ -657,12 +673,14 @@ html:has(body.business-page) {
     background-color: #1A2218 !important;
   }
 }
+
 @media (min-width: 1024px) {
   #BusinessSpacesOptions .retail-spaces-reveal-content {
     background-color: transparent !important;
     pointer-events: none;
   }
-  #BusinessSpacesOptions .retail-spaces-reveal-content > div {
+
+  #BusinessSpacesOptions .retail-spaces-reveal-content>div {
     pointer-events: auto;
   }
 }
