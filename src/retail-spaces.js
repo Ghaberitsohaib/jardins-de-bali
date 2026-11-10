@@ -188,15 +188,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4. RETAIL & BUSINESS SPACES FILTER STATE
   // ==========================================
   const state = {
-    type: 'all',          // 'all', 'Boutique', 'Flagship'
-    minSurface: 56,
-    maxSurface: 221,
-    floor: 'all',         // 'all', 0
-    wing: 'all',          // 'all', 'Façade Rue', 'Angle & Parvis'
+    type: 'all',          // 'all', 'Retail', 'Offices', 'Duplex'
+    minSurface: 40,
+    maxSurface: 450,
+    floor: 'all',         // 'all', 0, 0.5, 1, 2, 5
+    wing: 'all',          // 'all', 'Wing A', 'Wing B'
     searchQuery: '',
     sortBy: 'default',
     page: 1,
-    perPage: 6
+    perPage: 12
   };
 
   const gridContainer = document.getElementById('retailGrid');
@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
       gridContainer.innerHTML = `
         <div class="col-span-2 py-20 text-center space-y-4">
           <p class="font-editorialOld text-3xl text-golden">Aucun espace ne correspond à vos critères</p>
-          <p class="font-workSans text-pine-green/70 text-sm">Veuillez réinitialiser les filtres pour explorer l'ensemble de nos 4 magasins flagships.</p>
+          <p class="font-workSans text-pine-green/70 text-sm">Veuillez réinitialiser les filtres pour explorer l'ensemble de nos magasins et plateaux d'affaires.</p>
           <button id="noResultsReset" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-golden bg-golden text-sand uppercase text-xs tracking-widest hover:bg-pine-green transition mt-4">
             Réinitialiser les filtres
           </button>
@@ -520,8 +520,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function resetFilters() {
     state.type = 'all';
-    state.minSurface = 56;
-    state.maxSurface = 221;
+    state.minSurface = 40;
+    state.maxSurface = 450;
     state.floor = 'all';
     state.wing = 'all';
     state.page = 1;
@@ -531,14 +531,14 @@ document.addEventListener('DOMContentLoaded', () => {
     updateWingButtonsUI();
 
     if (surfaceSlider) {
-      surfaceSlider.value = 221;
-      if (surfaceMaxLabel) surfaceMaxLabel.textContent = '221';
+      surfaceSlider.value = 450;
+      if (surfaceMaxLabel) surfaceMaxLabel.textContent = '450';
     }
     const surfaceSliderMobile = document.getElementById('surfaceSliderMobile');
     const surfaceMaxLabelMobile = document.getElementById('surfaceMaxLabelMobile');
     if (surfaceSliderMobile) {
-      surfaceSliderMobile.value = 221;
-      if (surfaceMaxLabelMobile) surfaceMaxLabelMobile.textContent = '221';
+      surfaceSliderMobile.value = 450;
+      if (surfaceMaxLabelMobile) surfaceMaxLabelMobile.textContent = '450';
     }
 
     if (floorSlider) {
@@ -620,9 +620,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     return [
-      { label: 'Plan RDC & Mezzanine', src: unit.layoutImg },
-      { label: 'Plan RDC (HD)', src: unit.planPdf },
-      { label: 'Plan Mezzanine (HD)', src: '/jardins_de_bali/plan_04_mezzanine.jpg' },
+      { label: 'Plan Unité', src: unit.layoutImg },
+      { label: 'Plan Niveau (HD)', src: unit.planPdf },
       { label: 'Visuel 3D', src: renderImg },
       { label: 'Façade Menara', src: '/jardins_de_bali/14_rendu_3d_facade_rue.jpg' },
       { label: 'Patio & Fontaine', src: '/jardins_de_bali/09_patio_interieur_fontaine.jpg' }
@@ -643,7 +642,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="modal-main-img-wrap" id="unitModalMainImgWrap" style="cursor: zoom-in;" title="Cliquer pour afficher en plein écran">
             <img id="unitModalMainImg" src="${visuals[0].src}" alt="${unit.name} Architectural Plan" class="modal-main-img" />
             <div class="modal-img-badge">
-              TF 34 603 / M — Marrakech Menara
+              TF 34 603 / M — Lot B5
             </div>
           </div>
 
@@ -833,7 +832,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       closeArborMenu();
-      openContactModal('Demande générale pour les magasins flagships & espaces commerciaux Jardins de Bali.');
+      openContactModal('Demande générale pour les espaces commerciaux & bureaux Jardins de Bali.');
     });
   });
 
