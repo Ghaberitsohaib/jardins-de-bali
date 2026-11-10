@@ -2,7 +2,7 @@
   {
     "id": "MAGASIN 1",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 56,
     "type": "Commerce",
     "slug": "magasin-1",
@@ -10,7 +10,7 @@
     "rooms": 1,
     "roomsText": "Local Commercial Flagship",
     "features": [
-      "Vue Patio & Fontaine",
+      "Façade Rue Ibn Batouta",
       "Parking Sous-Sol Garanti"
     ],
     "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
@@ -25,7 +25,7 @@
   {
     "id": "MAGASIN 2",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 221,
     "type": "Commerce",
     "slug": "magasin-2",
@@ -33,7 +33,7 @@
     "rooms": 1,
     "roomsText": "Local Commercial Flagship",
     "features": [
-      "Façade Avenue Menara",
+      "Façade Rue Ibn Batouta",
       "Parking Sous-Sol Garanti"
     ],
     "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
@@ -48,7 +48,7 @@
   {
     "id": "MAGASIN 3",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 56,
     "type": "Commerce",
     "slug": "magasin-3",
@@ -56,7 +56,7 @@
     "rooms": 1,
     "roomsText": "Local Commercial Flagship",
     "features": [
-      "Vue Patio & Fontaine",
+      "Façade Rue Ibn Batouta",
       "Parking Sous-Sol Garanti"
     ],
     "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
@@ -71,7 +71,7 @@
   {
     "id": "MAGASIN 4",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 221,
     "type": "Commerce",
     "slug": "magasin-4",
@@ -79,7 +79,7 @@
     "rooms": 1,
     "roomsText": "Local Commercial Flagship",
     "features": [
-      "Façade Avenue Menara",
+      "Façade Rue Ibn Batouta",
       "Parking Sous-Sol Garanti"
     ],
     "planImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
@@ -116,12 +116,12 @@
   {
     "id": "APP 2",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 111,
     "slug": "app-2",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -141,12 +141,12 @@
   {
     "id": "APP 3",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 125,
     "slug": "app-3",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -164,12 +164,12 @@
   {
     "id": "APP 4",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 126,
     "slug": "app-4",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -189,12 +189,12 @@
   {
     "id": "APP 5",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 128,
     "slug": "app-5",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -212,12 +212,12 @@
   {
     "id": "APP 6",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 129,
     "slug": "app-6",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -237,12 +237,12 @@
   {
     "id": "APP 7",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 131,
     "slug": "app-7",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -262,12 +262,12 @@
   {
     "id": "APP 8",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 131,
     "slug": "app-8",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -287,12 +287,12 @@
   {
     "id": "APP 9",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 234,
     "slug": "app-9",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -311,12 +311,12 @@
   {
     "id": "APP 10",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 112,
     "slug": "app-10",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -638,12 +638,12 @@
   {
     "id": "APP 23",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 101,
     "slug": "app-23",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -662,12 +662,12 @@
   {
     "id": "APP 24",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 209,
     "slug": "app-24",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -687,12 +687,12 @@
   {
     "id": "APP 25",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 129,
     "slug": "app-25",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -710,12 +710,12 @@
   {
     "id": "APP 26",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 128,
     "slug": "app-26",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -735,12 +735,12 @@
   {
     "id": "APP 27",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 126,
     "slug": "app-27",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -759,12 +759,12 @@
   {
     "id": "APP 28",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 125,
     "slug": "app-28",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -785,12 +785,12 @@
   {
     "id": "APP 29",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 122,
     "slug": "app-29",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -809,12 +809,12 @@
   {
     "id": "APP 30",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 121,
     "slug": "app-30",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -835,12 +835,12 @@
   {
     "id": "APP 31",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 106,
     "slug": "app-31",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -860,12 +860,12 @@
   {
     "id": "APP 32",
     "floor": 0,
-    "floorName": "Rez-de-Chaussée",
+    "floorName": "Rez-de-Chaussée & Mezzanine",
     "surface": 152,
     "slug": "app-32",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Duplex 4 Pièces (RDC & Mezzanine)",
     "features": [
       "Vue Patio & Fontaine",
       "Parking Sous-Sol Garanti"
@@ -5015,7 +5015,7 @@
     "slug": "app-201",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Penthouse 4 Pièces (Terrasse)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",
@@ -5199,7 +5199,7 @@
     "slug": "app-208",
     "category": "3+ BR",
     "rooms": 4,
-    "roomsText": "4+ Pièces (Penthouse)",
+    "roomsText": "Penthouse 4 Pièces (Terrasse)",
     "features": [
       "Terrasse Panoramique",
       "Piscines Rooftop",

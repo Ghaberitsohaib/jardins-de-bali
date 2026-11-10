@@ -694,8 +694,8 @@ document.addEventListener('DOMContentLoaded', () => {
       img: '/jardins_de_bali/plan_01_sous_sol_2.jpg'
     },
     'ss1': {
-      title: 'Plan Sous-Sol -1 (Parking Niveau -1 & Locaux Techniques)',
-      desc: 'Deuxième niveau de stationnement souterrain avec liaisons directes par ascenseurs vers les 4 cages d\'escaliers et les halls d\'entrée résidentiels.',
+      title: 'Plan Sous-Sol -1 (124 Places de Parking & 15 Boxes Privatifs)',
+      desc: 'Premier niveau de stationnement souterrain comprenant 124 places numérotées de 1 à 124, 15 boxes fermés et 6 cages d\'ascenseurs desservant tous les étages.',
       img: '/jardins_de_bali/plan_02_sous_sol_1.jpg'
     },
     'rdc': {
@@ -704,8 +704,8 @@ document.addEventListener('DOMContentLoaded', () => {
       img: '/jardins_de_bali/plan_03_rez_de_chaussee.jpg'
     },
     'mezz': {
-      title: 'Plan Mezzanine (Extensions Commerciales & Bureaux)',
-      desc: 'Espaces en mezzanine surplombant les locaux commerciaux du rez-de-chaussée pour boutiques de prestige et enseignes exclusives.',
+      title: 'Plan Mezzanine (4 Mezzanines Commerciales & 19 Duplexes)',
+      desc: 'Niveau mezzanine intégrant les 4 mezzanines commerciales des magasins flagships (244 m² cumulés) et les étages supérieurs des 19 résidences duplexes.',
       img: '/jardins_de_bali/plan_04_mezzanine.jpg'
     },
     'r1': {

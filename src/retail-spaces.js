@@ -188,11 +188,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4. RETAIL & BUSINESS SPACES FILTER STATE
   // ==========================================
   const state = {
-    type: 'all',          // 'all', 'Retail', 'Offices', 'Duplex'
-    minSurface: 40,
-    maxSurface: 450,
-    floor: 'all',         // 'all', 0, 0.5, 1, 2, 5
-    wing: 'all',          // 'all', 'Wing A', 'Wing B'
+    type: 'all',          // 'all', 'Boutique', 'Flagship'
+    minSurface: 56,
+    maxSurface: 221,
+    floor: 'all',         // 'all', 0
+    wing: 'all',          // 'all', 'Façade Rue', 'Angle & Parvis'
     searchQuery: '',
     sortBy: 'default',
     page: 1,
@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
       gridContainer.innerHTML = `
         <div class="col-span-2 py-20 text-center space-y-4">
           <p class="font-editorialOld text-3xl text-golden">Aucun espace ne correspond à vos critères</p>
-          <p class="font-workSans text-pine-green/70 text-sm">Veuillez réinitialiser les filtres pour explorer l'ensemble de nos magasins et plateaux d'affaires.</p>
+          <p class="font-workSans text-pine-green/70 text-sm">Veuillez réinitialiser les filtres pour explorer l'ensemble de nos 4 magasins flagships.</p>
           <button id="noResultsReset" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-golden bg-golden text-sand uppercase text-xs tracking-widest hover:bg-pine-green transition mt-4">
             Réinitialiser les filtres
           </button>
@@ -520,8 +520,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function resetFilters() {
     state.type = 'all';
-    state.minSurface = 40;
-    state.maxSurface = 450;
+    state.minSurface = 56;
+    state.maxSurface = 221;
     state.floor = 'all';
     state.wing = 'all';
     state.page = 1;
@@ -531,14 +531,14 @@ document.addEventListener('DOMContentLoaded', () => {
     updateWingButtonsUI();
 
     if (surfaceSlider) {
-      surfaceSlider.value = 450;
-      if (surfaceMaxLabel) surfaceMaxLabel.textContent = '450';
+      surfaceSlider.value = 221;
+      if (surfaceMaxLabel) surfaceMaxLabel.textContent = '221';
     }
     const surfaceSliderMobile = document.getElementById('surfaceSliderMobile');
     const surfaceMaxLabelMobile = document.getElementById('surfaceMaxLabelMobile');
     if (surfaceSliderMobile) {
-      surfaceSliderMobile.value = 450;
-      if (surfaceMaxLabelMobile) surfaceMaxLabelMobile.textContent = '450';
+      surfaceSliderMobile.value = 221;
+      if (surfaceMaxLabelMobile) surfaceMaxLabelMobile.textContent = '221';
     }
 
     if (floorSlider) {
@@ -832,7 +832,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       closeArborMenu();
-      openContactModal('Demande générale pour les espaces commerciaux & bureaux Jardins de Bali.');
+      openContactModal('Demande générale pour les magasins flagships & espaces commerciaux Jardins de Bali.');
     });
   });
 
