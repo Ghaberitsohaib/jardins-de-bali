@@ -620,8 +620,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     return [
-      { label: 'Plan Unité', src: unit.layoutImg },
-      { label: 'Plan Niveau (HD)', src: unit.planPdf },
+      { label: 'Plan RDC & Mezzanine', src: unit.layoutImg },
+      { label: 'Plan RDC (HD)', src: unit.planPdf },
+      { label: 'Plan Mezzanine (HD)', src: '/jardins_de_bali/plan_04_mezzanine.jpg' },
       { label: 'Visuel 3D', src: renderImg },
       { label: 'Façade Menara', src: '/jardins_de_bali/14_rendu_3d_facade_rue.jpg' },
       { label: 'Patio & Fontaine', src: '/jardins_de_bali/09_patio_interieur_fontaine.jpg' }
@@ -642,7 +643,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="modal-main-img-wrap" id="unitModalMainImgWrap" style="cursor: zoom-in;" title="Cliquer pour afficher en plein écran">
             <img id="unitModalMainImg" src="${visuals[0].src}" alt="${unit.name} Architectural Plan" class="modal-main-img" />
             <div class="modal-img-badge">
-              TF 34 603 / M — Lot B5
+              TF 34 603 / M — Marrakech Menara
             </div>
           </div>
 
