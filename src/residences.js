@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener('click', (e) => {
       const targetId = link.getAttribute('href');
-      if (targetId && targetId !== '#') {
+      if (targetId && targetId.startsWith('#') && targetId.length > 1) {
         const el = document.querySelector(targetId);
         if (el) {
           e.preventDefault();
@@ -214,13 +214,52 @@ document.addEventListener('DOMContentLoaded', () => {
   const state = {
     category: 'all',
     floor: 'all',
-    maxSurface: 234,
+    maxSurface: 221,
     features: [],
     searchQuery: '',
     sortBy: 'default',
     viewMode: 'grid',
     pageLimit: 24,
   };
+
+  // Sync optional URL query params (?category=Magasin&floor=0)
+  const urlParams = new URLSearchParams(window.location.search);
+  const rawCategoryParam = urlParams.get('category');
+  if (rawCategoryParam) {
+    const categoryAliases = {
+      commerce: 'Magasin',
+      magasin: 'Magasin',
+      magasins: 'Magasin',
+      duplex: 'Duplex',
+      studio: '1 Chambre',
+      '1 br': '1 Chambre',
+      '1 chambre': '1 Chambre',
+      '2 br': '2 Chambres',
+      '2 chambres': '2 Chambres',
+      '3+ br': '3 Chambres',
+      '3 chambres': '3 Chambres',
+    };
+    const normalizedCat = categoryAliases[rawCategoryParam.toLowerCase()] || rawCategoryParam;
+    const matchedCatBtn = Array.from(document.querySelectorAll('[data-filter-category]')).find(
+      (b) => b.getAttribute('data-filter-category') === normalizedCat
+    );
+    if (matchedCatBtn) {
+      state.category = normalizedCat;
+      document.querySelectorAll('[data-filter-category]').forEach((b) => b.classList.remove('is-active'));
+      matchedCatBtn.classList.add('is-active');
+    }
+  }
+  const rawFloorParam = urlParams.get('floor');
+  if (rawFloorParam !== null) {
+    const matchedFloorBtn = Array.from(document.querySelectorAll('[data-filter-floor]')).find(
+      (b) => b.getAttribute('data-filter-floor') === rawFloorParam
+    );
+    if (matchedFloorBtn) {
+      state.floor = rawFloorParam;
+      document.querySelectorAll('[data-filter-floor]').forEach((b) => b.classList.remove('is-active'));
+      matchedFloorBtn.classList.add('is-active');
+    }
+  }
 
   const resultsGrid = document.getElementById('residencesGrid');
   const resultsCount = document.getElementById('resultsCount');
@@ -235,10 +274,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let list = residencesData.filter((item) => {
       // Category filter
       if (state.category !== 'all') {
-        if (state.category === 'Commerce' && item.type !== 'Commerce') return false;
-        if (state.category !== 'Commerce') {
-          if (item.type === 'Commerce') return false;
-          if (item.category !== state.category) return false;
+        if (state.category === 'Magasin' || state.category === 'Commerce') {
+          if (item.category !== 'Magasin' && item.type !== 'Commerce') return false;
+        } else if (item.category !== state.category) {
+          return false;
         }
       }
 
@@ -252,18 +291,30 @@ document.addEventListener('DOMContentLoaded', () => {
         return false;
       }
 
-      // Features filter
+      // Features filter (supports substring match, e.g. 'Terrasse' matches both RDC garden & upper terraces)
       if (state.features.length > 0) {
-        const hasAllFeatures = state.features.every((f) => item.features.includes(f));
+        const hasAllFeatures = state.features.every((f) => {
+          const needle = f.toLowerCase();
+          return item.features.some((feat) => feat.toLowerCase().includes(needle));
+        });
         if (!hasAllFeatures) return false;
       }
 
       // Search query
       if (state.searchQuery) {
         const q = state.searchQuery.toLowerCase();
-        const matchesId = item.id.toLowerCase().includes(q);
-        const matchesFloor = item.floorName.toLowerCase().includes(q);
-        if (!matchesId && !matchesFloor) return false;
+        const searchable = [
+          item.id,
+          item.floorName,
+          item.typeCode,
+          item.typePdf,
+          item.composition,
+          item.category,
+        ]
+          .filter(Boolean)
+          .join(' ')
+          .toLowerCase();
+        if (!searchable.includes(q)) return false;
       }
 
       return true;
@@ -354,6 +405,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="residence-card group" data-id="${item.id}" role="button" tabindex="0">
               <div class="card-top-preview">
                 <img src="${layoutThumb}" alt="${item.id}" class="card-preview-img" loading="lazy" />
+                <span class="card-plan-pill">${item.typeCode || item.category} · Plan PDF</span>
                 <div class="card-badges">
                   <span class="card-badge-icon" title="Exposition Lumineuse">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
@@ -366,16 +418,19 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="card-content">
                 <div class="flex items-baseline justify-between gap-2">
                   <h3 class="card-apartment-id">${item.id}</h3>
-                  <span class="font-editorialOld text-xl sm:text-2xl text-golden shrink-0">${item.surface.toFixed(2)} m²</span>
+                  <div class="text-right shrink-0">
+                    <span class="font-editorialOld text-xl sm:text-2xl text-golden">${item.surface.toFixed(0)} m²</span>
+                    ${item.terraceSurface > 0 ? `<span class="card-terrace-sub">+${item.terraceSurface} m² Ter.</span>` : ''}
+                  </div>
                 </div>
                 <div class="card-details-row">
                   <div class="card-specs-list">
-                    <span class="card-spec-item highlight">${item.floorName}</span>
-                    <span class="card-spec-item">${item.roomsText}</span>
-                    <span class="card-spec-item text-xs text-golden">${item.features[0] || 'Parking Sous-sol'}</span>
+                    <span class="card-spec-item highlight">${item.category} · ${item.floorName}</span>
+                    <span class="card-spec-item">${item.composition || item.roomsText}</span>
+                    <span class="card-spec-item text-xs text-golden">${item.isMagasin ? item.surfaceDetails : (item.terraceSurface > 0 ? `Terrasse / Jardin : ${item.terraceSurface} m²` : (item.features[0] || 'Parking Sous-Sol Garanti'))}</span>
                   </div>
-                  <div class="card-see-more">
-                    <span>Détails</span>
+                  <div class="card-see-more shrink-0">
+                    <span>Plan &amp; Détails</span>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                   </div>
                 </div>
@@ -507,14 +562,14 @@ document.addEventListener('DOMContentLoaded', () => {
     resetBtn.addEventListener('click', () => {
       state.category = 'all';
       state.floor = 'all';
-      state.maxSurface = 234;
+      state.maxSurface = 221;
       state.features = [];
       state.searchQuery = '';
       state.sortBy = 'default';
       state.pageLimit = 24;
 
-      if (surfaceSlider) surfaceSlider.value = 234;
-      if (surfaceBadge) surfaceBadge.textContent = '234 m²';
+      if (surfaceSlider) surfaceSlider.value = 221;
+      if (surfaceBadge) surfaceBadge.textContent = '221 m²';
       if (searchInput) searchInput.value = '';
       if (sortSelect) sortSelect.value = 'default';
 
@@ -541,25 +596,68 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalBackdrop = document.getElementById('apartmentModal');
   const modalCloseBtn = document.getElementById('modalCloseBtn');
   const modalLotId = document.getElementById('modalLotId');
+  const modalLotSubtitle = document.getElementById('modalLotSubtitle');
+  const modalTypePdf = document.getElementById('modalTypePdf');
   const modalMainImg = document.getElementById('modalMainImg');
   const modalThumbsRow = document.getElementById('modalThumbsRow');
+  const modalVisualTabs = document.getElementById('modalVisualTabs');
+  const modalVisualCaption = document.getElementById('modalVisualCaption');
   const modalSurface = document.getElementById('modalSurface');
+  const modalTerraceRow = document.getElementById('modalTerraceRow');
+  const modalTerrace = document.getElementById('modalTerrace');
   const modalFloor = document.getElementById('modalFloor');
   const modalRooms = document.getElementById('modalRooms');
   const modalFeatures = document.getElementById('modalFeatures');
+  const modalEquipments = document.getElementById('modalEquipments');
   const modalWaLink = document.getElementById('modalWaLink');
   const modalPlanDownload = document.getElementById('modalPlanDownload');
 
   const blueprintModal = document.getElementById('blueprintModal');
   const blueprintModalImg = document.getElementById('blueprintModalImg');
   const blueprintModalTitle = document.getElementById('blueprintModalTitle');
+  const blueprintModalActions = document.getElementById('blueprintModalActions');
   const closeBlueprintBtn = document.getElementById('closeBlueprintBtn');
 
-  function openBlueprintModal(src, title) {
+  let activeModalUnit = null;
+  let activeVisualMode = 'plan';
+
+  function updateBlueprintSwitch(unit, mode) {
+    if (!unit || !blueprintModalImg) return;
+    let targetSrc = unit.planImg;
+    let label = `Plan Unité (${unit.typeCode || unit.id})`;
+    if (mode === 'emplacement' && unit.emplacementImg) {
+      targetSrc = unit.emplacementImg;
+      label = `Emplacement sur Étage (Lot en rouge)`;
+    } else if (mode === 'floor' && unit.floorPlanImg) {
+      targetSrc = unit.floorPlanImg;
+      label = `Plan Architectural d'Étage Complet (${unit.floorName})`;
+    }
+    blueprintModalImg.src = targetSrc;
+    blueprintModalImg.alt = `${unit.id} — ${label}`;
+    if (blueprintModalTitle) {
+      blueprintModalTitle.textContent = `${unit.id} · ${label}`;
+    }
+    if (blueprintModalActions) {
+      blueprintModalActions.querySelectorAll('.blueprint-switch-btn').forEach((btn) => {
+        btn.classList.toggle('is-active', btn.getAttribute('data-bp-mode') === mode);
+      });
+    }
+  }
+
+  function openBlueprintModal(src, title, unit = null, initialMode = 'plan') {
     if (blueprintModal && blueprintModalImg) {
-      blueprintModalImg.src = src;
-      if (blueprintModalTitle) {
-        blueprintModalTitle.textContent = title || 'Plan Architectural Officiel';
+      if (unit && blueprintModalActions) {
+        blueprintModalActions.style.display = 'flex';
+        blueprintModalActions.querySelectorAll('.blueprint-switch-btn').forEach((btn) => {
+          btn.onclick = () => updateBlueprintSwitch(unit, btn.getAttribute('data-bp-mode'));
+        });
+        updateBlueprintSwitch(unit, initialMode);
+      } else {
+        if (blueprintModalActions) blueprintModalActions.style.display = 'none';
+        blueprintModalImg.src = src;
+        if (blueprintModalTitle) {
+          blueprintModalTitle.textContent = title || 'Plan Architectural Officiel';
+        }
       }
       blueprintModal.classList.add('is-open');
       document.body.style.overflow = 'hidden';
@@ -584,66 +682,135 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  function setModalVisual(unit, src, kind, captionText) {
+    activeVisualMode = kind;
+    if (modalMainImg) {
+      modalMainImg.src = src;
+      modalMainImg.alt = `${unit.id} — ${captionText}`;
+      modalMainImg.classList.toggle('is-photo', kind === 'photo');
+    }
+    if (modalVisualCaption) {
+      modalVisualCaption.textContent = captionText;
+    }
+    if (modalVisualTabs) {
+      modalVisualTabs.querySelectorAll('.modal-visual-tab').forEach((tab) => {
+        tab.classList.toggle('is-active', tab.getAttribute('data-visual-tab') === kind);
+      });
+    }
+    if (modalThumbsRow) {
+      modalThumbsRow.querySelectorAll('.modal-thumb-btn').forEach((btn) => {
+        btn.classList.toggle('is-active', btn.getAttribute('data-src') === src);
+      });
+    }
+  }
+
   function openModal(unit) {
     if (!modalBackdrop) return;
+    activeModalUnit = unit;
     if (modalLotId) modalLotId.textContent = unit.id;
-    if (modalSurface) modalSurface.textContent = `${unit.surface.toFixed(2)} m²`;
+    if (modalLotSubtitle) modalLotSubtitle.textContent = unit.situation || 'Lot certifié conforme aux plans officiels Jardins de Bali.';
+    if (modalTypePdf) modalTypePdf.textContent = unit.typePdf || unit.category;
+    if (modalSurface) modalSurface.textContent = unit.surfaceDetails || `${unit.surface} m²`;
+    if (modalTerraceRow && modalTerrace) {
+      if (unit.terraceSurface > 0) {
+        modalTerraceRow.style.display = 'table-row';
+        modalTerrace.textContent = `${unit.terraceSurface} m² (Total ${unit.totalWithTerrace} m²)`;
+      } else {
+        modalTerraceRow.style.display = 'none';
+      }
+    }
     if (modalFloor) modalFloor.textContent = unit.floorName;
-    if (modalRooms) modalRooms.textContent = unit.roomsText;
+    if (modalRooms) modalRooms.textContent = unit.composition || unit.roomsText;
     if (modalFeatures) modalFeatures.textContent = unit.features.join(', ');
+    if (modalEquipments) {
+      modalEquipments.textContent =
+        unit.equipments ||
+        (unit.isMagasin
+          ? 'Vitrine panoramique toute hauteur, Double hauteur sous plafond, Volet roulant motorisé, Climatisation pré-installée'
+          : 'Cuisine équipée Bosch, Marbre Travertin, Climatisation centralisée, Parking Sous-Sol');
+    }
 
-    // Main image: Showcase the luxury visual first, with floor plan accessible in gallery
-    const isCommercial = unit.type === 'Commerce' || unit.category === 'Magasin' || unit.id.startsWith('MAGASIN');
-    const initialImg = unit.thumbImg || unit.planImg;
+    const planSrc = unit.planImg;
+    const empSrc = unit.emplacementImg || unit.floorPlanImg;
+    const photoSrc = unit.thumbImg || (Array.isArray(unit.gallery) ? unit.gallery.find((s) => s !== planSrc && s !== empSrc) : null) || planSrc;
+
+    // Build visual entries: 1) Plan Unité (default), 2) Emplacement Rouge, 3) Interior/Vitrine Photos
+    const visualEntries = [
+      { src: planSrc, kind: 'plan', label: 'Plan Unité', caption: `Plan coté officiel (${unit.typePdf || unit.typeCode}) — cliquez pour agrandir` },
+      { src: empSrc, kind: 'emplacement', label: 'Rouge', caption: `Emplacement exact sur plan d'étage (lot surligné en rouge) — cliquez pour agrandir` },
+    ];
+    const extraPhotos = [];
+    if (unit.thumbImg) extraPhotos.push(unit.thumbImg);
+    if (Array.isArray(unit.gallery)) {
+      unit.gallery.forEach((s) => {
+        if (s && s !== planSrc && s !== empSrc && !extraPhotos.includes(s)) extraPhotos.push(s);
+      });
+    }
+    extraPhotos.forEach((s, idx) => {
+      visualEntries.push({
+        src: s,
+        kind: 'photo',
+        label: idx === 0 ? 'Aperçu' : `Vue ${idx + 1}`,
+        caption: `${unit.id} · Aperçu architectural & ambiance intérieure`,
+      });
+    });
+
+    if (modalThumbsRow) {
+      modalThumbsRow.innerHTML = visualEntries
+        .map(
+          (entry, i) => `
+          <button type="button" class="modal-thumb-btn ${i === 0 ? 'is-active' : ''}" data-src="${entry.src}" data-kind="${entry.kind}" data-caption="${entry.caption.replace(/"/g, '&quot;')}">
+            <img src="${entry.src}" alt="${entry.label}" class="modal-thumb" />
+            <span class="modal-thumb-label">${entry.label}</span>
+          </button>
+        `
+        )
+        .join('');
+
+      modalThumbsRow.querySelectorAll('.modal-thumb-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          setModalVisual(unit, btn.getAttribute('data-src'), btn.getAttribute('data-kind'), btn.getAttribute('data-caption'));
+        });
+      });
+    }
+
+    if (modalVisualTabs) {
+      modalVisualTabs.querySelectorAll('.modal-visual-tab').forEach((tab) => {
+        tab.onclick = () => {
+          const targetKind = tab.getAttribute('data-visual-tab');
+          const match = visualEntries.find((e) => e.kind === targetKind) || visualEntries[0];
+          setModalVisual(unit, match.src, match.kind, match.caption);
+        };
+      });
+    }
+
+    // Default open on zoomed Unit CAD Plan ('plan')
+    setModalVisual(unit, visualEntries[0].src, visualEntries[0].kind, visualEntries[0].caption);
 
     if (modalMainImg) {
-      modalMainImg.src = initialImg;
-      modalMainImg.alt = `Visuel ${unit.id}`;
       modalMainImg.style.cursor = 'zoom-in';
       modalMainImg.onclick = () => {
-        openBlueprintModal(modalMainImg.src, `Plan / Visuel Architectural — ${unit.id}`);
+        if (activeVisualMode === 'plan' || activeVisualMode === 'emplacement') {
+          openBlueprintModal(modalMainImg.src, `${unit.id}`, unit, activeVisualMode);
+        } else {
+          openBlueprintModal(modalMainImg.src, `${unit.id} — Visuel`, null);
+        }
       };
     }
 
-    // Download / Fullscreen plan link -> opens HD blueprint lightbox
+    // Plan Plein Écran button -> opens HD blueprint lightbox with Plan Unité / Emplacement Rouge / Plan Étage switcher
     if (modalPlanDownload) {
-      modalPlanDownload.href = unit.planImg;
+      modalPlanDownload.href = planSrc;
       modalPlanDownload.onclick = (e) => {
         e.preventDefault();
-        openBlueprintModal(unit.planImg, `Plan Architectural Officiel — ${unit.id}`);
+        openBlueprintModal(planSrc, `${unit.id}`, unit, activeVisualMode === 'emplacement' ? 'emplacement' : 'plan');
       };
     }
 
     // WhatsApp Direct Inquiry link
     if (modalWaLink) {
-      const msg = encodeURIComponent(`Bonjour BaytImmo, je souhaite recevoir le dossier complet pour le lot ${unit.id} (${unit.surface} m², ${unit.floorName}) du projet Jardins de Bali à Marrakech.`);
+      const msg = encodeURIComponent(`Bonjour BaytImmo, je souhaite recevoir le dossier complet pour le lot ${unit.id} (${unit.surfaceDetails || unit.surface + ' m²'}, ${unit.floorName}) du projet Jardins de Bali à Marrakech.`);
       modalWaLink.href = `https://wa.me/212665644391?text=${msg}`;
-    }
-
-    // Populate thumbnails: showcase main render, technical floor plan, then the rest of the gallery
-    if (modalThumbsRow) {
-      const baseGallery = Array.isArray(unit.gallery) ? unit.gallery : [];
-      const distinctGallery = [];
-      const seen = new Set();
-      
-      [initialImg, unit.planImg, ...baseGallery].forEach((src) => {
-        if (src && !seen.has(src)) {
-          seen.add(src);
-          distinctGallery.push(src);
-        }
-      });
-
-      modalThumbsRow.innerHTML = distinctGallery.map((src, i) => `
-        <img src="${src}" alt="Visuel ${i + 1}" class="modal-thumb ${i === 0 ? 'is-active' : ''}" />
-      `).join('');
-
-      modalThumbsRow.querySelectorAll('.modal-thumb').forEach((thumb) => {
-        thumb.addEventListener('click', () => {
-          modalThumbsRow.querySelectorAll('.modal-thumb').forEach((t) => t.classList.remove('is-active'));
-          thumb.classList.add('is-active');
-          if (modalMainImg) modalMainImg.src = thumb.src;
-        });
-      });
     }
 
     modalBackdrop.classList.add('is-open');
@@ -699,13 +866,13 @@ document.addEventListener('DOMContentLoaded', () => {
       img: '/jardins_de_bali/plan_02_sous_sol_1.jpg'
     },
     'rdc': {
-      title: 'Plan Rez-de-Chaussée (Patio Central, 4 Magasins & 32 Résidences)',
-      desc: 'Allée d\'accès arborée avec grande fontaine d\'eau, 4 grands magasins en façade sur rue et 32 appartements privatifs avec coursives intérieures.',
+      title: 'Plan Rez-de-Chaussée (Patio Central, 4 Magasins & 32 Duplexes)',
+      desc: 'Allée d\'accès arborée avec grande fontaine d\'eau, 4 magasins flagships en façade sur rue et 32 duplexes RDC (App 1 à 32).',
       img: '/jardins_de_bali/plan_03_rez_de_chaussee.jpg'
     },
     'mezz': {
-      title: 'Plan Mezzanine (4 Mezzanines Commerciales & 19 Duplexes)',
-      desc: 'Niveau mezzanine intégrant les 4 mezzanines commerciales des magasins flagships (244 m² cumulés) et les étages supérieurs des 19 résidences duplexes.',
+      title: 'Plan Mezzanine (4 Mezzanines Commerciales & 32 Duplexes)',
+      desc: 'Niveau mezzanine intégrant les 4 mezzanines commerciales des magasins flagships (244 m² cumulés) et les niveaux supérieurs des 32 duplexes RDC (App 1 à 32).',
       img: '/jardins_de_bali/plan_04_mezzanine.jpg'
     },
     'r1': {
@@ -729,8 +896,8 @@ document.addEventListener('DOMContentLoaded', () => {
       img: '/jardins_de_bali/plan_08_4eme_etage.jpg'
     },
     'r5': {
-      title: 'Plan 5ème Étage (38 Appartements & Penthouses — App 193 à 230)',
-      desc: 'Grand standing avec vastes terrasses panoramiques, suites de maître et accès direct au solarium et rooftop.',
+      title: 'Plan 5ème Étage (38 Appartements avec Terrasses — App 193 à 230)',
+      desc: 'Dernier niveau résidentiel avec grandes terrasses panoramiques privatives (16 lots) et accès au rooftop solarium.',
       img: '/jardins_de_bali/plan_09_5eme_etage.jpg'
     },
     'toiture': {

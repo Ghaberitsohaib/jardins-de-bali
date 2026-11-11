@@ -33,3 +33,6 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
+# Raw source architectural PDFs (web assets extracted to public/plans/)
+*.pdf
+

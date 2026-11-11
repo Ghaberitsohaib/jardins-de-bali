@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const blueprintData = [
       { 
         url: '/jardins_de_bali/plan_03_rez_de_chaussee.jpg', 
-        title: 'Plan RDC — 4 Grands Magasins Flagships (56 m² à 221 m²)', 
+        title: 'Plan RDC — 4 Grands Magasins Flagships (83 m² à 221 m²)', 
         img: '/business/retail/magasin_2_flagship.jpg',
         alt: 'Magasins Flagships RDC Jardins de Bali'
       },
@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       { 
         url: '/jardins_de_bali/plan_03_rez_de_chaussee.jpg', 
-        title: 'Plan RDC & Mezzanine — Esplanade & 19 Duplexes (101 à 234 m²)', 
+        title: 'Plan RDC & Mezzanine — Esplanade & 32 Duplexes (61 à 124 m²)', 
         img: '/business/retail/bureau_executive_suite_bali.jpg',
         alt: 'Esplanade et Duplex RDC Jardins de Bali'
       },

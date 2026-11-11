@@ -12,7 +12,6 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         residences: resolve(__dirname, 'residences.html'),
         business: resolve(__dirname, 'business.html'),
-        retailSpaces: resolve(__dirname, 'retail-spaces.html'),
         ventes: resolve(__dirname, 'ventes.html'),
         maquette: resolve(__dirname, 'maquette3d.html'),
         contact: resolve(__dirname, 'contact.html'),
