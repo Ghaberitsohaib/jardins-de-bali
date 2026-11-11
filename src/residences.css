@@ -350,19 +350,23 @@ footer {
   position: relative;
   z-index: 10;
   background-color: var(--arbor-vanilla);
-  padding: 2rem 0 6rem 0;
+  padding: 4.75rem 0 6rem 0;
 }
 
 .picker-container {
-  max-width: 90rem;
+  max-width: 92rem;
   margin: 0 auto;
   padding: 0 2.5rem;
   display: flex;
   align-items: flex-start;
-  gap: 3.5rem;
+  gap: 3rem;
 }
 
 @media (max-width: 1024px) {
+  .residences-picker-section {
+    padding: 2.5rem 0 5rem 0;
+  }
+
   .picker-container {
     flex-direction: column;
     padding: 0 1.25rem;
@@ -372,19 +376,29 @@ footer {
 
 /* Sticky Filters Sidebar */
 .picker-sidebar {
-  width: 24rem;
+  width: 24.5rem;
   flex-shrink: 0;
   position: sticky;
-  top: 1.75rem;
-  max-height: calc(100vh - 2.5rem);
+  top: 4.75rem;
+  max-height: calc(100vh - 5.5rem);
   overflow-y: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  padding-right: 0.5rem;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(166, 129, 80, 0.35) transparent;
+  padding: 0.15rem 0.55rem 0.35rem 0.15rem;
 }
 
 .picker-sidebar::-webkit-scrollbar {
-  display: none;
+  width: 4px;
+}
+
+.picker-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.picker-sidebar::-webkit-scrollbar-thumb {
+  background: rgba(166, 129, 80, 0.35);
+  border-radius: 9999px;
 }
 
 @media (max-width: 1024px) {
@@ -392,17 +406,19 @@ footer {
     width: 100%;
     position: static;
     max-height: none;
-    padding-right: 0;
+    overflow-y: visible;
+    padding: 0;
   }
 }
 
 .filter-heading {
   font-family: var(--font-editorialOld);
-  font-size: 2.25rem;
+  font-size: 1.85rem;
+  line-height: 1.05;
   font-weight: 300;
   color: var(--arbor-golden);
   text-transform: uppercase;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -410,35 +426,39 @@ footer {
 
 @media (max-width: 768px) {
   .filter-heading {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
+    font-size: 1.65rem;
+    margin-bottom: 0.85rem;
   }
 }
 
 .filter-group {
-  margin-bottom: 1.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.filter-group:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
   .filter-group {
-    margin-bottom: 1.15rem;
+    margin-bottom: 1rem;
   }
 }
 
 .filter-label {
   font-family: var(--font-workSans);
-  font-size: 0.8125rem;
+  font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--arbor-golden);
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.38rem;
   display: block;
 }
 
 @media (max-width: 768px) {
   .filter-label {
-    font-size: 0.75rem;
-    margin-bottom: 0.5rem;
+    font-size: 0.72rem;
+    margin-bottom: 0.45rem;
   }
 }
 
@@ -446,29 +466,41 @@ footer {
 .filter-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.375rem;
 }
 
 .filter-pill {
-  padding: 0.5rem 1rem;
+  padding: 0.38rem 0.74rem;
   border-radius: 9999px;
   border: 1px solid var(--arbor-cream-dark);
   background: transparent;
   color: var(--arbor-green);
   font-family: var(--font-workSans);
-  font-size: 0.8125rem;
+  font-size: 0.72rem;
+  line-height: 1.25;
   font-weight: 400;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   cursor: pointer;
+  outline: none;
   transition: all 0.25s ease;
   white-space: nowrap;
 }
 
+.filter-pill:focus {
+  outline: none;
+}
+
+.filter-pill:focus-visible {
+  outline: none;
+  border-color: var(--arbor-golden);
+  box-shadow: 0 0 0 2px var(--arbor-vanilla), 0 0 0 3.5px rgba(166, 129, 80, 0.45);
+}
+
 @media (max-width: 768px) {
   .filter-pill {
-    padding: 0.4rem 0.85rem;
-    font-size: 0.75rem;
+    padding: 0.4rem 0.82rem;
+    font-size: 0.74rem;
   }
 }
 
@@ -487,23 +519,24 @@ footer {
 /* Dual Range Slider for Surface */
 .range-slider-wrapper {
   position: relative;
-  padding: 1rem 0;
+  padding: 0.4rem 0 0.25rem;
 }
 
 .range-values {
   display: flex;
   justify-content: space-between;
   font-family: var(--font-workSans);
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   color: var(--arbor-green);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.35rem;
 }
 
 .range-current-badge {
   background-color: var(--arbor-sand);
   border: 1px solid var(--arbor-cream-dark);
-  padding: 0.2rem 0.6rem;
+  padding: 0.15rem 0.55rem;
   border-radius: 9999px;
+  font-size: 0.78rem;
   color: var(--arbor-golden);
   font-weight: 500;
 }
@@ -544,12 +577,12 @@ footer {
 
 .filter-search-input {
   width: 100%;
-  padding: 0.65rem 1rem 0.65rem 2.5rem;
+  padding: 0.48rem 0.95rem 0.48rem 2.25rem;
   background-color: transparent;
   border: 1px solid var(--arbor-cream-dark);
   border-radius: 9999px;
   font-family: var(--font-workSans);
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   color: var(--arbor-pine-green);
   outline: none;
   transition: border-color 0.25s ease;
@@ -562,10 +595,10 @@ footer {
 .filter-search-icon {
   position: absolute;
   top: 50%;
-  left: 0.85rem;
+  left: 0.8rem;
   transform: translateY(-50%);
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 1rem;
+  height: 1rem;
   color: var(--arbor-green);
   pointer-events: none;
 }
@@ -574,17 +607,23 @@ footer {
 .filter-reset-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.45rem;
   font-family: var(--font-workSans);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--arbor-green);
   background: transparent;
   border: none;
+  outline: none;
   cursor: pointer;
-  padding: 0.4rem 0;
+  padding: 0.3rem 0;
   transition: color 0.2s ease;
+}
+
+.filter-reset-btn:focus-visible {
+  color: var(--arbor-golden);
+  text-decoration: underline;
 }
 
 .filter-reset-btn:hover {
@@ -1408,8 +1447,8 @@ footer {
 
 .modal-thumbs-row {
   display: flex;
-  gap: 0.5rem;
-  overflow-x: auto;
+  flex-wrap: wrap;
+  gap: 0.45rem;
   padding-bottom: 0.2rem;
 }
 
@@ -1426,8 +1465,8 @@ footer {
 }
 
 .modal-thumb {
-  width: 4.5rem;
-  height: 3.25rem;
+  width: 3.9rem;
+  height: 2.85rem;
   border-radius: 0.5rem;
   object-fit: cover;
   cursor: pointer;
@@ -1604,4 +1643,29 @@ footer {
 .modal-download-plan-btn:hover {
   border-color: var(--arbor-golden);
   background-color: var(--arbor-sand);
+}
+
+/* Clean Editorial Focus Treatment (Suppresses harsh browser default black outline on mouse click) */
+.filter-pill:focus,
+.filter-reset-btn:focus,
+.view-mode-btn:focus,
+.plan-tab-btn:focus,
+.modal-visual-tab:focus,
+.modal-thumb-btn:focus,
+.modal-close-btn:focus,
+.blueprint-switch-btn:focus,
+.blueprint-close-btn:focus,
+.residence-card:focus {
+  outline: none;
+}
+
+.plan-tab-btn:focus-visible,
+.modal-visual-tab:focus-visible,
+.modal-thumb-btn:focus-visible,
+.modal-close-btn:focus-visible,
+.blueprint-switch-btn:focus-visible,
+.blueprint-close-btn:focus-visible,
+.residence-card:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--arbor-vanilla), 0 0 0 4px rgba(166, 129, 80, 0.55);
 }

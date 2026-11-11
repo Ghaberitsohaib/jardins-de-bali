@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (el) {
           e.preventDefault();
           closeArborMenu();
-          lenis.scrollTo(el, { offset: -30, duration: 1.2 });
+          lenis.scrollTo(el, { offset: targetId === '#Picker' ? 0 : -30, duration: 1.2 });
         }
       }
     });
@@ -360,43 +360,22 @@ document.addEventListener('DOMContentLoaded', () => {
           if (item.type === 'Commerce' || item.category === 'Magasin' || item.id.startsWith('MAGASIN')) {
             layoutThumb = item.thumbImg || `/business/retail/${item.slug || 'magasin-1'}.jpg`;
           } else {
-            // 100% EXCLUSIVE APARTMENT INTERIORS ONLY (No exterior building / facade / patio)
+            // 100% EXCLUSIVE VERTEX GALERIE 3D INTERIORS ONLY (001..010)
             const APARTMENT_INTERIORS_POOL = [
-              '/jardins_de_bali/07_salon_canape_et_tv.jpg',
-              '/residences/interiors/penthouse_salon_terrasse.jpg',
-              '/jardins_de_bali/01_chambre_lit_double.jpg',
-              '/residences/interiors/suite_master_marrakech.jpg',
-              '/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg',
-              '/residences/interiors/penthouse_salle_a_manger.jpg',
-              '/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg',
-              '/residences/interiors/salon_terrasse_lounge.jpg',
-              '/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg',
-              '/jardins_de_bali/02_chambre_tv_baie_vitree.jpg',
-              '/home/residences-options/1.webp',
-              '/home/residences-options/10.webp',
-              '/jardins_de_bali/04_cuisine_equipements_comptoir.jpg',
-              '/home/residences-options/5.webp',
-              '/home/residences-options/11.webp',
-              '/home/residences-options/2.webp',
-              '/home/residences-options/6.webp',
-              '/home/residences-options/3.webp',
-              '/home/residences-options/7.webp',
-              '/home/residences-options/9.webp',
-              '/jardins_de_bali/02b_chambre_placards_dressing.jpg',
-              '/home/residences-options/8.webp',
-              '/home/residences-options/4.webp',
-              '/home/residences-options/12.webp'
+              '/residences/galerie/001.webp',
+              '/residences/galerie/002.webp',
+              '/residences/galerie/003.webp',
+              '/residences/galerie/004.webp',
+              '/residences/galerie/005.webp',
+              '/residences/galerie/006.webp',
+              '/residences/galerie/007.webp',
+              '/residences/galerie/008.webp',
+              '/residences/galerie/009.webp',
+              '/residences/galerie/010.webp'
             ];
 
-            const isExterior = !layoutThumb || 
-              layoutThumb.includes('10_rooftop') || 
-              layoutThumb.includes('11_facade') || 
-              layoutThumb.includes('12_facade') || 
-              layoutThumb.includes('13_facade') || 
-              layoutThumb.includes('14_rendu') || 
-              layoutThumb.includes('09_patio');
-
-            if (isExterior) {
+            const isValidGalerie = layoutThumb && layoutThumb.startsWith('/residences/galerie/');
+            if (!isValidGalerie) {
               layoutThumb = APARTMENT_INTERIORS_POOL[index % APARTMENT_INTERIORS_POOL.length];
             }
           }
@@ -789,7 +768,7 @@ document.addEventListener('DOMContentLoaded', () => {
           : 'Cuisine équipée Bosch, Marbre Travertin, Climatisation centralisée, Parking Sous-Sol');
     }
 
-    const placeholderSrc = unit.thumbImg || unit.floorPlanImg;
+    const placeholderSrc = unit.floorPlanImg || unit.planSheet || unit.thumbImg;
 
     // Build visual entries: 1) Plan Unité (default), 2) Emplacement Rouge, 3) Interior/Vitrine Photos
     const visualEntries = [

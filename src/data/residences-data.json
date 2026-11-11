@@ -223,11 +223,12 @@
     "planImg": "/plans/sheets/app-1.webp",
     "emplacementImg": "/plans/sheets/app-1.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "thumbImg": "/residences/galerie/001.webp",
     "gallery": [
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/001.webp",
+      "/residences/galerie/002.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-1.webp",
     "sheetLayout": [
@@ -269,11 +270,12 @@
     "planImg": "/plans/sheets/app-2.webp",
     "emplacementImg": "/plans/sheets/app-2.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salon_terrasse.jpg",
+    "thumbImg": "/residences/galerie/002.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/002.webp",
+      "/residences/galerie/003.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-2.webp",
     "sheetLayout": [
@@ -315,11 +317,12 @@
     "planImg": "/plans/sheets/app-3.webp",
     "emplacementImg": "/plans/sheets/app-3.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "thumbImg": "/residences/galerie/003.webp",
     "gallery": [
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/003.webp",
+      "/residences/galerie/004.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-3.webp",
     "sheetLayout": [
@@ -361,11 +364,12 @@
     "planImg": "/plans/sheets/app-4.webp",
     "emplacementImg": "/plans/sheets/app-4.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/residences/interiors/suite_master_marrakech.jpg",
+    "thumbImg": "/residences/galerie/004.webp",
     "gallery": [
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/004.webp",
+      "/residences/galerie/001.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-4.webp",
     "sheetLayout": [
@@ -407,11 +411,12 @@
     "planImg": "/plans/sheets/app-5.webp",
     "emplacementImg": "/plans/sheets/app-5.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+    "thumbImg": "/residences/galerie/001.webp",
     "gallery": [
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/001.webp",
+      "/residences/galerie/002.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-5.webp",
     "sheetLayout": [
@@ -453,11 +458,12 @@
     "planImg": "/plans/sheets/app-6.webp",
     "emplacementImg": "/plans/sheets/app-6.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salle_a_manger.jpg",
+    "thumbImg": "/residences/galerie/002.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/home/residences-options/1.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/002.webp",
+      "/residences/galerie/003.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-6.webp",
     "sheetLayout": [
@@ -499,11 +505,12 @@
     "planImg": "/plans/sheets/app-7.webp",
     "emplacementImg": "/plans/sheets/app-7.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
+    "thumbImg": "/residences/galerie/003.webp",
     "gallery": [
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/home/residences-options/10.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/003.webp",
+      "/residences/galerie/004.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-7.webp",
     "sheetLayout": [
@@ -545,11 +552,12 @@
     "planImg": "/plans/sheets/app-8.webp",
     "emplacementImg": "/plans/sheets/app-8.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/residences/interiors/salon_terrasse_lounge.jpg",
+    "thumbImg": "/residences/galerie/004.webp",
     "gallery": [
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/004.webp",
+      "/residences/galerie/001.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-8.webp",
     "sheetLayout": [
@@ -591,11 +599,12 @@
     "planImg": "/plans/sheets/app-9.webp",
     "emplacementImg": "/plans/sheets/app-9.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+    "thumbImg": "/residences/galerie/001.webp",
     "gallery": [
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/home/residences-options/5.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/001.webp",
+      "/residences/galerie/002.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-9.webp",
     "sheetLayout": [
@@ -637,11 +646,12 @@
     "planImg": "/plans/sheets/app-10.webp",
     "emplacementImg": "/plans/sheets/app-10.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
+    "thumbImg": "/residences/galerie/002.webp",
     "gallery": [
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/home/residences-options/11.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/002.webp",
+      "/residences/galerie/003.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-10.webp",
     "sheetLayout": [
@@ -682,11 +692,12 @@
     "planImg": "/plans/sheets/app-11.webp",
     "emplacementImg": "/plans/sheets/app-11.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/home/residences-options/1.webp",
+    "thumbImg": "/residences/galerie/003.webp",
     "gallery": [
-      "/home/residences-options/1.webp",
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/003.webp",
+      "/residences/galerie/004.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-11.webp",
     "sheetLayout": [
@@ -727,11 +738,12 @@
     "planImg": "/plans/sheets/app-12.webp",
     "emplacementImg": "/plans/sheets/app-12.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/home/residences-options/10.webp",
+    "thumbImg": "/residences/galerie/004.webp",
     "gallery": [
-      "/home/residences-options/10.webp",
-      "/home/residences-options/6.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/004.webp",
+      "/residences/galerie/001.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-12.webp",
     "sheetLayout": [
@@ -772,11 +784,12 @@
     "planImg": "/plans/sheets/app-13.webp",
     "emplacementImg": "/plans/sheets/app-13.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
+    "thumbImg": "/residences/galerie/001.webp",
     "gallery": [
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/home/residences-options/3.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/001.webp",
+      "/residences/galerie/002.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-13.webp",
     "sheetLayout": [
@@ -817,11 +830,12 @@
     "planImg": "/plans/sheets/app-14.webp",
     "emplacementImg": "/plans/sheets/app-14.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/home/residences-options/5.webp",
+    "thumbImg": "/residences/galerie/002.webp",
     "gallery": [
-      "/home/residences-options/5.webp",
-      "/home/residences-options/7.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/002.webp",
+      "/residences/galerie/003.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-14.webp",
     "sheetLayout": [
@@ -862,11 +876,12 @@
     "planImg": "/plans/sheets/app-15.webp",
     "emplacementImg": "/plans/sheets/app-15.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/home/residences-options/11.webp",
+    "thumbImg": "/residences/galerie/003.webp",
     "gallery": [
-      "/home/residences-options/11.webp",
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/003.webp",
+      "/residences/galerie/004.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-15.webp",
     "sheetLayout": [
@@ -907,11 +922,12 @@
     "planImg": "/plans/sheets/app-16.webp",
     "emplacementImg": "/plans/sheets/app-16.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/home/residences-options/2.webp",
+    "thumbImg": "/residences/galerie/004.webp",
     "gallery": [
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/004.webp",
+      "/residences/galerie/001.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-16.webp",
     "sheetLayout": [
@@ -952,11 +968,12 @@
     "planImg": "/plans/sheets/app-17.webp",
     "emplacementImg": "/plans/sheets/app-17.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/home/residences-options/6.webp",
+    "thumbImg": "/residences/galerie/001.webp",
     "gallery": [
-      "/home/residences-options/6.webp",
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/001.webp",
+      "/residences/galerie/002.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-17.webp",
     "sheetLayout": [
@@ -997,11 +1014,12 @@
     "planImg": "/plans/sheets/app-18.webp",
     "emplacementImg": "/plans/sheets/app-18.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/home/residences-options/3.webp",
+    "thumbImg": "/residences/galerie/002.webp",
     "gallery": [
-      "/home/residences-options/3.webp",
-      "/home/residences-options/4.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/002.webp",
+      "/residences/galerie/003.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-18.webp",
     "sheetLayout": [
@@ -1042,11 +1060,12 @@
     "planImg": "/plans/sheets/app-19.webp",
     "emplacementImg": "/plans/sheets/app-19.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/home/residences-options/7.webp",
+    "thumbImg": "/residences/galerie/003.webp",
     "gallery": [
-      "/home/residences-options/7.webp",
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/003.webp",
+      "/residences/galerie/004.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-19.webp",
     "sheetLayout": [
@@ -1087,11 +1106,12 @@
     "planImg": "/plans/sheets/app-20.webp",
     "emplacementImg": "/plans/sheets/app-20.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/home/residences-options/9.webp",
+    "thumbImg": "/residences/galerie/004.webp",
     "gallery": [
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/004.webp",
+      "/residences/galerie/001.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-20.webp",
     "sheetLayout": [
@@ -1132,11 +1152,12 @@
     "planImg": "/plans/sheets/app-21.webp",
     "emplacementImg": "/plans/sheets/app-21.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
+    "thumbImg": "/residences/galerie/001.webp",
     "gallery": [
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/001.webp",
+      "/residences/galerie/002.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-21.webp",
     "sheetLayout": [
@@ -1177,11 +1198,12 @@
     "planImg": "/plans/sheets/app-22.webp",
     "emplacementImg": "/plans/sheets/app-22.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/home/residences-options/8.webp",
+    "thumbImg": "/residences/galerie/002.webp",
     "gallery": [
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/002.webp",
+      "/residences/galerie/003.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-22.webp",
     "sheetLayout": [
@@ -1223,11 +1245,12 @@
     "planImg": "/plans/sheets/app-23.webp",
     "emplacementImg": "/plans/sheets/app-23.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/home/residences-options/4.webp",
+    "thumbImg": "/residences/galerie/003.webp",
     "gallery": [
-      "/home/residences-options/4.webp",
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/003.webp",
+      "/residences/galerie/004.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-23.webp",
     "sheetLayout": [
@@ -1269,11 +1292,12 @@
     "planImg": "/plans/sheets/app-24.webp",
     "emplacementImg": "/plans/sheets/app-24.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/home/residences-options/12.webp",
+    "thumbImg": "/residences/galerie/004.webp",
     "gallery": [
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/004.webp",
+      "/residences/galerie/001.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-24.webp",
     "sheetLayout": [
@@ -1315,11 +1339,12 @@
     "planImg": "/plans/sheets/app-25.webp",
     "emplacementImg": "/plans/sheets/app-25.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "thumbImg": "/residences/galerie/001.webp",
     "gallery": [
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/001.webp",
+      "/residences/galerie/002.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-25.webp",
     "sheetLayout": [
@@ -1361,11 +1386,12 @@
     "planImg": "/plans/sheets/app-26.webp",
     "emplacementImg": "/plans/sheets/app-26.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salon_terrasse.jpg",
+    "thumbImg": "/residences/galerie/002.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/002.webp",
+      "/residences/galerie/003.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-26.webp",
     "sheetLayout": [
@@ -1407,11 +1433,12 @@
     "planImg": "/plans/sheets/app-27.webp",
     "emplacementImg": "/plans/sheets/app-27.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "thumbImg": "/residences/galerie/003.webp",
     "gallery": [
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/003.webp",
+      "/residences/galerie/004.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-27.webp",
     "sheetLayout": [
@@ -1453,11 +1480,12 @@
     "planImg": "/plans/sheets/app-28.webp",
     "emplacementImg": "/plans/sheets/app-28.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/residences/interiors/suite_master_marrakech.jpg",
+    "thumbImg": "/residences/galerie/004.webp",
     "gallery": [
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/004.webp",
+      "/residences/galerie/001.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-28.webp",
     "sheetLayout": [
@@ -1499,11 +1527,12 @@
     "planImg": "/plans/sheets/app-29.webp",
     "emplacementImg": "/plans/sheets/app-29.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+    "thumbImg": "/residences/galerie/001.webp",
     "gallery": [
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/001.webp",
+      "/residences/galerie/002.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-29.webp",
     "sheetLayout": [
@@ -1545,11 +1574,12 @@
     "planImg": "/plans/sheets/app-30.webp",
     "emplacementImg": "/plans/sheets/app-30.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salle_a_manger.jpg",
+    "thumbImg": "/residences/galerie/002.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/home/residences-options/1.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/002.webp",
+      "/residences/galerie/003.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-30.webp",
     "sheetLayout": [
@@ -1591,11 +1621,12 @@
     "planImg": "/plans/sheets/app-31.webp",
     "emplacementImg": "/plans/sheets/app-31.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
+    "thumbImg": "/residences/galerie/003.webp",
     "gallery": [
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/home/residences-options/10.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/003.webp",
+      "/residences/galerie/004.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-31.webp",
     "sheetLayout": [
@@ -1637,11 +1668,12 @@
     "planImg": "/plans/sheets/app-32.webp",
     "emplacementImg": "/plans/sheets/app-32.webp",
     "floorPlanImg": "/jardins_de_bali/plan_03_rez_de_chaussee.jpg",
-    "thumbImg": "/residences/interiors/salon_terrasse_lounge.jpg",
+    "thumbImg": "/residences/galerie/004.webp",
     "gallery": [
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/004.webp",
+      "/residences/galerie/001.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-32.webp",
     "sheetLayout": [
@@ -1681,11 +1713,12 @@
     "planImg": "/plans/sheets/app-33.webp",
     "emplacementImg": "/plans/sheets/app-33.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/home/residences-options/5.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-33.webp",
     "sheetLayout": [
@@ -1725,11 +1758,12 @@
     "planImg": "/plans/sheets/app-34.webp",
     "emplacementImg": "/plans/sheets/app-34.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/home/residences-options/11.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-34.webp",
     "sheetLayout": [
@@ -1769,11 +1803,12 @@
     "planImg": "/plans/sheets/app-35.webp",
     "emplacementImg": "/plans/sheets/app-35.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/1.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/1.webp",
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-35.webp",
     "sheetLayout": [
@@ -1813,11 +1848,12 @@
     "planImg": "/plans/sheets/app-36.webp",
     "emplacementImg": "/plans/sheets/app-36.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/10.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/10.webp",
-      "/home/residences-options/6.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-36.webp",
     "sheetLayout": [
@@ -1857,11 +1893,12 @@
     "planImg": "/plans/sheets/app-37.webp",
     "emplacementImg": "/plans/sheets/app-37.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/home/residences-options/3.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-37.webp",
     "sheetLayout": [
@@ -1901,11 +1938,12 @@
     "planImg": "/plans/sheets/app-38.webp",
     "emplacementImg": "/plans/sheets/app-38.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/5.webp",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/home/residences-options/5.webp",
-      "/home/residences-options/7.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-38.webp",
     "sheetLayout": [
@@ -1945,11 +1983,12 @@
     "planImg": "/plans/sheets/app-39.webp",
     "emplacementImg": "/plans/sheets/app-39.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/11.webp",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/home/residences-options/11.webp",
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-39.webp",
     "sheetLayout": [
@@ -1989,11 +2028,12 @@
     "planImg": "/plans/sheets/app-40.webp",
     "emplacementImg": "/plans/sheets/app-40.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/2.webp",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-40.webp",
     "sheetLayout": [
@@ -2033,11 +2073,12 @@
     "planImg": "/plans/sheets/app-41.webp",
     "emplacementImg": "/plans/sheets/app-41.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/6.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/6.webp",
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-41.webp",
     "sheetLayout": [
@@ -2077,11 +2118,12 @@
     "planImg": "/plans/sheets/app-42.webp",
     "emplacementImg": "/plans/sheets/app-42.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/3.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/3.webp",
-      "/home/residences-options/4.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-42.webp",
     "sheetLayout": [
@@ -2121,11 +2163,12 @@
     "planImg": "/plans/sheets/app-43.webp",
     "emplacementImg": "/plans/sheets/app-43.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/7.webp",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/home/residences-options/7.webp",
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-43.webp",
     "sheetLayout": [
@@ -2165,11 +2208,12 @@
     "planImg": "/plans/sheets/app-44.webp",
     "emplacementImg": "/plans/sheets/app-44.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/9.webp",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-44.webp",
     "sheetLayout": [
@@ -2209,11 +2253,12 @@
     "planImg": "/plans/sheets/app-45.webp",
     "emplacementImg": "/plans/sheets/app-45.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-45.webp",
     "sheetLayout": [
@@ -2253,11 +2298,12 @@
     "planImg": "/plans/sheets/app-46.webp",
     "emplacementImg": "/plans/sheets/app-46.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/8.webp",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-46.webp",
     "sheetLayout": [
@@ -2297,11 +2343,12 @@
     "planImg": "/plans/sheets/app-47.webp",
     "emplacementImg": "/plans/sheets/app-47.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/4.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/4.webp",
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-47.webp",
     "sheetLayout": [
@@ -2341,11 +2388,12 @@
     "planImg": "/plans/sheets/app-48.webp",
     "emplacementImg": "/plans/sheets/app-48.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/12.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-48.webp",
     "sheetLayout": [
@@ -2385,11 +2433,12 @@
     "planImg": "/plans/sheets/app-49.webp",
     "emplacementImg": "/plans/sheets/app-49.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-49.webp",
     "sheetLayout": [
@@ -2429,11 +2478,12 @@
     "planImg": "/plans/sheets/app-50.webp",
     "emplacementImg": "/plans/sheets/app-50.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salon_terrasse.jpg",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-50.webp",
     "sheetLayout": [
@@ -2473,11 +2523,12 @@
     "planImg": "/plans/sheets/app-51.webp",
     "emplacementImg": "/plans/sheets/app-51.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-51.webp",
     "sheetLayout": [
@@ -2517,11 +2568,12 @@
     "planImg": "/plans/sheets/app-52.webp",
     "emplacementImg": "/plans/sheets/app-52.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/residences/interiors/suite_master_marrakech.jpg",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-52.webp",
     "sheetLayout": [
@@ -2561,11 +2613,12 @@
     "planImg": "/plans/sheets/app-53.webp",
     "emplacementImg": "/plans/sheets/app-53.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-53.webp",
     "sheetLayout": [
@@ -2605,11 +2658,12 @@
     "planImg": "/plans/sheets/app-54.webp",
     "emplacementImg": "/plans/sheets/app-54.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salle_a_manger.jpg",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/home/residences-options/1.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-54.webp",
     "sheetLayout": [
@@ -2649,11 +2703,12 @@
     "planImg": "/plans/sheets/app-55.webp",
     "emplacementImg": "/plans/sheets/app-55.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/home/residences-options/10.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-55.webp",
     "sheetLayout": [
@@ -2693,11 +2748,12 @@
     "planImg": "/plans/sheets/app-56.webp",
     "emplacementImg": "/plans/sheets/app-56.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/residences/interiors/salon_terrasse_lounge.jpg",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-56.webp",
     "sheetLayout": [
@@ -2737,11 +2793,12 @@
     "planImg": "/plans/sheets/app-57.webp",
     "emplacementImg": "/plans/sheets/app-57.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/home/residences-options/5.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-57.webp",
     "sheetLayout": [
@@ -2781,11 +2838,12 @@
     "planImg": "/plans/sheets/app-58.webp",
     "emplacementImg": "/plans/sheets/app-58.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/home/residences-options/11.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-58.webp",
     "sheetLayout": [
@@ -2825,11 +2883,12 @@
     "planImg": "/plans/sheets/app-59.webp",
     "emplacementImg": "/plans/sheets/app-59.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/1.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/1.webp",
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-59.webp",
     "sheetLayout": [
@@ -2869,11 +2928,12 @@
     "planImg": "/plans/sheets/app-60.webp",
     "emplacementImg": "/plans/sheets/app-60.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/10.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/10.webp",
-      "/home/residences-options/6.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-60.webp",
     "sheetLayout": [
@@ -2913,11 +2973,12 @@
     "planImg": "/plans/sheets/app-61.webp",
     "emplacementImg": "/plans/sheets/app-61.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/home/residences-options/3.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-61.webp",
     "sheetLayout": [
@@ -2957,11 +3018,12 @@
     "planImg": "/plans/sheets/app-62.webp",
     "emplacementImg": "/plans/sheets/app-62.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/5.webp",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/home/residences-options/5.webp",
-      "/home/residences-options/7.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-62.webp",
     "sheetLayout": [
@@ -3001,11 +3063,12 @@
     "planImg": "/plans/sheets/app-63.webp",
     "emplacementImg": "/plans/sheets/app-63.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/11.webp",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/home/residences-options/11.webp",
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-63.webp",
     "sheetLayout": [
@@ -3045,11 +3108,12 @@
     "planImg": "/plans/sheets/app-64.webp",
     "emplacementImg": "/plans/sheets/app-64.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/2.webp",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-64.webp",
     "sheetLayout": [
@@ -3089,11 +3153,12 @@
     "planImg": "/plans/sheets/app-65.webp",
     "emplacementImg": "/plans/sheets/app-65.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/6.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/6.webp",
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-65.webp",
     "sheetLayout": [
@@ -3133,11 +3198,12 @@
     "planImg": "/plans/sheets/app-66.webp",
     "emplacementImg": "/plans/sheets/app-66.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/3.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/3.webp",
-      "/home/residences-options/4.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-66.webp",
     "sheetLayout": [
@@ -3177,11 +3243,12 @@
     "planImg": "/plans/sheets/app-67.webp",
     "emplacementImg": "/plans/sheets/app-67.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/7.webp",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/home/residences-options/7.webp",
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-67.webp",
     "sheetLayout": [
@@ -3221,11 +3288,12 @@
     "planImg": "/plans/sheets/app-68.webp",
     "emplacementImg": "/plans/sheets/app-68.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/9.webp",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-68.webp",
     "sheetLayout": [
@@ -3265,11 +3333,12 @@
     "planImg": "/plans/sheets/app-69.webp",
     "emplacementImg": "/plans/sheets/app-69.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-69.webp",
     "sheetLayout": [
@@ -3309,11 +3378,12 @@
     "planImg": "/plans/sheets/app-70.webp",
     "emplacementImg": "/plans/sheets/app-70.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/8.webp",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-70.webp",
     "sheetLayout": [
@@ -3353,11 +3423,12 @@
     "planImg": "/plans/sheets/app-71.webp",
     "emplacementImg": "/plans/sheets/app-71.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/4.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/4.webp",
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-71.webp",
     "sheetLayout": [
@@ -3397,11 +3468,12 @@
     "planImg": "/plans/sheets/app-72.webp",
     "emplacementImg": "/plans/sheets/app-72.webp",
     "floorPlanImg": "/jardins_de_bali/plan_05_1er_etage.jpg",
-    "thumbImg": "/home/residences-options/12.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-72.webp",
     "sheetLayout": [
@@ -3441,11 +3513,12 @@
     "planImg": "/plans/sheets/app-73.webp",
     "emplacementImg": "/plans/sheets/app-73.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-73.webp",
     "sheetLayout": [
@@ -3485,11 +3558,12 @@
     "planImg": "/plans/sheets/app-74.webp",
     "emplacementImg": "/plans/sheets/app-74.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salon_terrasse.jpg",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-74.webp",
     "sheetLayout": [
@@ -3529,11 +3603,12 @@
     "planImg": "/plans/sheets/app-75.webp",
     "emplacementImg": "/plans/sheets/app-75.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-75.webp",
     "sheetLayout": [
@@ -3573,11 +3648,12 @@
     "planImg": "/plans/sheets/app-76.webp",
     "emplacementImg": "/plans/sheets/app-76.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/residences/interiors/suite_master_marrakech.jpg",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-76.webp",
     "sheetLayout": [
@@ -3617,11 +3693,12 @@
     "planImg": "/plans/sheets/app-77.webp",
     "emplacementImg": "/plans/sheets/app-77.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-77.webp",
     "sheetLayout": [
@@ -3661,11 +3738,12 @@
     "planImg": "/plans/sheets/app-78.webp",
     "emplacementImg": "/plans/sheets/app-78.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salle_a_manger.jpg",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/home/residences-options/1.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-78.webp",
     "sheetLayout": [
@@ -3705,11 +3783,12 @@
     "planImg": "/plans/sheets/app-79.webp",
     "emplacementImg": "/plans/sheets/app-79.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/home/residences-options/10.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-79.webp",
     "sheetLayout": [
@@ -3749,11 +3828,12 @@
     "planImg": "/plans/sheets/app-80.webp",
     "emplacementImg": "/plans/sheets/app-80.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/residences/interiors/salon_terrasse_lounge.jpg",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-80.webp",
     "sheetLayout": [
@@ -3793,11 +3873,12 @@
     "planImg": "/plans/sheets/app-81.webp",
     "emplacementImg": "/plans/sheets/app-81.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/home/residences-options/5.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-81.webp",
     "sheetLayout": [
@@ -3837,11 +3918,12 @@
     "planImg": "/plans/sheets/app-82.webp",
     "emplacementImg": "/plans/sheets/app-82.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/home/residences-options/11.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-82.webp",
     "sheetLayout": [
@@ -3881,11 +3963,12 @@
     "planImg": "/plans/sheets/app-83.webp",
     "emplacementImg": "/plans/sheets/app-83.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/home/residences-options/1.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/1.webp",
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-83.webp",
     "sheetLayout": [
@@ -3925,11 +4008,12 @@
     "planImg": "/plans/sheets/app-84.webp",
     "emplacementImg": "/plans/sheets/app-84.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/home/residences-options/10.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/10.webp",
-      "/home/residences-options/6.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-84.webp",
     "sheetLayout": [
@@ -3969,11 +4053,12 @@
     "planImg": "/plans/sheets/app-85.webp",
     "emplacementImg": "/plans/sheets/app-85.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/home/residences-options/3.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-85.webp",
     "sheetLayout": [
@@ -4013,11 +4098,12 @@
     "planImg": "/plans/sheets/app-86.webp",
     "emplacementImg": "/plans/sheets/app-86.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/home/residences-options/5.webp",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/home/residences-options/5.webp",
-      "/home/residences-options/7.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-86.webp",
     "sheetLayout": [
@@ -4057,11 +4143,12 @@
     "planImg": "/plans/sheets/app-87.webp",
     "emplacementImg": "/plans/sheets/app-87.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/home/residences-options/11.webp",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/home/residences-options/11.webp",
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-87.webp",
     "sheetLayout": [
@@ -4101,11 +4188,12 @@
     "planImg": "/plans/sheets/app-88.webp",
     "emplacementImg": "/plans/sheets/app-88.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/home/residences-options/2.webp",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-88.webp",
     "sheetLayout": [
@@ -4145,11 +4233,12 @@
     "planImg": "/plans/sheets/app-89.webp",
     "emplacementImg": "/plans/sheets/app-89.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/home/residences-options/6.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/6.webp",
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-89.webp",
     "sheetLayout": [
@@ -4189,11 +4278,12 @@
     "planImg": "/plans/sheets/app-90.webp",
     "emplacementImg": "/plans/sheets/app-90.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/home/residences-options/3.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/3.webp",
-      "/home/residences-options/4.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-90.webp",
     "sheetLayout": [
@@ -4233,11 +4323,12 @@
     "planImg": "/plans/sheets/app-91.webp",
     "emplacementImg": "/plans/sheets/app-91.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/home/residences-options/7.webp",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/home/residences-options/7.webp",
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-91.webp",
     "sheetLayout": [
@@ -4277,11 +4368,12 @@
     "planImg": "/plans/sheets/app-92.webp",
     "emplacementImg": "/plans/sheets/app-92.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/home/residences-options/9.webp",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-92.webp",
     "sheetLayout": [
@@ -4321,11 +4413,12 @@
     "planImg": "/plans/sheets/app-93.webp",
     "emplacementImg": "/plans/sheets/app-93.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-93.webp",
     "sheetLayout": [
@@ -4365,11 +4458,12 @@
     "planImg": "/plans/sheets/app-94.webp",
     "emplacementImg": "/plans/sheets/app-94.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/home/residences-options/8.webp",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-94.webp",
     "sheetLayout": [
@@ -4409,11 +4503,12 @@
     "planImg": "/plans/sheets/app-95.webp",
     "emplacementImg": "/plans/sheets/app-95.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/home/residences-options/4.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/4.webp",
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-95.webp",
     "sheetLayout": [
@@ -4453,11 +4548,12 @@
     "planImg": "/plans/sheets/app-96.webp",
     "emplacementImg": "/plans/sheets/app-96.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/home/residences-options/12.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-96.webp",
     "sheetLayout": [
@@ -4497,11 +4593,12 @@
     "planImg": "/plans/sheets/app-97.webp",
     "emplacementImg": "/plans/sheets/app-97.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-97.webp",
     "sheetLayout": [
@@ -4541,11 +4638,12 @@
     "planImg": "/plans/sheets/app-98.webp",
     "emplacementImg": "/plans/sheets/app-98.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salon_terrasse.jpg",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-98.webp",
     "sheetLayout": [
@@ -4585,11 +4683,12 @@
     "planImg": "/plans/sheets/app-99.webp",
     "emplacementImg": "/plans/sheets/app-99.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-99.webp",
     "sheetLayout": [
@@ -4629,11 +4728,12 @@
     "planImg": "/plans/sheets/app-100.webp",
     "emplacementImg": "/plans/sheets/app-100.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/residences/interiors/suite_master_marrakech.jpg",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-100.webp",
     "sheetLayout": [
@@ -4673,11 +4773,12 @@
     "planImg": "/plans/sheets/app-101.webp",
     "emplacementImg": "/plans/sheets/app-101.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-101.webp",
     "sheetLayout": [
@@ -4717,11 +4818,12 @@
     "planImg": "/plans/sheets/app-102.webp",
     "emplacementImg": "/plans/sheets/app-102.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salle_a_manger.jpg",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/home/residences-options/1.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-102.webp",
     "sheetLayout": [
@@ -4761,11 +4863,12 @@
     "planImg": "/plans/sheets/app-103.webp",
     "emplacementImg": "/plans/sheets/app-103.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/home/residences-options/10.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-103.webp",
     "sheetLayout": [
@@ -4805,11 +4908,12 @@
     "planImg": "/plans/sheets/app-104.webp",
     "emplacementImg": "/plans/sheets/app-104.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/residences/interiors/salon_terrasse_lounge.jpg",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-104.webp",
     "sheetLayout": [
@@ -4849,11 +4953,12 @@
     "planImg": "/plans/sheets/app-105.webp",
     "emplacementImg": "/plans/sheets/app-105.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/home/residences-options/5.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-105.webp",
     "sheetLayout": [
@@ -4893,11 +4998,12 @@
     "planImg": "/plans/sheets/app-106.webp",
     "emplacementImg": "/plans/sheets/app-106.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/home/residences-options/11.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-106.webp",
     "sheetLayout": [
@@ -4937,11 +5043,12 @@
     "planImg": "/plans/sheets/app-107.webp",
     "emplacementImg": "/plans/sheets/app-107.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/home/residences-options/1.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/1.webp",
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-107.webp",
     "sheetLayout": [
@@ -4981,11 +5088,12 @@
     "planImg": "/plans/sheets/app-108.webp",
     "emplacementImg": "/plans/sheets/app-108.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/home/residences-options/10.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/10.webp",
-      "/home/residences-options/6.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-108.webp",
     "sheetLayout": [
@@ -5025,11 +5133,12 @@
     "planImg": "/plans/sheets/app-109.webp",
     "emplacementImg": "/plans/sheets/app-109.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/home/residences-options/3.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-109.webp",
     "sheetLayout": [
@@ -5069,11 +5178,12 @@
     "planImg": "/plans/sheets/app-110.webp",
     "emplacementImg": "/plans/sheets/app-110.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/home/residences-options/5.webp",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/home/residences-options/5.webp",
-      "/home/residences-options/7.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-110.webp",
     "sheetLayout": [
@@ -5113,11 +5223,12 @@
     "planImg": "/plans/sheets/app-111.webp",
     "emplacementImg": "/plans/sheets/app-111.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/home/residences-options/11.webp",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/home/residences-options/11.webp",
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-111.webp",
     "sheetLayout": [
@@ -5157,11 +5268,12 @@
     "planImg": "/plans/sheets/app-112.webp",
     "emplacementImg": "/plans/sheets/app-112.webp",
     "floorPlanImg": "/jardins_de_bali/plan_06_2eme_etage.jpg",
-    "thumbImg": "/home/residences-options/2.webp",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-112.webp",
     "sheetLayout": [
@@ -5201,11 +5313,12 @@
     "planImg": "/plans/sheets/app-113.webp",
     "emplacementImg": "/plans/sheets/app-113.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/6.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/6.webp",
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-113.webp",
     "sheetLayout": [
@@ -5245,11 +5358,12 @@
     "planImg": "/plans/sheets/app-114.webp",
     "emplacementImg": "/plans/sheets/app-114.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/3.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/3.webp",
-      "/home/residences-options/4.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-114.webp",
     "sheetLayout": [
@@ -5289,11 +5403,12 @@
     "planImg": "/plans/sheets/app-115.webp",
     "emplacementImg": "/plans/sheets/app-115.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/7.webp",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/home/residences-options/7.webp",
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-115.webp",
     "sheetLayout": [
@@ -5333,11 +5448,12 @@
     "planImg": "/plans/sheets/app-116.webp",
     "emplacementImg": "/plans/sheets/app-116.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/9.webp",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-116.webp",
     "sheetLayout": [
@@ -5377,11 +5493,12 @@
     "planImg": "/plans/sheets/app-117.webp",
     "emplacementImg": "/plans/sheets/app-117.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-117.webp",
     "sheetLayout": [
@@ -5421,11 +5538,12 @@
     "planImg": "/plans/sheets/app-118.webp",
     "emplacementImg": "/plans/sheets/app-118.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/8.webp",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-118.webp",
     "sheetLayout": [
@@ -5465,11 +5583,12 @@
     "planImg": "/plans/sheets/app-119.webp",
     "emplacementImg": "/plans/sheets/app-119.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/4.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/4.webp",
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-119.webp",
     "sheetLayout": [
@@ -5509,11 +5628,12 @@
     "planImg": "/plans/sheets/app-120.webp",
     "emplacementImg": "/plans/sheets/app-120.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/12.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-120.webp",
     "sheetLayout": [
@@ -5553,11 +5673,12 @@
     "planImg": "/plans/sheets/app-121.webp",
     "emplacementImg": "/plans/sheets/app-121.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-121.webp",
     "sheetLayout": [
@@ -5597,11 +5718,12 @@
     "planImg": "/plans/sheets/app-122.webp",
     "emplacementImg": "/plans/sheets/app-122.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salon_terrasse.jpg",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-122.webp",
     "sheetLayout": [
@@ -5641,11 +5763,12 @@
     "planImg": "/plans/sheets/app-123.webp",
     "emplacementImg": "/plans/sheets/app-123.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-123.webp",
     "sheetLayout": [
@@ -5685,11 +5808,12 @@
     "planImg": "/plans/sheets/app-124.webp",
     "emplacementImg": "/plans/sheets/app-124.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/residences/interiors/suite_master_marrakech.jpg",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-124.webp",
     "sheetLayout": [
@@ -5729,11 +5853,12 @@
     "planImg": "/plans/sheets/app-125.webp",
     "emplacementImg": "/plans/sheets/app-125.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-125.webp",
     "sheetLayout": [
@@ -5773,11 +5898,12 @@
     "planImg": "/plans/sheets/app-126.webp",
     "emplacementImg": "/plans/sheets/app-126.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salle_a_manger.jpg",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/home/residences-options/1.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-126.webp",
     "sheetLayout": [
@@ -5817,11 +5943,12 @@
     "planImg": "/plans/sheets/app-127.webp",
     "emplacementImg": "/plans/sheets/app-127.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/home/residences-options/10.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-127.webp",
     "sheetLayout": [
@@ -5861,11 +5988,12 @@
     "planImg": "/plans/sheets/app-128.webp",
     "emplacementImg": "/plans/sheets/app-128.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/residences/interiors/salon_terrasse_lounge.jpg",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-128.webp",
     "sheetLayout": [
@@ -5905,11 +6033,12 @@
     "planImg": "/plans/sheets/app-129.webp",
     "emplacementImg": "/plans/sheets/app-129.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/home/residences-options/5.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-129.webp",
     "sheetLayout": [
@@ -5949,11 +6078,12 @@
     "planImg": "/plans/sheets/app-130.webp",
     "emplacementImg": "/plans/sheets/app-130.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/home/residences-options/11.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-130.webp",
     "sheetLayout": [
@@ -5993,11 +6123,12 @@
     "planImg": "/plans/sheets/app-131.webp",
     "emplacementImg": "/plans/sheets/app-131.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/1.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/1.webp",
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-131.webp",
     "sheetLayout": [
@@ -6037,11 +6168,12 @@
     "planImg": "/plans/sheets/app-132.webp",
     "emplacementImg": "/plans/sheets/app-132.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/10.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/10.webp",
-      "/home/residences-options/6.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-132.webp",
     "sheetLayout": [
@@ -6081,11 +6213,12 @@
     "planImg": "/plans/sheets/app-133.webp",
     "emplacementImg": "/plans/sheets/app-133.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/home/residences-options/3.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-133.webp",
     "sheetLayout": [
@@ -6125,11 +6258,12 @@
     "planImg": "/plans/sheets/app-134.webp",
     "emplacementImg": "/plans/sheets/app-134.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/5.webp",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/home/residences-options/5.webp",
-      "/home/residences-options/7.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-134.webp",
     "sheetLayout": [
@@ -6169,11 +6303,12 @@
     "planImg": "/plans/sheets/app-135.webp",
     "emplacementImg": "/plans/sheets/app-135.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/11.webp",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/home/residences-options/11.webp",
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-135.webp",
     "sheetLayout": [
@@ -6213,11 +6348,12 @@
     "planImg": "/plans/sheets/app-136.webp",
     "emplacementImg": "/plans/sheets/app-136.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/2.webp",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-136.webp",
     "sheetLayout": [
@@ -6257,11 +6393,12 @@
     "planImg": "/plans/sheets/app-137.webp",
     "emplacementImg": "/plans/sheets/app-137.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/6.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/6.webp",
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-137.webp",
     "sheetLayout": [
@@ -6301,11 +6438,12 @@
     "planImg": "/plans/sheets/app-138.webp",
     "emplacementImg": "/plans/sheets/app-138.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/3.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/3.webp",
-      "/home/residences-options/4.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-138.webp",
     "sheetLayout": [
@@ -6345,11 +6483,12 @@
     "planImg": "/plans/sheets/app-139.webp",
     "emplacementImg": "/plans/sheets/app-139.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/7.webp",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/home/residences-options/7.webp",
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-139.webp",
     "sheetLayout": [
@@ -6389,11 +6528,12 @@
     "planImg": "/plans/sheets/app-140.webp",
     "emplacementImg": "/plans/sheets/app-140.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/9.webp",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-140.webp",
     "sheetLayout": [
@@ -6433,11 +6573,12 @@
     "planImg": "/plans/sheets/app-141.webp",
     "emplacementImg": "/plans/sheets/app-141.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-141.webp",
     "sheetLayout": [
@@ -6477,11 +6618,12 @@
     "planImg": "/plans/sheets/app-142.webp",
     "emplacementImg": "/plans/sheets/app-142.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/8.webp",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-142.webp",
     "sheetLayout": [
@@ -6521,11 +6663,12 @@
     "planImg": "/plans/sheets/app-143.webp",
     "emplacementImg": "/plans/sheets/app-143.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/4.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/4.webp",
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-143.webp",
     "sheetLayout": [
@@ -6565,11 +6708,12 @@
     "planImg": "/plans/sheets/app-144.webp",
     "emplacementImg": "/plans/sheets/app-144.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/home/residences-options/12.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-144.webp",
     "sheetLayout": [
@@ -6609,11 +6753,12 @@
     "planImg": "/plans/sheets/app-145.webp",
     "emplacementImg": "/plans/sheets/app-145.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-145.webp",
     "sheetLayout": [
@@ -6653,11 +6798,12 @@
     "planImg": "/plans/sheets/app-146.webp",
     "emplacementImg": "/plans/sheets/app-146.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salon_terrasse.jpg",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-146.webp",
     "sheetLayout": [
@@ -6697,11 +6843,12 @@
     "planImg": "/plans/sheets/app-147.webp",
     "emplacementImg": "/plans/sheets/app-147.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-147.webp",
     "sheetLayout": [
@@ -6741,11 +6888,12 @@
     "planImg": "/plans/sheets/app-148.webp",
     "emplacementImg": "/plans/sheets/app-148.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/residences/interiors/suite_master_marrakech.jpg",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-148.webp",
     "sheetLayout": [
@@ -6785,11 +6933,12 @@
     "planImg": "/plans/sheets/app-149.webp",
     "emplacementImg": "/plans/sheets/app-149.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-149.webp",
     "sheetLayout": [
@@ -6829,11 +6978,12 @@
     "planImg": "/plans/sheets/app-150.webp",
     "emplacementImg": "/plans/sheets/app-150.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salle_a_manger.jpg",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/home/residences-options/1.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-150.webp",
     "sheetLayout": [
@@ -6873,11 +7023,12 @@
     "planImg": "/plans/sheets/app-151.webp",
     "emplacementImg": "/plans/sheets/app-151.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/home/residences-options/10.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-151.webp",
     "sheetLayout": [
@@ -6917,11 +7068,12 @@
     "planImg": "/plans/sheets/app-152.webp",
     "emplacementImg": "/plans/sheets/app-152.webp",
     "floorPlanImg": "/jardins_de_bali/plan_07_3eme_etage.jpg",
-    "thumbImg": "/residences/interiors/salon_terrasse_lounge.jpg",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-152.webp",
     "sheetLayout": [
@@ -6961,11 +7113,12 @@
     "planImg": "/plans/sheets/app-153.webp",
     "emplacementImg": "/plans/sheets/app-153.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/home/residences-options/5.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-153.webp",
     "sheetLayout": [
@@ -7006,11 +7159,12 @@
     "planImg": "/plans/sheets/app-154.webp",
     "emplacementImg": "/plans/sheets/app-154.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/home/residences-options/11.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-154.webp",
     "sheetLayout": [
@@ -7051,11 +7205,12 @@
     "planImg": "/plans/sheets/app-155.webp",
     "emplacementImg": "/plans/sheets/app-155.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/1.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/1.webp",
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-155.webp",
     "sheetLayout": [
@@ -7096,11 +7251,12 @@
     "planImg": "/plans/sheets/app-156.webp",
     "emplacementImg": "/plans/sheets/app-156.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/10.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/10.webp",
-      "/home/residences-options/6.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-156.webp",
     "sheetLayout": [
@@ -7140,11 +7296,12 @@
     "planImg": "/plans/sheets/app-157.webp",
     "emplacementImg": "/plans/sheets/app-157.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/home/residences-options/3.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-157.webp",
     "sheetLayout": [
@@ -7184,11 +7341,12 @@
     "planImg": "/plans/sheets/app-158.webp",
     "emplacementImg": "/plans/sheets/app-158.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/5.webp",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/home/residences-options/5.webp",
-      "/home/residences-options/7.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-158.webp",
     "sheetLayout": [
@@ -7228,11 +7386,12 @@
     "planImg": "/plans/sheets/app-159.webp",
     "emplacementImg": "/plans/sheets/app-159.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/11.webp",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/home/residences-options/11.webp",
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-159.webp",
     "sheetLayout": [
@@ -7272,11 +7431,12 @@
     "planImg": "/plans/sheets/app-160.webp",
     "emplacementImg": "/plans/sheets/app-160.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/2.webp",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-160.webp",
     "sheetLayout": [
@@ -7316,11 +7476,12 @@
     "planImg": "/plans/sheets/app-161.webp",
     "emplacementImg": "/plans/sheets/app-161.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/6.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/6.webp",
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-161.webp",
     "sheetLayout": [
@@ -7361,11 +7522,12 @@
     "planImg": "/plans/sheets/app-162.webp",
     "emplacementImg": "/plans/sheets/app-162.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/3.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/3.webp",
-      "/home/residences-options/4.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-162.webp",
     "sheetLayout": [
@@ -7405,11 +7567,12 @@
     "planImg": "/plans/sheets/app-163.webp",
     "emplacementImg": "/plans/sheets/app-163.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/7.webp",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/home/residences-options/7.webp",
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-163.webp",
     "sheetLayout": [
@@ -7449,11 +7612,12 @@
     "planImg": "/plans/sheets/app-164.webp",
     "emplacementImg": "/plans/sheets/app-164.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/9.webp",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-164.webp",
     "sheetLayout": [
@@ -7493,11 +7657,12 @@
     "planImg": "/plans/sheets/app-165.webp",
     "emplacementImg": "/plans/sheets/app-165.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-165.webp",
     "sheetLayout": [
@@ -7537,11 +7702,12 @@
     "planImg": "/plans/sheets/app-166.webp",
     "emplacementImg": "/plans/sheets/app-166.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/8.webp",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-166.webp",
     "sheetLayout": [
@@ -7581,11 +7747,12 @@
     "planImg": "/plans/sheets/app-167.webp",
     "emplacementImg": "/plans/sheets/app-167.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/4.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/4.webp",
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-167.webp",
     "sheetLayout": [
@@ -7625,11 +7792,12 @@
     "planImg": "/plans/sheets/app-168.webp",
     "emplacementImg": "/plans/sheets/app-168.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/12.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-168.webp",
     "sheetLayout": [
@@ -7669,11 +7837,12 @@
     "planImg": "/plans/sheets/app-169.webp",
     "emplacementImg": "/plans/sheets/app-169.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-169.webp",
     "sheetLayout": [
@@ -7713,11 +7882,12 @@
     "planImg": "/plans/sheets/app-170.webp",
     "emplacementImg": "/plans/sheets/app-170.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salon_terrasse.jpg",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-170.webp",
     "sheetLayout": [
@@ -7757,11 +7927,12 @@
     "planImg": "/plans/sheets/app-171.webp",
     "emplacementImg": "/plans/sheets/app-171.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-171.webp",
     "sheetLayout": [
@@ -7801,11 +7972,12 @@
     "planImg": "/plans/sheets/app-172.webp",
     "emplacementImg": "/plans/sheets/app-172.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/residences/interiors/suite_master_marrakech.jpg",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-172.webp",
     "sheetLayout": [
@@ -7845,11 +8017,12 @@
     "planImg": "/plans/sheets/app-173.webp",
     "emplacementImg": "/plans/sheets/app-173.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-173.webp",
     "sheetLayout": [
@@ -7889,11 +8062,12 @@
     "planImg": "/plans/sheets/app-174.webp",
     "emplacementImg": "/plans/sheets/app-174.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salle_a_manger.jpg",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/home/residences-options/1.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-174.webp",
     "sheetLayout": [
@@ -7933,11 +8107,12 @@
     "planImg": "/plans/sheets/app-175.webp",
     "emplacementImg": "/plans/sheets/app-175.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/home/residences-options/10.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-175.webp",
     "sheetLayout": [
@@ -7977,11 +8152,12 @@
     "planImg": "/plans/sheets/app-176.webp",
     "emplacementImg": "/plans/sheets/app-176.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/residences/interiors/salon_terrasse_lounge.jpg",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-176.webp",
     "sheetLayout": [
@@ -8022,11 +8198,12 @@
     "planImg": "/plans/sheets/app-177.webp",
     "emplacementImg": "/plans/sheets/app-177.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/home/residences-options/5.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-177.webp",
     "sheetLayout": [
@@ -8067,11 +8244,12 @@
     "planImg": "/plans/sheets/app-178.webp",
     "emplacementImg": "/plans/sheets/app-178.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/home/residences-options/11.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-178.webp",
     "sheetLayout": [
@@ -8112,11 +8290,12 @@
     "planImg": "/plans/sheets/app-179.webp",
     "emplacementImg": "/plans/sheets/app-179.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/1.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/1.webp",
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-179.webp",
     "sheetLayout": [
@@ -8157,11 +8336,12 @@
     "planImg": "/plans/sheets/app-180.webp",
     "emplacementImg": "/plans/sheets/app-180.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/10.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/10.webp",
-      "/home/residences-options/6.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-180.webp",
     "sheetLayout": [
@@ -8202,11 +8382,12 @@
     "planImg": "/plans/sheets/app-181.webp",
     "emplacementImg": "/plans/sheets/app-181.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/home/residences-options/3.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-181.webp",
     "sheetLayout": [
@@ -8247,11 +8428,12 @@
     "planImg": "/plans/sheets/app-182.webp",
     "emplacementImg": "/plans/sheets/app-182.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/5.webp",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/home/residences-options/5.webp",
-      "/home/residences-options/7.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-182.webp",
     "sheetLayout": [
@@ -8292,11 +8474,12 @@
     "planImg": "/plans/sheets/app-183.webp",
     "emplacementImg": "/plans/sheets/app-183.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/11.webp",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/home/residences-options/11.webp",
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-183.webp",
     "sheetLayout": [
@@ -8337,11 +8520,12 @@
     "planImg": "/plans/sheets/app-184.webp",
     "emplacementImg": "/plans/sheets/app-184.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/2.webp",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-184.webp",
     "sheetLayout": [
@@ -8382,11 +8566,12 @@
     "planImg": "/plans/sheets/app-185.webp",
     "emplacementImg": "/plans/sheets/app-185.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/6.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/6.webp",
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-185.webp",
     "sheetLayout": [
@@ -8426,11 +8611,12 @@
     "planImg": "/plans/sheets/app-186.webp",
     "emplacementImg": "/plans/sheets/app-186.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/3.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/3.webp",
-      "/home/residences-options/4.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-186.webp",
     "sheetLayout": [
@@ -8470,11 +8656,12 @@
     "planImg": "/plans/sheets/app-187.webp",
     "emplacementImg": "/plans/sheets/app-187.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/7.webp",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/home/residences-options/7.webp",
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-187.webp",
     "sheetLayout": [
@@ -8514,11 +8701,12 @@
     "planImg": "/plans/sheets/app-188.webp",
     "emplacementImg": "/plans/sheets/app-188.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/9.webp",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-188.webp",
     "sheetLayout": [
@@ -8558,11 +8746,12 @@
     "planImg": "/plans/sheets/app-189.webp",
     "emplacementImg": "/plans/sheets/app-189.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-189.webp",
     "sheetLayout": [
@@ -8602,11 +8791,12 @@
     "planImg": "/plans/sheets/app-190.webp",
     "emplacementImg": "/plans/sheets/app-190.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/8.webp",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-190.webp",
     "sheetLayout": [
@@ -8646,11 +8836,12 @@
     "planImg": "/plans/sheets/app-191.webp",
     "emplacementImg": "/plans/sheets/app-191.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/4.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/4.webp",
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-191.webp",
     "sheetLayout": [
@@ -8690,11 +8881,12 @@
     "planImg": "/plans/sheets/app-192.webp",
     "emplacementImg": "/plans/sheets/app-192.webp",
     "floorPlanImg": "/jardins_de_bali/plan_08_4eme_etage.jpg",
-    "thumbImg": "/home/residences-options/12.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-192.webp",
     "sheetLayout": [
@@ -8734,11 +8926,12 @@
     "planImg": "/plans/sheets/app-193.webp",
     "emplacementImg": "/plans/sheets/app-193.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-193.webp",
     "sheetLayout": [
@@ -8779,11 +8972,12 @@
     "planImg": "/plans/sheets/app-194.webp",
     "emplacementImg": "/plans/sheets/app-194.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salon_terrasse.jpg",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-194.webp",
     "sheetLayout": [
@@ -8824,11 +9018,12 @@
     "planImg": "/plans/sheets/app-195.webp",
     "emplacementImg": "/plans/sheets/app-195.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-195.webp",
     "sheetLayout": [
@@ -8869,11 +9064,12 @@
     "planImg": "/plans/sheets/app-196.webp",
     "emplacementImg": "/plans/sheets/app-196.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/residences/interiors/suite_master_marrakech.jpg",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-196.webp",
     "sheetLayout": [
@@ -8914,11 +9110,12 @@
     "planImg": "/plans/sheets/app-197.webp",
     "emplacementImg": "/plans/sheets/app-197.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-197.webp",
     "sheetLayout": [
@@ -8959,11 +9156,12 @@
     "planImg": "/plans/sheets/app-198.webp",
     "emplacementImg": "/plans/sheets/app-198.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salle_a_manger.jpg",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/home/residences-options/1.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-198.webp",
     "sheetLayout": [
@@ -9004,11 +9202,12 @@
     "planImg": "/plans/sheets/app-199.webp",
     "emplacementImg": "/plans/sheets/app-199.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/home/residences-options/10.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-199.webp",
     "sheetLayout": [
@@ -9049,11 +9248,12 @@
     "planImg": "/plans/sheets/app-200.webp",
     "emplacementImg": "/plans/sheets/app-200.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/residences/interiors/salon_terrasse_lounge.jpg",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-200.webp",
     "sheetLayout": [
@@ -9094,11 +9294,12 @@
     "planImg": "/plans/sheets/app-201.webp",
     "emplacementImg": "/plans/sheets/app-201.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/home/residences-options/5.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-201.webp",
     "sheetLayout": [
@@ -9138,11 +9339,12 @@
     "planImg": "/plans/sheets/app-202.webp",
     "emplacementImg": "/plans/sheets/app-202.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/home/residences-options/11.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-202.webp",
     "sheetLayout": [
@@ -9182,11 +9384,12 @@
     "planImg": "/plans/sheets/app-203.webp",
     "emplacementImg": "/plans/sheets/app-203.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/home/residences-options/1.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/1.webp",
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-203.webp",
     "sheetLayout": [
@@ -9226,11 +9429,12 @@
     "planImg": "/plans/sheets/app-204.webp",
     "emplacementImg": "/plans/sheets/app-204.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/home/residences-options/10.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/10.webp",
-      "/home/residences-options/6.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-204.webp",
     "sheetLayout": [
@@ -9270,11 +9474,12 @@
     "planImg": "/plans/sheets/app-205.webp",
     "emplacementImg": "/plans/sheets/app-205.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/home/residences-options/3.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-205.webp",
     "sheetLayout": [
@@ -9314,11 +9519,12 @@
     "planImg": "/plans/sheets/app-206.webp",
     "emplacementImg": "/plans/sheets/app-206.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/home/residences-options/5.webp",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/home/residences-options/5.webp",
-      "/home/residences-options/7.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-206.webp",
     "sheetLayout": [
@@ -9358,11 +9564,12 @@
     "planImg": "/plans/sheets/app-207.webp",
     "emplacementImg": "/plans/sheets/app-207.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/home/residences-options/11.webp",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/home/residences-options/11.webp",
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-207.webp",
     "sheetLayout": [
@@ -9402,11 +9609,12 @@
     "planImg": "/plans/sheets/app-208.webp",
     "emplacementImg": "/plans/sheets/app-208.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/home/residences-options/2.webp",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-208.webp",
     "sheetLayout": [
@@ -9446,11 +9654,12 @@
     "planImg": "/plans/sheets/app-209.webp",
     "emplacementImg": "/plans/sheets/app-209.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/home/residences-options/6.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/6.webp",
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-209.webp",
     "sheetLayout": [
@@ -9490,11 +9699,12 @@
     "planImg": "/plans/sheets/app-210.webp",
     "emplacementImg": "/plans/sheets/app-210.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/home/residences-options/3.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/3.webp",
-      "/home/residences-options/4.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-210.webp",
     "sheetLayout": [
@@ -9534,11 +9744,12 @@
     "planImg": "/plans/sheets/app-211.webp",
     "emplacementImg": "/plans/sheets/app-211.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/home/residences-options/7.webp",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/home/residences-options/7.webp",
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-211.webp",
     "sheetLayout": [
@@ -9578,11 +9789,12 @@
     "planImg": "/plans/sheets/app-212.webp",
     "emplacementImg": "/plans/sheets/app-212.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/home/residences-options/9.webp",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/home/residences-options/9.webp",
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-212.webp",
     "sheetLayout": [
@@ -9622,11 +9834,12 @@
     "planImg": "/plans/sheets/app-213.webp",
     "emplacementImg": "/plans/sheets/app-213.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/02b_chambre_placards_dressing.jpg",
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-213.webp",
     "sheetLayout": [
@@ -9666,11 +9879,12 @@
     "planImg": "/plans/sheets/app-214.webp",
     "emplacementImg": "/plans/sheets/app-214.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/home/residences-options/8.webp",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/home/residences-options/8.webp",
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-214.webp",
     "sheetLayout": [
@@ -9710,11 +9924,12 @@
     "planImg": "/plans/sheets/app-215.webp",
     "emplacementImg": "/plans/sheets/app-215.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/home/residences-options/4.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/4.webp",
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-215.webp",
     "sheetLayout": [
@@ -9755,11 +9970,12 @@
     "planImg": "/plans/sheets/app-216.webp",
     "emplacementImg": "/plans/sheets/app-216.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/home/residences-options/12.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/12.webp",
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-216.webp",
     "sheetLayout": [
@@ -9800,11 +10016,12 @@
     "planImg": "/plans/sheets/app-217.webp",
     "emplacementImg": "/plans/sheets/app-217.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/07_salon_canape_et_tv.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/07_salon_canape_et_tv.jpg",
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-217.webp",
     "sheetLayout": [
@@ -9845,11 +10062,12 @@
     "planImg": "/plans/sheets/app-218.webp",
     "emplacementImg": "/plans/sheets/app-218.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salon_terrasse.jpg",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salon_terrasse.jpg",
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-218.webp",
     "sheetLayout": [
@@ -9890,11 +10108,12 @@
     "planImg": "/plans/sheets/app-219.webp",
     "emplacementImg": "/plans/sheets/app-219.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/01_chambre_lit_double.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/01_chambre_lit_double.jpg",
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-219.webp",
     "sheetLayout": [
@@ -9935,11 +10154,12 @@
     "planImg": "/plans/sheets/app-220.webp",
     "emplacementImg": "/plans/sheets/app-220.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/residences/interiors/suite_master_marrakech.jpg",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/residences/interiors/suite_master_marrakech.jpg",
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-220.webp",
     "sheetLayout": [
@@ -9980,11 +10200,12 @@
     "planImg": "/plans/sheets/app-221.webp",
     "emplacementImg": "/plans/sheets/app-221.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/jardins_de_bali/03_cuisine_americaine_vue_salon.jpg",
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-221.webp",
     "sheetLayout": [
@@ -10025,11 +10246,12 @@
     "planImg": "/plans/sheets/app-222.webp",
     "emplacementImg": "/plans/sheets/app-222.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/residences/interiors/penthouse_salle_a_manger.jpg",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/residences/interiors/penthouse_salle_a_manger.jpg",
-      "/home/residences-options/1.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-222.webp",
     "sheetLayout": [
@@ -10070,11 +10292,12 @@
     "planImg": "/plans/sheets/app-223.webp",
     "emplacementImg": "/plans/sheets/app-223.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/08_vue_ensemble_entree_sejour.jpg",
-      "/home/residences-options/10.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-223.webp",
     "sheetLayout": [
@@ -10114,11 +10337,12 @@
     "planImg": "/plans/sheets/app-224.webp",
     "emplacementImg": "/plans/sheets/app-224.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/residences/interiors/salon_terrasse_lounge.jpg",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/residences/interiors/salon_terrasse_lounge.jpg",
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-224.webp",
     "sheetLayout": [
@@ -10158,11 +10382,12 @@
     "planImg": "/plans/sheets/app-225.webp",
     "emplacementImg": "/plans/sheets/app-225.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
+    "thumbImg": "/residences/galerie/007.webp",
     "gallery": [
-      "/jardins_de_bali/06_salle_de_bain_douche_italienne.jpg",
-      "/home/residences-options/5.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-225.webp",
     "sheetLayout": [
@@ -10202,11 +10427,12 @@
     "planImg": "/plans/sheets/app-226.webp",
     "emplacementImg": "/plans/sheets/app-226.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
+    "thumbImg": "/residences/galerie/005.webp",
     "gallery": [
-      "/jardins_de_bali/02_chambre_tv_baie_vitree.jpg",
-      "/home/residences-options/11.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-226.webp",
     "sheetLayout": [
@@ -10246,11 +10472,12 @@
     "planImg": "/plans/sheets/app-227.webp",
     "emplacementImg": "/plans/sheets/app-227.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/home/residences-options/1.webp",
+    "thumbImg": "/residences/galerie/008.webp",
     "gallery": [
-      "/home/residences-options/1.webp",
-      "/home/residences-options/2.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/008.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-227.webp",
     "sheetLayout": [
@@ -10290,11 +10517,12 @@
     "planImg": "/plans/sheets/app-228.webp",
     "emplacementImg": "/plans/sheets/app-228.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/home/residences-options/10.webp",
+    "thumbImg": "/residences/galerie/009.webp",
     "gallery": [
-      "/home/residences-options/10.webp",
-      "/home/residences-options/6.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/009.webp",
+      "/residences/galerie/008.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/010.webp"
     ],
     "planSheet": "/plans/sheets/app-228.webp",
     "sheetLayout": [
@@ -10334,11 +10562,12 @@
     "planImg": "/plans/sheets/app-229.webp",
     "emplacementImg": "/plans/sheets/app-229.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
+    "thumbImg": "/residences/galerie/006.webp",
     "gallery": [
-      "/jardins_de_bali/04_cuisine_equipements_comptoir.jpg",
-      "/home/residences-options/3.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/006.webp",
+      "/residences/galerie/007.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-229.webp",
     "sheetLayout": [
@@ -10378,11 +10607,12 @@
     "planImg": "/plans/sheets/app-230.webp",
     "emplacementImg": "/plans/sheets/app-230.webp",
     "floorPlanImg": "/jardins_de_bali/plan_09_5eme_etage.jpg",
-    "thumbImg": "/home/residences-options/5.webp",
+    "thumbImg": "/residences/galerie/010.webp",
     "gallery": [
-      "/home/residences-options/5.webp",
-      "/home/residences-options/7.webp",
-      "/jardins_de_bali/10_rooftop_piscines_solarium.jpg"
+      "/residences/galerie/010.webp",
+      "/residences/galerie/005.webp",
+      "/residences/galerie/006.webp",
+      "/residences/galerie/009.webp"
     ],
     "planSheet": "/plans/sheets/app-230.webp",
     "sheetLayout": [
