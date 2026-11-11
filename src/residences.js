@@ -446,13 +446,13 @@ document.addEventListener('DOMContentLoaded', () => {
       loadMoreWrapper.style.display = itemsToDisplay.length < filtered.length ? 'flex' : 'none';
     }
 
-    // Attach click listeners to cards
+    // Attach click & pointer prefetch listeners to cards
     document.querySelectorAll('.residence-card').forEach((el) => {
-      el.addEventListener('click', () => {
-        const id = el.getAttribute('data-id');
-        const unit = residencesData.find((u) => u.id === id);
-        if (unit) openModal(unit);
-      });
+      const id = el.getAttribute('data-id');
+      const unit = residencesData.find((u) => u.id === id);
+      if (!unit) return;
+      el.addEventListener('pointerenter', () => loadUnitSheetVisuals(unit), { once: true });
+      el.addEventListener('click', () => openModal(unit));
     });
 
     // Smooth reveal for newly rendered cards (Always visible, zero invisible bugs)
@@ -621,18 +621,67 @@ document.addEventListener('DOMContentLoaded', () => {
   let activeModalUnit = null;
   let activeVisualMode = 'plan';
 
+  const unitSheetCache = new Map();
+  function cropSheetRegionToUrl(img, sx, sy, sw, sh) {
+    return new Promise((resolve) => {
+      const canvas = document.createElement('canvas');
+      canvas.width = sw;
+      canvas.height = sh;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, sx, sy, sw, sh, 0, 0, sw, sh);
+      canvas.toBlob(
+        (blob) => {
+          if (blob) resolve(URL.createObjectURL(blob));
+          else resolve(canvas.toDataURL('image/webp', 0.9));
+        },
+        'image/webp',
+        0.9
+      );
+    });
+  }
+
+  function loadUnitSheetVisuals(unit) {
+    if (!unit || !unit.planSheet || !Array.isArray(unit.sheetLayout)) {
+      return Promise.resolve({
+        planUrl: unit ? unit.planImg : '',
+        empUrl: unit ? unit.emplacementImg : '',
+        planWidth: 0,
+        empWidth: 0,
+      });
+    }
+    if (unitSheetCache.has(unit.slug)) {
+      return unitSheetCache.get(unit.slug);
+    }
+    const promise = new Promise((resolve) => {
+      const img = new Image();
+      img.onload = async () => {
+        try {
+          const [pw, ph, ew, eh] = unit.sheetLayout;
+          const [planUrl, empUrl] = await Promise.all([
+            cropSheetRegionToUrl(img, 0, 0, pw, ph),
+            cropSheetRegionToUrl(img, pw, 0, ew, eh),
+          ]);
+          resolve({ planUrl, empUrl, planWidth: pw, empWidth: ew });
+        } catch {
+          resolve({ planUrl: unit.planSheet, empUrl: unit.planSheet, planWidth: 0, empWidth: 0 });
+        }
+      };
+      img.onerror = () => resolve({ planUrl: unit.planSheet, empUrl: unit.planSheet, planWidth: 0, empWidth: 0 });
+      img.src = unit.planSheet;
+    });
+    unitSheetCache.set(unit.slug, promise);
+    return promise;
+  }
+
   function updateBlueprintSwitch(unit, mode) {
     if (!unit || !blueprintModalImg) return;
-    let targetSrc = unit.planImg;
     let label = `Plan Unité (${unit.typeCode || unit.id})`;
-    if (mode === 'emplacement' && unit.emplacementImg) {
-      targetSrc = unit.emplacementImg;
+    if (mode === 'emplacement') {
       label = `Emplacement sur Étage (Lot en rouge)`;
-    } else if (mode === 'floor' && unit.floorPlanImg) {
-      targetSrc = unit.floorPlanImg;
+    } else if (mode === 'floor') {
       label = `Plan Architectural d'Étage Complet (${unit.floorName})`;
     }
-    blueprintModalImg.src = targetSrc;
+    blueprintModalImg.dataset.bpMode = mode;
     blueprintModalImg.alt = `${unit.id} — ${label}`;
     if (blueprintModalTitle) {
       blueprintModalTitle.textContent = `${unit.id} · ${label}`;
@@ -642,11 +691,20 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.classList.toggle('is-active', btn.getAttribute('data-bp-mode') === mode);
       });
     }
+    if (mode === 'floor' && unit.floorPlanImg) {
+      blueprintModalImg.src = unit.floorPlanImg;
+      return;
+    }
+    loadUnitSheetVisuals(unit).then(({ planUrl, empUrl }) => {
+      if (blueprintModalImg.dataset.bpMode !== mode || activeModalUnit !== unit) return;
+      blueprintModalImg.src = mode === 'emplacement' ? empUrl : planUrl;
+    });
   }
 
   function openBlueprintModal(src, title, unit = null, initialMode = 'plan') {
     if (blueprintModal && blueprintModalImg) {
       if (unit && blueprintModalActions) {
+        activeModalUnit = unit;
         blueprintModalActions.style.display = 'flex';
         blueprintModalActions.querySelectorAll('.blueprint-switch-btn').forEach((btn) => {
           btn.onclick = () => updateBlueprintSwitch(unit, btn.getAttribute('data-bp-mode'));
@@ -685,8 +743,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function setModalVisual(unit, src, kind, captionText) {
     activeVisualMode = kind;
     if (modalMainImg) {
-      modalMainImg.src = src;
+      if (src) modalMainImg.src = src;
       modalMainImg.alt = `${unit.id} — ${captionText}`;
+      modalMainImg.dataset.visualKind = kind;
       modalMainImg.classList.toggle('is-photo', kind === 'photo');
     }
     if (modalVisualCaption) {
@@ -699,7 +758,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (modalThumbsRow) {
       modalThumbsRow.querySelectorAll('.modal-thumb-btn').forEach((btn) => {
-        btn.classList.toggle('is-active', btn.getAttribute('data-src') === src);
+        btn.classList.toggle('is-active', btn.getAttribute('data-kind') === kind && (!src || btn.getAttribute('data-src') === src));
       });
     }
   }
@@ -730,20 +789,18 @@ document.addEventListener('DOMContentLoaded', () => {
           : 'Cuisine équipée Bosch, Marbre Travertin, Climatisation centralisée, Parking Sous-Sol');
     }
 
-    const planSrc = unit.planImg;
-    const empSrc = unit.emplacementImg || unit.floorPlanImg;
-    const photoSrc = unit.thumbImg || (Array.isArray(unit.gallery) ? unit.gallery.find((s) => s !== planSrc && s !== empSrc) : null) || planSrc;
+    const placeholderSrc = unit.thumbImg || unit.floorPlanImg;
 
     // Build visual entries: 1) Plan Unité (default), 2) Emplacement Rouge, 3) Interior/Vitrine Photos
     const visualEntries = [
-      { src: planSrc, kind: 'plan', label: 'Plan Unité', caption: `Plan coté officiel (${unit.typePdf || unit.typeCode}) — cliquez pour agrandir` },
-      { src: empSrc, kind: 'emplacement', label: 'Rouge', caption: `Emplacement exact sur plan d'étage (lot surligné en rouge) — cliquez pour agrandir` },
+      { src: placeholderSrc, kind: 'plan', label: 'Plan Unité', caption: `Plan coté officiel (${unit.typePdf || unit.typeCode}) — cliquez pour agrandir` },
+      { src: unit.floorPlanImg, kind: 'emplacement', label: 'Rouge', caption: `Emplacement exact sur plan d'étage (lot surligné en rouge) — cliquez pour agrandir` },
     ];
     const extraPhotos = [];
     if (unit.thumbImg) extraPhotos.push(unit.thumbImg);
     if (Array.isArray(unit.gallery)) {
       unit.gallery.forEach((s) => {
-        if (s && s !== planSrc && s !== empSrc && !extraPhotos.includes(s)) extraPhotos.push(s);
+        if (s && s !== unit.planSheet && !extraPhotos.includes(s)) extraPhotos.push(s);
       });
     }
     extraPhotos.forEach((s, idx) => {
@@ -784,8 +841,37 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // Default open on zoomed Unit CAD Plan ('plan')
+    // Default open on zoomed Unit CAD Plan ('plan') & decode combined 2-panel sheet asynchronously
+    if (modalMainImg) modalMainImg.dataset.sheetReady = 'false';
     setModalVisual(unit, visualEntries[0].src, visualEntries[0].kind, visualEntries[0].caption);
+
+    loadUnitSheetVisuals(unit).then(({ planUrl, empUrl }) => {
+      if (activeModalUnit !== unit) return;
+      visualEntries[0].src = planUrl;
+      visualEntries[1].src = empUrl;
+      if (modalThumbsRow) {
+        const btns = modalThumbsRow.querySelectorAll('.modal-thumb-btn');
+        if (btns[0]) {
+          btns[0].setAttribute('data-src', planUrl);
+          const im = btns[0].querySelector('img');
+          if (im) im.src = planUrl;
+        }
+        if (btns[1]) {
+          btns[1].setAttribute('data-src', empUrl);
+          const im = btns[1].querySelector('img');
+          if (im) im.src = empUrl;
+        }
+      }
+      if (modalMainImg) {
+        modalMainImg.dataset.sheetReady = 'true';
+        if (activeVisualMode === 'plan') {
+          setModalVisual(unit, planUrl, 'plan', visualEntries[0].caption);
+        } else if (activeVisualMode === 'emplacement') {
+          setModalVisual(unit, empUrl, 'emplacement', visualEntries[1].caption);
+        }
+      }
+      if (modalPlanDownload) modalPlanDownload.href = planUrl;
+    });
 
     if (modalMainImg) {
       modalMainImg.style.cursor = 'zoom-in';
@@ -800,10 +886,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Plan Plein Écran button -> opens HD blueprint lightbox with Plan Unité / Emplacement Rouge / Plan Étage switcher
     if (modalPlanDownload) {
-      modalPlanDownload.href = planSrc;
+      modalPlanDownload.href = unit.planSheet || placeholderSrc;
       modalPlanDownload.onclick = (e) => {
         e.preventDefault();
-        openBlueprintModal(planSrc, `${unit.id}`, unit, activeVisualMode === 'emplacement' ? 'emplacement' : 'plan');
+        openBlueprintModal(modalMainImg ? modalMainImg.src : placeholderSrc, `${unit.id}`, unit, activeVisualMode === 'emplacement' ? 'emplacement' : 'plan');
       };
     }
 
