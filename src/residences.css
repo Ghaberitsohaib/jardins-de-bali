@@ -364,7 +364,7 @@ footer {
 
 @media (max-width: 1024px) {
   .residences-picker-section {
-    padding: 2.5rem 0 5rem 0;
+    padding: 5.25rem 0 5rem 0;
   }
 
   .picker-container {
@@ -483,6 +483,7 @@ footer {
   text-transform: uppercase;
   cursor: pointer;
   outline: none;
+  -webkit-tap-highlight-color: transparent;
   transition: all 0.25s ease;
   white-space: nowrap;
 }
