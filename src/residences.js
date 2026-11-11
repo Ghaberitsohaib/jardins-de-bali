@@ -1,9 +1,20 @@
 import './arbor.css';
 import './residences.css';
-import residencesData from './data/residences-data.json';
+import rawResidencesData from './data/residences-data.json';
+import { assetUrl } from './assetUrl.js';
 import { initMotion, initScrollReveals, MOTION_CONFIG } from './motion.js';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+const residencesData = rawResidencesData.map((unit) => ({
+  ...unit,
+  planImg: assetUrl(unit.planImg),
+  emplacementImg: assetUrl(unit.emplacementImg),
+  floorPlanImg: assetUrl(unit.floorPlanImg),
+  thumbImg: assetUrl(unit.thumbImg),
+  planSheet: assetUrl(unit.planSheet),
+  gallery: Array.isArray(unit.gallery) ? unit.gallery.map(assetUrl) : unit.gallery,
+}));
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -358,7 +369,7 @@ document.addEventListener('DOMContentLoaded', () => {
           // Pick an illustrative preview: Commercial shops have dedicated retail photography
           let layoutThumb = item.thumbImg;
           if (item.type === 'Commerce' || item.category === 'Magasin' || item.id.startsWith('MAGASIN')) {
-            layoutThumb = item.thumbImg || `/business/retail/${item.slug || 'magasin-1'}.jpg`;
+            layoutThumb = item.thumbImg || assetUrl(`/business/retail/${item.slug || 'magasin-1'}.jpg`);
           } else {
             // 100% EXCLUSIVE VERTEX GALERIE 3D INTERIORS ONLY (001..010)
             const APARTMENT_INTERIORS_POOL = [
@@ -372,9 +383,9 @@ document.addEventListener('DOMContentLoaded', () => {
               '/residences/galerie/008.webp',
               '/residences/galerie/009.webp',
               '/residences/galerie/010.webp'
-            ];
+            ].map(assetUrl);
 
-            const isValidGalerie = layoutThumb && layoutThumb.startsWith('/residences/galerie/');
+            const isValidGalerie = layoutThumb && layoutThumb.includes('/residences/galerie/');
             if (!isValidGalerie) {
               layoutThumb = APARTMENT_INTERIORS_POOL[index % APARTMENT_INTERIORS_POOL.length];
             }
@@ -923,57 +934,57 @@ document.addEventListener('DOMContentLoaded', () => {
     'ss2': {
       title: 'Plan Sous-Sol -2 (Parking Sécurisé & Visas Officiels)',
       desc: 'Capacité totale de 110 places de stationnement numérotées de 125 à 234, rampes d\'accès double voie, et visas officiels de la Commune de Marrakech et de l\'Architecte.',
-      img: '/jardins_de_bali/plan_01_sous_sol_2.jpg'
+      img: assetUrl('/jardins_de_bali/plan_01_sous_sol_2.jpg')
     },
     'ss1': {
       title: 'Plan Sous-Sol -1 (124 Places de Parking & 15 Boxes Privatifs)',
       desc: 'Premier niveau de stationnement souterrain comprenant 124 places numérotées de 1 à 124, 15 boxes fermés et 6 cages d\'ascenseurs desservant tous les étages.',
-      img: '/jardins_de_bali/plan_02_sous_sol_1.jpg'
+      img: assetUrl('/jardins_de_bali/plan_02_sous_sol_1.jpg')
     },
     'rdc': {
       title: 'Plan Rez-de-Chaussée (Patio Central, 4 Magasins & 32 Duplexes)',
       desc: 'Allée d\'accès arborée avec grande fontaine d\'eau, 4 magasins flagships en façade sur rue et 32 duplexes RDC (App 1 à 32).',
-      img: '/jardins_de_bali/plan_03_rez_de_chaussee.jpg'
+      img: assetUrl('/jardins_de_bali/plan_03_rez_de_chaussee.jpg')
     },
     'mezz': {
       title: 'Plan Mezzanine (4 Mezzanines Commerciales & 32 Duplexes)',
       desc: 'Niveau mezzanine intégrant les 4 mezzanines commerciales des magasins flagships (244 m² cumulés) et les niveaux supérieurs des 32 duplexes RDC (App 1 à 32).',
-      img: '/jardins_de_bali/plan_04_mezzanine.jpg'
+      img: assetUrl('/jardins_de_bali/plan_04_mezzanine.jpg')
     },
     'r1': {
       title: 'Plan 1er Étage (40 Appartements — App 33 à 72)',
       desc: 'Distribution optimisée autour des puits de lumière intérieurs et balcons extérieurs offrant une clarté naturelle tout au long de la journée.',
-      img: '/jardins_de_bali/plan_05_1er_etage.jpg'
+      img: assetUrl('/jardins_de_bali/plan_05_1er_etage.jpg')
     },
     'r2': {
       title: 'Plan 2ème Étage (40 Appartements — App 73 à 112)',
       desc: 'Appartements d\'exception avec loggias et balcons paysagers, isolation acoustique renforcée et menuiseries aluminium à rupture thermique.',
-      img: '/jardins_de_bali/plan_06_2eme_etage.jpg'
+      img: assetUrl('/jardins_de_bali/plan_06_2eme_etage.jpg')
     },
     'r3': {
       title: 'Plan 3ème Étage (40 Appartements — App 113 à 152)',
       desc: 'Vues dégagées sur les jardins et le patio arboré, finitions soignées en travertin et marbre noble.',
-      img: '/jardins_de_bali/plan_07_3eme_etage.jpg'
+      img: assetUrl('/jardins_de_bali/plan_07_3eme_etage.jpg')
     },
     'r4': {
       title: 'Plan 4ème Étage (40 Appartements — App 153 à 192)',
       desc: 'Début des retraits architecturaux en gradins inspirés de l\'île de Bali avec terrasses suspendues arborées.',
-      img: '/jardins_de_bali/plan_08_4eme_etage.jpg'
+      img: assetUrl('/jardins_de_bali/plan_08_4eme_etage.jpg')
     },
     'r5': {
       title: 'Plan 5ème Étage (38 Appartements avec Terrasses — App 193 à 230)',
       desc: 'Dernier niveau résidentiel avec grandes terrasses panoramiques privatives (16 lots) et accès au rooftop solarium.',
-      img: '/jardins_de_bali/plan_09_5eme_etage.jpg'
+      img: assetUrl('/jardins_de_bali/plan_09_5eme_etage.jpg')
     },
     'toiture': {
       title: 'Plan Toiture-Terrasse & Rooftop (Double Piscine Suspendue)',
       desc: 'Espace bien-être d\'exception avec deux piscines à débordement, solarium en teck, transats panoramiques et vue imprenable sur Marrakech.',
-      img: '/jardins_de_bali/plan_16_toiture_terrasse.jpg'
+      img: assetUrl('/jardins_de_bali/plan_16_toiture_terrasse.jpg')
     },
     'facades': {
       title: 'Façade Principale & Coupes Longitudinales (AMA Architecture)',
       desc: 'Élévation de la façade avec ses lignes organiques courbes, ses brise-soleil verticaux et coupes structurelles AA et BB.',
-      img: '/jardins_de_bali/plan_11_facade_principale.jpg'
+      img: assetUrl('/jardins_de_bali/plan_11_facade_principale.jpg')
     }
   };
 
@@ -998,7 +1009,7 @@ document.addEventListener('DOMContentLoaded', () => {
     planFullscreenLink.addEventListener('click', (e) => {
       e.preventDefault();
       const currentTitle = planInfoTitle ? planInfoTitle.textContent : 'Plan Architectural Officiel';
-      const currentSrc = planDisplayImg ? planDisplayImg.src : '/jardins_de_bali/plan_03_rez_de_chaussee.jpg';
+      const currentSrc = planDisplayImg ? planDisplayImg.src : assetUrl('/jardins_de_bali/plan_03_rez_de_chaussee.jpg');
       openBlueprintModal(currentSrc, currentTitle);
     });
   }

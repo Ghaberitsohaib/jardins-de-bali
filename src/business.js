@@ -7,6 +7,7 @@ import './business.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { initMotion, initScrollReveals, MOTION_CONFIG } from './motion.js';
+import { assetUrl } from './assetUrl.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -194,27 +195,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const blueprintData = [
       { 
-        url: '/jardins_de_bali/plan_03_rez_de_chaussee.jpg', 
+        url: assetUrl('/jardins_de_bali/plan_03_rez_de_chaussee.jpg'), 
         title: 'Plan RDC — 4 Grands Magasins Flagships (83 m² à 221 m²)', 
-        img: '/business/retail/magasin_2_flagship.jpg',
+        img: assetUrl('/business/retail/magasin_2_flagship.jpg'),
         alt: 'Magasins Flagships RDC Jardins de Bali'
       },
       { 
-        url: '/jardins_de_bali/plan_04_mezzanine.jpg', 
+        url: assetUrl('/jardins_de_bali/plan_04_mezzanine.jpg'), 
         title: 'Plan Mezzanine — 4 Mezzanines Commerciales (244 m²)', 
-        img: '/business/retail/magasin_4_showroom.jpg',
+        img: assetUrl('/business/retail/magasin_4_showroom.jpg'),
         alt: 'Mezzanines Showrooms Jardins de Bali'
       },
       { 
-        url: '/jardins_de_bali/plan_03_rez_de_chaussee.jpg', 
+        url: assetUrl('/jardins_de_bali/plan_03_rez_de_chaussee.jpg'), 
         title: 'Plan RDC & Mezzanine — Esplanade & 32 Duplexes (61 à 124 m²)', 
-        img: '/business/retail/bureau_executive_suite_bali.jpg',
+        img: assetUrl('/business/retail/bureau_executive_suite_bali.jpg'),
         alt: 'Esplanade et Duplex RDC Jardins de Bali'
       },
       { 
-        url: '/jardins_de_bali/plan_02_sous_sol_1.jpg', 
+        url: assetUrl('/jardins_de_bali/plan_02_sous_sol_1.jpg'), 
         title: 'Plan Sous-Sol 1 & 2 — 234 Places de Parking & 15 Boxes', 
-        img: '/business/retail/parking_prestige_jardins_bali.jpg',
+        img: assetUrl('/business/retail/parking_prestige_jardins_bali.jpg'),
         alt: 'Parkings Sécurisés et Sous-Sols Jardins de Bali'
       },
     ];

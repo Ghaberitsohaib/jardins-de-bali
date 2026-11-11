@@ -5,6 +5,7 @@ import { MorphSVGPlugin } from 'gsap/MorphSVGPlugin';
 import { SplitText } from 'gsap/SplitText';
 import * as THREE from 'three';
 import { initMotion, MOTION_CONFIG } from './motion.js';
+import { assetUrl } from './assetUrl.js';
 
 gsap.registerPlugin(ScrollTrigger, MorphSVGPlugin, SplitText);
 window.__gsap = gsap;
@@ -423,7 +424,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Video completion / scroll switch to final image
   if (heroVideo && heroFinalImg) {
     const isMobile = window.matchMedia('(max-width: 600px)').matches;
-    const targetSrc = isMobile ? '/home/hero-m.webm' : '/home/hero.mp4';
+    const targetSrc = assetUrl(isMobile ? '/home/hero-m.webm' : '/home/hero.mp4');
     if (!heroVideo.src.includes(targetSrc)) {
       heroVideo.src = targetSrc;
       heroVideo.load();
