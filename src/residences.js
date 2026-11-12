@@ -3,6 +3,7 @@ import './residences.css';
 import rawResidencesData from './data/residences-data.json';
 import { assetUrl } from './assetUrl.js';
 import { initMotion, initScrollReveals, MOTION_CONFIG } from './motion.js';
+import { bindFooterWeb3Form } from './web3forms.js';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -1037,12 +1038,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 4000);
   };
 
-  if (residencesFooterForm) {
-    residencesFooterForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      residencesFooterForm.reset();
-      showToast("Merci ! Votre demande d'inscription aux Jardins de Bali a bien été enregistrée.");
-    });
-  }
+  bindFooterWeb3Form(residencesFooterForm, {
+    sourceLabel: 'Résidences Footer',
+    successMessage: "Merci ! Votre demande concernant les Jardins de Bali a bien été transmise.",
+    notify: showToast,
+  });
 });
 

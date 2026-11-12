@@ -8,6 +8,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { initMotion, initScrollReveals, MOTION_CONFIG } from './motion.js';
 import { assetUrl } from './assetUrl.js';
+import { bindFooterWeb3Form } from './web3forms.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -436,11 +437,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 4000);
   };
 
-  if (businessFooterForm) {
-    businessFooterForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      businessFooterForm.reset();
-      showToast('Merci pour votre intérêt. Notre équipe commerciale vous contactera dans les plus brefs délais.');
-    });
-  }
+  bindFooterWeb3Form(businessFooterForm, {
+    sourceLabel: "Espaces d'Affaires Footer",
+    successMessage: 'Merci pour votre intérêt. Votre demande a bien été transmise à notre équipe commerciale.',
+    notify: showToast,
+  });
 });

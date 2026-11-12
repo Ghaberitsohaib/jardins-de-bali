@@ -6,6 +6,7 @@ import { SplitText } from 'gsap/SplitText';
 import * as THREE from 'three';
 import { initMotion, MOTION_CONFIG } from './motion.js';
 import { assetUrl } from './assetUrl.js';
+import { bindFooterWeb3Form, submitToWeb3Forms } from './web3forms.js';
 
 gsap.registerPlugin(ScrollTrigger, MorphSVGPlugin, SplitText);
 window.__gsap = gsap;
@@ -1831,23 +1832,47 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      if (contactModalBackdrop) {
-        contactModalBackdrop.classList.remove('open');
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const fullName = document.getElementById('contactFullName')?.value?.trim() || '';
+      const email = document.getElementById('contactEmail')?.value?.trim() || '';
+      const phone = document.getElementById('contactPhone')?.value?.trim() || '';
+      const message = document.getElementById('contactMessage')?.value?.trim() || '';
+
+      if (submitBtn) submitBtn.disabled = true;
+      try {
+        const emailSent = await submitToWeb3Forms({
+          subject: `[BaytImmo - Accueil Modal] Demande de ${fullName || 'Client'}`,
+          from_name: fullName || 'Visiteur BaytImmo',
+          replyto: email || undefined,
+          nom_complet: fullName || '-',
+          email: email || '-',
+          telephone: phone || '-',
+          message: message || '-',
+          source: 'Accueil Modal',
+          page_url: window.location.href,
+        });
+        if (emailSent) {
+          if (contactModalBackdrop) {
+            contactModalBackdrop.classList.remove('open');
+          }
+          contactForm.reset();
+          showToast('Merci ! Un conseiller BaytImmo vous contactera dans les plus brefs délais.');
+        } else {
+          showToast("Erreur lors de l'envoi. Veuillez réessayer dans un instant.");
+        }
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
       }
-      contactForm.reset();
-      showToast('Merci ! Un conseiller BaytImmo vous contactera dans les plus brefs délais.');
     });
   }
 
-  if (arborFooterForm) {
-    arborFooterForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      arborFooterForm.reset();
-      showToast('Merci ! Votre inscription aux actualités BaytImmo a bien été enregistrée.');
-    });
-  }
+  bindFooterWeb3Form(arborFooterForm, {
+    sourceLabel: 'Accueil Footer',
+    successMessage: 'Merci ! Votre demande a bien été transmise à BaytImmo.',
+    notify: showToast,
+  });
 
   // ==========================================
   // 16. LAZY LOAD OFF-SCREEN MP4 VIDEOS (Save ~60MB on Initial Load)

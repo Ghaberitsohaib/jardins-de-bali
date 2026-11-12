@@ -1,6 +1,7 @@
 import './arbor.css';
 import './business.css';
 import { initMotion, initScrollReveals } from './motion.js';
+import { submitToWeb3Forms } from './web3forms.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   // ==========================================
@@ -232,14 +233,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactSubmitBtn = document.getElementById('contactSubmitBtn');
   const toastNotice = document.getElementById('toastNotice');
 
-  // CONFIGURATION EMAIL (Web3Forms / Formspree)
-  // Pour recevoir les emails directement sur contact@bayt-immo.com ou votre Gmail :
-  // Obtenez votre clé gratuite en 10 secondes sur https://web3forms.com avec l'adresse contact@bayt-immo.com
-  const EMAIL_CONFIG = {
-    web3formsKey: '4a4e186e-4647-4241-8594-76a7af13060d', // Clé Web3Forms active
-    recipientEmail: 'contact@bayt-immo.com'
-  };
-
   function showToast(msg) {
     if (!toastNotice) return;
     const txt = toastNotice.querySelector('#toastMsg');
@@ -279,10 +272,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // 2. Préparation des données d'email
       const emailPayload = {
-        access_key: EMAIL_CONFIG.web3formsKey,
         subject: `[BaytImmo] Nouvelle Demande - ${firstName} ${lastName} (${propertyType})`,
         from_name: `${firstName} ${lastName}`,
-        to_email: EMAIL_CONFIG.recipientEmail,
         reply_to: email,
         nom_complet: `${firstName} ${lastName}`,
         prenom: firstName,
@@ -292,33 +283,10 @@ document.addEventListener('DOMContentLoaded', () => {
         type_de_bien: propertyType,
         creneau_de_rappel: callTime,
         contact_whatsapp_souhaite: whatsappConsent ? 'Oui' : 'Non',
-        projet: 'Jardins de Bali Marrakech - Rue Ibn Batouta Menara',
-        date_heure: new Date().toLocaleString('fr-FR', { timeZone: 'Africa/Casablanca' })
       };
 
-      let emailSent = false;
-
-      // 3. Envoi via l'API Web3Forms si une clé valide est renseignée
-      if (EMAIL_CONFIG.web3formsKey && EMAIL_CONFIG.web3formsKey !== 'YOUR_WEB3FORMS_ACCESS_KEY') {
-        try {
-          const response = await fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-            },
-            body: JSON.stringify(emailPayload)
-          });
-          const result = await response.json();
-          if (response.ok && result.success) {
-            emailSent = true;
-          } else {
-            console.warn('Web3Forms response:', result);
-          }
-        } catch (err) {
-          console.error('Erreur lors de l envoi de l email:', err);
-        }
-      }
+      // 3. Envoi via l'API Web3Forms partagée
+      const emailSent = await submitToWeb3Forms(emailPayload);
 
       // 4. Ouverture WhatsApp si le client a coché l'option
       if (whatsappConsent) {
@@ -340,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
       contactForm.reset();
 
       if (emailSent) {
-        showToast(`Merci ${firstName} ! Votre demande a été transmise directement par email à contact@bayt-immo.com.`);
+        showToast(`Merci ${firstName} ! Votre demande a été transmise directement par email à contact@bayti-immo.com.`);
       } else {
         showToast(`Merci ${firstName} ! Votre demande pour les Jardins de Bali a bien été enregistrée.`);
       }

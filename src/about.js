@@ -3,6 +3,7 @@ import './business.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { initMotion, initScrollReveals, MOTION_CONFIG } from './motion.js';
+import { bindFooterWeb3Form } from './web3forms.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -416,14 +417,12 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollReveals('#Static2 .animatedText', { trigger: static2Trigger, stagger: 0.1 });
   }
 
-  // Footer Newsletter Form Toast
+  // Footer Newsletter Form
   const footerForm = document.getElementById('arborFooterForm');
-  if (footerForm) {
-    footerForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('Merci pour votre inscription à la newsletter officielle de BaytImmo.');
-      footerForm.reset();
-    });
-  }
+  bindFooterWeb3Form(footerForm, {
+    sourceLabel: "L'Investisseur Footer",
+    successMessage: 'Merci pour votre inscription ! Votre demande a bien été transmise à BaytImmo.',
+    notify: (msg) => alert(msg),
+  });
 });
 
