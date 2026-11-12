@@ -61,7 +61,7 @@ export function bindFooterWeb3Form(form, { sourceLabel, successMessage, notify }
     const delivered = await submitToWeb3Forms({
       subject: `[BaytImmo - ${sourceLabel}] Nouvelle Demande - ${fullName}`,
       from_name: fullName,
-      reply_to: email,
+      replyto: email || undefined,
       nom_complet: fullName,
       prenom: firstName,
       nom: lastName,

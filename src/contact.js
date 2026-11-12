@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const emailPayload = {
         subject: `[BaytImmo] Nouvelle Demande - ${firstName} ${lastName} (${propertyType})`,
         from_name: `${firstName} ${lastName}`,
-        reply_to: email,
+        replyto: email || undefined,
         nom_complet: `${firstName} ${lastName}`,
         prenom: firstName,
         nom: lastName,
@@ -285,19 +285,10 @@ document.addEventListener('DOMContentLoaded', () => {
         contact_whatsapp_souhaite: whatsappConsent ? 'Oui' : 'Non',
       };
 
-      // 3. Envoi via l'API Web3Forms partagée
+      // 3. Envoi via l'API Web3Forms partagée (email uniquement)
       const emailSent = await submitToWeb3Forms(emailPayload);
 
-      // 4. Ouverture WhatsApp si le client a coché l'option
-      if (whatsappConsent) {
-        const text = `Bonjour BaytImmo, je m'appelle ${firstName} ${lastName} (Tél: ${phone}, Email: ${email}). ` +
-                     `Je suis intéressé(e) par: ${propertyType}. ` +
-                     `Créneau souhaité pour l'appel: ${callTime}.`;
-
-        window.open(`https://wa.me/212665644391?text=${encodeURIComponent(text)}`, '_blank');
-      }
-
-      // 5. Restauration du bouton et confirmation
+      // 4. Restauration du bouton et confirmation
       if (contactSubmitBtn) {
         contactSubmitBtn.disabled = false;
         if (btnContent) {
@@ -305,12 +296,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
-      contactForm.reset();
-
       if (emailSent) {
+        contactForm.reset();
         showToast(`Merci ${firstName} ! Votre demande a été transmise directement par email à contact@bayti-immo.com.`);
       } else {
-        showToast(`Merci ${firstName} ! Votre demande pour les Jardins de Bali a bien été enregistrée.`);
+        showToast("Erreur lors de l'envoi de votre demande. Veuillez réessayer dans un instant.");
       }
     });
   }
