@@ -886,7 +886,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // WhatsApp Direct Inquiry link
     if (modalWaLink) {
-      const msg = encodeURIComponent(`Bonjour BaytImmo, je souhaite recevoir le dossier complet pour le lot ${unit.id} (${unit.surfaceDetails || unit.surface + ' m²'}, ${unit.floorName}) du projet Jardins de Bali à Marrakech.`);
+      const msg = encodeURIComponent(`Bonjour, je souhaiterais recevoir la documentation privée relative au bien ${unit.id} (${unit.floorName}) aux Jardins de Bali à Marrakech.`);
       modalWaLink.href = `https://wa.me/212665644391?text=${msg}`;
     }
 
