@@ -897,55 +897,60 @@ footer {
   pointer-events: none;
 }
 
-/* Availability status rendered cleanly inside card typography (brand palette only) */
-.card-status-row {
+/* Availability bottom ribbon integrated flush on image bottom edge (Style 3: Ruban Bas) */
+.card-status-ribbon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
   display: flex;
   align-items: center;
-  margin-bottom: -0.45rem;
-}
-
-.card-status-tag,
-.modal-status-tag {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.24rem 0.65rem;
-  border-radius: 2px;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.36rem 0.75rem;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(197, 168, 128, 0.38);
   font-family: var(--font-workSans);
   font-size: 0.625rem;
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  line-height: 1.1;
+  line-height: 1.15;
+  pointer-events: none;
 }
 
-.card-status-tag.is-disponible,
-.modal-status-tag.is-disponible {
-  background-color: var(--arbor-pine-green);
-  border: 1px solid rgba(197, 168, 128, 0.42);
-  color: var(--arbor-vanilla);
+.card-status-ribbon-meta {
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  opacity: 0.78;
 }
 
-.card-status-tag.is-vendu,
-.modal-status-tag.is-vendu {
-  background-color: rgba(46, 58, 38, 0.055);
-  border: 1px solid rgba(46, 58, 38, 0.16);
-  color: rgba(46, 58, 38, 0.62);
+.card-status-ribbon.is-disponible {
+  background-color: rgba(16, 21, 15, 0.78);
+  color: #C5A880;
 }
 
-.card-status-tag.is-option,
-.modal-status-tag.is-option {
-  background-color: rgba(166, 129, 80, 0.1);
-  border: 1px solid rgba(166, 129, 80, 0.55);
-  color: #8A683B;
+.card-status-ribbon.is-vendu {
+  background-color: rgba(253, 251, 239, 0.9);
+  border-top-color: rgba(166, 129, 80, 0.32);
+  color: rgba(46, 58, 38, 0.78);
+}
+
+.card-status-ribbon.is-option {
+  background-color: rgba(197, 168, 128, 0.9);
+  border-top-color: rgba(16, 21, 15, 0.16);
+  color: #10150F;
 }
 
 .residence-card.is-vendu .card-preview-img {
-  filter: grayscale(0.42) contrast(0.95);
+  filter: grayscale(0.45) contrast(0.95);
   opacity: 0.8;
 }
 
 .residence-card.is-vendu .card-apartment-id {
-  color: rgba(166, 129, 80, 0.52);
+  color: rgba(166, 129, 80, 0.55);
 }
 
 .card-terrace-sub {
@@ -1624,14 +1629,14 @@ footer {
   justify-content: space-between;
 }
 
-.modal-eyebrow-row {
+.modal-lot-title-row {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 0.45rem 0.75rem;
+  align-items: baseline;
+  gap: 0.55rem 0.85rem;
   padding-right: 3.5rem;
-  margin-bottom: 0.45rem;
+  margin-top: 0.15rem;
+  margin-bottom: 0.4rem;
 }
 
 .modal-lot-id {
@@ -1640,6 +1645,34 @@ footer {
   line-height: 1;
   color: var(--arbor-golden);
   margin-bottom: 0.4rem;
+}
+
+.modal-lot-title-row .modal-lot-id {
+  margin-bottom: 0;
+}
+
+.modal-status-underline {
+  display: inline-block;
+  font-family: var(--font-workSans);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  border-bottom: 1px solid currentColor;
+  line-height: 1.2;
+}
+
+.modal-status-underline.is-disponible {
+  color: var(--arbor-pine-green);
+}
+
+.modal-status-underline.is-vendu {
+  color: rgba(46, 58, 38, 0.6);
+}
+
+.modal-status-underline.is-option {
+  color: var(--arbor-golden);
 }
 
 .modal-specs-table td.value.modal-status-value.is-disponible {
@@ -1658,18 +1691,18 @@ footer {
 }
 
 @media (max-width: 640px) {
-  .modal-eyebrow-row {
-    gap: 0.45rem;
+  .modal-lot-title-row {
+    gap: 0.4rem 0.65rem;
   }
 
   .modal-lot-id {
     font-size: 2.35rem;
   }
 
-  .card-status-tag,
-  .modal-status-tag {
-    font-size: 0.58rem;
-    padding: 0.22rem 0.55rem;
+  .card-status-ribbon {
+    padding: 0.34rem 0.65rem;
+    font-size: 0.6rem;
+    letter-spacing: 0.14em;
   }
 }
 

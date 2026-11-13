@@ -490,11 +490,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>
                   </span>
                 </div>
+                <div class="card-status-ribbon ${item.statusMeta.pillClass}" aria-label="Statut : ${item.statusMeta.label}">
+                  <span class="card-status-ribbon-label">${item.statusMeta.pillText}</span>
+                  <span class="card-status-ribbon-meta">${item.surface.toFixed(0)} m²</span>
+                </div>
               </div>
               <div class="card-content">
-                <div class="card-status-row">
-                  <span class="card-status-tag ${item.statusMeta.pillClass}" aria-label="Statut : ${item.statusMeta.label}">${item.statusMeta.pillText}</span>
-                </div>
                 <div class="flex items-baseline justify-between gap-2">
                   <h3 class="card-apartment-id">${item.id}</h3>
                   <div class="text-right shrink-0">
@@ -870,7 +871,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const statusMeta = unit.statusMeta || getStatusMeta(unit.status);
     if (modalLotId) modalLotId.textContent = unit.id;
     if (modalStatusBadge) {
-      modalStatusBadge.className = `modal-status-tag ${statusMeta.pillClass}`;
+      modalStatusBadge.className = `modal-status-underline ${statusMeta.pillClass}`;
       modalStatusBadge.textContent = statusMeta.label;
     }
     if (modalStatus) {
