@@ -17,6 +17,7 @@ const STATUS_META = {
     label: 'Disponible',
     pillText: 'Disponible',
     pillClass: 'is-disponible',
+    allowInquiry: true,
     modalWaText: 'Réserver ce lot via WhatsApp',
   },
   vendu: {
@@ -24,13 +25,15 @@ const STATUS_META = {
     label: 'Vendu',
     pillText: 'Vendu',
     pillClass: 'is-vendu',
-    modalWaText: 'Demander un lot similaire disponible',
+    allowInquiry: false,
+    modalWaText: null,
   },
   option: {
     key: 'option',
     label: 'Optionné',
     pillText: 'Optionné',
     pillClass: 'is-option',
+    allowInquiry: true,
     modalWaText: 'Être informé si ce lot se libère',
   },
 };

@@ -48,23 +48,27 @@ describe('getUnitStatus', () => {
 });
 
 describe('getStatusMeta', () => {
-  it('returns French display labels, badge classes, and modal CTA labels for each status', () => {
+  it('returns French display labels, badge classes, and modal CTA visibility per status', () => {
     const dispo = getStatusMeta('disponible');
     assert.equal(dispo.key, 'disponible');
     assert.equal(dispo.label, 'Disponible');
     assert.equal(dispo.pillClass, 'is-disponible');
+    assert.equal(dispo.allowInquiry, true);
     assert.match(dispo.modalWaText, /Réserver ce lot/i);
 
     const vendu = getStatusMeta('vendu');
     assert.equal(vendu.key, 'vendu');
     assert.equal(vendu.label, 'Vendu');
     assert.equal(vendu.pillClass, 'is-vendu');
-    assert.match(vendu.modalWaText, /similaire|disponible/i);
+    assert.equal(vendu.allowInquiry, false);
+    assert.equal(vendu.modalWaText, null);
 
     const option = getStatusMeta('option');
     assert.equal(option.key, 'option');
     assert.equal(option.label, 'Optionné');
     assert.equal(option.pillClass, 'is-option');
+    assert.equal(option.allowInquiry, true);
+    assert.match(option.modalWaText, /libère/i);
   });
 });
 

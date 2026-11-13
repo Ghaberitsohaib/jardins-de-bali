@@ -1025,18 +1025,23 @@ document.addEventListener('DOMContentLoaded', () => {
       };
     }
 
-    // WhatsApp Direct Inquiry link
+    // WhatsApp Direct Inquiry link (omitted on sold lots)
     if (modalWaLink) {
       const statusMeta = unit.statusMeta || getStatusMeta(unit.status);
-      modalWaLink.textContent = statusMeta.modalWaText;
-      let waText = `Bonjour, je souhaiterais recevoir la documentation privée relative au bien ${unit.id} (${unit.floorName}) aux Jardins de Bali à Marrakech.`;
-      if (statusMeta.key === 'vendu') {
-        waText = `Bonjour, j'ai vu que le lot ${unit.id} (${unit.floorName}) est déjà vendu et je souhaiterais connaître les lots similaires disponibles aux Jardins de Bali à Marrakech.`;
-      } else if (statusMeta.key === 'option') {
-        waText = `Bonjour, je souhaiterais être informé si le lot ${unit.id} (${unit.floorName}), actuellement sous option, se libère aux Jardins de Bali à Marrakech.`;
+      const canInquire = statusMeta.allowInquiry !== false && Boolean(statusMeta.modalWaText);
+      modalWaLink.hidden = !canInquire;
+
+      if (canInquire) {
+        modalWaLink.textContent = statusMeta.modalWaText;
+        let waText = `Bonjour, je souhaiterais recevoir la documentation privée relative au bien ${unit.id} (${unit.floorName}) aux Jardins de Bali à Marrakech.`;
+        if (statusMeta.key === 'option') {
+          waText = `Bonjour, je souhaiterais être informé si le lot ${unit.id} (${unit.floorName}), actuellement sous option, se libère aux Jardins de Bali à Marrakech.`;
+        }
+        modalWaLink.href = `https://wa.me/212665644391?text=${encodeURIComponent(waText)}`;
+      } else {
+        modalWaLink.removeAttribute('href');
+        modalWaLink.textContent = '';
       }
-      const msg = encodeURIComponent(waText);
-      modalWaLink.href = `https://wa.me/212665644391?text=${msg}`;
     }
 
     modalBackdrop.classList.add('is-open');
