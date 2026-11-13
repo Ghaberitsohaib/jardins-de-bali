@@ -1,7 +1,7 @@
 import './arbor.css';
 import './business.css';
 import { initMotion, initScrollReveals } from './motion.js';
-import { submitToWeb3Forms } from './web3forms.js';
+import { ensureHoneypotField, submitToWeb3Forms } from './web3forms.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   // ==========================================
@@ -244,6 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (contactForm) {
+    ensureHoneypotField(contactForm);
     contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
@@ -286,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
       };
 
       // 3. Envoi via l'API Web3Forms partagée (email uniquement)
-      const emailSent = await submitToWeb3Forms(emailPayload);
+      const emailSent = await submitToWeb3Forms(emailPayload, { form: contactForm });
 
       // 4. Restauration du bouton et confirmation
       if (contactSubmitBtn) {

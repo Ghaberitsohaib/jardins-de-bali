@@ -6,7 +6,7 @@ import { SplitText } from 'gsap/SplitText';
 import * as THREE from 'three';
 import { initMotion, MOTION_CONFIG } from './motion.js';
 import { assetUrl } from './assetUrl.js';
-import { bindFooterWeb3Form, submitToWeb3Forms } from './web3forms.js';
+import { bindFooterWeb3Form, ensureHoneypotField, submitToWeb3Forms } from './web3forms.js';
 
 gsap.registerPlugin(ScrollTrigger, MorphSVGPlugin, SplitText);
 window.__gsap = gsap;
@@ -1832,6 +1832,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (contactForm) {
+    ensureHoneypotField(contactForm);
     contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const submitBtn = contactForm.querySelector('button[type="submit"]');
@@ -1842,17 +1843,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (submitBtn) submitBtn.disabled = true;
       try {
-        const emailSent = await submitToWeb3Forms({
-          subject: `[BaytImmo - Accueil Modal] Demande de ${fullName || 'Client'}`,
-          from_name: fullName || 'Visiteur BaytImmo',
-          replyto: email || undefined,
-          nom_complet: fullName || '-',
-          email: email || '-',
-          telephone: phone || '-',
-          message: message || '-',
-          source: 'Accueil Modal',
-          page_url: window.location.href,
-        });
+        const emailSent = await submitToWeb3Forms(
+          {
+            subject: `[BaytImmo - Accueil Modal] Demande de ${fullName || 'Client'}`,
+            from_name: fullName || 'Visiteur BaytImmo',
+            replyto: email || undefined,
+            nom_complet: fullName || '-',
+            email: email || '-',
+            telephone: phone || '-',
+            message: message || '-',
+            source: 'Accueil Modal',
+            page_url: window.location.href,
+          },
+          { form: contactForm }
+        );
         if (emailSent) {
           if (contactModalBackdrop) {
             contactModalBackdrop.classList.remove('open');
