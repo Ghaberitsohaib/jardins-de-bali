@@ -262,6 +262,17 @@
           </div>
         </div>
 
+        <!-- Availability (Statut) -->
+        <div class="filter-group">
+          <span class="filter-label">Disponibilité</span>
+          <div class="filter-pills">
+            <button type="button" class="filter-pill is-active" data-filter-status="all">Tous (234)</button>
+            <button type="button" class="filter-pill" data-filter-status="disponible">Disponible (68)</button>
+            <button type="button" class="filter-pill" data-filter-status="vendu">Vendu (162)</button>
+            <button type="button" class="filter-pill" data-filter-status="option">Optionné (4)</button>
+          </div>
+        </div>
+
         <!-- Typology / Rooms -->
         <div class="filter-group">
           <span class="filter-label">Typologie</span>
@@ -558,11 +569,18 @@
         <div class="modal-info-col">
           <div>
             <span class="text-xs tracking-widest text-golden uppercase font-sans">Jardins de Bali · Marrakech Menara</span>
-            <h2 id="modalLotId" class="modal-lot-id">APP 33</h2>
+            <div class="modal-lot-header">
+              <h2 id="modalLotId" class="modal-lot-id">APP 33</h2>
+              <span id="modalStatusBadge" class="modal-status-badge is-disponible">Disponible</span>
+            </div>
             <p id="modalLotSubtitle" class="font-workSans text-sm text-pine-green/75">Lot certifié conforme aux plans officiels du projet Jardins de Bali.</p>
 
             <table class="modal-specs-table">
               <tbody>
+                <tr id="modalStatusRow">
+                  <td class="label">Disponibilité</td>
+                  <td class="value" id="modalStatus">Disponible</td>
+                </tr>
                 <tr>
                   <td class="label">Type Officiel</td>
                   <td class="value" id="modalTypePdf">Type 18 : Appartement 1 Chambre</td>

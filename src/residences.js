@@ -1,21 +1,28 @@
 import './arbor.css';
 import './residences.css';
 import rawResidencesData from './data/residences-data.json';
+import unitStatuses from './data/unit-statuses.json';
+import { getUnitStatus, getStatusMeta, normalizeUnitStatus, countByStatus } from './unitStatus.js';
 import { assetUrl } from './assetUrl.js';
 import { initMotion, initScrollReveals, MOTION_CONFIG } from './motion.js';
 import { bindFooterWeb3Form } from './web3forms.js';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-const residencesData = rawResidencesData.map((unit) => ({
-  ...unit,
-  planImg: assetUrl(unit.planImg),
-  emplacementImg: assetUrl(unit.emplacementImg),
-  floorPlanImg: assetUrl(unit.floorPlanImg),
-  thumbImg: assetUrl(unit.thumbImg),
-  planSheet: assetUrl(unit.planSheet),
-  gallery: Array.isArray(unit.gallery) ? unit.gallery.map(assetUrl) : unit.gallery,
-}));
+const residencesData = rawResidencesData.map((unit) => {
+  const status = getUnitStatus(unit.id, unitStatuses);
+  return {
+    ...unit,
+    status,
+    statusMeta: getStatusMeta(status),
+    planImg: assetUrl(unit.planImg),
+    emplacementImg: assetUrl(unit.emplacementImg),
+    floorPlanImg: assetUrl(unit.floorPlanImg),
+    thumbImg: assetUrl(unit.thumbImg),
+    planSheet: assetUrl(unit.planSheet),
+    gallery: Array.isArray(unit.gallery) ? unit.gallery.map(assetUrl) : unit.gallery,
+  };
+});
 
 const RESIDENCE_CARD_FINITIONS = [
   'Portes bois chêne',
@@ -269,6 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4. INTERACTIVE FILTERING & APARTMENT PICKER
   // ==========================================
   const state = {
+    availability: 'all',
     category: 'all',
     floor: 'all',
     maxSurface: 221,
@@ -279,8 +287,33 @@ document.addEventListener('DOMContentLoaded', () => {
     pageLimit: 24,
   };
 
-  // Sync optional URL query params (?category=Magasin&floor=0)
+  // Sync dynamic counts onto availability filter pills from unit-statuses.json
+  const statusCounts = countByStatus(residencesData);
+  const statusPillLabels = {
+    all: `Tous (${statusCounts.all})`,
+    disponible: `Disponible (${statusCounts.disponible})`,
+    vendu: `Vendu (${statusCounts.vendu})`,
+    option: `Optionné (${statusCounts.option})`,
+  };
+  document.querySelectorAll('[data-filter-status]').forEach((btn) => {
+    const key = btn.getAttribute('data-filter-status');
+    if (statusPillLabels[key]) btn.textContent = statusPillLabels[key];
+  });
+
+  // Sync optional URL query params (?status=disponible&category=Magasin&floor=0)
   const urlParams = new URLSearchParams(window.location.search);
+  const rawStatusParam = urlParams.get('status');
+  if (rawStatusParam) {
+    const normalizedStatus = normalizeUnitStatus(rawStatusParam);
+    const matchedStatusBtn = Array.from(document.querySelectorAll('[data-filter-status]')).find(
+      (b) => b.getAttribute('data-filter-status') === normalizedStatus
+    );
+    if (matchedStatusBtn) {
+      state.availability = normalizedStatus;
+      document.querySelectorAll('[data-filter-status]').forEach((b) => b.classList.remove('is-active'));
+      matchedStatusBtn.classList.add('is-active');
+    }
+  }
   const rawCategoryParam = urlParams.get('category');
   if (rawCategoryParam) {
     const categoryAliases = {
@@ -329,6 +362,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function filterAndSortData() {
     let list = residencesData.filter((item) => {
+      // Availability status filter
+      if (state.availability !== 'all' && item.status !== state.availability) {
+        return false;
+      }
+
       // Category filter
       if (state.category !== 'all') {
         if (state.category === 'Magasin' || state.category === 'Commerce') {
@@ -362,6 +400,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const q = state.searchQuery.toLowerCase();
         const searchable = [
           item.id,
+          item.statusMeta.label,
           item.floorName,
           item.typeCode,
           item.typePdf,
@@ -439,10 +478,14 @@ document.addEventListener('DOMContentLoaded', () => {
           }
           
           return `
-            <div class="residence-card group" data-id="${item.id}" role="button" tabindex="0">
+            <div class="residence-card group ${item.statusMeta.pillClass}" data-id="${item.id}" role="button" tabindex="0">
               <div class="card-top-preview">
                 <img src="${layoutThumb}" alt="${item.id}" class="card-preview-img" loading="lazy" />
                 <span class="card-plan-pill">${item.typeCode || item.category} · Plan PDF</span>
+                <span class="card-status-pill ${item.statusMeta.pillClass}" aria-label="Statut : ${item.statusMeta.label}">
+                  <span class="card-status-dot" aria-hidden="true"></span>
+                  <span>${item.statusMeta.pillText}</span>
+                </span>
                 <div class="card-badges">
                   <span class="card-badge-icon" title="Exposition Lumineuse">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
@@ -525,6 +568,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Availability pill filters
+  document.querySelectorAll('[data-filter-status]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('[data-filter-status]').forEach((b) => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      state.availability = btn.getAttribute('data-filter-status');
+      state.pageLimit = 24;
+      renderList();
+    });
+  });
+
   // Category pill filters
   document.querySelectorAll('[data-filter-category]').forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -602,6 +656,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const resetBtn = document.getElementById('resetFiltersBtn');
   if (resetBtn) {
     resetBtn.addEventListener('click', () => {
+      state.availability = 'all';
       state.category = 'all';
       state.floor = 'all';
       state.maxSurface = 221;
@@ -615,6 +670,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (searchInput) searchInput.value = '';
       if (sortSelect) sortSelect.value = 'default';
 
+      document.querySelectorAll('[data-filter-status]').forEach((b) => {
+        b.classList.toggle('is-active', b.getAttribute('data-filter-status') === 'all');
+      });
       document.querySelectorAll('[data-filter-category]').forEach((b) => {
         b.classList.toggle('is-active', b.getAttribute('data-filter-category') === 'all');
       });
@@ -638,6 +696,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalBackdrop = document.getElementById('apartmentModal');
   const modalCloseBtn = document.getElementById('modalCloseBtn');
   const modalLotId = document.getElementById('modalLotId');
+  const modalStatusBadge = document.getElementById('modalStatusBadge');
+  const modalStatus = document.getElementById('modalStatus');
   const modalLotSubtitle = document.getElementById('modalLotSubtitle');
   const modalTypePdf = document.getElementById('modalTypePdf');
   const modalMainImg = document.getElementById('modalMainImg');
@@ -808,7 +868,16 @@ document.addEventListener('DOMContentLoaded', () => {
   function openModal(unit) {
     if (!modalBackdrop) return;
     activeModalUnit = unit;
+    const statusMeta = unit.statusMeta || getStatusMeta(unit.status);
     if (modalLotId) modalLotId.textContent = unit.id;
+    if (modalStatusBadge) {
+      modalStatusBadge.className = `modal-status-badge ${statusMeta.pillClass}`;
+      modalStatusBadge.textContent = statusMeta.label;
+    }
+    if (modalStatus) {
+      modalStatus.className = `value modal-status-value ${statusMeta.pillClass}`;
+      modalStatus.textContent = statusMeta.label;
+    }
     if (modalLotSubtitle) modalLotSubtitle.textContent = unit.situation || 'Lot certifié conforme aux plans officiels Jardins de Bali.';
     if (modalTypePdf) modalTypePdf.textContent = unit.typePdf || unit.category;
     if (modalSurface) modalSurface.textContent = unit.surfaceDetails || `${unit.surface} m²`;
@@ -958,7 +1027,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // WhatsApp Direct Inquiry link
     if (modalWaLink) {
-      const msg = encodeURIComponent(`Bonjour, je souhaiterais recevoir la documentation privée relative au bien ${unit.id} (${unit.floorName}) aux Jardins de Bali à Marrakech.`);
+      const statusMeta = unit.statusMeta || getStatusMeta(unit.status);
+      modalWaLink.textContent = statusMeta.modalWaText;
+      let waText = `Bonjour, je souhaiterais recevoir la documentation privée relative au bien ${unit.id} (${unit.floorName}) aux Jardins de Bali à Marrakech.`;
+      if (statusMeta.key === 'vendu') {
+        waText = `Bonjour, j'ai vu que le lot ${unit.id} (${unit.floorName}) est déjà vendu et je souhaiterais connaître les lots similaires disponibles aux Jardins de Bali à Marrakech.`;
+      } else if (statusMeta.key === 'option') {
+        waText = `Bonjour, je souhaiterais être informé si le lot ${unit.id} (${unit.floorName}), actuellement sous option, se libère aux Jardins de Bali à Marrakech.`;
+      }
+      const msg = encodeURIComponent(waText);
       modalWaLink.href = `https://wa.me/212665644391?text=${msg}`;
     }
 
