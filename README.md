@@ -1,4 +1,4 @@
-# Jardins de Bali — Menara Marrakech 🌿🏛️
+# Jardins de Bali — Menara Marrakech
 
 [![Auteur](https://img.shields.io/badge/Auteur-Sohaib%20Ghaberi-C5A880?style=for-the-badge&logo=github)](https://github.com/Ghaberitsohaib)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-jardins--de--bali-10150F?style=for-the-badge&logo=github)](https://github.com/Ghaberitsohaib/jardins-de-bali)
@@ -8,7 +8,7 @@
 
 ---
 
-## 👤 Auteur & Propriétaire
+## Auteur & Propriétaire
 - **Sohaib Ghaberi** ([@Ghaberitsohaib](https://github.com/Ghaberitsohaib))
 - **Profil GitHub** : [https://github.com/Ghaberitsohaib](https://github.com/Ghaberitsohaib)
 - **Email Contact** : contact@bayt-immo.com
@@ -17,11 +17,11 @@
 
 ---
 
-## ✨ Présentation du Projet
+## Présentation du Projet
 
 **Jardins de Bali** est un complexe immobilier et commercial exclusif situé sur la Rue Ibn Batouta à Marrakech, alliant architecture contemporaine raffinée, art de vivre d'exception et espaces d'affaires haut de gamme.
 
-### 🌟 Caractéristiques Principales
+### Caractéristiques Principales
 - **Espaces Commerciaux & Retail** : 4 Flagship Stores en rez-de-chaussée avec vitrines panoramiques sur voie passante, mezzanines showrooms et 12 plateaux de bureaux modulables.
 - **Résidences & Duplex** : Appartements de luxe et duplex d'exception avec terrasses panoramiques offrant une vue imprenable sur les montagnes de l'Atlas.
 - **Expérience Immersive 3D** : Maquette interactive 3D, exploration des plans d'étages et visites virtuelles.
@@ -29,7 +29,7 @@
 
 ---
 
-## 🛠️ Stack Technique
+## Stack Technique
 
 - **Bundler & Build Tool** : [Vite](https://vitejs.dev/)
 - **Animations & Micro-interactions** : [GSAP 3](https://greensock.com/gsap/) (ScrollTrigger, TweenLite)
@@ -39,7 +39,7 @@
 
 ---
 
-## 🚀 Installation & Développement
+## Installation & Développement
 
 ```bash
 # Cloner le dépôt
@@ -60,7 +60,7 @@ npm run build
 
 ---
 
-## 📂 Structure du Projet
+## Structure du Projet
 
 ```text
 ├── index.html                  # Page d'accueil & vue d'ensemble du complexe
@@ -75,7 +75,7 @@ npm run build
 
 ---
 
-## 👤 Auteur & Propriétaire
+## Auteur & Propriétaire
 - **Sohaib Ghaberi** ([@Ghaberitsohaib](https://github.com/Ghaberitsohaib))
 - **Profil GitHub** : [https://github.com/Ghaberitsohaib](https://github.com/Ghaberitsohaib)
 - **Email Contact** : contact@bayt-immo.com
@@ -83,6 +83,5 @@ npm run build
 
 ---
 
-## 📄 Licence & Droits
+## Licence & Droits
 © 2026 **Sohaib Ghaberi** / **BaytImmo Groupe Immobilier**. Tous droits réservés.
-
