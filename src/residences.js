@@ -482,10 +482,6 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="card-top-preview">
                 <img src="${layoutThumb}" alt="${item.id}" class="card-preview-img" loading="lazy" />
                 <span class="card-plan-pill">${item.typeCode || item.category} · Plan PDF</span>
-                <span class="card-status-pill ${item.statusMeta.pillClass}" aria-label="Statut : ${item.statusMeta.label}">
-                  <span class="card-status-dot" aria-hidden="true"></span>
-                  <span>${item.statusMeta.pillText}</span>
-                </span>
                 <div class="card-badges">
                   <span class="card-badge-icon" title="Exposition Lumineuse">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
@@ -496,6 +492,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
               </div>
               <div class="card-content">
+                <div class="card-status-row">
+                  <span class="card-status-tag ${item.statusMeta.pillClass}" aria-label="Statut : ${item.statusMeta.label}">${item.statusMeta.pillText}</span>
+                </div>
                 <div class="flex items-baseline justify-between gap-2">
                   <h3 class="card-apartment-id">${item.id}</h3>
                   <div class="text-right shrink-0">
@@ -871,7 +870,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const statusMeta = unit.statusMeta || getStatusMeta(unit.status);
     if (modalLotId) modalLotId.textContent = unit.id;
     if (modalStatusBadge) {
-      modalStatusBadge.className = `modal-status-badge ${statusMeta.pillClass}`;
+      modalStatusBadge.className = `modal-status-tag ${statusMeta.pillClass}`;
       modalStatusBadge.textContent = statusMeta.label;
     }
     if (modalStatus) {
