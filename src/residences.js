@@ -17,6 +17,51 @@ const residencesData = rawResidencesData.map((unit) => ({
   gallery: Array.isArray(unit.gallery) ? unit.gallery.map(assetUrl) : unit.gallery,
 }));
 
+const RESIDENCE_CARD_FINITIONS = [
+  'Portes bois chêne',
+  'Placards sur mesure',
+  'Grès cérame 60×120',
+  'Chambres effet bois',
+  'Cuisine semi-équipée',
+  'Sanitaires Duravit / Vitra · Hansgrohe',
+  'Clim. gainable par pièce',
+];
+
+function getResidenceFinitionsList(isDuplex) {
+  return [
+    {
+      label: 'Portes intérieures',
+      value: 'Bois finition chêne, poignées noires design contemporain',
+    },
+    {
+      label: 'Placards',
+      value: 'Placards intégrés sur mesure, finition chêne épurée',
+    },
+    {
+      label: 'Sols principaux',
+      value: isDuplex
+        ? 'Grès cérame 60×120 cm mat beige clair (salon, circulations, SDB & escaliers)'
+        : 'Grès cérame 60×120 cm mat beige clair (salon, circulations & SDB)',
+    },
+    {
+      label: 'Sol chambres',
+      value: 'Grès cérame effet bois naturel clair à joints fins',
+    },
+    {
+      label: 'Cuisine semi-équipée',
+      value: 'Façades mates brun foncé & bois clair, plan effet marbre clair, évier & mitigeur noir, éclairage LED intégré',
+    },
+    {
+      label: 'Sanitaires',
+      value: "Vasque & WC suspendus Duravit / Vitra (meuble bois, robinetterie noire), douche à l'italienne type pluie Hansgrohe / Vitra",
+    },
+    {
+      label: 'Climatisation',
+      value: 'Centralisée gainable avec réglage individuel dans chaque pièce',
+    },
+  ];
+}
+
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -322,6 +367,7 @@ document.addEventListener('DOMContentLoaded', () => {
           item.typePdf,
           item.composition,
           item.category,
+          item.equipments,
         ]
           .filter(Boolean)
           .join(' ')
@@ -425,6 +471,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                   </div>
                 </div>
+                ${!item.isMagasin ? `
+                  <div class="card-finitions" aria-label="Finitions et équipements inclus">
+                    ${RESIDENCE_CARD_FINITIONS.map((label) => `<span class="card-finition-pill">${label}</span>`).join('')}
+                  </div>
+                ` : ''}
               </div>
             </div>
           `;
@@ -773,11 +824,32 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modalRooms) modalRooms.textContent = unit.composition || unit.roomsText;
     if (modalFeatures) modalFeatures.textContent = unit.features.join(', ');
     if (modalEquipments) {
-      modalEquipments.textContent =
-        unit.equipments ||
-        (unit.isMagasin
-          ? 'Vitrine panoramique toute hauteur, Double hauteur sous plafond, Volet roulant motorisé, Climatisation pré-installée'
-          : 'Cuisine équipée Bosch, Marbre Travertin, Climatisation centralisée, Parking Sous-Sol');
+      const row = modalEquipments.closest('tr');
+      modalEquipments.textContent = '';
+      if (unit.isMagasin) {
+        if (row) row.classList.remove('is-vertical-row');
+        modalEquipments.textContent =
+          unit.equipments ||
+          'Vitrine panoramique toute hauteur, Double hauteur sous plafond, Volet roulant motorisé, Climatisation pré-installée';
+      } else {
+        if (row) row.classList.add('is-vertical-row');
+        const list = document.createElement('ul');
+        list.className = 'modal-finitions-list';
+        getResidenceFinitionsList(Boolean(unit.isDuplex)).forEach(({ label, value }) => {
+          const li = document.createElement('li');
+          li.className = 'modal-finition-item';
+          const keyEl = document.createElement('span');
+          keyEl.className = 'modal-finition-key';
+          keyEl.textContent = `${label} : `;
+          const valEl = document.createElement('span');
+          valEl.className = 'modal-finition-val';
+          valEl.textContent = value;
+          li.appendChild(keyEl);
+          li.appendChild(valEl);
+          list.appendChild(li);
+        });
+        modalEquipments.appendChild(list);
+      }
     }
 
     const placeholderSrc = unit.floorPlanImg || unit.planSheet || unit.thumbImg;
