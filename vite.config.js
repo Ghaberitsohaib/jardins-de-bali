@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
+process.env.BROWSER = process.env.BROWSER || 'Brave Browser';
+
 function normalizeBase(rawBase) {
   if (!rawBase || rawBase === '/') return '/';
   const withLeading = rawBase.startsWith('/') ? rawBase : `/${rawBase}`;
@@ -49,6 +51,7 @@ export default defineConfig({
   server: {
     host: true, // Expose to local network (Wi-Fi / LAN)
     port: 5173,
+    open: true, // Automatically opens in Brave Browser
   },
   build: {
     rollupOptions: {
