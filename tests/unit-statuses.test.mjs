@@ -110,7 +110,7 @@ describe('unit-statuses.json parity with residences-data.json and Vertex 3D', ()
     }
   });
 
-  it('matches Vertex 3D commercial counts (162 vendu, 68 disponible incl. 4 magasins, 4 option)', () => {
+  it('matches commercial counts (164 vendu, 66 disponible incl. 4 magasins, 4 option)', () => {
     const residences = loadJson('src/data/residences-data.json');
     const statuses = loadJson('src/data/unit-statuses.json');
 
@@ -122,8 +122,8 @@ describe('unit-statuses.json parity with residences-data.json and Vertex 3D', ()
 
     assert.deepEqual(countByStatus(enriched), {
       all: 234,
-      disponible: 68,
-      vendu: 162,
+      disponible: 66,
+      vendu: 164,
       option: 4,
     });
 
