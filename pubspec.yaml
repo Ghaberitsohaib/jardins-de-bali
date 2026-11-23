@@ -1,0 +1,46 @@
+name: jardins_de_bali_app
+description: "Application Mobile Officielle — Jardins de Bali Marrakech Menara (BaytImmo Prestige)."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_animate: ^4.5.2
+  rive: ^0.13.20
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.17
+  url_launcher: ^6.3.1
+  shared_preferences: ^2.5.2
+  video_player: ^2.9.3
+  pdf: ^3.13.1
+  printing: ^5.15.1
+  supabase_flutter: ^2.18.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/01_DATA_JSON_ET_API/
+    - assets/02_PLANS_ARCHITECTURAUX/2D_Plans_Par_Etage/
+    - assets/02_PLANS_ARCHITECTURAUX/Plans_Des_Commerces_Et_Bureaux/
+    - assets/02_PLANS_ARCHITECTURAUX/Facades_Et_Coupes/
+    - assets/02_PLANS_ARCHITECTURAUX/Planches_Master_HD/
+    - assets/03_PHOTOS_ET_RENDUS_3D/Interieurs_Appartements/
+    - assets/03_PHOTOS_ET_RENDUS_3D/Exterieurs_Et_Facades/
+    - assets/03_PHOTOS_ET_RENDUS_3D/Commerces_Et_Bureaux/
+    - assets/03_PHOTOS_ET_RENDUS_3D/Panoramas_360_VR/
+    - assets/04_ASSETS_MOBILE_ICONES_LOGOS/Logos/
+    - assets/04_ASSETS_MOBILE_ICONES_LOGOS/Icons/
+    - assets/04_ASSETS_MOBILE_ICONES_LOGOS/Badges/
+    - assets/05_DOCUMENTS_ET_BROCHURES_PDF/
+    - assets/06_VIDEOS_ET_MAQUETTE_3D/

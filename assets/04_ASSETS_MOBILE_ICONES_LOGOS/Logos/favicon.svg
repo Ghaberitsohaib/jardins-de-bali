@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#182017"/>
+      <stop offset="100%" stop-color="#0A0E0A"/>
+    </linearGradient>
+    <linearGradient id="goldRoof" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCEFD8"/>
+      <stop offset="50%" stop-color="#C5A880"/>
+      <stop offset="100%" stop-color="#9E8055"/>
+    </linearGradient>
+  </defs>
+  <!-- Luxury Circular Badge with Gold Trim -->
+  <circle cx="60" cy="60" r="58" fill="url(#bgGrad)" stroke="#C5A880" stroke-width="2.5" />
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#C5A880" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.5" />
+  <!-- Scaled BaytImmo Roof Symbol -->
+  <g transform="translate(22, 47.5) scale(0.2868)" fill="url(#goldRoof)">
+    <path fill-rule="evenodd" d="M 123 48 L 123 64 L 138 64 L 138 48 Z M 142 48 L 142 64 L 157 64 L 157 48 Z M 123 68 L 123 84 L 138 84 L 138 68 Z M 142 68 L 142 84 L 157 84 L 157 68 Z M 0 86 L 32 86 L 140 5 L 200 53 L 164 87 L 182 87 L 211 62 L 240 84 L 213 61 L 221 53 L 265 85 L 224 49 L 214 44 L 183 18 L 160 17 L 140 0 L 107 0 Z M 173 27 L 181 21 L 214 47 L 207 48 L 202 52 Z" />
+  </g>
+</svg>

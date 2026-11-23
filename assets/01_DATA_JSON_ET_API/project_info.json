@@ -1,0 +1,79 @@
+{
+  "projectName": "Jardins de Bali Marrakech Menara",
+  "tagline": "L'Élégance Impériale & L'Art de Vivre au Cœur de Marrakech",
+  "titreFoncier": "TF 34 603/M (Lot B5)",
+  "developer": {
+    "name": "BaytImmo Groupe Immobilier",
+    "brand": "BaytImmo Prestige",
+    "website": "https://bayt-immo.com",
+    "liveDemo": "https://volatile-bolt-er8we5n.shipstatic.com",
+    "githubRepo": "https://github.com/Ghaberitsohaib/jardins-de-bali",
+    "author": "Sohaib Ghaberi (@Ghaberitsohaib)",
+    "phone": "+212 665-644391",
+    "phoneFixe": "+212 524-420000",
+    "email": "contact@bayt-immo.com",
+    "headquarters": "Quartier Rahham, Lot B5 (Rue Ibn Batouta), Menara, Marrakech"
+  },
+  "architect": {
+    "name": "Cabinet AMA Architecture",
+    "principalArchitect": "M. Amar Menara",
+    "location": "Guéliz, Marrakech, Maroc",
+    "designVision": "Harmonie contemporaine fusionnant l'architecture balinaise tropicale et le raffinement impérial marocain."
+  },
+  "location": {
+    "city": "Marrakech",
+    "district": "Quartier Rahham, Zone B5 • Arrondissement Menara",
+    "address": "Quartier Rahham, Lot B5 (Rue Ibn Batouta), Menara, Marrakech",
+    "coordinates": {
+      "latitude": 31.628587,
+      "longitude": -8.03618
+    },
+    "googleMapsUrl": "https://www.google.com/maps/place/31.628587,-8.036180/@31.628587,-8.036180,18z",
+    "accessibility": [
+      {
+        "name": "Aéroport International Marrakech Menara (RAK)",
+        "distance": "3.2 km",
+        "time": "5 min"
+      },
+      {
+        "name": "Jardins Historiques de la Ménara",
+        "distance": "1.8 km",
+        "time": "3 min"
+      },
+      {
+        "name": "Avenue Mohammed VI & Hivernage",
+        "distance": "2.4 km",
+        "time": "4 min"
+      },
+      {
+        "name": "Gare TGV Marrakech Guéliz",
+        "distance": "4.0 km",
+        "time": "7 min"
+      },
+      {
+        "name": "Place Jemaa el-Fna & Médina",
+        "distance": "4.5 km",
+        "time": "8 min"
+      },
+      {
+        "name": "Golf Royal & Menara Golf Resorts",
+        "distance": "5.1 km",
+        "time": "9 min"
+      }
+    ]
+  },
+  "keyMetrics": {
+    "surfacePlancherCouverte": "15 746 m²",
+    "empriseAuSol": "2 624 m²",
+    "niveaux": "R+5 avec Mezzanine et 2 Niveaux de Sous-Sol",
+    "totalLots": 234,
+    "totalAppartements": 230,
+    "totalCommercesFlagship": 4,
+    "totalBureauxEtSuitesCorporate": 0,
+    "capaciteParkingSousSol": 234,
+    "longueurPiscineRooftop": "78 mètres",
+    "nombrePalmiersPhoenix": 38,
+    "dateLivraisonPrevisionnelle": "4ème Trimestre 2026",
+    "garantieDecennale": "Assurance décennale et garantie d'achèvement bancaire (GFA)"
+  }
+}

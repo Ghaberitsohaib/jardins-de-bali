@@ -1,0 +1,56 @@
+[
+  {
+    "id": "amenity-rooftop-pool",
+    "title": "Double Piscine Panoramique sur Toiture-Terrasse",
+    "subtitle": "78 mètres de longueur avec vue 360° sur l'Atlas",
+    "description": "Une prouesse architecturale offrant un bassin de nage olympique et un bassin lagon relaxant en toiture-terrasse, suspendus entre ciel et montagnes de l'Atlas.",
+    "icon": "pool",
+    "badge": "Exclusivité Résidents",
+    "image": "03_PHOTOS_ET_RENDUS_3D/Exterieurs_Et_Facades/10_rooftop_piscines_solarium.jpg"
+  },
+  {
+    "id": "amenity-patio-fountain",
+    "title": "Patio Intérieur Végétalisé & Fontaine Monumentale",
+    "subtitle": "Oasis de fraîcheur bioclimatique",
+    "description": "Conçu comme une cour impériale andalouse arborée de 38 palmiers dattiers Phoenix Dactylifera, ce patio apporte une fraîcheur naturelle et un murmure d'eau apaisant.",
+    "icon": "tree",
+    "badge": "Artisanat d'Art",
+    "image": "03_PHOTOS_ET_RENDUS_3D/Exterieurs_Et_Facades/09_patio_interieur_fontaine.jpg"
+  },
+  {
+    "id": "amenity-solarium-lounge",
+    "title": "Solarium & Rooftop Culinary Lounge",
+    "subtitle": "Espace détente, beds balinais & bar à jus",
+    "description": "Un espace privilégié dédié à la détente, équipé de transats de luxe, cabanas balinaises ombragées et service de rafraîchissement au coucher du soleil.",
+    "icon": "sun",
+    "badge": "VIP Lounge",
+    "image": "03_PHOTOS_ET_RENDUS_3D/Exterieurs_Et_Facades/rooftop_culinary_lounge_hd.jpg"
+  },
+  {
+    "id": "amenity-wellness-fitness",
+    "title": "Centre de Fitness & Espace Wellness",
+    "subtitle": "Équipements Technogym & Studio Yoga",
+    "description": "Salle de sport tout équipée avec vue panoramique sur les jardins, sauna, hammam traditionnel marocain en marbre et studio de yoga/pilates.",
+    "icon": "fitness",
+    "badge": "Santé & Vitalité",
+    "image": "03_PHOTOS_ET_RENDUS_3D/Exterieurs_Et_Facades/amenity_fitness.webp"
+  },
+  {
+    "id": "amenity-terrasses-gradins",
+    "title": "Façades en Gradins & Terrasses Végétalisées",
+    "subtitle": "Loggias privatives & architecture bioclimatique",
+    "description": "Une signature architecturale d'exception signée Cabinet AMA. Chaque appartement bénéficie d'une loggia ou terrasse privative végétalisée sans vis-à-vis, avec une vue panoramique sur la Menara et l'Atlas.",
+    "icon": "deck",
+    "badge": "Signature AMA",
+    "image": "03_PHOTOS_ET_RENDUS_3D/Exterieurs_Et_Facades/12_facade_gradins_vegetalisee.jpg"
+  },
+  {
+    "id": "amenity-parking-ev",
+    "title": "Double Parking Sous-Sol Sécurisé (2 Niveaux)",
+    "subtitle": "234 places sécurisées avec vidéosurveillance",
+    "description": "Deux niveaux de stationnement souterrain sécurisé (SS-1 & SS-2) avec 234 places numérotées, rampes larges à double sens, vidéosurveillance 24/7 et accès direct par ascenseurs.",
+    "icon": "parking",
+    "badge": "Sécurité 24/7",
+    "image": "03_PHOTOS_ET_RENDUS_3D/Exterieurs_Et_Facades/amenity_parking.webp"
+  }
+]

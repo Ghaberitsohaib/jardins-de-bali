@@ -1,0 +1,82 @@
+{
+  "agencyInfo": {
+    "companyName": "BaytImmo Groupe Immobilier",
+    "commercialEntity": "Jardins de Bali Marrakech Menara",
+    "telephoneDirect": "+212 665-644391",
+    "telephoneCommercial": "+212 524-420000",
+    "whatsappNumber": "+212665644391",
+    "whatsappDeepLink": "https://wa.me/212665644391?text=Bonjour,%20je%20souhaite%20recevoir%20les%20disponibilit%C3%A9s%20et%20la%20brochure%20du%20projet%20Jardins%20de%20Bali%20Marrakech",
+    "email": "contact@bayt-immo.com",
+    "address": "Quartier Rahham, Lot B5 (Rue Ibn Batouta), Menara, 40000 Marrakech",
+    "openingHours": "Du Lundi au Samedi : 09h00 - 19h30 (Dimanche sur rendez-vous VIP)"
+  },
+  "leadFormSchema": {
+    "fields": [
+      {
+        "name": "firstName",
+        "label": "Prénom",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lastName",
+        "label": "Nom",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Adresse Email",
+        "type": "email",
+        "required": true
+      },
+      {
+        "name": "phone",
+        "label": "Téléphone / WhatsApp",
+        "type": "tel",
+        "required": true
+      },
+      {
+        "name": "budgetMAD",
+        "label": "Budget Envisagé (MAD)",
+        "type": "select",
+        "options": [
+          "Moins de 1 000 000 MAD",
+          "1 000 000 - 1 500 000 MAD",
+          "1 500 000 - 2 500 000 MAD",
+          "Plus de 2 500 000 MAD"
+        ]
+      },
+      {
+        "name": "interestType",
+        "label": "Typologie recherchée",
+        "type": "select",
+        "options": [
+          "Studio (38-45 m²)",
+          "1 Chambre (48-65 m²)",
+          "2 Chambres (70-95 m²)",
+          "Penthouse d'exception (100-234 m²)",
+          "Magasin Flagship en Façade",
+          "Plateau de Bureaux"
+        ]
+      },
+      {
+        "name": "purpose",
+        "label": "Projet d'acquisition",
+        "type": "select",
+        "options": [
+          "Résidence Principale",
+          "Pied-à-Terre de Vacances",
+          "Investissement Locatif à Fort Rendement (RBNB / Saisonnier)",
+          "Espace Professionnel / Boutique"
+        ]
+      },
+      {
+        "name": "message",
+        "label": "Message ou questions",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  }
+}

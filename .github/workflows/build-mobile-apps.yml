@@ -1,0 +1,76 @@
+name: Build Jardins de Bali iOS (.ipa) & Android (.apk)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-ios-ipa:
+    name: Build iPhone App (.ipa)
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Run unit tests
+        run: flutter test
+
+      - name: Build iOS Release (unsigned .app)
+        run: flutter build ios --release --no-codesign
+
+      - name: Package Runner.app into JardinsDeBali-iOS.ipa
+        run: |
+          mkdir -p build/ipa/Payload
+          cp -r build/ios/iphoneos/Runner.app build/ipa/Payload/Runner.app
+          cd build/ipa
+          zip -r -y JardinsDeBali-iOS.ipa Payload
+          ls -lh JardinsDeBali-iOS.ipa
+
+      - name: Upload JardinsDeBali-iOS.ipa artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: JardinsDeBali-iOS-IPA
+          path: build/ipa/JardinsDeBali-iOS.ipa
+          retention-days: 90
+
+  build-android-apk:
+    name: Build Android App (.apk)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build Android Release APK
+        run: flutter build apk --release
+
+      - name: Upload JardinsDeBali-Android.apk artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: JardinsDeBali-Android-APK
+          path: build/app/outputs/flutter-apk/app-release.apk
+          retention-days: 90

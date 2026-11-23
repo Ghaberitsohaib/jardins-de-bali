@@ -1,0 +1,61 @@
+{
+  "themeName": "Jardins de Bali Imperial Luxury Design System",
+  "colors": {
+    "primary": "#10150F",
+    "primaryVariant": "#192218",
+    "onPrimary": "#FFFFFF",
+    "accent": "#C5A880",
+    "accentLight": "#E5D4BC",
+    "accentDark": "#9F8055",
+    "onAccent": "#10150F",
+    "background": "#FDFBEF",
+    "backgroundDark": "#10150F",
+    "surface": "#FFFFFF",
+    "surfaceVariant": "#F7F4EA",
+    "textPrimary": "#10150F",
+    "textSecondary": "#4A5248",
+    "textMuted": "#8A9287",
+    "border": "#E8E4D9",
+    "borderGold": "rgba(197, 168, 128, 0.4)",
+    "status": {
+      "available": "#2E7D32",
+      "reserved": "#ED6C02",
+      "sold": "#8A9287"
+    }
+  },
+  "typography": {
+    "displayFamily": "Cinzel, Georgia, serif",
+    "bodyFamily": "Plus Jakarta Sans, Inter, sans-serif",
+    "sizes": {
+      "hero": 34,
+      "titleLarge": 26,
+      "titleMedium": 20,
+      "titleSmall": 18,
+      "bodyLarge": 16,
+      "bodyMedium": 14,
+      "bodySmall": 12,
+      "caption": 11
+    },
+    "weights": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "semiBold": 600,
+      "bold": 700
+    }
+  },
+  "radii": {
+    "none": 0,
+    "sm": 6,
+    "md": 12,
+    "lg": 18,
+    "xl": 24,
+    "pill": 9999
+  },
+  "shadows": {
+    "card": "0 8px 30px rgba(16, 21, 15, 0.06)",
+    "cardHover": "0 14px 40px rgba(197, 168, 128, 0.18)",
+    "floatingPill": "0 10px 25px rgba(16, 21, 15, 0.12)",
+    "modal": "0 25px 60px rgba(16, 21, 15, 0.35)"
+  }
+}
