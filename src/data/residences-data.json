@@ -581,13 +581,13 @@
     "category": "Duplex",
     "typeCode": "Type 4",
     "typePdf": "Type 4 : Duplex",
-    "composition": "2 Salons, Kitchenette, 4 Chambres, 4 S.D.B",
+    "composition": "2 Salons, Kitchenette, 4 Chambres, 3 S.D.B",
     "isDuplex": true,
     "isMagasin": false,
     "bedrooms": 4,
-    "bathrooms": 4,
+    "bathrooms": 3,
     "rooms": 6,
-    "roomsText": "Duplex · 4 Chambres · 2 Salons · Kitchenette · 4 SDB",
+    "roomsText": "Duplex · 4 Chambres · 2 Salons · Kitchenette · 3 SDB",
     "situation": "Quartier \"Rahham\" · Rue Ibn Batouta",
     "features": [
       "Terrasse / Jardin Privatif",
@@ -609,7 +609,7 @@
     "planSheet": "/plans/sheets/app-9.webp",
     "sheetLayout": [
       1140,
-      825,
+      790,
       451,
       620
     ]
