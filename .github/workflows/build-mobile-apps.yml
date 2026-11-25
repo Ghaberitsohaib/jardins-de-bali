@@ -1,9 +1,12 @@
-name: Build Jardins de Bali iOS (.ipa) & Android (.apk)
+name: Build Jardins de Bali iOS (.ipa)
 
 on:
   workflow_dispatch:
   push:
     branches: [ main, iphone-app ]
+
+permissions:
+  contents: write
 
 jobs:
   build-ios-ipa:
@@ -43,34 +46,16 @@ jobs:
           path: build/ipa/JardinsDeBali-iOS.ipa
           retention-days: 90
 
-  build-android-apk:
-    name: Build Android App (.apk)
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: '17'
-
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          channel: stable
-          cache: true
-
-      - name: Install dependencies
-        run: flutter pub get
-
-      - name: Build Android Release APK
-        run: flutter build apk --release
-
-      - name: Upload JardinsDeBali-Android.apk artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: JardinsDeBali-Android-APK
-          path: build/app/outputs/flutter-apk/app-release.apk
-          retention-days: 90
+      - name: Publish direct-download IPA Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="v1.0-iphone"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" build/ipa/JardinsDeBali-iOS.ipa --clobber
+          else
+            gh release create "$TAG" build/ipa/JardinsDeBali-iOS.ipa \
+              --target "${{ github.ref_name }}" \
+              --title "Jardins de Bali iPhone App (.ipa)" \
+              --notes "Build iOS officiel Jardins de Bali Marrakech (unsigned IPA pour Sideloadly / AltStore)."
+          fi
