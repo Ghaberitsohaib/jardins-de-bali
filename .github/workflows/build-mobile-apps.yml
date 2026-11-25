@@ -3,7 +3,7 @@ name: Build Jardins de Bali iOS (.ipa) & Android (.apk)
 on:
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [ main, iphone-app ]
 
 jobs:
   build-ios-ipa:
